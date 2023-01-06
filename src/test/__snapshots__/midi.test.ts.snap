@@ -1,0 +1,67 @@
+// Vitest Snapshot v1
+
+exports[`parseMidi() should parse to a known format 1`] = `
+{
+  "timeSignature": {
+    "denominator": 4,
+    "numerator": 4,
+  },
+  "timings": {
+    "durationTicks": 479,
+    "microsecondsPerBeat": 517241,
+    "ticksPerBeat": 480,
+  },
+  "tracks": [
+    {
+      "durationTicks": 479,
+      "notes": [
+        {
+          "durationTicks": 35,
+          "noteName": [
+            "A3",
+            "A3",
+          ],
+          "noteNumber": 57,
+          "partStartTicks": 39,
+        },
+        {
+          "durationTicks": 55,
+          "noteName": [
+            "D4",
+            "D4",
+          ],
+          "noteNumber": 62,
+          "partStartTicks": 177,
+        },
+        {
+          "durationTicks": 43,
+          "noteName": [
+            "Bb3",
+            "A#3",
+          ],
+          "noteNumber": 58,
+          "partStartTicks": 273,
+        },
+        {
+          "durationTicks": 34,
+          "noteName": [
+            "A2",
+            "A2",
+          ],
+          "noteNumber": 45,
+          "partStartTicks": 393,
+        },
+        {
+          "durationTicks": 18,
+          "noteName": [
+            "G4",
+            "G4",
+          ],
+          "noteNumber": 67,
+          "partStartTicks": 479,
+        },
+      ],
+    },
+  ],
+}
+`;
