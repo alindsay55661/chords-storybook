@@ -31,7 +31,7 @@ export function buildMidiPart(data: ArrayLike<number>): MidiPart {
     timings: {
       ...timings,
       durationTicks: Math.max(...tracks.map(track => track.durationTicks)),
-      ticksPerBeat: json.header.ticksPerBeat || 480,
+      ticksPerBeat: json.header.ticksPerBeat || 960,
     },
     timeSignature,
     tracks,

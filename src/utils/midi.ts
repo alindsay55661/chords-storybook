@@ -28,6 +28,7 @@ export type Note = {
   partStartTicks: number
   durationTicks: number
   noteNumber: number
+  noteNameWithOctave: string[]
   noteName: string[]
 }
 
@@ -48,9 +49,16 @@ export function buildNote(
     partStartTicks,
     durationTicks,
     noteNumber: note.noteNumber,
-    noteName: [
+    noteNameWithOctave: [
       Tonal.Midi.midiToNoteName(note.noteNumber),
       Tonal.Midi.midiToNoteName(note.noteNumber, { sharps: true }),
+    ],
+    noteName: [
+      Tonal.Midi.midiToNoteName(note.noteNumber, { pitchClass: true }),
+      Tonal.Midi.midiToNoteName(note.noteNumber, {
+        pitchClass: true,
+        sharps: true,
+      }),
     ],
   }
 }

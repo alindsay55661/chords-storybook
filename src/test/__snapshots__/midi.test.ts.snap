@@ -18,6 +18,10 @@ exports[`parseMidi() should parse to a known format 1`] = `
         {
           "durationTicks": 35,
           "noteName": [
+            "A",
+            "A",
+          ],
+          "noteNameWithOctave": [
             "A3",
             "A3",
           ],
@@ -27,6 +31,10 @@ exports[`parseMidi() should parse to a known format 1`] = `
         {
           "durationTicks": 55,
           "noteName": [
+            "D",
+            "D",
+          ],
+          "noteNameWithOctave": [
             "D4",
             "D4",
           ],
@@ -36,6 +44,10 @@ exports[`parseMidi() should parse to a known format 1`] = `
         {
           "durationTicks": 43,
           "noteName": [
+            "Bb",
+            "A#",
+          ],
+          "noteNameWithOctave": [
             "Bb3",
             "A#3",
           ],
@@ -45,6 +57,10 @@ exports[`parseMidi() should parse to a known format 1`] = `
         {
           "durationTicks": 34,
           "noteName": [
+            "A",
+            "A",
+          ],
+          "noteNameWithOctave": [
             "A2",
             "A2",
           ],
@@ -54,6 +70,10 @@ exports[`parseMidi() should parse to a known format 1`] = `
         {
           "durationTicks": 18,
           "noteName": [
+            "G",
+            "G",
+          ],
+          "noteNameWithOctave": [
             "G4",
             "G4",
           ],

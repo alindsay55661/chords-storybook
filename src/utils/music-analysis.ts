@@ -1,5 +1,5 @@
 import Tonal from 'tonal'
-import type { MidiPart } from './midi'
+import type { MidiPart, Note } from './midi'
 
 type DetectChordOptions = {
   resolution: 'beat' | 'bar'
@@ -21,35 +21,50 @@ export function detectChords(
   const { resolution } = options
   const buckets = getBuckets(part, resolution)
 
-  console.log(buckets)
-
-  const track = part.tracks[0]
+  // combine all tracks
+  // optimize O(n2) ? - typical track count is low
+  part.tracks.forEach(track => {
+    track.notes.forEach(note => {
+      addNoteToBuckets(note, buckets)
+    })
+  })
 
   // Assign each note to a single chord range
-  track.notes.forEach(note => {
-    // Notes that start and end inside the
-    const noteOffTicks = note.partStartTicks + note.durationTicks
-  })
+  const chords = buckets.buckets.map(bucket => Tonal.Chord.detect(bucket))
+  return chords
 }
 
-function getBuckets(part: MidiPart, resolution: 'bar' | 'beat') {
+function addNoteToBuckets(note: Note, buckets: Buckets) {
+  const noteOnTicks = note.partStartTicks
+  const noteOffTicks = note.partStartTicks + note.durationTicks
+  const noteStartBucket = Math.floor(noteOnTicks / buckets.ticksPerBucket)
+  const noteEndBucket = Math.floor(noteOffTicks / buckets.ticksPerBucket)
+
+  // at least loop is limited to its own buckets (typically 1-2)
+  for (let i = noteStartBucket; i <= noteEndBucket; i++) {
+    buckets.buckets[i] = buckets.buckets[i] || []
+    buckets.buckets[i].push(note.noteName[0])
+  }
+
+  return buckets
+}
+
+type Buckets = {
+  ticksPerBucket: number
+  bucketCount: number
+  buckets: string[][]
+}
+
+function getBuckets(part: MidiPart, resolution: 'bar' | 'beat'): Buckets {
   const ticksPerBeat = part.timings.ticksPerBeat
   const ticksPerBar = part.timeSignature.numerator * ticksPerBeat
   const ticksPerBucket = resolution === 'beat' ? ticksPerBeat : ticksPerBar
   const partDurationTicks = part.timings.durationTicks
   const bucketCount = Math.ceil(partDurationTicks / ticksPerBucket)
 
-  const buckets = new Array(bucketCount)
-    .fill(0)
-    .reduce((result, value, idx) => {
-      const upperLimit = ticksPerBucket * (idx + 1) - 1
-      result[upperLimit] = []
-      return result
-    }, {})
-
   return {
     ticksPerBucket,
     bucketCount,
-    buckets,
+    buckets: [],
   }
 }
