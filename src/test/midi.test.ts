@@ -1,6 +1,7 @@
 import { expect, test } from 'vitest'
 import { readFileSync } from 'node:fs'
 import { parseMidi } from '../utils/midi'
+import { detectChords } from '../utils/music-analysis'
 
 test('parseMidi() should parse to a known format', () => {
   const path = `${__dirname}/beat.mid`
@@ -23,4 +24,12 @@ test('parseMidi() should parse to a known format', () => {
 
   // Keep a snapshot around in case adaptors or 3rd party libs are changed
   expect(parsed).toMatchSnapshot()
+})
+
+test('chord detection', () => {
+  const path = `${__dirname}/sample.mid`
+  const data = readFileSync(path)
+  const parsed = parseMidi(data)
+
+  detectChords(parsed, { resolution: 'beat' })
 })
