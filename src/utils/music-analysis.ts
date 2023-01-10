@@ -4,8 +4,8 @@ import type { MidiPart, Note } from './midi'
 type DetectUnit = 'bar' | 'beat'
 
 type DetectChordOptions = {
-  unit: DetectUnit
-  lengthThreshold: number
+  unit?: DetectUnit
+  lengthThreshold?: number
 }
 
 type DetectedChords = Array<
