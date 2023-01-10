@@ -41,7 +41,6 @@ test('chord detection', () => {
 
   const chords = detectChords(parsed, { unit: 'beat' })
   console.log(chords)
-  console.log(chords[0])
 })
 
 test('updateDistribution()', () => {
