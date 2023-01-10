@@ -4,7 +4,7 @@ import { parseMidi, Note } from '../utils/midi'
 import {
   detectChords,
   updateDistribution,
-  Bucket,
+  ChordRange,
 } from '../utils/music-analysis'
 
 test('parseMidi() should parse to a known format', () => {
@@ -41,10 +41,11 @@ test('chord detection', () => {
 
   const chords = detectChords(parsed, { unit: 'beat' })
   console.log(chords)
+  console.log(chords[0])
 })
 
 test('updateDistribution()', () => {
-  const bucket: Bucket = {
+  const cr: ChordRange = {
     notes: new Set(['A', 'B', 'C', 'D']),
     chords: [],
     unit: 'bar',
@@ -110,33 +111,25 @@ test('updateDistribution()', () => {
     noteNameWithOctave: ['F4'],
   }
 
-  expect(updateDistribution(bucket, noteA).distribution).toEqual({
+  expect(updateDistribution(cr, noteA).distribution).toEqual({
     ticks: {
       A: 10,
     },
   })
-  expect(updateDistribution(bucket, noteB).distribution).toEqual({
-    ticks: {
-      A: 10,
-      B: 30,
-    },
-  })
-  expect(updateDistribution(bucket, noteC).distribution).toEqual({
+  expect(updateDistribution(cr, noteB).distribution).toEqual({
     ticks: {
       A: 10,
       B: 30,
-      C: 20,
     },
   })
-  expect(updateDistribution(bucket, noteD).distribution).toEqual({
+  expect(updateDistribution(cr, noteC).distribution).toEqual({
     ticks: {
       A: 10,
       B: 30,
       C: 20,
-      D: 100,
     },
   })
-  expect(updateDistribution(bucket, noteE).distribution).toEqual({
+  expect(updateDistribution(cr, noteD).distribution).toEqual({
     ticks: {
       A: 10,
       B: 30,
@@ -144,7 +137,15 @@ test('updateDistribution()', () => {
       D: 100,
     },
   })
-  expect(updateDistribution(bucket, noteF).distribution).toEqual({
+  expect(updateDistribution(cr, noteE).distribution).toEqual({
+    ticks: {
+      A: 10,
+      B: 30,
+      C: 20,
+      D: 100,
+    },
+  })
+  expect(updateDistribution(cr, noteF).distribution).toEqual({
     ticks: {
       A: 10,
       B: 30,
@@ -154,7 +155,7 @@ test('updateDistribution()', () => {
   })
 
   // Add A a 2nd time should increase ticks & percentage
-  expect(updateDistribution(bucket, noteA).distribution).toEqual({
+  expect(updateDistribution(cr, noteA).distribution).toEqual({
     ticks: {
       A: 20,
       B: 30,
@@ -163,7 +164,7 @@ test('updateDistribution()', () => {
     },
   })
 
-  expect(updateDistribution(bucket).distribution).toEqual({
+  expect(updateDistribution(cr).distribution).toEqual({
     ticks: {
       A: 20,
       B: 30,

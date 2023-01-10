@@ -7,99 +7,124 @@ type DetectChordOptions = {
   unit: DetectUnit
 }
 
+type DetectedChords = Array<
+  ChordRange & {
+    chords: string[]
+  }
+>
+
 export function detectChords(
   part: MidiPart,
   options: DetectChordOptions = {
     unit: 'bar',
   },
-) {
-  // log all notes that belong to the specified unit of measurement
-  const { unit } = options
-  let bucketData = getBucketData(part, unit)
-
-  // chord recognition should happen across all tracks (i.e. is time-based)
-  // optimize O(n^2) ? - typical track count is low, however
-  part.tracks.forEach(track => {
-    track.notes.forEach(note => {
-      bucketData = addNoteToBuckets(note, bucketData)
-    })
-  })
-
-  // Assign each note to a single chord range
-  const chords = bucketData.buckets.map(bucket => {
+): DetectedChords {
+  const chordRangeData = chordRangeDataFromPart(part, options.unit)
+  const chords = chordRangeData.chordRanges.map(cr => {
     return {
-      ...bucket,
-      chords: Tonal.Chord.detect([...bucket.notes]),
+      ...cr,
+      chords: Tonal.Chord.detect([...cr.notes]),
     }
   })
   return chords
 }
 
-function addNoteToBuckets(note: Note, bucketData: BucketData) {
+export function chordRangeDataFromPart(
+  part: MidiPart,
+  unit: DetectUnit,
+): ChordRangeData {
+  // log all notes that belong to the specified unit of measurement
+  let chordRangeData = initChordRangeData(part, unit)
+
+  // chord recognition should happen across all tracks (i.e. is time-based)
+  // optimize O(n^2) ? - typical track count is low, however
+  part.tracks.forEach(track => {
+    track.notes.forEach(note => {
+      chordRangeData = addNoteToChordRange(note, chordRangeData)
+    })
+  })
+
+  return chordRangeData
+}
+
+function addNoteToChordRange(note: Note, data: ChordRangeData) {
   const noteOnTicks = note.startTicks
   const noteOffTicks = note.startTicks + note.durationTicks
-  const noteStartBucket = Math.floor(noteOnTicks / bucketData.ticksPerBucket)
-  const noteEndBucket = Math.floor(noteOffTicks / bucketData.ticksPerBucket)
-  const newBucket: Bucket = {
+  const noteStartRange = Math.floor(noteOnTicks / data.ticksPerChordRange)
+  const noteEndRange = Math.floor(noteOffTicks / data.ticksPerChordRange)
+  const newChordRange: ChordRange = {
     notes: new Set(),
     distribution: {
       ticks: {},
     },
     chords: [],
-    unit: bucketData.unit,
+    unit: data.unit,
     unitNumber: 0,
     startTicks: 0,
-    durationTicks: bucketData.ticksPerBucket,
+    durationTicks: data.ticksPerChordRange,
   }
 
   // loop is limited to a note's own buckets (typically 1-2)
-  for (let i = noteStartBucket; i <= noteEndBucket; i++) {
-    let bucket: Bucket = bucketData.buckets[i] || {
-      ...newBucket,
+  for (let i = noteStartRange; i <= noteEndRange; i++) {
+    let cr: ChordRange = data.chordRanges[i] || {
+      ...newChordRange,
       unitNumber: i,
-      startTicks: i * bucketData.ticksPerBucket,
+      startTicks: i * data.ticksPerChordRange,
     }
     // Set vs Array prevents duplicates
-    bucket.notes.add(note.noteName[0])
+    cr.notes.add(note.noteName[0])
     // Note distribution allows for advanced chord recognition
-    bucket = updateDistribution(bucket, note)
-    bucketData.buckets[i] = bucket
+    cr = updateDistribution(cr, note)
+    data.chordRanges[i] = cr
   }
 
-  return bucketData
+  return data
+}
+
+export function notePercentagesInChordRange(chordRange: ChordRange) {
+  const { ticks } = chordRange.distribution
+  const percentages: ChordRange['distribution']['time'] = {}
+
+  Object.keys(ticks).forEach(noteName => {
+    const time = ticks[noteName] / chordRange.durationTicks
+    percentages[noteName] = time
+  })
+
+  return percentages
 }
 
 // distribution is an attempt to measure note strength
 // we will track the time the note is played, including doubling
 // distribution can be useful to exclude some notes from chord recognition
 export function updateDistribution(
-  bucket: Bucket,
+  chordRange: ChordRange,
   note: Note | undefined = undefined,
 ) {
-  const { ticks } = bucket.distribution
+  const { ticks } = chordRange.distribution
 
   // If note is omitted, calculate percentages
   if (!note) {
     Object.keys(ticks).forEach(noteName => {
-      // Divide the note ticks by the bucket length
-      const time = ticks[noteName] / bucket.durationTicks
-
-      bucket.distribution.time = bucket.distribution.time ?? {}
-      bucket.distribution.time[noteName] = time
+      const time = ticks[noteName] / chordRange.durationTicks
+      chordRange.distribution.time = chordRange.distribution.time ?? {}
+      chordRange.distribution.time[noteName] = time
     })
-    return bucket
+    return chordRange
   }
 
   const noteName = note.noteName[0]
   const noteOffTicks = note.startTicks + note.durationTicks
-  const bucketOffTicks = bucket.startTicks + bucket.durationTicks
+  const chordRangeOffTicks = chordRange.startTicks + chordRange.durationTicks
   const startTicks =
-    note.startTicks < bucket.startTicks ? bucket.startTicks : note.startTicks
-  const endTicks = noteOffTicks > bucketOffTicks ? bucketOffTicks : noteOffTicks
+    note.startTicks < chordRange.startTicks
+      ? chordRange.startTicks
+      : note.startTicks
+  const endTicks =
+    noteOffTicks > chordRangeOffTicks ? chordRangeOffTicks : noteOffTicks
 
-  // Only occurs if this funciton is called directly
-  if (startTicks >= endTicks) return bucket
-  if (endTicks <= startTicks) return bucket
+  // Can occur if this funciton is called directly with bad data
+  if (startTicks >= endTicks) return chordRange
+  if (endTicks <= startTicks) return chordRange
 
   if (!ticks[noteName]) {
     ticks[noteName] = endTicks - startTicks
@@ -107,15 +132,14 @@ export function updateDistribution(
     ticks[noteName] = ticks[noteName] + endTicks - startTicks
   }
 
-  return bucket
+  return chordRange
 }
 
-export type Bucket = {
+export type ChordRange = {
   notes: Set<string>
   distribution: {
     ticks: Record<string, number>
     time?: Record<string, number>
-    pitch?: Record<string, number>
   }
   chords: string[]
   unit: DetectUnit
@@ -124,24 +148,24 @@ export type Bucket = {
   durationTicks: number
 }
 
-type BucketData = {
-  ticksPerBucket: number
-  bucketCount: number
+type ChordRangeData = {
+  ticksPerChordRange: number
+  chordRangeCount: number
   unit: DetectUnit
-  buckets: Bucket[]
+  chordRanges: ChordRange[]
 }
 
-function getBucketData(part: MidiPart, unit: DetectUnit): BucketData {
+function initChordRangeData(part: MidiPart, unit: DetectUnit): ChordRangeData {
   const ticksPerBeat = part.timings.ticksPerBeat
   const ticksPerBar = part.timeSignature.numerator * ticksPerBeat
-  const ticksPerBucket = unit === 'beat' ? ticksPerBeat : ticksPerBar
+  const ticksPerChordRange = unit === 'beat' ? ticksPerBeat : ticksPerBar
   const durationTicks = part.timings.durationTicks
-  const bucketCount = Math.ceil(durationTicks / ticksPerBucket)
+  const chordRangeCount = Math.ceil(durationTicks / ticksPerChordRange)
 
   return {
-    ticksPerBucket,
-    bucketCount,
+    ticksPerChordRange,
+    chordRangeCount,
     unit,
-    buckets: [],
+    chordRanges: [],
   }
 }
