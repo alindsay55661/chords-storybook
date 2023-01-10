@@ -49,17 +49,25 @@ test('chord detection', () => {
   const path = `${__dirname}/sample.mid`
   const data = readFileSync(path)
   const parsed = parseMidi(data)
-
   const chords = detectChords(parsed, { unit: 'beat' })
-  expect(chords).toMatchSnapshot()
+  const cleaned = chords.map(chord => {
+    return { ...chord, uniqueNotes: [] }
+  })
+
+  expect(cleaned).toMatchSnapshot()
 })
 
 test('analyze()', () => {
   const path = `${__dirname}/sample.mid`
   const data = readFileSync(path)
   const parsed = parseMidi(data)
-
   const stats = analyze(parsed, { unit: 'beat' })
+  const cleaned = stats.chords.chordRanges.map(chord => {
+    return { ...chord, uniqueNotes: [] }
+  })
+
+  stats.chords.chordRanges = cleaned
+
   expect(stats).toMatchSnapshot()
 })
 
@@ -74,6 +82,7 @@ test('updateDistribution()', () => {
     },
     startTicks: 100,
     durationTicks: 100,
+    uniqueNotes: [],
   }
 
   // Starts outside bucket, ends in bucket

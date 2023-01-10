@@ -181,6 +181,7 @@ function addNoteToChordRange(note: Note, data: ChordRangeData) {
     unitNumber: 0,
     startTicks: 0,
     durationTicks: data.ticksPerChordRange,
+    uniqueNotes: [],
   }
 
   // loop is limited to a note's own buckets (typically 1-2)
@@ -192,6 +193,7 @@ function addNoteToChordRange(note: Note, data: ChordRangeData) {
     }
     // Set vs Array prevents duplicates
     cr.notes.add(note.noteName[0])
+    cr.uniqueNotes.push(note.uuid)
     // Note distribution allows for advanced chord recognition
     cr = updateDistribution(cr, note)
     data.chordRanges[i] = cr
@@ -265,6 +267,7 @@ export type ChordRange = {
   unitNumber: number
   startTicks: number
   durationTicks: number
+  uniqueNotes: string[]
 }
 
 type ChordRangeData = {
