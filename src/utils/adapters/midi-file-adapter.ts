@@ -1,9 +1,11 @@
-import { buildNote, MidiPart, Note } from '../midi'
+import { buildNote, MidiPart, Track, Note, GMPatchNames } from '../midi'
 import mf from 'midi-file'
 
 // Constants based on midi-file parsing
 const TEMPO = 'setTempo'
 const TIME_SIGNATURE = 'timeSignature'
+const TRACK_NAME = 'trackName'
+const PROGRAM_CHANGE = 'programChange'
 const NOTE_ON = 'noteOn'
 const NOTE_OFF = 'noteOff'
 const END_OF_TRACK = 'endOfTrack'
@@ -24,8 +26,12 @@ export function buildMidiPart(data: ArrayLike<number>): MidiPart {
   const firstTrack = json.tracks.shift() as mf.MidiEvent[]
   const { timings, timeSignature } = extractPartDataFromTrack(firstTrack)
 
-  // Remaining tracks contain note data
-  const tracks = json.tracks.map(track => processNoteEvents(track))
+  // Remaining tracks *may* contain note data - otherwise filter
+  const tracks = json.tracks.reduce((result: MidiPart['tracks'], track) => {
+    const processed = processTrack(track)
+    if (processed.notes.length) result.push(processed)
+    return result
+  }, [])
 
   return {
     timings: {
@@ -48,6 +54,7 @@ function extractPartDataFromTrack(firstTrack: mf.MidiEvent[]) {
       denominator: 4,
     },
   }
+  // console.log(firstTrack)
   return firstTrack.reduce((result, track) => {
     switch (track.type) {
       case TEMPO:
@@ -65,34 +72,48 @@ function extractPartDataFromTrack(firstTrack: mf.MidiEvent[]) {
 type NoteEvent = mf.MidiEvent & Record<string, any>
 type NoteEvents = Record<string, NoteEvent>
 
-function processNoteEvents(noteEvents: mf.MidiEvent[]) {
-  let partStartTicks: number = 0
+function processTrack(noteEvents: mf.MidiEvent[]): Track {
+  let startTicks: number = 0
   const notesOn: NoteEvents = {}
   const notes: Note[] = []
+  const track: Track = {
+    notes: [],
+    durationTicks: 0,
+  }
 
   noteEvents.forEach(event => {
-    // Increment partStartTicks for all events, even non-note events
-    // partStartTicks is the tick location of this event relative to the part
-    partStartTicks += event.deltaTime
+    // Increment startTicks for all events, even non-note events
+    // startTicks is the tick location of this event relative to the part
+    startTicks += event.deltaTime
 
     switch (event.type) {
+      case TRACK_NAME:
+        track.name = event.text
+        break
+      case PROGRAM_CHANGE:
+        track.midiPatch = event.programNumber
+        if (!track.name) track.name = GMPatchNames.general[track.midiPatch]
+        break
       case NOTE_ON:
-        notesOn[event.noteNumber] = { ...event, partStartTicks }
+        notesOn[event.noteNumber] = { ...event, startTicks }
         break
       case NOTE_OFF:
-        processNote(event.noteNumber, notesOn, notes, partStartTicks)
+        processNote(event.noteNumber, notesOn, notes, startTicks)
         break
       case END_OF_TRACK:
         // Terminate all remaining notes
         Object.keys(notesOn).forEach(number => {
-          processNote(number, notesOn, notes, partStartTicks)
+          processNote(number, notesOn, notes, startTicks)
         })
         break
+      default:
+      // console.log(event)
     }
   })
 
   return {
-    durationTicks: partStartTicks,
+    ...track,
+    durationTicks: startTicks,
     notes,
   }
 }
@@ -101,10 +122,13 @@ function processNote(
   number: string | number,
   notesOn: NoteEvents,
   notes: Note[],
-  currentPartStartTicks: number,
+  currentStartTicks: number,
 ) {
-  const { noteNumber, partStartTicks } = notesOn[number]
-  const note = buildNote({ noteNumber, partStartTicks }, currentPartStartTicks)
+  // some midi files have multiple NOTE_OFF events...
+  if (!notesOn[number]) return
+
+  const { noteNumber, startTicks } = notesOn[number]
+  const note = buildNote({ noteNumber, startTicks }, currentStartTicks)
   if (note) notes.push(note)
   delete notesOn[number]
 
