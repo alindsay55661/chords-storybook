@@ -54,7 +54,6 @@ function extractPartDataFromTrack(firstTrack: mf.MidiEvent[]) {
       denominator: 4,
     },
   }
-  // console.log(firstTrack)
   return firstTrack.reduce((result, track) => {
     switch (track.type) {
       case TEMPO:
@@ -107,7 +106,7 @@ function processTrack(noteEvents: mf.MidiEvent[]): Track {
         })
         break
       default:
-      // console.log(event)
+      // ignore
     }
   })
 

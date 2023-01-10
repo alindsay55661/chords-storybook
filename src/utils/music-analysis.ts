@@ -40,7 +40,7 @@ export function analyze(
     noteLengthThreshold = 0.1,
     noteOccuranceThreshold = 0.1,
   }: AnalyzeOptions,
-) {
+): Stats {
   const chordRangeData = initChordRangeData(part, unit)
   let stats: Stats = {
     chords: chordRangeData,
@@ -58,58 +58,44 @@ export function analyze(
   return stats
 }
 
-function analyzeScale(stats: Stats): Stats {
-  return stats
-}
-
-export function detectChords(
-  part: MidiPart,
-  { unit = 'bar', lengthThreshold = 0.1 }: DetectChordOptions,
-): DetectedChords {
-  const chordRangeData = chordRangeDataFromPart(part, unit)
-  const chords = chordRangeData.chordRanges.map(cr => {
-    // apply specialized filtering
-    const percentages = notePercentagesInChordRange(cr)
-
-    // Remove notes that are "threshold" or less of the chord range
-    // Optimize
-    let newNotes: string[] = []
-    Object.keys(percentages).forEach(note => {
-      if (percentages[note] > lengthThreshold) newNotes.push(note)
+export function analyzeScale(presence: Record<string, number>) {
+  // order by prominence
+  const notes = Object.entries(presence)
+    .map(entry => {
+      return { name: entry[0], presence: entry[1] }
+    })
+    .sort((a, b) => {
+      if (a.presence > b.presence) return -1
+      if (a.presence < b.presence) return 1
+      return 0
     })
 
-    cr.distribution.time = percentages
+  const scaleNotes = Tonal.Scale.scaleNotes(notes.map(note => note.name))
 
-    return {
-      ...cr,
-      chordNotes: new Set(newNotes),
-      chords: Tonal.Chord.detect([...newNotes]),
-    }
-  })
-  return chords
-}
+  // Get distance from C
+  const interval = Tonal.Interval.distance(scaleNotes[0], 'C')
+  const transposed = scaleNotes.map(Tonal.Note.transposeBy(interval))
+  const pcset = Tonal.Pcset.get(transposed)
 
-export function chordRangeDataFromPart(
-  part: MidiPart,
-  unit: DetectUnit,
-): ChordRangeData {
-  // log all notes that belong to the specified unit of measurement
-  let chordRangeData = initChordRangeData(part, unit)
-
-  // chord recognition should happen across all tracks (i.e. is time-based)
-  // optimize O(n^2) ? - typical track count is low, however
-  part.tracks.forEach(track => {
-    track.notes.forEach(note => {
-      chordRangeData = addNoteToChordRange(note, chordRangeData)
+  // Filter scales that include these intervals
+  const scales = Tonal.ScaleType.all().filter(scale => {
+    let intervalsFound = 0
+    pcset.intervals.forEach(interval => {
+      if (scale.intervals.includes(interval)) intervalsFound++
     })
+
+    if (intervalsFound === pcset.intervals.length) return true
   })
 
-  return chordRangeData
+  const keyScales = scales.map(scale => {
+    return Tonal.Scale.get(`${scaleNotes[0]} ${scale.name}`)
+  })
+
+  return keyScales
 }
 
 // Adds this note to the current stats
 function analyzeNote(note: Note, stats: Stats) {
-  const name = note.noteName[0]
   // Add note stats
   stats.notes.frequency = updateFrequencyStats(note, stats)
   stats.notes.duration = updateDurationStats(note, stats)
@@ -164,6 +150,51 @@ function normalizeToOne(noteMap: Record<string, number>) {
     result[tuple[0]] = (tuple[1] - min) * factor
     return result
   }, {})
+}
+
+export function detectChords(
+  part: MidiPart,
+  { unit = 'bar', lengthThreshold = 0.1 }: DetectChordOptions,
+): DetectedChords {
+  const chordRangeData = chordRangeDataFromPart(part, unit)
+  const chords = chordRangeData.chordRanges.map(cr => {
+    // apply specialized filtering
+    const percentages = notePercentagesInChordRange(cr)
+
+    // Remove notes that are "threshold" or less of the chord range
+    // Optimize
+    let newNotes: string[] = []
+    Object.keys(percentages).forEach(note => {
+      if (percentages[note] > lengthThreshold) newNotes.push(note)
+    })
+
+    cr.distribution.time = percentages
+
+    return {
+      ...cr,
+      chordNotes: new Set(newNotes),
+      chords: Tonal.Chord.detect([...newNotes]),
+    }
+  })
+  return chords
+}
+
+export function chordRangeDataFromPart(
+  part: MidiPart,
+  unit: DetectUnit,
+): ChordRangeData {
+  // log all notes that belong to the specified unit of measurement
+  let chordRangeData = initChordRangeData(part, unit)
+
+  // chord recognition should happen across all tracks (i.e. is time-based)
+  // optimize O(n^2) ? - typical track count is low, however
+  part.tracks.forEach(track => {
+    track.notes.forEach(note => {
+      chordRangeData = addNoteToChordRange(note, chordRangeData)
+    })
+  })
+
+  return chordRangeData
 }
 
 function addNoteToChordRange(note: Note, data: ChordRangeData) {
@@ -270,7 +301,7 @@ export type ChordRange = {
   uniqueNotes: string[]
 }
 
-type ChordRangeData = {
+export type ChordRangeData = {
   ticksPerChordRange: number
   chordRangeCount: number
   unit: DetectUnit
