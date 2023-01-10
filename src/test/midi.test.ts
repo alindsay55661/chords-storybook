@@ -1,11 +1,13 @@
 import { expect, test } from 'vitest'
 import { readFileSync } from 'node:fs'
-import { parseMidi, Note } from '../utils/midi'
+import { parseMidi, buildNote, Note } from '../utils/midi'
 import {
+  analyze,
   detectChords,
   updateDistribution,
   ChordRange,
 } from '../utils/music-analysis'
+import { note } from 'tonal'
 
 test('parseMidi() should parse to a known format', () => {
   const path = `${__dirname}/beat.mid`
@@ -30,6 +32,15 @@ test('parseMidi() should parse to a known format', () => {
   expect(parsed.tracks[0].notes[2].noteName).toEqual(['Bb', 'A#'])
 
   // Keep a snapshot around in case adaptors or 3rd party libs are changed
+  // Remove uuids first
+  const cleaned = parsed.tracks.map(track => {
+    track.notes = track.notes.map(note => {
+      return { ...note, uuid: 'removed' }
+    })
+    return track
+  })
+
+  parsed.tracks = cleaned
   expect(parsed).toMatchSnapshot()
 })
 
@@ -40,7 +51,16 @@ test('chord detection', () => {
   const parsed = parseMidi(data)
 
   const chords = detectChords(parsed, { unit: 'beat' })
-  console.log(chords)
+  expect(chords).toMatchSnapshot()
+})
+
+test('analyze()', () => {
+  const path = `${__dirname}/sample.mid`
+  const data = readFileSync(path)
+  const parsed = parseMidi(data)
+
+  const stats = analyze(parsed, { unit: 'beat' })
+  expect(stats).toMatchSnapshot()
 })
 
 test('updateDistribution()', () => {
@@ -57,124 +77,43 @@ test('updateDistribution()', () => {
   }
 
   // Starts outside bucket, ends in bucket
-  const noteA: Note = {
-    startTicks: 80,
-    durationTicks: 30,
-    noteNumber: 57,
-    noteName: ['A'],
-    noteNameWithOctave: ['A3'],
-  }
-
+  const noteA = buildNote({ startTicks: 50, noteNumber: 57 }, 80) as Note
   // Starts in bucket, ends in bucket
-  const noteB: Note = {
-    startTicks: 120,
-    durationTicks: 30,
-    noteNumber: 59,
-    noteName: ['B'],
-    noteNameWithOctave: ['B3'],
-  }
-
+  const noteB = buildNote({ startTicks: 90, noteNumber: 59 }, 120) as Note
   // Starts in bucket, ends outside bucket
-  const noteC: Note = {
-    startTicks: 180,
-    durationTicks: 30,
-    noteNumber: 60,
-    noteName: ['C'],
-    noteNameWithOctave: ['C4'],
-  }
-
+  const noteC = buildNote({ startTicks: 150, noteNumber: 60 }, 180) as Note
   // Starts before bucket, ends after bucket
-  const noteD: Note = {
-    startTicks: 80,
-    durationTicks: 130,
-    noteNumber: 62,
-    noteName: ['D'],
-    noteNameWithOctave: ['D4'],
-  }
+  // This case note possible using buildNote :)
 
   // Starts after bucket, ends after bucket
-  const noteE: Note = {
-    startTicks: 280,
-    durationTicks: 10,
-    noteNumber: 64,
-    noteName: ['E'],
-    noteNameWithOctave: ['E4'],
-  }
-
+  const noteE = buildNote({ startTicks: 280, noteNumber: 64 }, 290) as Note
   // Starts before bucket, ends before bucket
-  const noteF: Note = {
-    startTicks: 50,
-    durationTicks: 10,
-    noteNumber: 65,
-    noteName: ['F'],
-    noteNameWithOctave: ['F4'],
-  }
+  const noteF = buildNote({ startTicks: 50, noteNumber: 65 }, 60) as Note
 
   expect(updateDistribution(cr, noteA).distribution).toEqual({
-    ticks: {
-      A: 10,
-    },
+    ticks: { A: 10 },
   })
   expect(updateDistribution(cr, noteB).distribution).toEqual({
-    ticks: {
-      A: 10,
-      B: 30,
-    },
+    ticks: { A: 10, B: 30 },
   })
   expect(updateDistribution(cr, noteC).distribution).toEqual({
-    ticks: {
-      A: 10,
-      B: 30,
-      C: 20,
-    },
+    ticks: { A: 10, B: 30, C: 20 },
   })
-  expect(updateDistribution(cr, noteD).distribution).toEqual({
-    ticks: {
-      A: 10,
-      B: 30,
-      C: 20,
-      D: 100,
-    },
-  })
+
   expect(updateDistribution(cr, noteE).distribution).toEqual({
-    ticks: {
-      A: 10,
-      B: 30,
-      C: 20,
-      D: 100,
-    },
+    ticks: { A: 10, B: 30, C: 20 },
   })
   expect(updateDistribution(cr, noteF).distribution).toEqual({
-    ticks: {
-      A: 10,
-      B: 30,
-      C: 20,
-      D: 100,
-    },
+    ticks: { A: 10, B: 30, C: 20 },
   })
 
   // Add A a 2nd time should increase ticks & percentage
   expect(updateDistribution(cr, noteA).distribution).toEqual({
-    ticks: {
-      A: 20,
-      B: 30,
-      C: 20,
-      D: 100,
-    },
+    ticks: { A: 20, B: 30, C: 20 },
   })
 
   expect(updateDistribution(cr).distribution).toEqual({
-    ticks: {
-      A: 20,
-      B: 30,
-      C: 20,
-      D: 100,
-    },
-    time: {
-      A: 0.2,
-      B: 0.3,
-      C: 0.2,
-      D: 1,
-    },
+    ticks: { A: 20, B: 30, C: 20 },
+    time: { A: 0.2, B: 0.3, C: 0.2 },
   })
 })

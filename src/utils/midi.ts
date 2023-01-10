@@ -1,4 +1,5 @@
 import Tonal from 'tonal'
+import { v4 as uuid } from 'uuid'
 import { buildMidiPart } from './adapters/midi-file-adapter'
 
 export type MidiPart = {
@@ -26,6 +27,7 @@ export type Track = {
 }
 
 export type Note = {
+  uuid: string
   startTicks: number
   durationTicks: number
   noteNumber: number
@@ -47,6 +49,7 @@ export function buildNote(
   if (!durationTicks) return false
 
   return {
+    uuid: uuid(),
     startTicks: partStartTicks,
     durationTicks,
     noteNumber: note.noteNumber,

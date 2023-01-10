@@ -14,6 +14,54 @@ type DetectedChords = Array<
   }
 >
 
+type AnalyzeOptions = {
+  unit?: DetectUnit
+  noteLengthThreshold?: number
+  noteOccuranceThreshold?: number
+  noteFrequencyWeight?: number
+  noteDurationWeight?: number
+}
+
+type NoteStats = {
+  frequency: Record<string, number>
+  duration: Record<string, number>
+  presence?: Record<string, number>
+}
+
+type Stats = {
+  chords: ChordRangeData
+  notes: NoteStats
+}
+
+export function analyze(
+  part: MidiPart,
+  {
+    unit = 'bar',
+    noteLengthThreshold = 0.1,
+    noteOccuranceThreshold = 0.1,
+  }: AnalyzeOptions,
+) {
+  const chordRangeData = initChordRangeData(part, unit)
+  let stats: Stats = {
+    chords: chordRangeData,
+    notes: { frequency: {}, duration: {}, presence: {} },
+  }
+
+  part.tracks.forEach(track => {
+    track.notes.forEach(note => {
+      stats = analyzeNote(note, stats)
+    })
+  })
+
+  stats.notes.presence = updatePresenceStats(stats)
+
+  return stats
+}
+
+function analyzeScale(stats: Stats): Stats {
+  return stats
+}
+
 export function detectChords(
   part: MidiPart,
   { unit = 'bar', lengthThreshold = 0.1 }: DetectChordOptions,
@@ -57,6 +105,65 @@ export function chordRangeDataFromPart(
   })
 
   return chordRangeData
+}
+
+// Adds this note to the current stats
+function analyzeNote(note: Note, stats: Stats) {
+  const name = note.noteName[0]
+  // Add note stats
+  stats.notes.frequency = updateFrequencyStats(note, stats)
+  stats.notes.duration = updateDurationStats(note, stats)
+
+  // Add chord stats
+  stats.chords = addNoteToChordRange(note, stats.chords)
+
+  return stats
+}
+
+function updateFrequencyStats(note: Note, stats: Stats) {
+  const name = note.noteName[0]
+  const frequency = stats.notes.frequency ?? {}
+  frequency[name] = frequency[name] ?? 0
+  frequency[name] = frequency[name] + 1
+  return frequency
+}
+
+function updateDurationStats(note: Note, stats: Stats) {
+  const name = note.noteName[0]
+  const duration = stats.notes.duration ?? {}
+  duration[name] = duration[name] ?? 0
+  duration[name] = duration[name] + note.durationTicks
+  return duration
+}
+
+function updatePresenceStats(
+  stats: Stats,
+  noteDurationWeight: number = 1,
+  noteFrequencyWeight: number = 0.3,
+) {
+  const presence = stats.notes.presence ?? {}
+  const duration = normalizeToOne(stats.notes.duration)
+  const frequency = normalizeToOne(stats.notes.frequency)
+
+  Object.keys(frequency).forEach(name => {
+    presence[name] =
+      duration[name] * noteDurationWeight +
+      frequency[name] * noteFrequencyWeight
+  })
+
+  return normalizeToOne(presence)
+}
+
+function normalizeToOne(noteMap: Record<string, number>) {
+  const values = Object.values(noteMap)
+  const min = 0 //Math.min(...values)
+  const max = Math.max(...values)
+  const factor = 1 / (max - min)
+
+  return Object.entries(noteMap).reduce((result: any, tuple) => {
+    result[tuple[0]] = (tuple[1] - min) * factor
+    return result
+  }, {})
 }
 
 function addNoteToChordRange(note: Note, data: ChordRangeData) {
