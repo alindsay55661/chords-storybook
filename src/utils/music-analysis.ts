@@ -5,6 +5,7 @@ type DetectUnit = 'bar' | 'beat'
 
 type DetectChordOptions = {
   unit: DetectUnit
+  lengthThreshold: number
 }
 
 type DetectedChords = Array<
@@ -15,15 +16,25 @@ type DetectedChords = Array<
 
 export function detectChords(
   part: MidiPart,
-  options: DetectChordOptions = {
-    unit: 'bar',
-  },
+  opts: DetectChordOptions,
 ): DetectedChords {
+  const options = { unit: 'bar', lengthThreshold: 0.1, ...opts }
   const chordRangeData = chordRangeDataFromPart(part, options.unit)
   const chords = chordRangeData.chordRanges.map(cr => {
+    // apply specialized filtering
+    const percentages = notePercentagesInChordRange(cr)
+
+    // Remove notes that are "threshold" or less of the chord range
+    // Optimize
+    let newNotes: string[] = []
+    Object.keys(percentages).forEach(note => {
+      if (percentages[note] > options.lengthThreshold) newNotes.push(note)
+    })
+
     return {
       ...cr,
-      chords: Tonal.Chord.detect([...cr.notes]),
+      chordNotes: new Set(newNotes),
+      chords: Tonal.Chord.detect([...newNotes]),
     }
   })
   return chords
