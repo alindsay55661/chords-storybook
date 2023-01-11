@@ -89,14 +89,11 @@ export function analyzeScale(presence: Record<string, number>) {
   const pcset = Tonal.Pcset.get(transposed)
 
   // Filter scales that include these intervals
-  const scales = Tonal.ScaleType.all().filter(scale => {
-    let intervalsFound = 0
-    pcset.intervals.forEach(interval => {
-      if (scale.intervals.includes(interval)) intervalsFound++
-    })
-
-    if (intervalsFound === pcset.intervals.length) return true
-  })
+  // https://github.com/tonaljs/tonal/blob/main/packages/chord/index.ts#L197
+  const areNotesIncluded = Tonal.Pcset.isSupersetOf(pcset.chroma)
+  const scales = Tonal.ScaleType.all().filter(scale =>
+    areNotesIncluded(scale.chroma),
+  )
 
   const keyScales = scales.map(scale => {
     return Tonal.Scale.get(`${scaleNotes[0]} ${scale.name}`)

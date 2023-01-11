@@ -2,13 +2,7 @@ import { expect, test } from 'vitest'
 import { readFileSync } from 'node:fs'
 import { parseMidi, buildNote, Note } from '../utils/midi'
 import { analyze, analyzeScale } from '../utils/music-analysis'
-import {
-  detectChords,
-  updateDistribution,
-  ChordRange,
-  ChordRangeData,
-} from '../utils/chords'
-import { note } from 'tonal'
+import { detectChords, updateDistribution, ChordRange } from '../utils/chords'
 
 test('parseMidi() should parse to a known format', () => {
   const path = `${__dirname}/beat.mid`
