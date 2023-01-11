@@ -1,14 +1,13 @@
 import { expect, test } from 'vitest'
 import { readFileSync } from 'node:fs'
 import { parseMidi, buildNote, Note } from '../utils/midi'
+import { analyze, analyzeScale } from '../utils/music-analysis'
 import {
-  analyze,
-  analyzeScale,
   detectChords,
   updateDistribution,
   ChordRange,
   ChordRangeData,
-} from '../utils/music-analysis'
+} from '../utils/chords'
 import { note } from 'tonal'
 
 test('parseMidi() should parse to a known format', () => {
