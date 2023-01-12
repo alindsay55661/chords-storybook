@@ -30,6 +30,12 @@ export type Track = {
   midiPatch?: number
 }
 
+export type Beat = {
+  index: number
+  startTicks: number
+  notes: Note[]
+}
+
 export type Note = {
   uuid: string
   startTicks: number

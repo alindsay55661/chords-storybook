@@ -1,13 +1,7 @@
 import type { Scale } from '@tonaljs/scale'
-import type { MidiPart, Note } from './parse'
+import type { MidiPart, Beat, Note } from './parse'
 
 export type DetectUnit = 'bar' | 'beat'
-
-export type Beat = {
-  index: number
-  startTicks: number
-  notes: Note[]
-}
 
 export type NoteStats = {
   frequency: Record<string, number>

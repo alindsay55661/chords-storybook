@@ -1,5 +1,5 @@
 import Tonal from 'tonal'
-import type { MidiPart, Note, TimeSignature } from './parse'
+import type { MidiPart, Beat, Note, TimeSignature } from './parse'
 import type { DetectUnit, Stats } from './analyze'
 
 export type DetectChordOptions = {
@@ -47,51 +47,7 @@ export function detectChords(
   const chordRangeData = initChordRangeData(stats, options.unit)
 
   if (options.unit === 'bar') {
-    let totalBeatsProcessed = 0
-    // Detect from chordRanges in each timeSignature
-    chordRangeData.timeSignatures.forEach((ts, idx) => {
-      // const barCount = ts.beatsInSignature / ts.numerator
-      let signatureBeatsProcessed = 0
-      let beatsInCurrentBatch = 0
-      let notes: Note[] = []
-      const durationTicks = stats.timings.ticksPerBeat * ts.numerator
-      const startTicks = stats.notes.byBeat[totalBeatsProcessed].startTicks
-
-      while (signatureBeatsProcessed <= ts.beatsInSignature) {
-        const notesFound = stats.notes.byBeat[totalBeatsProcessed]
-
-        // update counters
-        signatureBeatsProcessed++
-        totalBeatsProcessed++
-        beatsInCurrentBatch++
-
-        if (notesFound) {
-          notes = [...notes, ...notesFound.notes]
-        }
-
-        // Create chordRange!
-        if (beatsInCurrentBatch === ts.numerator) {
-          chordRangeData.chordRanges.push(
-            createChordRange(notes, { unit: 'bar', startTicks, durationTicks }),
-          )
-
-          // Reset aggregators
-          beatsInCurrentBatch = 0
-          notes = []
-        }
-      }
-
-      // Create range for last bar if needed
-      if (notes.length && idx === chordRangeData.timeSignatures.length - 1) {
-        chordRangeData.chordRanges.push(
-          createChordRange(notes, { unit: 'bar', startTicks, durationTicks }),
-        )
-      }
-
-      console.log(
-        `totalBeats: ${stats.timings.totalBeats}, processed: ${totalBeatsProcessed}`,
-      )
-    })
+    makeBarRanges(chordRangeData, stats.notes.byBeat)
   } else if (options.unit === 'beat') {
     stats.notes.byBeat.forEach(beat => {
       if (beat) {
@@ -106,12 +62,63 @@ export function detectChords(
     })
   }
 
+  console.log(`totalBeats: ${stats.timings.totalBeats} (from stats)`)
+
   const chords = chordsFromRanges(
     chordRangeData.chordRanges,
     options.lengthThreshold,
   )
 
   return chords
+}
+
+function makeBarRanges(chordRangeData: ChordRangeData, notesByBeat: Beat[]) {
+  let totalBeatsProcessed = 0
+  // Detect from chordRanges in each timeSignature
+  chordRangeData.timeSignatures.forEach((ts, idx) => {
+    // const barCount = ts.beatsInSignature / ts.numerator
+    let signatureBeatsProcessed = 0
+    let beatsInCurrentBatch = 0
+    let notes: Note[] = []
+    const { ticksPerBeat } = chordRangeData
+    const durationTicks = ticksPerBeat * ts.numerator
+    const startTicks = totalBeatsProcessed * ticksPerBeat
+
+    while (signatureBeatsProcessed <= ts.beatsInSignature) {
+      const notesFound = notesByBeat[totalBeatsProcessed]
+
+      // update counters
+      signatureBeatsProcessed++
+      totalBeatsProcessed++
+      beatsInCurrentBatch++
+
+      if (notesFound) {
+        notes = [...notes, ...notesFound.notes]
+      }
+
+      // Create chordRange!
+      if (beatsInCurrentBatch === ts.numerator) {
+        chordRangeData.chordRanges.push(
+          createChordRange(notes, { unit: 'bar', startTicks, durationTicks }),
+        )
+
+        // Reset aggregators
+        beatsInCurrentBatch = 0
+        notes = []
+      }
+    }
+
+    // Create range for last bar if needed
+    if (notes.length && idx === chordRangeData.timeSignatures.length - 1) {
+      chordRangeData.chordRanges.push(
+        createChordRange(notes, { unit: 'bar', startTicks, durationTicks }),
+      )
+    }
+
+    console.log(
+      `totalBeats: ${notesByBeat.length}, processed: ${totalBeatsProcessed}`,
+    )
+  })
 }
 
 function chordsFromRanges(
