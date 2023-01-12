@@ -55,6 +55,7 @@ export function detectChords(
       let beatsInCurrentBatch = 0
       let notes: Note[] = []
       const durationTicks = stats.timings.ticksPerBeat * ts.numerator
+      const startTicks = stats.notes.byBeat[totalBeatsProcessed].startTicks
 
       while (signatureBeatsProcessed <= ts.beatsInSignature) {
         const notesFound = stats.notes.byBeat[totalBeatsProcessed]
@@ -71,7 +72,7 @@ export function detectChords(
         // Create chordRange!
         if (beatsInCurrentBatch === ts.numerator) {
           chordRangeData.chordRanges.push(
-            createChordRange(notes, { unit: 'bar', durationTicks }),
+            createChordRange(notes, { unit: 'bar', startTicks, durationTicks }),
           )
 
           // Reset aggregators
@@ -82,9 +83,8 @@ export function detectChords(
 
       // Create range for last bar if needed
       if (notes.length && idx === chordRangeData.timeSignatures.length - 1) {
-        console.log('CREATE FINAL chord range')
         chordRangeData.chordRanges.push(
-          createChordRange(notes, { unit: 'bar', durationTicks }),
+          createChordRange(notes, { unit: 'bar', startTicks, durationTicks }),
         )
       }
 
@@ -98,6 +98,7 @@ export function detectChords(
         chordRangeData.chordRanges.push(
           createChordRange(beat.notes, {
             unit: 'beat',
+            startTicks: beat.startTicks,
             durationTicks: stats.timings.ticksPerBeat,
           }),
         )
@@ -109,8 +110,6 @@ export function detectChords(
     chordRangeData.chordRanges,
     options.lengthThreshold,
   )
-  // console.log(chords)
-  // console.log(chords[10].distribution)
 
   return chords
 }
@@ -171,7 +170,7 @@ export function initChordRangeData(
 
 export function createChordRange(
   notes: Note[],
-  options: { unit: DetectUnit; durationTicks: number },
+  options: { unit: DetectUnit; startTicks: number; durationTicks: number },
 ): ChordRange {
   const chordRange: ChordRange = {
     notes: new Set(),
@@ -181,7 +180,7 @@ export function createChordRange(
     chords: [],
     unit: options.unit,
     unitNumber: 0,
-    startTicks: 0,
+    startTicks: options.startTicks,
     durationTicks: options.durationTicks,
     uniqueNotes: [],
   }

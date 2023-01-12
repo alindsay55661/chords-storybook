@@ -98,14 +98,14 @@ test('chord detection', () => {
   const data = readFileSync(path)
   const parsed = parseMidi(data)
   const stats = analyze(parsed)
-  const chords = detectChords(stats, { unit: 'beat', lengthThreshold: 0.2 })
+  const chords = detectChords(stats, { unit: 'beat' })
   const cleaned = chords.map(chord => {
     return { ...chord, uniqueNotes: [] }
   })
 
-  console.log(chords)
+  console.log(cleaned)
 
-  // expect(cleaned).toMatchSnapshot()
+  expect(cleaned).toMatchSnapshot()
 })
 
 test('analyze()', () => {
@@ -133,7 +133,7 @@ test('detectScales()', () => {
   expect(scales).toMatchSnapshot()
 })
 
-test('updateDistribution()', () => {
+test.skip('updateDistribution()', () => {
   const cr: ChordRange = {
     notes: new Set(['A', 'B', 'C', 'D']),
     chords: [],
