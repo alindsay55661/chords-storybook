@@ -1,5 +1,5 @@
 import type { Scale } from '@tonaljs/scale'
-import type { MidiPart, Beat, Note } from './parse'
+import type { MidiPart, Beat, Track, Note } from './parse'
 
 export type DetectUnit = 'bar' | 'beat'
 
@@ -14,6 +14,7 @@ export type NoteStats = {
 export type Stats = Pick<MidiPart, 'timings' | 'timeSignatures'> & {
   notes: NoteStats
   scales: Scale[]
+  tracks: Track[]
 }
 
 export function analyze(part: MidiPart): Stats {
@@ -28,6 +29,7 @@ export function analyze(part: MidiPart): Stats {
       byBeat: new Array(part.timings.totalBeats),
     },
     scales: [],
+    tracks: [],
   }
 
   // Execution order matters
@@ -38,6 +40,7 @@ export function analyze(part: MidiPart): Stats {
 
   // 1 - Note analysis
   part.tracks.forEach(track => {
+    stats.tracks.push(track)
     track.notes.forEach(note => {
       stats = analyzeNote(note, stats)
     })

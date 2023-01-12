@@ -113,6 +113,12 @@ function processTrack(noteEvents: mf.MidiEvent[]): Track {
   let startTicks: number = 0
   const notesOn: NoteEvents = {}
   const notes: Note[] = []
+  const lowHigh: Partial<{
+    lowestNote: number | undefined
+    highestNote: number | undefined
+  }> = {}
+  // let lowestNote: number | undefined = undefined
+  // let highestNote: number | undefined = undefined
   const track: Track = {
     notes: [],
     durationTicks: 0,
@@ -133,6 +139,14 @@ function processTrack(noteEvents: mf.MidiEvent[]): Track {
         break
       case NOTE_ON:
         notesOn[event.noteNumber] = { ...event, startTicks }
+
+        lowHigh.lowestNote = lowHigh.lowestNote ?? event.noteNumber
+        if (lowHigh.lowestNote > event.noteNumber)
+          lowHigh.lowestNote = event.noteNumber
+
+        lowHigh.highestNote = lowHigh.highestNote ?? event.noteNumber
+        if (lowHigh.highestNote < event.noteNumber)
+          lowHigh.highestNote = event.noteNumber
         break
       case NOTE_OFF:
         processNote(event.noteNumber, notesOn, notes, startTicks)
@@ -150,6 +164,7 @@ function processTrack(noteEvents: mf.MidiEvent[]): Track {
 
   return {
     ...track,
+    ...lowHigh,
     durationTicks: startTicks,
     notes,
   }

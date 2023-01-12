@@ -25,6 +25,8 @@ export type TimeSignature = {
 
 export type Track = {
   notes: Note[]
+  lowestNote?: number
+  highestNote?: number
   durationTicks: number
   name?: string
   midiPatch?: number
@@ -76,6 +78,7 @@ export function buildNote(
     ],
   }
 }
+
 type GMPatchNames = {
   general: Record<number, string>
   percussion: Record<number, string>

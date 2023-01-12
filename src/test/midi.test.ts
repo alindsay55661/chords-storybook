@@ -27,6 +27,7 @@ function removeUuids(data: any, type: string) {
       })
       data.notes.byBeat = cleaned
       data.notes.map = {}
+      data.tracks = []
       break
     }
   }
@@ -35,7 +36,7 @@ function removeUuids(data: any, type: string) {
 }
 
 test('parseMidi() should parse to a known format', () => {
-  const path = `${__dirname}/beat.mid`
+  const path = `${__dirname}/midi/beat.mid`
   const data = readFileSync(path)
   const parsed = parseMidi(data)
 
@@ -62,7 +63,7 @@ test('parseMidi() should parse to a known format', () => {
 })
 
 test('parseMidi() should parse multiple time signatures', () => {
-  const path = `${__dirname}/takefivedavebrubeck.mid`
+  const path = `${__dirname}/midi/takefivedavebrubeck.mid`
   const data = readFileSync(path)
   const parsed = parseMidi(data)
   const timeSignatures: TimeSignature[] = [
@@ -93,8 +94,8 @@ test('parseMidi() should parse multiple time signatures', () => {
 })
 
 test('chord detection', () => {
-  const path = `${__dirname}/sample.mid`
-  // const path = `${__dirname}/takefivedavebrubeck.mid`
+  const path = `${__dirname}/midi/sample.mid`
+  // const path = `${__dirname}/midi/takefivedavebrubeck.mid`
   const data = readFileSync(path)
   const parsed = parseMidi(data)
   const stats = analyze(parsed)
@@ -107,7 +108,7 @@ test('chord detection', () => {
 })
 
 test('analyze()', () => {
-  const path = `${__dirname}/sample.mid`
+  const path = `${__dirname}/midi/sample.mid`
   const data = readFileSync(path)
   const parsed = parseMidi(data)
   const stats = analyze(parsed)
