@@ -4,12 +4,14 @@ type ClipNote = Pick<
   Note,
   'noteNumber' | 'startTicks' | 'durationTicks' | 'uuid'
 >
-type ClipProps = {
+export type ClipProps = {
   startTicks: number
   durationTicks: number
   lowestNote?: number
   highestNote?: number
-  notes?: ClipNote[]
+  notes?: Note[]
+  name?: string
+  onNoteClick?: (note: Note) => void
 }
 
 export default function Clip({
@@ -18,67 +20,44 @@ export default function Clip({
   durationTicks = 0,
   lowestNote = 0,
   highestNote = 127,
+  name = 'clip',
+  onNoteClick,
 }: ClipProps) {
-  const height = 175
-  const titleHeight = 30
-  const verticalMargin = 20
-  const verticalNoteRange = highestNote - lowestNote
-  const verticalNoteArea = height - verticalMargin * 2 - titleHeight
-  const noteHeight = verticalNoteArea / verticalNoteRange
+  const height = highestNote - lowestNote + 1
+
+  function handleNotesClick(e: any) {
+    console.log(e)
+    const id = e.target.dataset.noteid
+    if (id && onNoteClick)
+      onNoteClick(notes.find(note => note.uuid === id) as Note)
+  }
 
   return (
-    <svg
-      viewBox={`0 0 ${durationTicks} 100`}
-      preserveAspectRatio="none"
-      style={{ borderRadius: '6px' }}
-      width="100%"
-      height={height}
-    >
-      <rect
-        width="100%"
-        height="100%"
-        fill="hsla(326, 100%, 16%, 0.8)"
-        rx={6}
-      />
-      <rect
-        width="100%"
-        height="100%"
-        fill="none"
-        stroke="hsla(326, 100%, 30%, 1)"
-        strokeWidth={5}
-        rx={6}
-      />
-      <rect
-        width="100%"
-        height={titleHeight}
-        fill="hsla(326, 100%, 30%, 1)"
-        rx={6}
-        className="drag-handle"
-      />
-      <rect
-        width="100%"
-        height="10"
-        y={titleHeight - 10}
-        fill="hsla(326, 100%, 30%, 1)"
-        className="drag-handle"
-      />
-
-      {notes.map(note => {
-        return (
-          <rect
-            key={note.uuid}
-            width={durationTicks}
-            height={noteHeight}
-            fill="hsla(326, 100%, 90%, 0.7)"
-            x={note.startTicks - startTicks}
-            y={
-              (highestNote - note.noteNumber) * noteHeight +
-              verticalMargin +
-              titleHeight
-            }
-          />
-        )
-      })}
-    </svg>
+    <div className="clip bg-sky-800 rounded border-2 border-sky-600">
+      <div className="clip-title bg-sky-600 py-0.5 px-1 text-white">{name}</div>
+      <div className="clip-notes h-36 py-4">
+        <svg
+          viewBox={`${startTicks} 0 ${durationTicks} ${height}`}
+          preserveAspectRatio="none"
+          width="100%"
+          height="100%"
+          onClick={handleNotesClick}
+        >
+          {notes.map(note => {
+            return (
+              <rect
+                data-noteid={note.uuid}
+                key={note.uuid}
+                width={note.durationTicks}
+                height="1"
+                fill="hsla(0, 100%, 100%, 0.7)"
+                x={note.startTicks}
+                y={highestNote - note.noteNumber}
+              />
+            )
+          })}
+        </svg>
+      </div>
+    </div>
   )
 }

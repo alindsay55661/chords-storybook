@@ -17,7 +17,7 @@ const NOTE_ON = 'noteOn'
 const NOTE_OFF = 'noteOff'
 const END_OF_TRACK = 'endOfTrack'
 
-function midiBufferToJson(data: ArrayLike<number>) {
+export function midiBufferToJson(data: ArrayLike<number>) {
   return mf.parseMidi(data)
 }
 
@@ -110,15 +110,13 @@ type NoteEvent = mf.MidiEvent & Record<string, any>
 type NoteEvents = Record<string, NoteEvent>
 
 function processTrack(noteEvents: mf.MidiEvent[]): Track {
-  let startTicks: number = 0
+  let currentTicks: number = 0
   const notesOn: NoteEvents = {}
   const notes: Note[] = []
   const lowHigh: Partial<{
     lowestNote: number | undefined
     highestNote: number | undefined
   }> = {}
-  // let lowestNote: number | undefined = undefined
-  // let highestNote: number | undefined = undefined
   const track: Track = {
     notes: [],
     durationTicks: 0,
@@ -127,7 +125,7 @@ function processTrack(noteEvents: mf.MidiEvent[]): Track {
   noteEvents.forEach(event => {
     // Increment startTicks for all events, even non-note events
     // startTicks is the tick location of this event relative to the part
-    startTicks += event.deltaTime
+    currentTicks += event.deltaTime
 
     switch (event.type) {
       case TRACK_NAME:
@@ -138,7 +136,7 @@ function processTrack(noteEvents: mf.MidiEvent[]): Track {
         if (!track.name) track.name = GMPatchNames.general[track.midiPatch]
         break
       case NOTE_ON:
-        notesOn[event.noteNumber] = { ...event, startTicks }
+        notesOn[event.noteNumber] = { ...event, startTicks: currentTicks }
 
         lowHigh.lowestNote = lowHigh.lowestNote ?? event.noteNumber
         if (lowHigh.lowestNote > event.noteNumber)
@@ -149,12 +147,12 @@ function processTrack(noteEvents: mf.MidiEvent[]): Track {
           lowHigh.highestNote = event.noteNumber
         break
       case NOTE_OFF:
-        processNote(event.noteNumber, notesOn, notes, startTicks)
+        processNote(event.noteNumber, notesOn, notes, currentTicks)
         break
       case END_OF_TRACK:
         // Terminate all remaining notes
         Object.keys(notesOn).forEach(number => {
-          processNote(number, notesOn, notes, startTicks)
+          processNote(number, notesOn, notes, currentTicks)
         })
         break
       default:
@@ -165,7 +163,7 @@ function processTrack(noteEvents: mf.MidiEvent[]): Track {
   return {
     ...track,
     ...lowHigh,
-    durationTicks: startTicks,
+    durationTicks: currentTicks,
     notes,
   }
 }
@@ -174,13 +172,15 @@ function processNote(
   number: string | number,
   notesOn: NoteEvents,
   notes: Note[],
-  currentStartTicks: number,
+  currentTicks: number,
 ) {
   // some midi files have multiple NOTE_OFF events...
   if (!notesOn[number]) return
 
   const { noteNumber, startTicks } = notesOn[number]
-  const note = buildNote({ noteNumber, startTicks }, currentStartTicks)
+  const note = buildNote({ noteNumber, startTicks }, currentTicks)
+  // console.log('--------Process Note------------------------------')
+  // console.log(note)
   if (note) notes.push(note)
   delete notesOn[number]
 

@@ -53,16 +53,16 @@ export function parseMidi(data: ArrayLike<number>): MidiPart {
 
 export function buildNote(
   note: Pick<Note, 'startTicks' | 'noteNumber'>,
-  partStartTicks: number,
+  partCurrentTicks: number,
 ): Note | false {
-  const durationTicks = partStartTicks - note.startTicks
+  const durationTicks = partCurrentTicks - note.startTicks
 
   // Ignore notes with no duration (this happens with some midi programs)
   if (!durationTicks) return false
 
   return {
     uuid: uuid(),
-    startTicks: partStartTicks,
+    startTicks: note.startTicks,
     durationTicks,
     noteNumber: note.noteNumber,
     noteNameWithOctave: [

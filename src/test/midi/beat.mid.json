@@ -1,0 +1,97 @@
+{
+  "timings": {
+    "microsecondsPerBeat": 517241,
+    "durationTicks": 479,
+    "ticksPerBeat": 480,
+    "totalBeats": 1
+  },
+  "timeSignatures": [
+    {
+      "startTicks": 0,
+      "startBeat": 0,
+      "beatsInSignature": 1,
+      "numerator": 4,
+      "denominator": 4
+    }
+  ],
+  "tracks": [
+    {
+      "notes": [
+        {
+          "uuid": "6c80954d-cc58-4104-81bd-b5d4d165c90f",
+          "startTicks": 4,
+          "durationTicks": 35,
+          "noteNumber": 57,
+          "noteNameWithOctave": [
+            "A3",
+            "A3"
+          ],
+          "noteName": [
+            "A",
+            "A"
+          ]
+        },
+        {
+          "uuid": "139603c5-4d18-4d59-8aea-5788ea489c13",
+          "startTicks": 122,
+          "durationTicks": 55,
+          "noteNumber": 62,
+          "noteNameWithOctave": [
+            "D4",
+            "D4"
+          ],
+          "noteName": [
+            "D",
+            "D"
+          ]
+        },
+        {
+          "uuid": "d89abd5f-f30e-4ea5-89ca-db465a260c0c",
+          "startTicks": 230,
+          "durationTicks": 43,
+          "noteNumber": 58,
+          "noteNameWithOctave": [
+            "Bb3",
+            "A#3"
+          ],
+          "noteName": [
+            "Bb",
+            "A#"
+          ]
+        },
+        {
+          "uuid": "a29179c0-1cab-48e7-892d-df21af4bb21f",
+          "startTicks": 359,
+          "durationTicks": 34,
+          "noteNumber": 45,
+          "noteNameWithOctave": [
+            "A2",
+            "A2"
+          ],
+          "noteName": [
+            "A",
+            "A"
+          ]
+        },
+        {
+          "uuid": "f066d452-da6b-43bb-9c72-5f21b6f2908d",
+          "startTicks": 461,
+          "durationTicks": 18,
+          "noteNumber": 67,
+          "noteNameWithOctave": [
+            "G4",
+            "G4"
+          ],
+          "noteName": [
+            "G",
+            "G"
+          ]
+        }
+      ],
+      "durationTicks": 479,
+      "name": "Pianoteq",
+      "lowestNote": 45,
+      "highestNote": 67
+    }
+  ]
+}

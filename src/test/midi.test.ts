@@ -1,6 +1,7 @@
 import { expect, test } from 'vitest'
-import { readFileSync } from 'node:fs'
+import { readFileSync, writeFileSync } from 'node:fs'
 import { parseMidi, buildNote, Note, TimeSignature } from '../utils/parse'
+import { midiBufferToJson } from '../utils/adapters/midi-file-adapter'
 import { analyze } from '../utils/analyze'
 import { detectScales } from '../utils/scales'
 import { detectChords, updateDistribution, ChordRange } from '../utils/chords'
@@ -94,7 +95,7 @@ test('parseMidi() should parse multiple time signatures', () => {
 })
 
 test('chord detection', () => {
-  const path = `${__dirname}/midi/sample.mid`
+  const path = `${__dirname}/midi/2bar.mid`
   // const path = `${__dirname}/midi/takefivedavebrubeck.mid`
   const data = readFileSync(path)
   const parsed = parseMidi(data)
@@ -104,7 +105,7 @@ test('chord detection', () => {
     return { ...chord, uniqueNotes: [] }
   })
 
-  // expect(cleaned).toMatchSnapshot()
+  expect(cleaned).toMatchSnapshot()
 })
 
 test('analyze()', () => {
@@ -132,7 +133,7 @@ test('detectScales()', () => {
   expect(scales).toMatchSnapshot()
 })
 
-test.skip('updateDistribution()', () => {
+test('updateDistribution()', () => {
   const cr: ChordRange = {
     notes: new Set(['A', 'B', 'C', 'D']),
     chords: [],
@@ -147,11 +148,11 @@ test.skip('updateDistribution()', () => {
   }
 
   // Starts outside bucket, ends in bucket
-  const noteA = buildNote({ startTicks: 50, noteNumber: 57 }, 80) as Note
+  const noteA = buildNote({ startTicks: 50, noteNumber: 57 }, 110) as Note
   // Starts in bucket, ends in bucket
-  const noteB = buildNote({ startTicks: 90, noteNumber: 59 }, 120) as Note
+  const noteB = buildNote({ startTicks: 110, noteNumber: 59 }, 140) as Note
   // Starts in bucket, ends outside bucket
-  const noteC = buildNote({ startTicks: 150, noteNumber: 60 }, 180) as Note
+  const noteC = buildNote({ startTicks: 180, noteNumber: 60 }, 210) as Note
   // Starts before bucket, ends after bucket
   // This case note possible using buildNote :)
 
@@ -186,4 +187,40 @@ test.skip('updateDistribution()', () => {
     ticks: { A: 20, B: 30, C: 20 },
     time: { A: 0.2, B: 0.3, C: 0.2 },
   })
+})
+
+test('save parsed midi files to disk', () => {
+  function writeParsed(midiFile: string) {
+    const inputPath = `${__dirname}/midi/`
+    const outputPath = `${__dirname}/midi/`
+    const data = readFileSync(inputPath + midiFile)
+    const parsed = parseMidi(data)
+
+    writeFileSync(
+      outputPath + midiFile + '.json',
+      JSON.stringify(parsed, null, 2),
+    )
+  }
+
+  const files = [
+    '2bar.mid',
+    'beat.mid',
+    'blackbird.mid',
+    'ghostbusters.mid',
+    'groove.mid',
+    'sample.mid',
+    'takefivedavebrubeck.mid',
+  ]
+
+  files.forEach(writeParsed)
+})
+
+test.skip('2 bar', () => {
+  const data = readFileSync(`${__dirname}/midi/2bar.mid`)
+  const json = midiBufferToJson(data)
+  writeFileSync(
+    `${__dirname}/midi/2bar.mid.RAW.json`,
+    JSON.stringify(json, null, 2),
+  )
+  const parsed = parseMidi(data)
 })

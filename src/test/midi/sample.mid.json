@@ -1,0 +1,391 @@
+{
+  "timings": {
+    "microsecondsPerBeat": 517241,
+    "durationTicks": 1920,
+    "ticksPerBeat": 480,
+    "totalBeats": 4
+  },
+  "timeSignatures": [
+    {
+      "startTicks": 0,
+      "startBeat": 0,
+      "beatsInSignature": 4,
+      "numerator": 4,
+      "denominator": 4
+    }
+  ],
+  "tracks": [
+    {
+      "notes": [
+        {
+          "uuid": "5f4fb2f3-ab1b-4182-99fa-3e951a1c9395",
+          "startTicks": 0,
+          "durationTicks": 113,
+          "noteNumber": 67,
+          "noteNameWithOctave": [
+            "G4",
+            "G4"
+          ],
+          "noteName": [
+            "G",
+            "G"
+          ]
+        },
+        {
+          "uuid": "2c340656-afe5-424b-8c24-7dc6845cf2e3",
+          "startTicks": 2,
+          "durationTicks": 251,
+          "noteNumber": 45,
+          "noteNameWithOctave": [
+            "A2",
+            "A2"
+          ],
+          "noteName": [
+            "A",
+            "A"
+          ]
+        },
+        {
+          "uuid": "e0d04a7c-7bf8-4f1a-bd16-bcc23b03192f",
+          "startTicks": 253,
+          "durationTicks": 34,
+          "noteNumber": 57,
+          "noteNameWithOctave": [
+            "A3",
+            "A3"
+          ],
+          "noteName": [
+            "A",
+            "A"
+          ]
+        },
+        {
+          "uuid": "4420875a-3e68-4647-9d20-07df382233be",
+          "startTicks": 0,
+          "durationTicks": 305,
+          "noteNumber": 64,
+          "noteNameWithOctave": [
+            "E4",
+            "E4"
+          ],
+          "noteName": [
+            "E",
+            "E"
+          ]
+        },
+        {
+          "uuid": "50585625-8332-4e00-8e05-144cd124c2c5",
+          "startTicks": 2,
+          "durationTicks": 355,
+          "noteNumber": 72,
+          "noteNameWithOctave": [
+            "C5",
+            "C5"
+          ],
+          "noteName": [
+            "C",
+            "C"
+          ]
+        },
+        {
+          "uuid": "650dab2b-2885-4d80-8df9-ca2e95e89f91",
+          "startTicks": 98,
+          "durationTicks": 274,
+          "noteNumber": 69,
+          "noteNameWithOctave": [
+            "A4",
+            "A4"
+          ],
+          "noteName": [
+            "A",
+            "A"
+          ]
+        },
+        {
+          "uuid": "3707f294-0204-4411-b299-c3d3de9afa48",
+          "startTicks": 379,
+          "durationTicks": 49,
+          "noteNumber": 62,
+          "noteNameWithOctave": [
+            "D4",
+            "D4"
+          ],
+          "noteName": [
+            "D",
+            "D"
+          ]
+        },
+        {
+          "uuid": "3e2f3e0c-2d99-4f1c-bc72-ccc21504880e",
+          "startTicks": 377,
+          "durationTicks": 72,
+          "noteNumber": 67,
+          "noteNameWithOctave": [
+            "G4",
+            "G4"
+          ],
+          "noteName": [
+            "G",
+            "G"
+          ]
+        },
+        {
+          "uuid": "1ad87ba9-0fe6-40db-afbd-96ac351b8bed",
+          "startTicks": 368,
+          "durationTicks": 97,
+          "noteNumber": 71,
+          "noteNameWithOctave": [
+            "B4",
+            "B4"
+          ],
+          "noteName": [
+            "B",
+            "B"
+          ]
+        },
+        {
+          "uuid": "01c85f97-5a20-487f-8f7b-a5f2c83e12e3",
+          "startTicks": 484,
+          "durationTicks": 35,
+          "noteNumber": 57,
+          "noteNameWithOctave": [
+            "A3",
+            "A3"
+          ],
+          "noteName": [
+            "A",
+            "A"
+          ]
+        },
+        {
+          "uuid": "fa4e07ee-b018-421a-9003-0c0d8f663cf2",
+          "startTicks": 602,
+          "durationTicks": 55,
+          "noteNumber": 62,
+          "noteNameWithOctave": [
+            "D4",
+            "D4"
+          ],
+          "noteName": [
+            "D",
+            "D"
+          ]
+        },
+        {
+          "uuid": "c1641861-854f-4a55-ae62-7d767a07c0c1",
+          "startTicks": 710,
+          "durationTicks": 43,
+          "noteNumber": 57,
+          "noteNameWithOctave": [
+            "A3",
+            "A3"
+          ],
+          "noteName": [
+            "A",
+            "A"
+          ]
+        },
+        {
+          "uuid": "9a48d4aa-d13e-40af-abda-9f9925cf2afa",
+          "startTicks": 839,
+          "durationTicks": 34,
+          "noteNumber": 45,
+          "noteNameWithOctave": [
+            "A2",
+            "A2"
+          ],
+          "noteName": [
+            "A",
+            "A"
+          ]
+        },
+        {
+          "uuid": "f699d64f-7289-48b7-9f7c-daab70ef1df8",
+          "startTicks": 957,
+          "durationTicks": 128,
+          "noteNumber": 67,
+          "noteNameWithOctave": [
+            "G4",
+            "G4"
+          ],
+          "noteName": [
+            "G",
+            "G"
+          ]
+        },
+        {
+          "uuid": "37f64cb6-4917-4ccf-8cd6-d08eb6c02a2f",
+          "startTicks": 959,
+          "durationTicks": 264,
+          "noteNumber": 64,
+          "noteNameWithOctave": [
+            "E4",
+            "E4"
+          ],
+          "noteName": [
+            "E",
+            "E"
+          ]
+        },
+        {
+          "uuid": "8e99f656-21b0-478f-9264-53cba937bf39",
+          "startTicks": 1190,
+          "durationTicks": 38,
+          "noteNumber": 57,
+          "noteNameWithOctave": [
+            "A3",
+            "A3"
+          ],
+          "noteName": [
+            "A",
+            "A"
+          ]
+        },
+        {
+          "uuid": "cdcd6d57-5a78-44f9-b73b-c58c71f62815",
+          "startTicks": 1079,
+          "durationTicks": 240,
+          "noteNumber": 69,
+          "noteNameWithOctave": [
+            "A4",
+            "A4"
+          ],
+          "noteName": [
+            "A",
+            "A"
+          ]
+        },
+        {
+          "uuid": "f63f82eb-4fea-42aa-801f-f4c70aad4dce",
+          "startTicks": 960,
+          "durationTicks": 395,
+          "noteNumber": 72,
+          "noteNameWithOctave": [
+            "C5",
+            "C5"
+          ],
+          "noteName": [
+            "C",
+            "C"
+          ]
+        },
+        {
+          "uuid": "562d391c-cea8-4649-8c74-cb524a33edc7",
+          "startTicks": 1318,
+          "durationTicks": 103,
+          "noteNumber": 62,
+          "noteNameWithOctave": [
+            "D4",
+            "D4"
+          ],
+          "noteName": [
+            "D",
+            "D"
+          ]
+        },
+        {
+          "uuid": "8bcdda4d-32e8-4316-8b8b-c42cc28bda56",
+          "startTicks": 1318,
+          "durationTicks": 113,
+          "noteNumber": 67,
+          "noteNameWithOctave": [
+            "G4",
+            "G4"
+          ],
+          "noteName": [
+            "G",
+            "G"
+          ]
+        },
+        {
+          "uuid": "73074c02-1beb-4972-83bc-115fde1c8f4d",
+          "startTicks": 1312,
+          "durationTicks": 167,
+          "noteNumber": 71,
+          "noteNameWithOctave": [
+            "B4",
+            "B4"
+          ],
+          "noteName": [
+            "B",
+            "B"
+          ]
+        },
+        {
+          "uuid": "7bf01d47-101b-4cc2-b3b3-bc0692f04a27",
+          "startTicks": 1439,
+          "durationTicks": 40,
+          "noteNumber": 57,
+          "noteNameWithOctave": [
+            "A3",
+            "A3"
+          ],
+          "noteName": [
+            "A",
+            "A"
+          ]
+        },
+        {
+          "uuid": "0c587e82-e18d-44b4-9722-e2ae8b663d74",
+          "startTicks": 1561,
+          "durationTicks": 83,
+          "noteNumber": 62,
+          "noteNameWithOctave": [
+            "D4",
+            "D4"
+          ],
+          "noteName": [
+            "D",
+            "D"
+          ]
+        },
+        {
+          "uuid": "b79b13e6-48fb-49f4-bce9-4c9f54d13ea0",
+          "startTicks": 1684,
+          "durationTicks": 38,
+          "noteNumber": 57,
+          "noteNameWithOctave": [
+            "A3",
+            "A3"
+          ],
+          "noteName": [
+            "A",
+            "A"
+          ]
+        },
+        {
+          "uuid": "083e8f53-e9b8-4a8d-a5e8-aeb4b913b428",
+          "startTicks": 1804,
+          "durationTicks": 33,
+          "noteNumber": 50,
+          "noteNameWithOctave": [
+            "D3",
+            "D3"
+          ],
+          "noteName": [
+            "D",
+            "D"
+          ]
+        },
+        {
+          "uuid": "f198f44b-48f2-4f60-980a-ef41693febce",
+          "startTicks": 1917,
+          "durationTicks": 3,
+          "noteNumber": 64,
+          "noteNameWithOctave": [
+            "E4",
+            "E4"
+          ],
+          "noteName": [
+            "E",
+            "E"
+          ]
+        }
+      ],
+      "durationTicks": 1920,
+      "name": "Pianoteq",
+      "lowestNote": 45,
+      "highestNote": 72
+    }
+  ]
+}

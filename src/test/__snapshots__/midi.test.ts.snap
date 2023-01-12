@@ -18,7 +18,7 @@ exports[`analyze() 1`] = `
               "G4",
             ],
             "noteNumber": 67,
-            "startTicks": 113,
+            "startTicks": 0,
             "uuid": "removed",
           },
           {
@@ -32,7 +32,7 @@ exports[`analyze() 1`] = `
               "A2",
             ],
             "noteNumber": 45,
-            "startTicks": 253,
+            "startTicks": 2,
             "uuid": "removed",
           },
           {
@@ -46,7 +46,7 @@ exports[`analyze() 1`] = `
               "A3",
             ],
             "noteNumber": 57,
-            "startTicks": 287,
+            "startTicks": 253,
             "uuid": "removed",
           },
           {
@@ -60,7 +60,7 @@ exports[`analyze() 1`] = `
               "E4",
             ],
             "noteNumber": 64,
-            "startTicks": 305,
+            "startTicks": 0,
             "uuid": "removed",
           },
           {
@@ -74,7 +74,7 @@ exports[`analyze() 1`] = `
               "C5",
             ],
             "noteNumber": 72,
-            "startTicks": 357,
+            "startTicks": 2,
             "uuid": "removed",
           },
           {
@@ -88,7 +88,7 @@ exports[`analyze() 1`] = `
               "A4",
             ],
             "noteNumber": 69,
-            "startTicks": 372,
+            "startTicks": 98,
             "uuid": "removed",
           },
           {
@@ -102,7 +102,7 @@ exports[`analyze() 1`] = `
               "D4",
             ],
             "noteNumber": 62,
-            "startTicks": 428,
+            "startTicks": 379,
             "uuid": "removed",
           },
           {
@@ -116,7 +116,7 @@ exports[`analyze() 1`] = `
               "G4",
             ],
             "noteNumber": 67,
-            "startTicks": 449,
+            "startTicks": 377,
             "uuid": "removed",
           },
           {
@@ -130,7 +130,7 @@ exports[`analyze() 1`] = `
               "B4",
             ],
             "noteNumber": 71,
-            "startTicks": 465,
+            "startTicks": 368,
             "uuid": "removed",
           },
         ],
@@ -139,90 +139,6 @@ exports[`analyze() 1`] = `
       {
         "index": 1,
         "notes": [
-          {
-            "durationTicks": 251,
-            "noteName": [
-              "A",
-              "A",
-            ],
-            "noteNameWithOctave": [
-              "A2",
-              "A2",
-            ],
-            "noteNumber": 45,
-            "startTicks": 253,
-            "uuid": "removed",
-          },
-          {
-            "durationTicks": 305,
-            "noteName": [
-              "E",
-              "E",
-            ],
-            "noteNameWithOctave": [
-              "E4",
-              "E4",
-            ],
-            "noteNumber": 64,
-            "startTicks": 305,
-            "uuid": "removed",
-          },
-          {
-            "durationTicks": 355,
-            "noteName": [
-              "C",
-              "C",
-            ],
-            "noteNameWithOctave": [
-              "C5",
-              "C5",
-            ],
-            "noteNumber": 72,
-            "startTicks": 357,
-            "uuid": "removed",
-          },
-          {
-            "durationTicks": 274,
-            "noteName": [
-              "A",
-              "A",
-            ],
-            "noteNameWithOctave": [
-              "A4",
-              "A4",
-            ],
-            "noteNumber": 69,
-            "startTicks": 372,
-            "uuid": "removed",
-          },
-          {
-            "durationTicks": 72,
-            "noteName": [
-              "G",
-              "G",
-            ],
-            "noteNameWithOctave": [
-              "G4",
-              "G4",
-            ],
-            "noteNumber": 67,
-            "startTicks": 449,
-            "uuid": "removed",
-          },
-          {
-            "durationTicks": 97,
-            "noteName": [
-              "B",
-              "B",
-            ],
-            "noteNameWithOctave": [
-              "B4",
-              "B4",
-            ],
-            "noteNumber": 71,
-            "startTicks": 465,
-            "uuid": "removed",
-          },
           {
             "durationTicks": 35,
             "noteName": [
@@ -234,7 +150,7 @@ exports[`analyze() 1`] = `
               "A3",
             ],
             "noteNumber": 57,
-            "startTicks": 519,
+            "startTicks": 484,
             "uuid": "removed",
           },
           {
@@ -248,7 +164,7 @@ exports[`analyze() 1`] = `
               "D4",
             ],
             "noteNumber": 62,
-            "startTicks": 657,
+            "startTicks": 602,
             "uuid": "removed",
           },
           {
@@ -262,7 +178,7 @@ exports[`analyze() 1`] = `
               "A3",
             ],
             "noteNumber": 57,
-            "startTicks": 753,
+            "startTicks": 710,
             "uuid": "removed",
           },
           {
@@ -276,7 +192,35 @@ exports[`analyze() 1`] = `
               "A2",
             ],
             "noteNumber": 45,
-            "startTicks": 873,
+            "startTicks": 839,
+            "uuid": "removed",
+          },
+          {
+            "durationTicks": 128,
+            "noteName": [
+              "G",
+              "G",
+            ],
+            "noteNameWithOctave": [
+              "G4",
+              "G4",
+            ],
+            "noteNumber": 67,
+            "startTicks": 957,
+            "uuid": "removed",
+          },
+          {
+            "durationTicks": 264,
+            "noteName": [
+              "E",
+              "E",
+            ],
+            "noteNameWithOctave": [
+              "E4",
+              "E4",
+            ],
+            "noteNumber": 64,
+            "startTicks": 959,
             "uuid": "removed",
           },
         ],
@@ -296,7 +240,7 @@ exports[`analyze() 1`] = `
               "G4",
             ],
             "noteNumber": 67,
-            "startTicks": 1085,
+            "startTicks": 957,
             "uuid": "removed",
           },
           {
@@ -310,7 +254,7 @@ exports[`analyze() 1`] = `
               "E4",
             ],
             "noteNumber": 64,
-            "startTicks": 1223,
+            "startTicks": 959,
             "uuid": "removed",
           },
           {
@@ -324,7 +268,7 @@ exports[`analyze() 1`] = `
               "A3",
             ],
             "noteNumber": 57,
-            "startTicks": 1228,
+            "startTicks": 1190,
             "uuid": "removed",
           },
           {
@@ -338,7 +282,7 @@ exports[`analyze() 1`] = `
               "A4",
             ],
             "noteNumber": 69,
-            "startTicks": 1319,
+            "startTicks": 1079,
             "uuid": "removed",
           },
           {
@@ -352,7 +296,7 @@ exports[`analyze() 1`] = `
               "C5",
             ],
             "noteNumber": 72,
-            "startTicks": 1355,
+            "startTicks": 960,
             "uuid": "removed",
           },
           {
@@ -366,7 +310,7 @@ exports[`analyze() 1`] = `
               "D4",
             ],
             "noteNumber": 62,
-            "startTicks": 1421,
+            "startTicks": 1318,
             "uuid": "removed",
           },
           {
@@ -380,83 +324,7 @@ exports[`analyze() 1`] = `
               "G4",
             ],
             "noteNumber": 67,
-            "startTicks": 1431,
-            "uuid": "removed",
-          },
-        ],
-        "startTicks": 960,
-      },
-      {
-        "index": 3,
-        "notes": [
-          {
-            "durationTicks": 264,
-            "noteName": [
-              "E",
-              "E",
-            ],
-            "noteNameWithOctave": [
-              "E4",
-              "E4",
-            ],
-            "noteNumber": 64,
-            "startTicks": 1223,
-            "uuid": "removed",
-          },
-          {
-            "durationTicks": 240,
-            "noteName": [
-              "A",
-              "A",
-            ],
-            "noteNameWithOctave": [
-              "A4",
-              "A4",
-            ],
-            "noteNumber": 69,
-            "startTicks": 1319,
-            "uuid": "removed",
-          },
-          {
-            "durationTicks": 395,
-            "noteName": [
-              "C",
-              "C",
-            ],
-            "noteNameWithOctave": [
-              "C5",
-              "C5",
-            ],
-            "noteNumber": 72,
-            "startTicks": 1355,
-            "uuid": "removed",
-          },
-          {
-            "durationTicks": 103,
-            "noteName": [
-              "D",
-              "D",
-            ],
-            "noteNameWithOctave": [
-              "D4",
-              "D4",
-            ],
-            "noteNumber": 62,
-            "startTicks": 1421,
-            "uuid": "removed",
-          },
-          {
-            "durationTicks": 113,
-            "noteName": [
-              "G",
-              "G",
-            ],
-            "noteNameWithOctave": [
-              "G4",
-              "G4",
-            ],
-            "noteNumber": 67,
-            "startTicks": 1431,
+            "startTicks": 1318,
             "uuid": "removed",
           },
           {
@@ -470,7 +338,7 @@ exports[`analyze() 1`] = `
               "B4",
             ],
             "noteNumber": 71,
-            "startTicks": 1479,
+            "startTicks": 1312,
             "uuid": "removed",
           },
           {
@@ -484,7 +352,41 @@ exports[`analyze() 1`] = `
               "A3",
             ],
             "noteNumber": 57,
-            "startTicks": 1479,
+            "startTicks": 1439,
+            "uuid": "removed",
+          },
+        ],
+        "startTicks": 960,
+      },
+      {
+        "index": 3,
+        "notes": [
+          {
+            "durationTicks": 167,
+            "noteName": [
+              "B",
+              "B",
+            ],
+            "noteNameWithOctave": [
+              "B4",
+              "B4",
+            ],
+            "noteNumber": 71,
+            "startTicks": 1312,
+            "uuid": "removed",
+          },
+          {
+            "durationTicks": 40,
+            "noteName": [
+              "A",
+              "A",
+            ],
+            "noteNameWithOctave": [
+              "A3",
+              "A3",
+            ],
+            "noteNumber": 57,
+            "startTicks": 1439,
             "uuid": "removed",
           },
           {
@@ -498,7 +400,7 @@ exports[`analyze() 1`] = `
               "D4",
             ],
             "noteNumber": 62,
-            "startTicks": 1644,
+            "startTicks": 1561,
             "uuid": "removed",
           },
           {
@@ -512,7 +414,7 @@ exports[`analyze() 1`] = `
               "A3",
             ],
             "noteNumber": 57,
-            "startTicks": 1722,
+            "startTicks": 1684,
             "uuid": "removed",
           },
           {
@@ -526,7 +428,21 @@ exports[`analyze() 1`] = `
               "D3",
             ],
             "noteNumber": 50,
-            "startTicks": 1837,
+            "startTicks": 1804,
+            "uuid": "removed",
+          },
+          {
+            "durationTicks": 3,
+            "noteName": [
+              "E",
+              "E",
+            ],
+            "noteNameWithOctave": [
+              "E4",
+              "E4",
+            ],
+            "noteNumber": 64,
+            "startTicks": 1917,
             "uuid": "removed",
           },
         ],
@@ -546,7 +462,7 @@ exports[`analyze() 1`] = `
               "E4",
             ],
             "noteNumber": 64,
-            "startTicks": 1920,
+            "startTicks": 1917,
             "uuid": "removed",
           },
         ],
@@ -597,6 +513,83 @@ exports[`analyze() 1`] = `
   },
   "tracks": [],
 }
+`;
+
+exports[`chord detection 1`] = `
+[
+  {
+    "chordNotes": Set {
+      "G",
+      "A",
+      "E",
+      "C",
+      "D",
+      "B",
+    },
+    "chords": [
+      "Cmaj13/G",
+      "CM7add13/G",
+      "D13sus4/G",
+      "Am11/G",
+    ],
+    "distribution": {
+      "ticks": {
+        "A": 1067,
+        "B": 431,
+        "C": 750,
+        "D": 323,
+        "E": 836,
+        "G": 554,
+      },
+      "time": {
+        "A": 0.5557291666666667,
+        "B": 0.22447916666666667,
+        "C": 0.390625,
+        "D": 0.16822916666666668,
+        "E": 0.4354166666666667,
+        "G": 0.28854166666666664,
+      },
+    },
+    "durationTicks": 1920,
+    "notes": Set {
+      "G",
+      "A",
+      "E",
+      "C",
+      "D",
+      "B",
+    },
+    "startTicks": 0,
+    "uniqueNotes": [],
+    "unit": "bar",
+    "unitNumber": 0,
+  },
+  {
+    "chordNotes": Set {},
+    "chords": [],
+    "distribution": {
+      "ticks": {
+        "E": 3,
+      },
+      "time": {
+        "E": 0.0015625,
+      },
+    },
+    "durationTicks": 1920,
+    "notes": Set {
+      "E",
+      "A",
+      "Gb",
+      "D",
+      "G",
+      "B",
+    },
+    "startTicks": 0,
+    "uniqueNotes": [],
+    "unit": "bar",
+    "unitNumber": 0,
+  },
+]
 `;
 
 exports[`detectScales() 1`] = `
@@ -827,7 +820,7 @@ exports[`parseMidi() should parse to a known format 1`] = `
             "A3",
           ],
           "noteNumber": 57,
-          "startTicks": 39,
+          "startTicks": 4,
           "uuid": "removed",
         },
         {
@@ -841,7 +834,7 @@ exports[`parseMidi() should parse to a known format 1`] = `
             "D4",
           ],
           "noteNumber": 62,
-          "startTicks": 177,
+          "startTicks": 122,
           "uuid": "removed",
         },
         {
@@ -855,7 +848,7 @@ exports[`parseMidi() should parse to a known format 1`] = `
             "A#3",
           ],
           "noteNumber": 58,
-          "startTicks": 273,
+          "startTicks": 230,
           "uuid": "removed",
         },
         {
@@ -869,7 +862,7 @@ exports[`parseMidi() should parse to a known format 1`] = `
             "A2",
           ],
           "noteNumber": 45,
-          "startTicks": 393,
+          "startTicks": 359,
           "uuid": "removed",
         },
         {
@@ -883,7 +876,7 @@ exports[`parseMidi() should parse to a known format 1`] = `
             "G4",
           ],
           "noteNumber": 67,
-          "startTicks": 479,
+          "startTicks": 461,
           "uuid": "removed",
         },
       ],

@@ -1,8 +1,10 @@
-// Button.stories.ts|tsx
+import type { Meta, StoryObj } from '@storybook/react'
 
-import type { Meta } from '@storybook/react'
+import Clip, { ClipProps } from '../components/Clip'
+import * as data from '../test/midi/2bar.mid.json'
+import { analyze } from '../utils/analyze'
 
-import Clip from '../components/Clip'
+const analyzed = analyze(data)
 
 const meta: Meta<typeof Clip> = {
   /* 👇 The title prop is optional.
@@ -14,3 +16,18 @@ const meta: Meta<typeof Clip> = {
 }
 
 export default meta
+type Story = StoryObj<typeof Clip>
+
+export const Sample: Story = {
+  args: {
+    ...analyzed.tracks[0],
+    startTicks: 0,
+    onNoteClick: note => {
+      console.log('NOTE FOUND!')
+      console.log(note)
+    },
+  },
+  render: args => {
+    return <Clip {...args} />
+  },
+}
