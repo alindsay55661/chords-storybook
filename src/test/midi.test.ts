@@ -103,8 +103,6 @@ test('chord detection', () => {
     return { ...chord, uniqueNotes: [] }
   })
 
-  console.log(cleaned)
-
   expect(cleaned).toMatchSnapshot()
 })
 
