@@ -1,46 +1,38 @@
-import Tonal from 'tonal'
 import type { Scale } from '@tonaljs/scale'
-import type { MidiPart, Note } from './midi'
-import {
-  ChordRangeData,
-  initChordRangeData,
-  addNoteToChordRange,
-} from './chords'
+import type { MidiPart, Note } from './parse'
 
 export type DetectUnit = 'bar' | 'beat'
 
-type AnalyzeOptions = {
-  unit?: DetectUnit
-  noteLengthThreshold?: number
-  noteOccuranceThreshold?: number
-  noteFrequencyWeight?: number
-  noteDurationWeight?: number
+export type Beat = {
+  index: number
+  startTicks: number
+  notes: Note[]
 }
 
-type NoteStats = {
+export type NoteStats = {
   frequency: Record<string, number>
   duration: Record<string, number>
   presence?: Record<string, number>
+  map: Record<string, Note>
+  byBeat: Beat[]
 }
 
-type Stats = {
-  chords: ChordRangeData
+export type Stats = Pick<MidiPart, 'timings' | 'timeSignatures'> & {
   notes: NoteStats
   scales: Scale[]
 }
 
-export function analyze(
-  part: MidiPart,
-  {
-    unit = 'bar',
-    noteLengthThreshold = 0.1,
-    noteOccuranceThreshold = 0.1,
-  }: AnalyzeOptions,
-): Stats {
-  const chordRangeData = initChordRangeData(part, unit)
+export function analyze(part: MidiPart): Stats {
   let stats: Stats = {
-    chords: chordRangeData,
-    notes: { frequency: {}, duration: {}, presence: {} },
+    timings: part.timings,
+    timeSignatures: part.timeSignatures,
+    notes: {
+      frequency: {},
+      duration: {},
+      presence: {},
+      map: {},
+      byBeat: new Array(part.timings.totalBeats),
+    },
     scales: [],
   }
 
@@ -60,46 +52,8 @@ export function analyze(
   // 2 - Note "presence" calculation
   stats.notes.presence = updatePresenceStats(stats) as Record<string, number>
 
-  // 3 - Scale recognition
-  stats.scales = analyzeScale(stats.notes.presence)
-
-  // 4 - Recognize chords
-  // TODO
-
+  // 3-4 are done with other funciton calls
   return stats
-}
-
-export function analyzeScale(presence: Record<string, number>) {
-  // order by prominence
-  const notes = Object.entries(presence)
-    .map(entry => {
-      return { name: entry[0], presence: entry[1] }
-    })
-    .sort((a, b) => {
-      if (a.presence > b.presence) return -1
-      if (a.presence < b.presence) return 1
-      return 0
-    })
-
-  const scaleNotes = Tonal.Scale.scaleNotes(notes.map(note => note.name))
-
-  // Get distance from C
-  const interval = Tonal.Interval.distance(scaleNotes[0], 'C')
-  const transposed = scaleNotes.map(Tonal.Note.transposeBy(interval))
-  const pcset = Tonal.Pcset.get(transposed)
-
-  // Filter scales that include these intervals
-  // https://github.com/tonaljs/tonal/blob/main/packages/chord/index.ts#L197
-  const areNotesIncluded = Tonal.Pcset.isSupersetOf(pcset.chroma)
-  const scales = Tonal.ScaleType.all().filter(scale =>
-    areNotesIncluded(scale.chroma),
-  )
-
-  const keyScales = scales.map(scale => {
-    return Tonal.Scale.get(`${scaleNotes[0]} ${scale.name}`)
-  })
-
-  return keyScales
 }
 
 // Adds this note to the current stats
@@ -107,9 +61,24 @@ function analyzeNote(note: Note, stats: Stats) {
   // Add note stats
   stats.notes.frequency = updateFrequencyStats(note, stats)
   stats.notes.duration = updateDurationStats(note, stats)
+  stats.notes.map[note.uuid] = note
 
-  // Add chord stats
-  stats.chords = addNoteToChordRange(note, stats.chords)
+  const noteOnTicks = note.startTicks
+  const noteOffTicks = note.startTicks + note.durationTicks
+  const noteStartRange = Math.floor(noteOnTicks / stats.timings.ticksPerBeat)
+  const noteEndRange = Math.floor(noteOffTicks / stats.timings.ticksPerBeat)
+
+  // loop is limited to a note's own buckets (typically 1-2)
+  for (let i = noteStartRange; i <= noteEndRange; i++) {
+    const beat = stats.notes.byBeat[i] ?? {
+      index: i,
+      startTicks: i * stats.timings.ticksPerBeat,
+      notes: [],
+    }
+
+    beat.notes.push(note)
+    stats.notes.byBeat[i] = beat
+  }
 
   return stats
 }
@@ -130,7 +99,7 @@ function updateDurationStats(note: Note, stats: Stats) {
   return duration
 }
 
-function updatePresenceStats(
+export function updatePresenceStats(
   stats: Stats,
   noteDurationWeight: number = 1,
   noteFrequencyWeight: number = 0.3,
@@ -158,4 +127,8 @@ function normalizeToOne(noteMap: Record<string, number>) {
     result[tuple[0]] = (tuple[1] - min) * factor
     return result
   }, {})
+}
+
+export function noteInBeat(note: Note, beat: number) {
+  return true
 }

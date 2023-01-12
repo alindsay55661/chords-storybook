@@ -1,4 +1,11 @@
-import { buildNote, MidiPart, Track, Note, GMPatchNames } from '../midi'
+import {
+  buildNote,
+  MidiPart,
+  TimeSignature,
+  Track,
+  Note,
+  GMPatchNames,
+} from '../parse'
 import mf from 'midi-file'
 
 // Constants based on midi-file parsing
@@ -24,48 +31,79 @@ export function buildMidiPart(data: ArrayLike<number>): MidiPart {
 
   // By convention the first track in format 1 is metadata only
   const firstTrack = json.tracks.shift() as mf.MidiEvent[]
-  const { timings, timeSignature } = extractPartDataFromTrack(firstTrack)
-
-  // Remaining tracks *may* contain note data - otherwise filter
   const tracks = json.tracks.reduce((result: MidiPart['tracks'], track) => {
     const processed = processTrack(track)
     if (processed.notes.length) result.push(processed)
     return result
   }, [])
 
+  const ticksPerBeat = json.header.ticksPerBeat || 960
+  const durationTicks = Math.max(...tracks.map(track => track.durationTicks))
+  const totalBeats = Math.ceil(durationTicks / ticksPerBeat)
+  const { timings, timeSignatures } = extractPartDataFromTrack(
+    firstTrack,
+    ticksPerBeat,
+    totalBeats,
+  )
+
   return {
     timings: {
       ...timings,
-      durationTicks: Math.max(...tracks.map(track => track.durationTicks)),
-      ticksPerBeat: json.header.ticksPerBeat || 960,
+      durationTicks,
+      ticksPerBeat,
+      totalBeats,
     },
-    timeSignature,
+    timeSignatures,
     tracks,
   }
 }
 
-function extractPartDataFromTrack(firstTrack: mf.MidiEvent[]) {
-  const defaultPartData = {
+function extractPartDataFromTrack(
+  firstTrack: mf.MidiEvent[],
+  ticksPerBeat: number,
+  totalBeats: number,
+) {
+  let startTicks: number = 0
+  const defaultPartData: any = {
     timings: {
       microsecondsPerBeat: 0,
     },
-    timeSignature: {
-      numerator: 4,
-      denominator: 4,
-    },
+    timeSignatures: [],
   }
-  return firstTrack.reduce((result, track) => {
-    switch (track.type) {
+
+  const data = firstTrack.reduce((result, event) => {
+    // Increment startTicks for all events (deltaTime is relative)
+    startTicks += event.deltaTime
+
+    switch (event.type) {
       case TEMPO:
-        result.timings.microsecondsPerBeat = track.microsecondsPerBeat
+        result.timings.microsecondsPerBeat = event.microsecondsPerBeat
         break
       case TIME_SIGNATURE:
-        result.timeSignature.numerator = track.numerator
-        result.timeSignature.denominator = track.denominator
+        const signature: TimeSignature = {
+          startTicks,
+          startBeat: Math.floor(startTicks / ticksPerBeat),
+          beatsInSignature: 0,
+          numerator: event.numerator,
+          denominator: event.denominator,
+        }
+        result.timeSignatures.push(signature)
         break
     }
     return result
   }, defaultPartData)
+
+  // Update timeSignature data
+  data.timeSignatures = data.timeSignatures.map(
+    (ts: TimeSignature, idx: number) => {
+      const beatsInSignature = data.timeSignatures[idx + 1]
+        ? data.timeSignatures[idx + 1].startBeat - ts.startBeat
+        : totalBeats - ts.startBeat
+      return { ...ts, beatsInSignature }
+    },
+  )
+
+  return data
 }
 
 type NoteEvent = mf.MidiEvent & Record<string, any>

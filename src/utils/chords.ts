@@ -1,6 +1,6 @@
 import Tonal from 'tonal'
-import type { MidiPart, Note } from './midi'
-import type { DetectUnit } from './music-analysis'
+import type { MidiPart, Note, TimeSignature } from './parse'
+import type { DetectUnit, Stats } from './analyze'
 
 export type DetectChordOptions = {
   unit?: DetectUnit
@@ -24,22 +24,102 @@ export type ChordRange = {
   unitNumber: number
   startTicks: number
   durationTicks: number
-  uniqueNotes: string[]
+  uniqueNotes: Note[]
 }
 
 export type ChordRangeData = {
-  ticksPerChordRange: number
+  ticksPerBeat: number
+  timeSignatures: TimeSignature[]
   chordRangeCount: number
   unit: DetectUnit
   chordRanges: ChordRange[]
 }
 
 export function detectChords(
-  part: MidiPart,
-  { unit = 'bar', lengthThreshold = 0.1 }: DetectChordOptions,
+  stats: Stats,
+  opts?: DetectChordOptions,
 ): DetectedChords {
-  const chordRangeData = chordRangeDataFromPart(part, unit)
-  const chords = chordRangeData.chordRanges.map(cr => {
+  const options = {
+    unit: 'bar',
+    lengthThreshold: 0.1,
+    ...opts,
+  } satisfies DetectChordOptions
+  const chordRangeData = initChordRangeData(stats, options.unit)
+
+  if (options.unit === 'bar') {
+    let totalBeatsProcessed = 0
+    // Detect from chordRanges in each timeSignature
+    chordRangeData.timeSignatures.forEach((ts, idx) => {
+      // const barCount = ts.beatsInSignature / ts.numerator
+      let signatureBeatsProcessed = 0
+      let beatsInCurrentBatch = 0
+      let notes: Note[] = []
+      const durationTicks = stats.timings.ticksPerBeat * ts.numerator
+
+      while (signatureBeatsProcessed <= ts.beatsInSignature) {
+        const notesFound = stats.notes.byBeat[totalBeatsProcessed]
+
+        // update counters
+        signatureBeatsProcessed++
+        totalBeatsProcessed++
+        beatsInCurrentBatch++
+
+        if (notesFound) {
+          notes = [...notes, ...notesFound.notes]
+        }
+
+        // Create chordRange!
+        if (beatsInCurrentBatch === ts.numerator) {
+          chordRangeData.chordRanges.push(
+            createChordRange(notes, { unit: 'bar', durationTicks }),
+          )
+
+          // Reset aggregators
+          beatsInCurrentBatch = 0
+          notes = []
+        }
+      }
+
+      // Create range for last bar if needed
+      if (notes.length && idx === chordRangeData.timeSignatures.length - 1) {
+        console.log('CREATE FINAL chord range')
+        chordRangeData.chordRanges.push(
+          createChordRange(notes, { unit: 'bar', durationTicks }),
+        )
+      }
+
+      console.log(
+        `totalBeats: ${stats.timings.totalBeats}, processed: ${totalBeatsProcessed}`,
+      )
+    })
+  } else if (options.unit === 'beat') {
+    stats.notes.byBeat.forEach(beat => {
+      if (beat) {
+        chordRangeData.chordRanges.push(
+          createChordRange(beat.notes, {
+            unit: 'beat',
+            durationTicks: stats.timings.ticksPerBeat,
+          }),
+        )
+      }
+    })
+  }
+
+  const chords = chordsFromRanges(
+    chordRangeData.chordRanges,
+    options.lengthThreshold,
+  )
+  // console.log(chords)
+  // console.log(chords[10].distribution)
+
+  return chords
+}
+
+function chordsFromRanges(
+  chordRanges: ChordRange[],
+  lengthThreshold: number,
+): ChordRange[] {
+  const chords = chordRanges.map(cr => {
     // apply specialized filtering
     const percentages = notePercentagesInChordRange(cr)
 
@@ -58,79 +138,70 @@ export function detectChords(
       chords: Tonal.Chord.detect([...newNotes]),
     }
   })
+
   return chords
 }
 
-export function chordRangeDataFromPart(
-  part: MidiPart,
-  unit: DetectUnit,
-): ChordRangeData {
-  // log all notes that belong to the specified unit of measurement
-  let chordRangeData = initChordRangeData(part, unit)
-
-  // chord recognition should happen across all tracks (i.e. is time-based)
-  // optimize O(n^2) ? - typical track count is low, however
-  part.tracks.forEach(track => {
-    track.notes.forEach(note => {
-      chordRangeData = addNoteToChordRange(note, chordRangeData)
-    })
-  })
-
-  return chordRangeData
-}
-
 export function initChordRangeData(
-  part: MidiPart,
+  stats: Stats,
   unit: DetectUnit,
 ): ChordRangeData {
-  const ticksPerBeat = part.timings.ticksPerBeat
-  const ticksPerBar = part.timeSignature.numerator * ticksPerBeat
-  const ticksPerChordRange = unit === 'beat' ? ticksPerBeat : ticksPerBar
-  const durationTicks = part.timings.durationTicks
-  const chordRangeCount = Math.ceil(durationTicks / ticksPerChordRange)
+  const ticksPerBeat = stats.timings.ticksPerBeat
+  const timeSignatures = stats.timeSignatures
+  let chordRangeCount = 0
+
+  if (unit === 'beat') {
+    chordRangeCount = stats.timings.totalBeats
+  } else if (unit === 'bar') {
+    // Loop through each time signature to get the right # of measures
+    timeSignatures.forEach(ts => {
+      // ceil required in case last bar of song is missing beats
+      chordRangeCount += Math.ceil(ts.beatsInSignature / ts.numerator)
+    })
+  }
 
   return {
-    ticksPerChordRange,
+    ticksPerBeat,
+    timeSignatures,
     chordRangeCount,
     unit,
     chordRanges: [],
   }
 }
 
-export function addNoteToChordRange(note: Note, data: ChordRangeData) {
-  const noteOnTicks = note.startTicks
-  const noteOffTicks = note.startTicks + note.durationTicks
-  const noteStartRange = Math.floor(noteOnTicks / data.ticksPerChordRange)
-  const noteEndRange = Math.floor(noteOffTicks / data.ticksPerChordRange)
-  const newChordRange: ChordRange = {
+export function createChordRange(
+  notes: Note[],
+  options: { unit: DetectUnit; durationTicks: number },
+): ChordRange {
+  const chordRange: ChordRange = {
     notes: new Set(),
     distribution: {
       ticks: {},
     },
     chords: [],
-    unit: data.unit,
+    unit: options.unit,
     unitNumber: 0,
     startTicks: 0,
-    durationTicks: data.ticksPerChordRange,
+    durationTicks: options.durationTicks,
     uniqueNotes: [],
   }
 
-  // loop is limited to a note's own buckets (typically 1-2)
-  for (let i = noteStartRange; i <= noteEndRange; i++) {
-    let cr: ChordRange = data.chordRanges[i] || {
-      ...newChordRange,
-      unitNumber: i,
-      startTicks: i * data.ticksPerChordRange,
-    }
-    // Set vs Array prevents duplicates
-    cr.notes.add(note.noteName[0])
-    cr.uniqueNotes.push(note.uuid)
-    // Note distribution allows for advanced chord recognition
-    cr = updateDistribution(cr, note)
-    data.chordRanges[i] = cr
-  }
+  // Evalute whether every note should be part of the chord
+  notes.forEach(note => addNoteToChordRange(note, chordRange))
 
-  return data
+  return chordRange
+}
+
+export function addNoteToChordRange(note: Note, range: ChordRange) {
+  const noteOnTicks = note.startTicks
+  const noteOffTicks = note.startTicks + note.durationTicks
+  const noteStartRange = Math.floor(noteOnTicks / range.durationTicks)
+  const noteEndRange = Math.floor(noteOffTicks / range.durationTicks)
+
+  range.notes.add(note.noteName[0])
+  range.uniqueNotes.push(note)
+  // Note distribution allows for advanced chord recognition
+  range = updateDistribution(range, note)
 }
 
 export function notePercentagesInChordRange(chordRange: ChordRange) {

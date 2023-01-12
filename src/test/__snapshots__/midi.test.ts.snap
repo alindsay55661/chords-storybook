@@ -2,132 +2,557 @@
 
 exports[`analyze() 1`] = `
 {
-  "chords": {
-    "chordRangeCount": 4,
-    "chordRanges": [
+  "notes": {
+    "byBeat": [
       {
-        "chords": [],
-        "distribution": {
-          "ticks": {
-            "A": 369,
-            "B": 15,
-            "C": 123,
-            "D": 49,
-            "E": 175,
-            "G": 144,
+        "index": 0,
+        "notes": [
+          {
+            "durationTicks": 113,
+            "noteName": [
+              "G",
+              "G",
+            ],
+            "noteNameWithOctave": [
+              "G4",
+              "G4",
+            ],
+            "noteNumber": 67,
+            "startTicks": 113,
+            "uuid": "removed",
           },
-        },
-        "durationTicks": 480,
-        "notes": Set {
-          "G",
-          "A",
-          "E",
-          "C",
-          "D",
-          "B",
-        },
+          {
+            "durationTicks": 251,
+            "noteName": [
+              "A",
+              "A",
+            ],
+            "noteNameWithOctave": [
+              "A2",
+              "A2",
+            ],
+            "noteNumber": 45,
+            "startTicks": 253,
+            "uuid": "removed",
+          },
+          {
+            "durationTicks": 34,
+            "noteName": [
+              "A",
+              "A",
+            ],
+            "noteNameWithOctave": [
+              "A3",
+              "A3",
+            ],
+            "noteNumber": 57,
+            "startTicks": 287,
+            "uuid": "removed",
+          },
+          {
+            "durationTicks": 305,
+            "noteName": [
+              "E",
+              "E",
+            ],
+            "noteNameWithOctave": [
+              "E4",
+              "E4",
+            ],
+            "noteNumber": 64,
+            "startTicks": 305,
+            "uuid": "removed",
+          },
+          {
+            "durationTicks": 355,
+            "noteName": [
+              "C",
+              "C",
+            ],
+            "noteNameWithOctave": [
+              "C5",
+              "C5",
+            ],
+            "noteNumber": 72,
+            "startTicks": 357,
+            "uuid": "removed",
+          },
+          {
+            "durationTicks": 274,
+            "noteName": [
+              "A",
+              "A",
+            ],
+            "noteNameWithOctave": [
+              "A4",
+              "A4",
+            ],
+            "noteNumber": 69,
+            "startTicks": 372,
+            "uuid": "removed",
+          },
+          {
+            "durationTicks": 49,
+            "noteName": [
+              "D",
+              "D",
+            ],
+            "noteNameWithOctave": [
+              "D4",
+              "D4",
+            ],
+            "noteNumber": 62,
+            "startTicks": 428,
+            "uuid": "removed",
+          },
+          {
+            "durationTicks": 72,
+            "noteName": [
+              "G",
+              "G",
+            ],
+            "noteNameWithOctave": [
+              "G4",
+              "G4",
+            ],
+            "noteNumber": 67,
+            "startTicks": 449,
+            "uuid": "removed",
+          },
+          {
+            "durationTicks": 97,
+            "noteName": [
+              "B",
+              "B",
+            ],
+            "noteNameWithOctave": [
+              "B4",
+              "B4",
+            ],
+            "noteNumber": 71,
+            "startTicks": 465,
+            "uuid": "removed",
+          },
+        ],
         "startTicks": 0,
-        "uniqueNotes": [],
-        "unit": "beat",
-        "unitNumber": 0,
       },
       {
-        "chords": [],
-        "distribution": {
-          "ticks": {
-            "A": 302,
-            "B": 82,
-            "C": 232,
-            "D": 55,
-            "E": 130,
-            "G": 41,
+        "index": 1,
+        "notes": [
+          {
+            "durationTicks": 251,
+            "noteName": [
+              "A",
+              "A",
+            ],
+            "noteNameWithOctave": [
+              "A2",
+              "A2",
+            ],
+            "noteNumber": 45,
+            "startTicks": 253,
+            "uuid": "removed",
           },
-        },
-        "durationTicks": 480,
-        "notes": Set {
-          "A",
-          "E",
-          "C",
-          "G",
-          "B",
-          "D",
-        },
+          {
+            "durationTicks": 305,
+            "noteName": [
+              "E",
+              "E",
+            ],
+            "noteNameWithOctave": [
+              "E4",
+              "E4",
+            ],
+            "noteNumber": 64,
+            "startTicks": 305,
+            "uuid": "removed",
+          },
+          {
+            "durationTicks": 355,
+            "noteName": [
+              "C",
+              "C",
+            ],
+            "noteNameWithOctave": [
+              "C5",
+              "C5",
+            ],
+            "noteNumber": 72,
+            "startTicks": 357,
+            "uuid": "removed",
+          },
+          {
+            "durationTicks": 274,
+            "noteName": [
+              "A",
+              "A",
+            ],
+            "noteNameWithOctave": [
+              "A4",
+              "A4",
+            ],
+            "noteNumber": 69,
+            "startTicks": 372,
+            "uuid": "removed",
+          },
+          {
+            "durationTicks": 72,
+            "noteName": [
+              "G",
+              "G",
+            ],
+            "noteNameWithOctave": [
+              "G4",
+              "G4",
+            ],
+            "noteNumber": 67,
+            "startTicks": 449,
+            "uuid": "removed",
+          },
+          {
+            "durationTicks": 97,
+            "noteName": [
+              "B",
+              "B",
+            ],
+            "noteNameWithOctave": [
+              "B4",
+              "B4",
+            ],
+            "noteNumber": 71,
+            "startTicks": 465,
+            "uuid": "removed",
+          },
+          {
+            "durationTicks": 35,
+            "noteName": [
+              "A",
+              "A",
+            ],
+            "noteNameWithOctave": [
+              "A3",
+              "A3",
+            ],
+            "noteNumber": 57,
+            "startTicks": 519,
+            "uuid": "removed",
+          },
+          {
+            "durationTicks": 55,
+            "noteName": [
+              "D",
+              "D",
+            ],
+            "noteNameWithOctave": [
+              "D4",
+              "D4",
+            ],
+            "noteNumber": 62,
+            "startTicks": 657,
+            "uuid": "removed",
+          },
+          {
+            "durationTicks": 43,
+            "noteName": [
+              "A",
+              "A",
+            ],
+            "noteNameWithOctave": [
+              "A3",
+              "A3",
+            ],
+            "noteNumber": 57,
+            "startTicks": 753,
+            "uuid": "removed",
+          },
+          {
+            "durationTicks": 34,
+            "noteName": [
+              "A",
+              "A",
+            ],
+            "noteNameWithOctave": [
+              "A2",
+              "A2",
+            ],
+            "noteNumber": 45,
+            "startTicks": 873,
+            "uuid": "removed",
+          },
+        ],
         "startTicks": 480,
-        "uniqueNotes": [],
-        "unit": "beat",
-        "unitNumber": 1,
       },
       {
-        "chords": [],
-        "distribution": {
-          "ticks": {
-            "A": 159,
-            "C": 85,
-            "D": 19,
-            "E": 217,
-            "G": 137,
+        "index": 2,
+        "notes": [
+          {
+            "durationTicks": 128,
+            "noteName": [
+              "G",
+              "G",
+            ],
+            "noteNameWithOctave": [
+              "G4",
+              "G4",
+            ],
+            "noteNumber": 67,
+            "startTicks": 1085,
+            "uuid": "removed",
           },
-        },
-        "durationTicks": 480,
-        "notes": Set {
-          "G",
-          "E",
-          "A",
-          "C",
-          "D",
-        },
+          {
+            "durationTicks": 264,
+            "noteName": [
+              "E",
+              "E",
+            ],
+            "noteNameWithOctave": [
+              "E4",
+              "E4",
+            ],
+            "noteNumber": 64,
+            "startTicks": 1223,
+            "uuid": "removed",
+          },
+          {
+            "durationTicks": 38,
+            "noteName": [
+              "A",
+              "A",
+            ],
+            "noteNameWithOctave": [
+              "A3",
+              "A3",
+            ],
+            "noteNumber": 57,
+            "startTicks": 1228,
+            "uuid": "removed",
+          },
+          {
+            "durationTicks": 240,
+            "noteName": [
+              "A",
+              "A",
+            ],
+            "noteNameWithOctave": [
+              "A4",
+              "A4",
+            ],
+            "noteNumber": 69,
+            "startTicks": 1319,
+            "uuid": "removed",
+          },
+          {
+            "durationTicks": 395,
+            "noteName": [
+              "C",
+              "C",
+            ],
+            "noteNameWithOctave": [
+              "C5",
+              "C5",
+            ],
+            "noteNumber": 72,
+            "startTicks": 1355,
+            "uuid": "removed",
+          },
+          {
+            "durationTicks": 103,
+            "noteName": [
+              "D",
+              "D",
+            ],
+            "noteNameWithOctave": [
+              "D4",
+              "D4",
+            ],
+            "noteNumber": 62,
+            "startTicks": 1421,
+            "uuid": "removed",
+          },
+          {
+            "durationTicks": 113,
+            "noteName": [
+              "G",
+              "G",
+            ],
+            "noteNameWithOctave": [
+              "G4",
+              "G4",
+            ],
+            "noteNumber": 67,
+            "startTicks": 1431,
+            "uuid": "removed",
+          },
+        ],
         "startTicks": 960,
-        "uniqueNotes": [],
-        "unit": "beat",
-        "unitNumber": 2,
       },
       {
-        "chords": [],
-        "distribution": {
-          "ticks": {
-            "A": 197,
-            "B": 167,
-            "C": 310,
-            "D": 200,
-            "E": 47,
-            "G": 104,
+        "index": 3,
+        "notes": [
+          {
+            "durationTicks": 264,
+            "noteName": [
+              "E",
+              "E",
+            ],
+            "noteNameWithOctave": [
+              "E4",
+              "E4",
+            ],
+            "noteNumber": 64,
+            "startTicks": 1223,
+            "uuid": "removed",
           },
-        },
-        "durationTicks": 480,
-        "notes": Set {
-          "E",
-          "A",
-          "C",
-          "D",
-          "G",
-          "B",
-        },
+          {
+            "durationTicks": 240,
+            "noteName": [
+              "A",
+              "A",
+            ],
+            "noteNameWithOctave": [
+              "A4",
+              "A4",
+            ],
+            "noteNumber": 69,
+            "startTicks": 1319,
+            "uuid": "removed",
+          },
+          {
+            "durationTicks": 395,
+            "noteName": [
+              "C",
+              "C",
+            ],
+            "noteNameWithOctave": [
+              "C5",
+              "C5",
+            ],
+            "noteNumber": 72,
+            "startTicks": 1355,
+            "uuid": "removed",
+          },
+          {
+            "durationTicks": 103,
+            "noteName": [
+              "D",
+              "D",
+            ],
+            "noteNameWithOctave": [
+              "D4",
+              "D4",
+            ],
+            "noteNumber": 62,
+            "startTicks": 1421,
+            "uuid": "removed",
+          },
+          {
+            "durationTicks": 113,
+            "noteName": [
+              "G",
+              "G",
+            ],
+            "noteNameWithOctave": [
+              "G4",
+              "G4",
+            ],
+            "noteNumber": 67,
+            "startTicks": 1431,
+            "uuid": "removed",
+          },
+          {
+            "durationTicks": 167,
+            "noteName": [
+              "B",
+              "B",
+            ],
+            "noteNameWithOctave": [
+              "B4",
+              "B4",
+            ],
+            "noteNumber": 71,
+            "startTicks": 1479,
+            "uuid": "removed",
+          },
+          {
+            "durationTicks": 40,
+            "noteName": [
+              "A",
+              "A",
+            ],
+            "noteNameWithOctave": [
+              "A3",
+              "A3",
+            ],
+            "noteNumber": 57,
+            "startTicks": 1479,
+            "uuid": "removed",
+          },
+          {
+            "durationTicks": 83,
+            "noteName": [
+              "D",
+              "D",
+            ],
+            "noteNameWithOctave": [
+              "D4",
+              "D4",
+            ],
+            "noteNumber": 62,
+            "startTicks": 1644,
+            "uuid": "removed",
+          },
+          {
+            "durationTicks": 38,
+            "noteName": [
+              "A",
+              "A",
+            ],
+            "noteNameWithOctave": [
+              "A3",
+              "A3",
+            ],
+            "noteNumber": 57,
+            "startTicks": 1722,
+            "uuid": "removed",
+          },
+          {
+            "durationTicks": 33,
+            "noteName": [
+              "D",
+              "D",
+            ],
+            "noteNameWithOctave": [
+              "D3",
+              "D3",
+            ],
+            "noteNumber": 50,
+            "startTicks": 1837,
+            "uuid": "removed",
+          },
+        ],
         "startTicks": 1440,
-        "uniqueNotes": [],
-        "unit": "beat",
-        "unitNumber": 3,
       },
       {
-        "chords": [],
-        "distribution": {
-          "ticks": {
-            "E": 3,
+        "index": 4,
+        "notes": [
+          {
+            "durationTicks": 3,
+            "noteName": [
+              "E",
+              "E",
+            ],
+            "noteNameWithOctave": [
+              "E4",
+              "E4",
+            ],
+            "noteNumber": 64,
+            "startTicks": 1920,
+            "uuid": "removed",
           },
-        },
-        "durationTicks": 480,
-        "notes": Set {
-          "E",
-        },
+        ],
         "startTicks": 1920,
-        "uniqueNotes": [],
-        "unit": "beat",
-        "unitNumber": 4,
       },
     ],
-    "ticksPerChordRange": 480,
-    "unit": "beat",
-  },
-  "notes": {
     "duration": {
       "A": 1027,
       "B": 264,
@@ -144,6 +569,7 @@ exports[`analyze() 1`] = `
       "E": 3,
       "G": 4,
     },
+    "map": {},
     "presence": {
       "A": 1,
       "B": 0.2438918433076174,
@@ -153,200 +579,28 @@ exports[`analyze() 1`] = `
       "G": 0.41138491498764135,
     },
   },
-  "scales": [
+  "scales": [],
+  "timeSignatures": [
     {
-      "aliases": [
-        "minor",
-      ],
-      "chroma": "101101011010",
-      "empty": false,
-      "intervals": [
-        "1P",
-        "2M",
-        "3m",
-        "4P",
-        "5P",
-        "6m",
-        "7m",
-      ],
-      "name": "A aeolian",
-      "normalized": "101010110101",
-      "notes": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-      ],
-      "setNum": 2906,
-      "tonic": "A",
-      "type": "aeolian",
-    },
-    {
-      "aliases": [],
-      "chroma": "101101010110",
-      "empty": false,
-      "intervals": [
-        "1P",
-        "2M",
-        "3m",
-        "4P",
-        "5P",
-        "6M",
-        "7m",
-      ],
-      "name": "A dorian",
-      "normalized": "101010110101",
-      "notes": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F#",
-        "G",
-      ],
-      "setNum": 2902,
-      "tonic": "A",
-      "type": "dorian",
-    },
-    {
-      "aliases": [],
-      "chroma": "101111010110",
-      "empty": false,
-      "intervals": [
-        "1P",
-        "2M",
-        "3m",
-        "3M",
-        "4P",
-        "5P",
-        "6M",
-        "7m",
-      ],
-      "name": "A bebop minor",
-      "normalized": "101011010111",
-      "notes": [
-        "A",
-        "B",
-        "C",
-        "C#",
-        "D",
-        "E",
-        "F#",
-        "G",
-      ],
-      "setNum": 3030,
-      "tonic": "A",
-      "type": "bebop minor",
-    },
-    {
-      "aliases": [],
-      "chroma": "101101011011",
-      "empty": false,
-      "intervals": [
-        "1P",
-        "2M",
-        "3m",
-        "4P",
-        "5P",
-        "6m",
-        "7m",
-        "7M",
-      ],
-      "name": "A minor bebop",
-      "normalized": "101011011101",
-      "notes": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "G#",
-      ],
-      "setNum": 2907,
-      "tonic": "A",
-      "type": "minor bebop",
-    },
-    {
-      "aliases": [],
-      "chroma": "101111110110",
-      "empty": false,
-      "intervals": [
-        "1P",
-        "2M",
-        "3m",
-        "3M",
-        "4P",
-        "5d",
-        "5P",
-        "6M",
-        "7m",
-      ],
-      "name": "A composite blues",
-      "normalized": "101011111101",
-      "notes": [
-        "A",
-        "B",
-        "C",
-        "C#",
-        "D",
-        "Eb",
-        "E",
-        "F#",
-        "G",
-      ],
-      "setNum": 3062,
-      "tonic": "A",
-      "type": "composite blues",
-    },
-    {
-      "aliases": [],
-      "chroma": "111111111111",
-      "empty": false,
-      "intervals": [
-        "1P",
-        "2m",
-        "2M",
-        "3m",
-        "3M",
-        "4P",
-        "5d",
-        "5P",
-        "6m",
-        "6M",
-        "7m",
-        "7M",
-      ],
-      "name": "A chromatic",
-      "normalized": "111111111111",
-      "notes": [
-        "A",
-        "Bb",
-        "B",
-        "C",
-        "C#",
-        "D",
-        "Eb",
-        "E",
-        "F",
-        "F#",
-        "G",
-        "G#",
-      ],
-      "setNum": 4095,
-      "tonic": "A",
-      "type": "chromatic",
+      "beatsInSignature": 4,
+      "denominator": 4,
+      "numerator": 4,
+      "startBeat": 0,
+      "startTicks": 0,
     },
   ],
+  "timings": {
+    "durationTicks": 1920,
+    "microsecondsPerBeat": 517241,
+    "ticksPerBeat": 480,
+    "totalBeats": 4,
+  },
 }
 `;
 
-exports[`analyzeScale() 1`] = `
+exports[`chord detection 1`] = `[]`;
+
+exports[`detectScales() 1`] = `
 [
   {
     "aliases": [
@@ -539,209 +793,22 @@ exports[`analyzeScale() 1`] = `
 ]
 `;
 
-exports[`chord detection 1`] = `
-[
-  {
-    "chordNotes": Set {
-      "G",
-      "A",
-      "E",
-      "C",
-      "D",
-    },
-    "chords": [
-      "C6/9/G",
-      "D11/G",
-      "D9sus4/G",
-      "Am7add11/G",
-    ],
-    "distribution": {
-      "ticks": {
-        "A": 369,
-        "B": 15,
-        "C": 123,
-        "D": 49,
-        "E": 175,
-        "G": 144,
-      },
-      "time": {
-        "A": 0.76875,
-        "B": 0.03125,
-        "C": 0.25625,
-        "D": 0.10208333333333333,
-        "E": 0.3645833333333333,
-        "G": 0.3,
-      },
-    },
-    "durationTicks": 480,
-    "notes": Set {
-      "G",
-      "A",
-      "E",
-      "C",
-      "D",
-      "B",
-    },
-    "startTicks": 0,
-    "uniqueNotes": [],
-    "unit": "beat",
-    "unitNumber": 0,
-  },
-  {
-    "chordNotes": Set {
-      "A",
-      "E",
-      "C",
-      "B",
-      "D",
-    },
-    "chords": [],
-    "distribution": {
-      "ticks": {
-        "A": 302,
-        "B": 82,
-        "C": 232,
-        "D": 55,
-        "E": 130,
-        "G": 41,
-      },
-      "time": {
-        "A": 0.6291666666666667,
-        "B": 0.17083333333333334,
-        "C": 0.48333333333333334,
-        "D": 0.11458333333333333,
-        "E": 0.2708333333333333,
-        "G": 0.08541666666666667,
-      },
-    },
-    "durationTicks": 480,
-    "notes": Set {
-      "A",
-      "E",
-      "C",
-      "G",
-      "B",
-      "D",
-    },
-    "startTicks": 480,
-    "uniqueNotes": [],
-    "unit": "beat",
-    "unitNumber": 1,
-  },
-  {
-    "chordNotes": Set {
-      "G",
-      "E",
-      "A",
-      "C",
-    },
-    "chords": [
-      "C6/G",
-      "Am7/G",
-    ],
-    "distribution": {
-      "ticks": {
-        "A": 159,
-        "C": 85,
-        "D": 19,
-        "E": 217,
-        "G": 137,
-      },
-      "time": {
-        "A": 0.33125,
-        "C": 0.17708333333333334,
-        "D": 0.03958333333333333,
-        "E": 0.45208333333333334,
-        "G": 0.28541666666666665,
-      },
-    },
-    "durationTicks": 480,
-    "notes": Set {
-      "G",
-      "E",
-      "A",
-      "C",
-      "D",
-    },
-    "startTicks": 960,
-    "uniqueNotes": [],
-    "unit": "beat",
-    "unitNumber": 2,
-  },
-  {
-    "chordNotes": Set {
-      "A",
-      "C",
-      "D",
-      "G",
-      "B",
-    },
-    "chords": [],
-    "distribution": {
-      "ticks": {
-        "A": 197,
-        "B": 167,
-        "C": 310,
-        "D": 200,
-        "E": 47,
-        "G": 104,
-      },
-      "time": {
-        "A": 0.41041666666666665,
-        "B": 0.34791666666666665,
-        "C": 0.6458333333333334,
-        "D": 0.4166666666666667,
-        "E": 0.09791666666666667,
-        "G": 0.21666666666666667,
-      },
-    },
-    "durationTicks": 480,
-    "notes": Set {
-      "E",
-      "A",
-      "C",
-      "D",
-      "G",
-      "B",
-    },
-    "startTicks": 1440,
-    "uniqueNotes": [],
-    "unit": "beat",
-    "unitNumber": 3,
-  },
-  {
-    "chordNotes": Set {},
-    "chords": [],
-    "distribution": {
-      "ticks": {
-        "E": 3,
-      },
-      "time": {
-        "E": 0.00625,
-      },
-    },
-    "durationTicks": 480,
-    "notes": Set {
-      "E",
-    },
-    "startTicks": 1920,
-    "uniqueNotes": [],
-    "unit": "beat",
-    "unitNumber": 4,
-  },
-]
-`;
-
 exports[`parseMidi() should parse to a known format 1`] = `
 {
-  "timeSignature": {
-    "denominator": 4,
-    "numerator": 4,
-  },
+  "timeSignatures": [
+    {
+      "beatsInSignature": 1,
+      "denominator": 4,
+      "numerator": 4,
+      "startBeat": 0,
+      "startTicks": 0,
+    },
+  ],
   "timings": {
     "durationTicks": 479,
     "microsecondsPerBeat": 517241,
     "ticksPerBeat": 480,
+    "totalBeats": 1,
   },
   "tracks": [
     {

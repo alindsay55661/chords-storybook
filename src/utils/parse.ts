@@ -4,7 +4,7 @@ import { buildMidiPart } from './adapters/midi-file-adapter'
 
 export type MidiPart = {
   timings: Timings
-  timeSignature: TimeSignature
+  timeSignatures: TimeSignature[]
   tracks: Track[]
 }
 
@@ -12,9 +12,13 @@ export type Timings = {
   durationTicks: number
   ticksPerBeat: number
   microsecondsPerBeat: number
+  totalBeats: number
 }
 
 export type TimeSignature = {
+  startTicks: number
+  startBeat: number
+  beatsInSignature: number
   numerator: number
   denominator: number
 }
