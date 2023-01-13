@@ -1,7 +1,6 @@
 import { expect, test } from 'vitest'
-import { readFileSync, writeFileSync } from 'node:fs'
+import { readFileSync } from 'node:fs'
 import { parseMidi, buildNote, Note, TimeSignature } from '../utils/parse'
-import { midiBufferToJson } from '../utils/adapters/midi-file-adapter'
 import { analyze } from '../utils/analyze'
 import { detectScales } from '../utils/scales'
 import { detectChords, updateDistribution, ChordRange } from '../utils/chords'
@@ -187,40 +186,4 @@ test('updateDistribution()', () => {
     ticks: { A: 20, B: 30, C: 20 },
     time: { A: 0.2, B: 0.3, C: 0.2 },
   })
-})
-
-test('save parsed midi files to disk', () => {
-  function writeParsed(midiFile: string) {
-    const inputPath = `${__dirname}/midi/`
-    const outputPath = `${__dirname}/midi/`
-    const data = readFileSync(inputPath + midiFile)
-    const parsed = parseMidi(data)
-
-    writeFileSync(
-      outputPath + midiFile + '.json',
-      JSON.stringify(parsed, null, 2),
-    )
-  }
-
-  const files = [
-    '2bar.mid',
-    'beat.mid',
-    'blackbird.mid',
-    'ghostbusters.mid',
-    'groove.mid',
-    'sample.mid',
-    'takefivedavebrubeck.mid',
-  ]
-
-  files.forEach(writeParsed)
-})
-
-test.skip('2 bar', () => {
-  const data = readFileSync(`${__dirname}/midi/2bar.mid`)
-  const json = midiBufferToJson(data)
-  writeFileSync(
-    `${__dirname}/midi/2bar.mid.RAW.json`,
-    JSON.stringify(json, null, 2),
-  )
-  const parsed = parseMidi(data)
 })

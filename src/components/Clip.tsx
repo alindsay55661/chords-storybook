@@ -7,11 +7,12 @@ type ClipNote = Pick<
 export type ClipProps = {
   startTicks: number
   durationTicks: number
+  notes: Note[]
   lowestNote?: number
   highestNote?: number
-  notes?: Note[]
   name?: string
   onNoteClick?: (note: Note) => void
+  className?: string
 }
 
 export default function Clip({
@@ -22,20 +23,24 @@ export default function Clip({
   highestNote = 127,
   name = 'clip',
   onNoteClick,
+  className,
 }: ClipProps) {
   const height = highestNote - lowestNote + 1
 
   function handleNotesClick(e: any) {
-    console.log(e)
     const id = e.target.dataset.noteid
     if (id && onNoteClick)
       onNoteClick(notes.find(note => note.uuid === id) as Note)
   }
 
   return (
-    <div className="clip bg-sky-800 rounded border-2 border-sky-600">
-      <div className="clip-title bg-sky-600 py-0.5 px-1 text-white">{name}</div>
-      <div className="clip-notes h-36 py-4">
+    <div
+      className={`clip bg-sky-800 rounded border-2 border-sky-600 flex flex-col ${className} h-full`}
+    >
+      <div className="clip-title bg-sky-600 py-0.5 px-1 text-white flex-shrink-0">
+        {name}
+      </div>
+      <div className="clip-notes py-4 flex-grow">
         <svg
           viewBox={`${startTicks} 0 ${durationTicks} ${height}`}
           preserveAspectRatio="none"
@@ -47,12 +52,14 @@ export default function Clip({
             return (
               <rect
                 data-noteid={note.uuid}
+                data-testid={note.uuid}
                 key={note.uuid}
                 width={note.durationTicks}
                 height="1"
                 fill="hsla(0, 100%, 100%, 0.7)"
                 x={note.startTicks}
                 y={highestNote - note.noteNumber}
+                className="hover:outline-4 hover:outline-sky-900 hover:fill-slate-100 hover:drop-shadow"
               />
             )
           })}
