@@ -5,6 +5,7 @@ import { analyzed } from './stories/musicData'
 
 function App() {
   const [zoom, setZoom] = useState(10)
+  const { timings, timeSignatures, tracks } = analyzed.takeFive
 
   return (
     <div>
@@ -19,8 +20,9 @@ function App() {
         }}
       ></input>
       <MidiTracks
-        tracks={analyzed.takeFive.tracks}
-        timings={analyzed.takeFive.timings}
+        tracks={tracks}
+        timings={timings}
+        timeSignatures={timeSignatures}
         zoom={zoom}
         trackHeight={64}
       />

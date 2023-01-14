@@ -1,12 +1,14 @@
 import { useMemo, useRef, useEffect, memo } from 'react'
-import { Timings, Track } from '../utils/parse'
+import { Timings, TimeSignature, Track } from '../utils/parse'
 import TrackHeader from './TrackHeader'
 import Clip from './Clip'
 import BeatLines from './BeatLines'
+import TimeSignatureMarkers from './TimeSignatureMarkers'
 
 export type MidiTracksProps = {
   tracks: Track[]
   timings: Timings
+  timeSignatures: TimeSignature[]
   zoom?: number
   trackHeight?: number
 }
@@ -16,6 +18,7 @@ export default function MidiTracks({
   zoom = 50,
   tracks = [],
   timings,
+  timeSignatures,
 }: MidiTracksProps) {
   const height = tracks.length * trackHeight
   const trackWidth = timings.totalBeats * zoom
@@ -29,7 +32,7 @@ export default function MidiTracks({
         <div
           key={`header-${track.id}`}
           className="absolute z-10"
-          style={{ top: trackHeight * idx }}
+          style={{ top: trackHeight * idx + 100 }}
         >
           <TrackHeader
             height={trackHeight}
@@ -38,14 +41,21 @@ export default function MidiTracks({
         </div>
       ))}
 
-      <div className="pl-[82px] w-full overflow-x-scroll relative">
+      <div className="pl-[82px] w-full overflow-x-scroll overflow-y-hidden relative">
+        <div style={{ height: '100px' }}>
+          <TimeSignatureMarkers
+            timings={timings}
+            timeSignatures={timeSignatures}
+            width={trackWidth}
+          />
+        </div>
         <div className="absolute z-0 h-full">
           <BeatLines
             timings={timings}
             width={`${trackWidth}px`}
           />
         </div>
-        {tracks.map((track, idx) => {
+        {tracks.map(track => {
           return (
             <div key={`track-${track.id}`}>
               <div
