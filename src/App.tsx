@@ -19,8 +19,8 @@ function App() {
         }}
       ></input>
       <MidiTracks
-        tracks={analyzed.ghostBusters.tracks}
-        timings={analyzed.ghostBusters.timings}
+        tracks={analyzed.takeFive.tracks}
+        timings={analyzed.takeFive.timings}
         zoom={zoom}
         trackHeight={64}
       />
