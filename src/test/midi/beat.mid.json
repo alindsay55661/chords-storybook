@@ -16,9 +16,10 @@
   ],
   "tracks": [
     {
+      "id": "195d046f-1256-46bd-a6c3-532880178a2f",
       "notes": [
         {
-          "uuid": "39d0f879-a533-4168-bb4b-fe70e0d9f612",
+          "id": "1b07ee85-0a7d-4a06-9561-38ca3c210769",
           "startTicks": 4,
           "durationTicks": 35,
           "noteNumber": 57,
@@ -32,7 +33,7 @@
           ]
         },
         {
-          "uuid": "93f8a122-a083-4281-bbdf-11e91b81d2ce",
+          "id": "b00540f2-9fdd-4bf2-b854-baefd0889af2",
           "startTicks": 122,
           "durationTicks": 55,
           "noteNumber": 62,
@@ -46,7 +47,7 @@
           ]
         },
         {
-          "uuid": "3bd6a2df-db54-4be1-94fb-2ee548adf3b2",
+          "id": "e364bddc-3009-4749-bfa1-a6141f68d625",
           "startTicks": 230,
           "durationTicks": 43,
           "noteNumber": 58,
@@ -60,7 +61,7 @@
           ]
         },
         {
-          "uuid": "03149261-9f06-4248-8410-325a569c1d6d",
+          "id": "3a52bf93-192a-449d-bcd5-c06069723fb3",
           "startTicks": 359,
           "durationTicks": 34,
           "noteNumber": 45,
@@ -74,7 +75,7 @@
           ]
         },
         {
-          "uuid": "7b977ac8-4f7e-4341-a223-eddb2e1ef5b5",
+          "id": "a51f0a66-ec95-4057-abd9-fbe6e265f83f",
           "startTicks": 461,
           "durationTicks": 18,
           "noteNumber": 67,

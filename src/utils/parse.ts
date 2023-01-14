@@ -24,6 +24,7 @@ export type TimeSignature = {
 }
 
 export type Track = {
+  id: string
   notes: Note[]
   lowestNote?: number
   highestNote?: number
@@ -39,7 +40,7 @@ export type Beat = {
 }
 
 export type Note = {
-  uuid: string
+  id: string
   startTicks: number
   durationTicks: number
   noteNumber: number
@@ -61,7 +62,7 @@ export function buildNote(
   if (!durationTicks) return false
 
   return {
-    uuid: uuid(),
+    id: uuid(),
     startTicks: note.startTicks,
     durationTicks,
     noteNumber: note.noteNumber,

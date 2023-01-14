@@ -9,6 +9,7 @@ exports[`analyze() 1`] = `
         "notes": [
           {
             "durationTicks": 113,
+            "id": "removed",
             "noteName": [
               "G",
               "G",
@@ -19,10 +20,10 @@ exports[`analyze() 1`] = `
             ],
             "noteNumber": 67,
             "startTicks": 0,
-            "uuid": "removed",
           },
           {
             "durationTicks": 251,
+            "id": "removed",
             "noteName": [
               "A",
               "A",
@@ -33,10 +34,10 @@ exports[`analyze() 1`] = `
             ],
             "noteNumber": 45,
             "startTicks": 2,
-            "uuid": "removed",
           },
           {
             "durationTicks": 34,
+            "id": "removed",
             "noteName": [
               "A",
               "A",
@@ -47,10 +48,10 @@ exports[`analyze() 1`] = `
             ],
             "noteNumber": 57,
             "startTicks": 253,
-            "uuid": "removed",
           },
           {
             "durationTicks": 305,
+            "id": "removed",
             "noteName": [
               "E",
               "E",
@@ -61,10 +62,10 @@ exports[`analyze() 1`] = `
             ],
             "noteNumber": 64,
             "startTicks": 0,
-            "uuid": "removed",
           },
           {
             "durationTicks": 355,
+            "id": "removed",
             "noteName": [
               "C",
               "C",
@@ -75,10 +76,10 @@ exports[`analyze() 1`] = `
             ],
             "noteNumber": 72,
             "startTicks": 2,
-            "uuid": "removed",
           },
           {
             "durationTicks": 274,
+            "id": "removed",
             "noteName": [
               "A",
               "A",
@@ -89,10 +90,10 @@ exports[`analyze() 1`] = `
             ],
             "noteNumber": 69,
             "startTicks": 98,
-            "uuid": "removed",
           },
           {
             "durationTicks": 49,
+            "id": "removed",
             "noteName": [
               "D",
               "D",
@@ -103,10 +104,10 @@ exports[`analyze() 1`] = `
             ],
             "noteNumber": 62,
             "startTicks": 379,
-            "uuid": "removed",
           },
           {
             "durationTicks": 72,
+            "id": "removed",
             "noteName": [
               "G",
               "G",
@@ -117,10 +118,10 @@ exports[`analyze() 1`] = `
             ],
             "noteNumber": 67,
             "startTicks": 377,
-            "uuid": "removed",
           },
           {
             "durationTicks": 97,
+            "id": "removed",
             "noteName": [
               "B",
               "B",
@@ -131,7 +132,6 @@ exports[`analyze() 1`] = `
             ],
             "noteNumber": 71,
             "startTicks": 368,
-            "uuid": "removed",
           },
         ],
         "startTicks": 0,
@@ -141,6 +141,7 @@ exports[`analyze() 1`] = `
         "notes": [
           {
             "durationTicks": 35,
+            "id": "removed",
             "noteName": [
               "A",
               "A",
@@ -151,10 +152,10 @@ exports[`analyze() 1`] = `
             ],
             "noteNumber": 57,
             "startTicks": 484,
-            "uuid": "removed",
           },
           {
             "durationTicks": 55,
+            "id": "removed",
             "noteName": [
               "D",
               "D",
@@ -165,10 +166,10 @@ exports[`analyze() 1`] = `
             ],
             "noteNumber": 62,
             "startTicks": 602,
-            "uuid": "removed",
           },
           {
             "durationTicks": 43,
+            "id": "removed",
             "noteName": [
               "A",
               "A",
@@ -179,10 +180,10 @@ exports[`analyze() 1`] = `
             ],
             "noteNumber": 57,
             "startTicks": 710,
-            "uuid": "removed",
           },
           {
             "durationTicks": 34,
+            "id": "removed",
             "noteName": [
               "A",
               "A",
@@ -193,10 +194,10 @@ exports[`analyze() 1`] = `
             ],
             "noteNumber": 45,
             "startTicks": 839,
-            "uuid": "removed",
           },
           {
             "durationTicks": 128,
+            "id": "removed",
             "noteName": [
               "G",
               "G",
@@ -207,10 +208,10 @@ exports[`analyze() 1`] = `
             ],
             "noteNumber": 67,
             "startTicks": 957,
-            "uuid": "removed",
           },
           {
             "durationTicks": 264,
+            "id": "removed",
             "noteName": [
               "E",
               "E",
@@ -221,7 +222,6 @@ exports[`analyze() 1`] = `
             ],
             "noteNumber": 64,
             "startTicks": 959,
-            "uuid": "removed",
           },
         ],
         "startTicks": 480,
@@ -231,6 +231,7 @@ exports[`analyze() 1`] = `
         "notes": [
           {
             "durationTicks": 128,
+            "id": "removed",
             "noteName": [
               "G",
               "G",
@@ -241,10 +242,10 @@ exports[`analyze() 1`] = `
             ],
             "noteNumber": 67,
             "startTicks": 957,
-            "uuid": "removed",
           },
           {
             "durationTicks": 264,
+            "id": "removed",
             "noteName": [
               "E",
               "E",
@@ -255,10 +256,10 @@ exports[`analyze() 1`] = `
             ],
             "noteNumber": 64,
             "startTicks": 959,
-            "uuid": "removed",
           },
           {
             "durationTicks": 38,
+            "id": "removed",
             "noteName": [
               "A",
               "A",
@@ -269,10 +270,10 @@ exports[`analyze() 1`] = `
             ],
             "noteNumber": 57,
             "startTicks": 1190,
-            "uuid": "removed",
           },
           {
             "durationTicks": 240,
+            "id": "removed",
             "noteName": [
               "A",
               "A",
@@ -283,10 +284,10 @@ exports[`analyze() 1`] = `
             ],
             "noteNumber": 69,
             "startTicks": 1079,
-            "uuid": "removed",
           },
           {
             "durationTicks": 395,
+            "id": "removed",
             "noteName": [
               "C",
               "C",
@@ -297,10 +298,10 @@ exports[`analyze() 1`] = `
             ],
             "noteNumber": 72,
             "startTicks": 960,
-            "uuid": "removed",
           },
           {
             "durationTicks": 103,
+            "id": "removed",
             "noteName": [
               "D",
               "D",
@@ -311,10 +312,10 @@ exports[`analyze() 1`] = `
             ],
             "noteNumber": 62,
             "startTicks": 1318,
-            "uuid": "removed",
           },
           {
             "durationTicks": 113,
+            "id": "removed",
             "noteName": [
               "G",
               "G",
@@ -325,10 +326,10 @@ exports[`analyze() 1`] = `
             ],
             "noteNumber": 67,
             "startTicks": 1318,
-            "uuid": "removed",
           },
           {
             "durationTicks": 167,
+            "id": "removed",
             "noteName": [
               "B",
               "B",
@@ -339,10 +340,10 @@ exports[`analyze() 1`] = `
             ],
             "noteNumber": 71,
             "startTicks": 1312,
-            "uuid": "removed",
           },
           {
             "durationTicks": 40,
+            "id": "removed",
             "noteName": [
               "A",
               "A",
@@ -353,7 +354,6 @@ exports[`analyze() 1`] = `
             ],
             "noteNumber": 57,
             "startTicks": 1439,
-            "uuid": "removed",
           },
         ],
         "startTicks": 960,
@@ -363,6 +363,7 @@ exports[`analyze() 1`] = `
         "notes": [
           {
             "durationTicks": 167,
+            "id": "removed",
             "noteName": [
               "B",
               "B",
@@ -373,10 +374,10 @@ exports[`analyze() 1`] = `
             ],
             "noteNumber": 71,
             "startTicks": 1312,
-            "uuid": "removed",
           },
           {
             "durationTicks": 40,
+            "id": "removed",
             "noteName": [
               "A",
               "A",
@@ -387,10 +388,10 @@ exports[`analyze() 1`] = `
             ],
             "noteNumber": 57,
             "startTicks": 1439,
-            "uuid": "removed",
           },
           {
             "durationTicks": 83,
+            "id": "removed",
             "noteName": [
               "D",
               "D",
@@ -401,10 +402,10 @@ exports[`analyze() 1`] = `
             ],
             "noteNumber": 62,
             "startTicks": 1561,
-            "uuid": "removed",
           },
           {
             "durationTicks": 38,
+            "id": "removed",
             "noteName": [
               "A",
               "A",
@@ -415,10 +416,10 @@ exports[`analyze() 1`] = `
             ],
             "noteNumber": 57,
             "startTicks": 1684,
-            "uuid": "removed",
           },
           {
             "durationTicks": 33,
+            "id": "removed",
             "noteName": [
               "D",
               "D",
@@ -429,10 +430,10 @@ exports[`analyze() 1`] = `
             ],
             "noteNumber": 50,
             "startTicks": 1804,
-            "uuid": "removed",
           },
           {
             "durationTicks": 3,
+            "id": "removed",
             "noteName": [
               "E",
               "E",
@@ -443,7 +444,6 @@ exports[`analyze() 1`] = `
             ],
             "noteNumber": 64,
             "startTicks": 1917,
-            "uuid": "removed",
           },
         ],
         "startTicks": 1440,
@@ -453,6 +453,7 @@ exports[`analyze() 1`] = `
         "notes": [
           {
             "durationTicks": 3,
+            "id": "removed",
             "noteName": [
               "E",
               "E",
@@ -463,7 +464,6 @@ exports[`analyze() 1`] = `
             ],
             "noteNumber": 64,
             "startTicks": 1917,
-            "uuid": "removed",
           },
         ],
         "startTicks": 1920,
@@ -806,11 +806,13 @@ exports[`parseMidi() should parse to a known format 1`] = `
     {
       "durationTicks": 479,
       "highestNote": 67,
+      "id": "removed",
       "lowestNote": 45,
       "name": "Pianoteq",
       "notes": [
         {
           "durationTicks": 35,
+          "id": "removed",
           "noteName": [
             "A",
             "A",
@@ -821,10 +823,10 @@ exports[`parseMidi() should parse to a known format 1`] = `
           ],
           "noteNumber": 57,
           "startTicks": 4,
-          "uuid": "removed",
         },
         {
           "durationTicks": 55,
+          "id": "removed",
           "noteName": [
             "D",
             "D",
@@ -835,10 +837,10 @@ exports[`parseMidi() should parse to a known format 1`] = `
           ],
           "noteNumber": 62,
           "startTicks": 122,
-          "uuid": "removed",
         },
         {
           "durationTicks": 43,
+          "id": "removed",
           "noteName": [
             "Bb",
             "A#",
@@ -849,10 +851,10 @@ exports[`parseMidi() should parse to a known format 1`] = `
           ],
           "noteNumber": 58,
           "startTicks": 230,
-          "uuid": "removed",
         },
         {
           "durationTicks": 34,
+          "id": "removed",
           "noteName": [
             "A",
             "A",
@@ -863,10 +865,10 @@ exports[`parseMidi() should parse to a known format 1`] = `
           ],
           "noteNumber": 45,
           "startTicks": 359,
-          "uuid": "removed",
         },
         {
           "durationTicks": 18,
+          "id": "removed",
           "noteName": [
             "G",
             "G",
@@ -877,7 +879,6 @@ exports[`parseMidi() should parse to a known format 1`] = `
           ],
           "noteNumber": 67,
           "startTicks": 461,
-          "uuid": "removed",
         },
       ],
     },

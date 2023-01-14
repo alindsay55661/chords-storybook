@@ -6,6 +6,7 @@ import {
   Note,
   GMPatchNames,
 } from '../parse'
+import { v4 as uuid } from 'uuid'
 import mf from 'midi-file'
 
 // Constants based on midi-file parsing
@@ -118,6 +119,7 @@ function processTrack(noteEvents: mf.MidiEvent[]): Track {
     highestNote: number | undefined
   }> = {}
   const track: Track = {
+    id: uuid(),
     notes: [],
     durationTicks: 0,
   }
@@ -179,8 +181,6 @@ function processNote(
 
   const { noteNumber, startTicks } = notesOn[number]
   const note = buildNote({ noteNumber, startTicks }, currentTicks)
-  // console.log('--------Process Note------------------------------')
-  // console.log(note)
   if (note) notes.push(note)
   delete notesOn[number]
 

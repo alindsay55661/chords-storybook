@@ -1,7 +1,31 @@
+import { useState } from 'react'
 import './App.css'
+import MidiTracks from './components/MidiTracks'
+import { analyzed } from './stories/musicData'
 
 function App() {
-  return <h1 className="text-sky-700">Chord Recognition</h1>
+  const [zoom, setZoom] = useState(10)
+
+  return (
+    <div>
+      <h1>Perf test</h1>
+      <input
+        type="range"
+        min="1"
+        max="100"
+        value={zoom}
+        onChange={e => {
+          setZoom(Number(e.target.value))
+        }}
+      ></input>
+      <MidiTracks
+        tracks={analyzed.ghostBusters.tracks}
+        timings={analyzed.ghostBusters.timings}
+        zoom={zoom}
+        trackHeight={64}
+      />
+    </div>
+  )
 }
 
 export default App

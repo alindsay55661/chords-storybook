@@ -10,9 +10,9 @@ function removeUuids(data: any, type: string) {
     case 'tracks': {
       const cleaned = data.tracks.map((track: any) => {
         track.notes = track.notes.map((note: any) => {
-          return { ...note, uuid: 'removed' }
+          return { ...note, id: 'removed' }
         })
-        return track
+        return { ...track, id: 'removed' }
       })
       data.tracks = cleaned
       break
@@ -21,7 +21,7 @@ function removeUuids(data: any, type: string) {
     case 'stats': {
       const cleaned = data.notes.byBeat.map((beat: any) => {
         beat.notes = beat.notes.map((note: any) => {
-          return { ...note, uuid: 'removed' }
+          return { ...note, id: 'removed' }
         })
         return beat
       })

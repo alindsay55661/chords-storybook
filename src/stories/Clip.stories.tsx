@@ -2,17 +2,13 @@ import type { Meta, StoryObj } from '@storybook/react'
 import { userEvent, within } from '@storybook/testing-library'
 import { expect } from '@storybook/jest'
 import { useState } from 'react'
-
+import { analyzed } from './musicData'
 import Clip from '../components/Clip'
-import * as data from '../test/midi/2bar.mid.json'
-import { analyze } from '../utils/analyze'
-
-const analyzed = analyze(data)
 
 const meta: Meta<typeof Clip> = {
   title: 'Clip',
   args: {
-    ...analyzed.tracks[0],
+    ...analyzed.twoBar.tracks[0],
   },
   component: Clip,
   decorators: [
@@ -57,11 +53,11 @@ export const Sample: Story = {
   play: async ({ args, canvasElement, step }) => {
     const canvas = within(canvasElement)
     const note = args.notes[0]
-    const noteEl = canvas.getByTestId(note.uuid)
+    const noteEl = canvas.getByTestId(note.id)
 
     await step('Ensure the note is returned onClick', async () => {
       await userEvent.click(noteEl)
-      expect(canvas.getByTestId('output')).toHaveTextContent(note.uuid)
+      expect(canvas.getByTestId('output')).toHaveTextContent(note.id)
     })
   },
 }

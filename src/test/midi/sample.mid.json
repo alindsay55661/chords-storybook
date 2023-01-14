@@ -16,9 +16,10 @@
   ],
   "tracks": [
     {
+      "id": "fa3221af-fcf6-4ea8-b3d6-744ed6adf7df",
       "notes": [
         {
-          "uuid": "33b5e641-1c57-4b64-adee-d9bddd9f50fd",
+          "id": "3128d623-8e2b-47a7-9e89-abbab47254bc",
           "startTicks": 0,
           "durationTicks": 113,
           "noteNumber": 67,
@@ -32,7 +33,7 @@
           ]
         },
         {
-          "uuid": "a25b79b9-0cc7-4345-ae59-e9761d779ae9",
+          "id": "1c1857c4-4a34-4dde-85cf-3f1f9acdc5d7",
           "startTicks": 2,
           "durationTicks": 251,
           "noteNumber": 45,
@@ -46,7 +47,7 @@
           ]
         },
         {
-          "uuid": "1f0dda63-a6ae-4a80-a5c7-cc8615047bea",
+          "id": "092044bf-55ce-464a-8c71-1d941b51e292",
           "startTicks": 253,
           "durationTicks": 34,
           "noteNumber": 57,
@@ -60,7 +61,7 @@
           ]
         },
         {
-          "uuid": "a36066a7-8b85-4d75-a5a2-ec4d581e7c9a",
+          "id": "603b95df-7176-41fe-8115-10519cc535a8",
           "startTicks": 0,
           "durationTicks": 305,
           "noteNumber": 64,
@@ -74,7 +75,7 @@
           ]
         },
         {
-          "uuid": "0cd4378a-e574-4697-9d66-bd5801c95871",
+          "id": "df3d9a6d-b1b0-49f9-97ec-2c6f0589e385",
           "startTicks": 2,
           "durationTicks": 355,
           "noteNumber": 72,
@@ -88,7 +89,7 @@
           ]
         },
         {
-          "uuid": "2a1d1889-60fe-4fbb-b779-01c8b3f1b3ca",
+          "id": "c42b11bc-d8ab-4afd-abf3-72ed2c60e1c2",
           "startTicks": 98,
           "durationTicks": 274,
           "noteNumber": 69,
@@ -102,7 +103,7 @@
           ]
         },
         {
-          "uuid": "a548f02c-2f09-4373-a8a9-1a67bea5ee7a",
+          "id": "f5865bf3-b7be-420a-b50e-724e29ed2c6f",
           "startTicks": 379,
           "durationTicks": 49,
           "noteNumber": 62,
@@ -116,7 +117,7 @@
           ]
         },
         {
-          "uuid": "84f0c6f9-5d05-4c2f-8197-1759dbd5a651",
+          "id": "cd33ea20-2b8b-46e0-ad4d-90b59cea1c4a",
           "startTicks": 377,
           "durationTicks": 72,
           "noteNumber": 67,
@@ -130,7 +131,7 @@
           ]
         },
         {
-          "uuid": "3774adf8-0aac-4438-8a94-844750aa7c93",
+          "id": "31da458a-14ef-4490-9e10-8cf0bc96f5c3",
           "startTicks": 368,
           "durationTicks": 97,
           "noteNumber": 71,
@@ -144,7 +145,7 @@
           ]
         },
         {
-          "uuid": "1d5a194b-654a-421e-b74d-bf2e62b91867",
+          "id": "bb01a4d0-aab5-4f95-a654-be7bbe0872e5",
           "startTicks": 484,
           "durationTicks": 35,
           "noteNumber": 57,
@@ -158,7 +159,7 @@
           ]
         },
         {
-          "uuid": "132ff22c-8a43-4f39-a68a-094624f625a6",
+          "id": "00406a53-27bc-4796-bd5a-a527e8724592",
           "startTicks": 602,
           "durationTicks": 55,
           "noteNumber": 62,
@@ -172,7 +173,7 @@
           ]
         },
         {
-          "uuid": "c8e9515a-ff38-42e6-9306-de46d1a1d0d9",
+          "id": "1202b724-0830-4d9e-9704-a6c0ce3d9edf",
           "startTicks": 710,
           "durationTicks": 43,
           "noteNumber": 57,
@@ -186,7 +187,7 @@
           ]
         },
         {
-          "uuid": "fd039330-97e3-473f-bce9-6f2a9f4b6e33",
+          "id": "7e2c8cc9-1d93-4bc0-b60b-d4107fb0e163",
           "startTicks": 839,
           "durationTicks": 34,
           "noteNumber": 45,
@@ -200,7 +201,7 @@
           ]
         },
         {
-          "uuid": "45075279-b639-45e0-b859-944c8496011b",
+          "id": "68f631ae-dfca-4ce9-a9c0-f594c8ac8394",
           "startTicks": 957,
           "durationTicks": 128,
           "noteNumber": 67,
@@ -214,7 +215,7 @@
           ]
         },
         {
-          "uuid": "466d4f99-5ddd-4a2e-a61f-0e2fe94b27b3",
+          "id": "74d2d93f-0b55-4cd6-8c54-b78e4c8a9ddb",
           "startTicks": 959,
           "durationTicks": 264,
           "noteNumber": 64,
@@ -228,7 +229,7 @@
           ]
         },
         {
-          "uuid": "5a229ed5-6110-4c4a-a34e-d42554701bd5",
+          "id": "53664e81-4f50-4ad9-b5ab-f4921bc59512",
           "startTicks": 1190,
           "durationTicks": 38,
           "noteNumber": 57,
@@ -242,7 +243,7 @@
           ]
         },
         {
-          "uuid": "5982ef82-1e4f-4959-a567-32fab8e849f8",
+          "id": "b5ad26d7-0826-4f78-ad75-cc34c46ecc9a",
           "startTicks": 1079,
           "durationTicks": 240,
           "noteNumber": 69,
@@ -256,7 +257,7 @@
           ]
         },
         {
-          "uuid": "a01826eb-1d0c-4a4d-91aa-60d016c019fe",
+          "id": "7e8a4066-5bfb-4e4e-aad2-402e92de3a9b",
           "startTicks": 960,
           "durationTicks": 395,
           "noteNumber": 72,
@@ -270,7 +271,7 @@
           ]
         },
         {
-          "uuid": "23f7c3ea-bb6d-49cc-bced-51ae0335f8bf",
+          "id": "711c8eb7-35ea-4012-8e16-76048fd9a8b9",
           "startTicks": 1318,
           "durationTicks": 103,
           "noteNumber": 62,
@@ -284,7 +285,7 @@
           ]
         },
         {
-          "uuid": "04d5e500-ac7e-4e6c-ac74-43938759160f",
+          "id": "afb4b3ff-8882-4527-adcb-5cc418b8df32",
           "startTicks": 1318,
           "durationTicks": 113,
           "noteNumber": 67,
@@ -298,7 +299,7 @@
           ]
         },
         {
-          "uuid": "359d73c8-5c9e-41e5-808e-0477b282fbd1",
+          "id": "e3d2f730-c897-484c-aad3-0c667b1a0870",
           "startTicks": 1312,
           "durationTicks": 167,
           "noteNumber": 71,
@@ -312,7 +313,7 @@
           ]
         },
         {
-          "uuid": "3770eb43-5dc9-4bf0-bb5d-ae48f8fb7494",
+          "id": "890dd361-ccc2-4415-b590-09228782dcff",
           "startTicks": 1439,
           "durationTicks": 40,
           "noteNumber": 57,
@@ -326,7 +327,7 @@
           ]
         },
         {
-          "uuid": "e519e071-ed33-4144-b1b9-5c368aec21e3",
+          "id": "414520d5-c994-4606-8765-265efb36d6eb",
           "startTicks": 1561,
           "durationTicks": 83,
           "noteNumber": 62,
@@ -340,7 +341,7 @@
           ]
         },
         {
-          "uuid": "55203d6e-260a-46ef-854d-a81e6c052f2f",
+          "id": "9ce0cd13-b688-41d2-984c-60bdea7d4da8",
           "startTicks": 1684,
           "durationTicks": 38,
           "noteNumber": 57,
@@ -354,7 +355,7 @@
           ]
         },
         {
-          "uuid": "e862a6db-c667-4ff9-8bea-74769e6c0548",
+          "id": "abcfff63-b30d-460c-a255-f84dcb1ba14c",
           "startTicks": 1804,
           "durationTicks": 33,
           "noteNumber": 50,
@@ -368,7 +369,7 @@
           ]
         },
         {
-          "uuid": "ab7612dd-173d-4693-ab4e-c4f0502359cc",
+          "id": "0a7b83e5-decb-4630-a9fe-8fc1229a7579",
           "startTicks": 1917,
           "durationTicks": 3,
           "noteNumber": 64,

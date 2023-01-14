@@ -58,7 +58,7 @@ function analyzeNote(note: Note, stats: Stats) {
   // Add note stats
   stats.notes.frequency = updateFrequencyStats(note, stats)
   stats.notes.duration = updateDurationStats(note, stats)
-  stats.notes.map[note.uuid] = note
+  stats.notes.map[note.id] = note
 
   const noteOnTicks = note.startTicks
   const noteOffTicks = note.startTicks + note.durationTicks
@@ -124,8 +124,4 @@ function normalizeToOne(noteMap: Record<string, number>) {
     result[tuple[0]] = (tuple[1] - min) * factor
     return result
   }, {})
-}
-
-export function noteInBeat(note: Note, beat: number) {
-  return true
 }
