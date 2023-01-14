@@ -4,6 +4,8 @@ import TrackHeader from './TrackHeader'
 import Clip from './Clip'
 import BeatLines from './BeatLines'
 import TimeSignatureMarkers from './TimeSignatureMarkers'
+import ChordMarkers from './ChordMarkers'
+import { Stats } from '../utils/analyze'
 
 export type MidiTracksProps = {
   tracks: Track[]
@@ -11,6 +13,7 @@ export type MidiTracksProps = {
   timeSignatures: TimeSignature[]
   zoom?: number
   trackHeight?: number
+  analyzed: Stats
 }
 
 export default function MidiTracks({
@@ -19,6 +22,7 @@ export default function MidiTracks({
   tracks = [],
   timings,
   timeSignatures,
+  analyzed,
 }: MidiTracksProps) {
   const height = tracks.length * trackHeight
   const trackWidth = timings.totalBeats * zoom
@@ -42,7 +46,15 @@ export default function MidiTracks({
       ))}
 
       <div className="pl-[82px] w-full overflow-x-scroll overflow-y-hidden relative">
-        <div style={{ height: '100px' }}>
+        <div
+          className="pl-[82px] relative"
+          style={{ height: '100px' }}
+        >
+          <ChordMarkers
+            analyzed={analyzed}
+            timings={timings}
+            width={trackWidth}
+          />
           <TimeSignatureMarkers
             timings={timings}
             timeSignatures={timeSignatures}

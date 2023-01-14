@@ -1,22 +1,26 @@
+import { Stats } from '../utils/analyze'
 import { Timings, TimeSignature } from '../utils/parse'
+import { detectChords } from '../utils/chords'
 
-type SignatureProps = {
-  timeSignatures: TimeSignature[]
+type ChordMarkerProps = {
+  analyzed: Stats
   timings: Timings
   width: number
 }
-export default function TimeSignatureMarkers({
+export default function ChordMarkers({
+  analyzed,
   timings,
-  timeSignatures,
   width,
-}: SignatureProps) {
+}: ChordMarkerProps) {
+  const chords = detectChords(analyzed, { unit: 'bar' })
+  console.log(chords)
   const ticksPerPixel = timings.durationTicks / width
-  const markers = timeSignatures.map((ts, idx) => {
-    const x = ts.startTicks / ticksPerPixel
+  const markers = chords.map((chord, idx) => {
+    const x = chord.startTicks / ticksPerPixel
     return {
-      key: `${ts.numerator}-${ts.denominator}-${idx}`,
+      key: `${chord.startTicks}`,
       x,
-      label: `${ts.numerator}/${ts.denominator}`,
+      label: `${chord.chords[0]}`,
     }
   })
 

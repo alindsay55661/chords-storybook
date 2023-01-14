@@ -1,4 +1,4 @@
-import Tonal from 'tonal'
+import * as Tonal from 'tonal'
 import type { MidiPart, Beat, Note, TimeSignature } from './parse'
 import type { DetectUnit, Stats } from './analyze'
 
@@ -80,12 +80,13 @@ function makeBarRanges(chordRangeData: ChordRangeData, notesByBeat: Beat[]) {
     let signatureBeatsProcessed = 0
     let beatsInCurrentBatch = 0
     let notes: Note[] = []
+    let startTicks = 0
     const { ticksPerBeat } = chordRangeData
     const durationTicks = ticksPerBeat * ts.numerator
-    const startTicks = totalBeatsProcessed * ticksPerBeat
 
     while (signatureBeatsProcessed <= ts.beatsInSignature) {
       const notesFound = notesByBeat[totalBeatsProcessed]
+      startTicks = totalBeatsProcessed * ticksPerBeat
 
       // update counters
       signatureBeatsProcessed++

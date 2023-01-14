@@ -1,11 +1,12 @@
 import { useState } from 'react'
 import './App.css'
 import MidiTracks from './components/MidiTracks'
-import { analyzed } from './stories/musicData'
+import { analyzed as data } from './stories/musicData'
 
 function App() {
   const [zoom, setZoom] = useState(10)
-  const { timings, timeSignatures, tracks } = analyzed.takeFive
+  const analyzed = data.groove
+  const { timings, timeSignatures, tracks } = analyzed
 
   return (
     <div>
@@ -20,6 +21,7 @@ function App() {
         }}
       ></input>
       <MidiTracks
+        analyzed={analyzed}
         tracks={tracks}
         timings={timings}
         timeSignatures={timeSignatures}
