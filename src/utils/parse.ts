@@ -6,13 +6,15 @@ export type MidiPart = {
   timings: Timings
   timeSignatures: TimeSignature[]
   tracks: Track[]
+  barsAndBeats: Bar[]
+  notesMap: Record<string, Note>
 }
 
 export type Timings = {
   durationTicks: number
   ticksPerBeat: number
   microsecondsPerBeat: number
-  totalBeats: number
+  bars?: Bar[]
 }
 
 export type TimeSignature = {
@@ -21,6 +23,7 @@ export type TimeSignature = {
   beatsInSignature: number
   numerator: number
   denominator: number
+  beatTicksMultiplier: number
 }
 
 export type Track = {
@@ -33,9 +36,19 @@ export type Track = {
   midiPatch?: number
 }
 
+export type Bar = {
+  index: number
+  startTicks: number
+  durationTicks: number
+  beatCount: number
+  beats: Beat[]
+  notes: Note[]
+}
+
 export type Beat = {
   index: number
   startTicks: number
+  durationTicks: number
   notes: Note[]
 }
 
@@ -49,23 +62,24 @@ export type Note = {
 }
 
 export function parseMidi(data: ArrayLike<number>): MidiPart {
+  // Adapters leverage generic 'buildNote' and 'makeBars' logic
+  // during custom format translation
   return buildMidiPart(data)
 }
 
 export function buildNote(
-  note: Pick<Note, 'startTicks' | 'noteNumber'>,
-  partCurrentTicks: number,
+  note: Pick<Note, 'startTicks' | 'noteNumber' | 'durationTicks'>,
 ): Note | false {
-  const durationTicks = partCurrentTicks - note.startTicks
+  const { startTicks, noteNumber, durationTicks } = note
 
   // Ignore notes with no duration (this happens with some midi programs)
   if (!durationTicks) return false
 
   return {
     id: uuid(),
-    startTicks: note.startTicks,
+    startTicks,
     durationTicks,
-    noteNumber: note.noteNumber,
+    noteNumber,
     noteNameWithOctave: [
       Tonal.Midi.midiToNoteName(note.noteNumber),
       Tonal.Midi.midiToNoteName(note.noteNumber, { sharps: true }),
@@ -78,6 +92,75 @@ export function buildNote(
       }),
     ],
   }
+}
+
+export function makeBarsAndBeats(
+  timeSignatures: TimeSignature[],
+  ticksPerBeat: number,
+): Bar[] {
+  let totalBeatsProcessed = 0
+  let totalBarsProcessed = 0
+  let barStartTicks = 0
+  const bars: Bar[] = []
+
+  timeSignatures.forEach((ts, idx) => {
+    let signatureBeatsProcessed = 0
+    let beatsInCurrentBatch = 0
+    let beats: Beat[] = []
+    let startTicks = ts.startTicks
+    const durationTicks = ticksPerBeat * ts.beatTicksMultiplier * ts.numerator
+
+    while (signatureBeatsProcessed <= ts.beatsInSignature) {
+      if (beatsInCurrentBatch === 0) barStartTicks = startTicks
+
+      // Create beat
+      beats.push({
+        index: totalBeatsProcessed,
+        startTicks: startTicks,
+        durationTicks: ticksPerBeat,
+        notes: [],
+      })
+
+      // update counters
+      startTicks = startTicks + ticksPerBeat * ts.beatTicksMultiplier
+      signatureBeatsProcessed++
+      totalBeatsProcessed++
+      beatsInCurrentBatch++
+
+      // Create bar
+      if (beatsInCurrentBatch === ts.numerator) {
+        bars.push({
+          index: totalBarsProcessed,
+          startTicks: barStartTicks,
+          durationTicks,
+          beatCount: ts.numerator,
+          beats,
+          notes: [],
+        })
+
+        // update counter
+        totalBarsProcessed++
+
+        // Reset aggregators
+        beatsInCurrentBatch = 0
+        beats = []
+      }
+    }
+
+    // Create range for last bar if needed
+    if (beats.length && idx === timeSignatures.length - 1) {
+      bars.push({
+        index: totalBarsProcessed,
+        startTicks,
+        durationTicks,
+        beatCount: ts.numerator,
+        beats,
+        notes: [],
+      })
+    }
+  })
+
+  return bars
 }
 
 type GMPatchNames = {

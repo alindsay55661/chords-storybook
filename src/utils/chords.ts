@@ -1,5 +1,5 @@
 import * as Tonal from 'tonal'
-import type { MidiPart, Beat, Note, TimeSignature } from './parse'
+import type { MidiPart, Bar, Beat, Note, TimeSignature } from './parse'
 import type { DetectUnit, Stats } from './analyze'
 
 export type DetectChordOptions = {
@@ -27,14 +27,6 @@ export type ChordRange = {
   uniqueNotes: Note[]
 }
 
-export type ChordRangeData = {
-  ticksPerBeat: number
-  timeSignatures: TimeSignature[]
-  chordRangeCount: number
-  unit: DetectUnit
-  chordRanges: ChordRange[]
-}
-
 export function detectChords(
   stats: Stats,
   opts?: DetectChordOptions,
@@ -44,82 +36,37 @@ export function detectChords(
     lengthThreshold: 0.1,
     ...opts,
   } satisfies DetectChordOptions
-  const chordRangeData = initChordRangeData(stats, options.unit)
+  const chordRanges: ChordRange[] = []
+  const { unit } = options
 
-  if (options.unit === 'bar') {
-    makeBarRanges(chordRangeData, stats.notes.byBeat)
-  } else if (options.unit === 'beat') {
-    stats.notes.byBeat.forEach(beat => {
-      if (beat) {
-        chordRangeData.chordRanges.push(
-          createChordRange(beat.notes, {
-            unit: 'beat',
-            startTicks: beat.startTicks,
-            durationTicks: stats.timings.ticksPerBeat,
-          }),
-        )
-      }
+  if (unit === 'bar') {
+    stats.notes.byBar.forEach(bar => {
+      chordRanges.push(
+        createChordRange(bar.notes, {
+          unit,
+          startTicks: bar.startTicks,
+          durationTicks: bar.durationTicks,
+        }),
+      )
     })
   }
+  // else if (unit === 'beat') {
+  //   stats.notes.byBeat.forEach(beat => {
+  //     if (beat) {
+  //       chordRanges.push(
+  //         createChordRange(beat.notes, {
+  //           unit,
+  //           startTicks: beat.startTicks,
+  //           durationTicks: stats.timings.ticksPerBeat,
+  //         }),
+  //       )
+  //     }
+  //   })
+  // }
 
-  console.log(`totalBeats: ${stats.timings.totalBeats} (from stats)`)
-
-  const chords = chordsFromRanges(
-    chordRangeData.chordRanges,
-    options.lengthThreshold,
-  )
+  const chords = chordsFromRanges(chordRanges, options.lengthThreshold)
 
   return chords
-}
-
-function makeBarRanges(chordRangeData: ChordRangeData, notesByBeat: Beat[]) {
-  let totalBeatsProcessed = 0
-  // Detect from chordRanges in each timeSignature
-  chordRangeData.timeSignatures.forEach((ts, idx) => {
-    // const barCount = ts.beatsInSignature / ts.numerator
-    let signatureBeatsProcessed = 0
-    let beatsInCurrentBatch = 0
-    let notes: Note[] = []
-    let startTicks = 0
-    const { ticksPerBeat } = chordRangeData
-    const durationTicks = ticksPerBeat * ts.numerator
-
-    while (signatureBeatsProcessed <= ts.beatsInSignature) {
-      const notesFound = notesByBeat[totalBeatsProcessed]
-      startTicks = totalBeatsProcessed * ticksPerBeat
-
-      // update counters
-      signatureBeatsProcessed++
-      totalBeatsProcessed++
-      beatsInCurrentBatch++
-
-      if (notesFound) {
-        notes = [...notes, ...notesFound.notes]
-      }
-
-      // Create chordRange!
-      if (beatsInCurrentBatch === ts.numerator) {
-        chordRangeData.chordRanges.push(
-          createChordRange(notes, { unit: 'bar', startTicks, durationTicks }),
-        )
-
-        // Reset aggregators
-        beatsInCurrentBatch = 0
-        notes = []
-      }
-    }
-
-    // Create range for last bar if needed
-    if (notes.length && idx === chordRangeData.timeSignatures.length - 1) {
-      chordRangeData.chordRanges.push(
-        createChordRange(notes, { unit: 'bar', startTicks, durationTicks }),
-      )
-    }
-
-    console.log(
-      `totalBeats: ${notesByBeat.length}, processed: ${totalBeatsProcessed}`,
-    )
-  })
 }
 
 function chordsFromRanges(
@@ -149,33 +96,6 @@ function chordsFromRanges(
   return chords
 }
 
-export function initChordRangeData(
-  stats: Stats,
-  unit: DetectUnit,
-): ChordRangeData {
-  const ticksPerBeat = stats.timings.ticksPerBeat
-  const timeSignatures = stats.timeSignatures
-  let chordRangeCount = 0
-
-  if (unit === 'beat') {
-    chordRangeCount = stats.timings.totalBeats
-  } else if (unit === 'bar') {
-    // Loop through each time signature to get the right # of measures
-    timeSignatures.forEach(ts => {
-      // ceil required in case last bar of song is missing beats
-      chordRangeCount += Math.ceil(ts.beatsInSignature / ts.numerator)
-    })
-  }
-
-  return {
-    ticksPerBeat,
-    timeSignatures,
-    chordRangeCount,
-    unit,
-    chordRanges: [],
-  }
-}
-
 export function createChordRange(
   notes: Note[],
   options: { unit: DetectUnit; startTicks: number; durationTicks: number },
@@ -200,11 +120,6 @@ export function createChordRange(
 }
 
 export function addNoteToChordRange(note: Note, range: ChordRange) {
-  const noteOnTicks = note.startTicks
-  const noteOffTicks = note.startTicks + note.durationTicks
-  const noteStartRange = Math.floor(noteOnTicks / range.durationTicks)
-  const noteEndRange = Math.floor(noteOffTicks / range.durationTicks)
-
   range.notes.add(note.noteName[0])
   range.uniqueNotes.push(note)
   // Note distribution allows for advanced chord recognition

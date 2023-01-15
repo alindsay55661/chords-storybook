@@ -5,7 +5,7 @@ import { analyzed as data } from './stories/musicData'
 
 function App() {
   const [zoom, setZoom] = useState(10)
-  const analyzed = data.groove
+  const analyzed = data.ghostBusters
   const { timings, timeSignatures, tracks } = analyzed
 
   return (

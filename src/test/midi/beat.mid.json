@@ -2,24 +2,24 @@
   "timings": {
     "microsecondsPerBeat": 517241,
     "durationTicks": 479,
-    "ticksPerBeat": 480,
-    "totalBeats": 1
+    "ticksPerBeat": 480
   },
   "timeSignatures": [
     {
       "startTicks": 0,
       "startBeat": 0,
-      "beatsInSignature": 1,
+      "beatsInSignature": 0.9979166666666667,
       "numerator": 4,
-      "denominator": 4
+      "denominator": 4,
+      "beatTicksMultiplier": 1
     }
   ],
   "tracks": [
     {
-      "id": "195d046f-1256-46bd-a6c3-532880178a2f",
+      "id": "47c0ebd3-f41f-4b37-8370-c9d3a259fa95",
       "notes": [
         {
-          "id": "1b07ee85-0a7d-4a06-9561-38ca3c210769",
+          "id": "49e36d7c-f0de-417b-a651-fe4bdc856d57",
           "startTicks": 4,
           "durationTicks": 35,
           "noteNumber": 57,
@@ -33,7 +33,7 @@
           ]
         },
         {
-          "id": "b00540f2-9fdd-4bf2-b854-baefd0889af2",
+          "id": "eb5fb50b-44d3-47d4-9da6-f4fd03e78305",
           "startTicks": 122,
           "durationTicks": 55,
           "noteNumber": 62,
@@ -47,7 +47,7 @@
           ]
         },
         {
-          "id": "e364bddc-3009-4749-bfa1-a6141f68d625",
+          "id": "db71e787-fc51-490f-9fdd-6b32937ebb0e",
           "startTicks": 230,
           "durationTicks": 43,
           "noteNumber": 58,
@@ -61,7 +61,7 @@
           ]
         },
         {
-          "id": "3a52bf93-192a-449d-bcd5-c06069723fb3",
+          "id": "188c8319-2641-4e14-9006-a72d4c526845",
           "startTicks": 359,
           "durationTicks": 34,
           "noteNumber": 45,
@@ -75,7 +75,7 @@
           ]
         },
         {
-          "id": "a51f0a66-ec95-4057-abd9-fbe6e265f83f",
+          "id": "e9f5c327-38bd-4129-a232-92a2fc9a04de",
           "startTicks": 461,
           "durationTicks": 18,
           "noteNumber": 67,
@@ -94,5 +94,94 @@
       "lowestNote": 45,
       "highestNote": 67
     }
-  ]
+  ],
+  "barsAndBeats": [
+    {
+      "index": 0,
+      "startTicks": 480,
+      "durationTicks": 1920,
+      "beatCount": 4,
+      "beats": [
+        {
+          "index": 0,
+          "startTicks": 0,
+          "durationTicks": 480,
+          "notes": []
+        }
+      ],
+      "notes": []
+    }
+  ],
+  "notesMap": {
+    "49e36d7c-f0de-417b-a651-fe4bdc856d57": {
+      "id": "49e36d7c-f0de-417b-a651-fe4bdc856d57",
+      "startTicks": 4,
+      "durationTicks": 35,
+      "noteNumber": 57,
+      "noteNameWithOctave": [
+        "A3",
+        "A3"
+      ],
+      "noteName": [
+        "A",
+        "A"
+      ]
+    },
+    "eb5fb50b-44d3-47d4-9da6-f4fd03e78305": {
+      "id": "eb5fb50b-44d3-47d4-9da6-f4fd03e78305",
+      "startTicks": 122,
+      "durationTicks": 55,
+      "noteNumber": 62,
+      "noteNameWithOctave": [
+        "D4",
+        "D4"
+      ],
+      "noteName": [
+        "D",
+        "D"
+      ]
+    },
+    "db71e787-fc51-490f-9fdd-6b32937ebb0e": {
+      "id": "db71e787-fc51-490f-9fdd-6b32937ebb0e",
+      "startTicks": 230,
+      "durationTicks": 43,
+      "noteNumber": 58,
+      "noteNameWithOctave": [
+        "Bb3",
+        "A#3"
+      ],
+      "noteName": [
+        "Bb",
+        "A#"
+      ]
+    },
+    "188c8319-2641-4e14-9006-a72d4c526845": {
+      "id": "188c8319-2641-4e14-9006-a72d4c526845",
+      "startTicks": 359,
+      "durationTicks": 34,
+      "noteNumber": 45,
+      "noteNameWithOctave": [
+        "A2",
+        "A2"
+      ],
+      "noteName": [
+        "A",
+        "A"
+      ]
+    },
+    "e9f5c327-38bd-4129-a232-92a2fc9a04de": {
+      "id": "e9f5c327-38bd-4129-a232-92a2fc9a04de",
+      "startTicks": 461,
+      "durationTicks": 18,
+      "noteNumber": 67,
+      "noteNameWithOctave": [
+        "G4",
+        "G4"
+      ],
+      "noteName": [
+        "G",
+        "G"
+      ]
+    }
+  }
 }

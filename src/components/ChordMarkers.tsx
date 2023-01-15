@@ -13,27 +13,31 @@ export default function ChordMarkers({
   width,
 }: ChordMarkerProps) {
   const chords = detectChords(analyzed, { unit: 'bar' })
-  console.log(chords)
   const ticksPerPixel = timings.durationTicks / width
+  const chordWidth = timings.ticksPerBeat / ticksPerPixel
   const markers = chords.map((chord, idx) => {
     const x = chord.startTicks / ticksPerPixel
+    const label = chord.chords.length ? chord.chords[0] : ''
     return {
       key: `${chord.startTicks}`,
       x,
-      label: `${chord.chords[0]}`,
+      label,
+      w: chord.durationTicks / ticksPerPixel,
     }
   })
 
   return (
-    <div style={{ width: `${width}px` }}>
+    <div
+      className="relative h-8"
+      style={{ width: `${width}px` }}
+    >
       {markers.map(marker => (
         <div
           key={marker.key}
-          className="absolute flex flex-col h-full"
-          style={{ left: `${marker.x}px` }}
+          className="absolute h-full bg-slate-100"
+          style={{ left: `${marker.x}px`, width: `${marker.w - 2}px` }}
         >
-          <div className="flex-shrink-0">{marker.label}</div>
-          <div className="w-0.5 h-full flex-grow bg-black"></div>
+          <div className="text-center p-1 text-xs">{marker.label}</div>
         </div>
       ))}
     </div>

@@ -1,0 +1,2656 @@
+{
+  "timings": {
+    "microsecondsPerBeat": 500000,
+    "durationTicks": 18456,
+    "ticksPerBeat": 480
+  },
+  "timeSignatures": [
+    {
+      "startTicks": 0,
+      "startBeat": 0,
+      "beatsInSignature": 10,
+      "numerator": 5,
+      "denominator": 4,
+      "beatTicksMultiplier": 1
+    },
+    {
+      "startTicks": 4800,
+      "startBeat": 0,
+      "beatsInSignature": 6,
+      "numerator": 3,
+      "denominator": 4,
+      "beatTicksMultiplier": 1
+    },
+    {
+      "startTicks": 7680,
+      "startBeat": 0,
+      "beatsInSignature": 7,
+      "numerator": 7,
+      "denominator": 8,
+      "beatTicksMultiplier": 0.5
+    },
+    {
+      "startTicks": 9360,
+      "startBeat": 0,
+      "beatsInSignature": 8,
+      "numerator": 4,
+      "denominator": 4,
+      "beatTicksMultiplier": 1
+    },
+    {
+      "startTicks": 13200,
+      "startBeat": 0,
+      "beatsInSignature": 5,
+      "numerator": 5,
+      "denominator": 4,
+      "beatTicksMultiplier": 1
+    },
+    {
+      "startTicks": 15600,
+      "startBeat": 0,
+      "beatsInSignature": 2.975,
+      "numerator": 3,
+      "denominator": 2,
+      "beatTicksMultiplier": 2
+    }
+  ],
+  "tracks": [
+    {
+      "id": "d781c623-9497-4afa-be8b-1bc11ad804c2",
+      "notes": [
+        {
+          "id": "50c171b8-1469-4b84-b9c4-17e367903054",
+          "startTicks": 0,
+          "durationTicks": 456,
+          "noteNumber": 64,
+          "noteNameWithOctave": [
+            "E4",
+            "E4"
+          ],
+          "noteName": [
+            "E",
+            "E"
+          ]
+        },
+        {
+          "id": "46d6b8bd-b4e1-4e91-b8c8-2bd7e17d7d7e",
+          "startTicks": 0,
+          "durationTicks": 456,
+          "noteNumber": 71,
+          "noteNameWithOctave": [
+            "B4",
+            "B4"
+          ],
+          "noteName": [
+            "B",
+            "B"
+          ]
+        },
+        {
+          "id": "bf4d0d0b-e52e-43a1-8c35-97345266f8e0",
+          "startTicks": 0,
+          "durationTicks": 456,
+          "noteNumber": 67,
+          "noteNameWithOctave": [
+            "G4",
+            "G4"
+          ],
+          "noteName": [
+            "G",
+            "G"
+          ]
+        },
+        {
+          "id": "65d3e89a-b81e-4f11-b6ea-943c854696bd",
+          "startTicks": 479,
+          "durationTicks": 457,
+          "noteNumber": 69,
+          "noteNameWithOctave": [
+            "A4",
+            "A4"
+          ],
+          "noteName": [
+            "A",
+            "A"
+          ]
+        },
+        {
+          "id": "6b3c9cbc-2cd8-42ee-82f3-7aba1d720620",
+          "startTicks": 480,
+          "durationTicks": 456,
+          "noteNumber": 65,
+          "noteNameWithOctave": [
+            "F4",
+            "F4"
+          ],
+          "noteName": [
+            "F",
+            "F"
+          ]
+        },
+        {
+          "id": "59f019b6-f36c-4e94-9479-5a3bcac7f563",
+          "startTicks": 481,
+          "durationTicks": 455,
+          "noteNumber": 62,
+          "noteNameWithOctave": [
+            "D4",
+            "D4"
+          ],
+          "noteName": [
+            "D",
+            "D"
+          ]
+        },
+        {
+          "id": "f64cc58b-2677-4692-8893-f66077e77bf4",
+          "startTicks": 958,
+          "durationTicks": 458,
+          "noteNumber": 64,
+          "noteNameWithOctave": [
+            "E4",
+            "E4"
+          ],
+          "noteName": [
+            "E",
+            "E"
+          ]
+        },
+        {
+          "id": "9060956d-f129-465e-8621-e0b098b49f59",
+          "startTicks": 961,
+          "durationTicks": 455,
+          "noteNumber": 71,
+          "noteNameWithOctave": [
+            "B4",
+            "B4"
+          ],
+          "noteName": [
+            "B",
+            "B"
+          ]
+        },
+        {
+          "id": "529af750-9564-4ab9-be03-57b6b4c24f0f",
+          "startTicks": 963,
+          "durationTicks": 453,
+          "noteNumber": 67,
+          "noteNameWithOctave": [
+            "G4",
+            "G4"
+          ],
+          "noteName": [
+            "G",
+            "G"
+          ]
+        },
+        {
+          "id": "d941682b-5dd1-460c-9294-2c4d79386de5",
+          "startTicks": 1438,
+          "durationTicks": 458,
+          "noteNumber": 65,
+          "noteNameWithOctave": [
+            "F4",
+            "F4"
+          ],
+          "noteName": [
+            "F",
+            "F"
+          ]
+        },
+        {
+          "id": "e9ee57cb-6e99-44b0-bc38-1bc85bb3130b",
+          "startTicks": 1440,
+          "durationTicks": 456,
+          "noteNumber": 62,
+          "noteNameWithOctave": [
+            "D4",
+            "D4"
+          ],
+          "noteName": [
+            "D",
+            "D"
+          ]
+        },
+        {
+          "id": "553a1a11-c434-4d0c-a90a-bea0f711f76f",
+          "startTicks": 1444,
+          "durationTicks": 452,
+          "noteNumber": 69,
+          "noteNameWithOctave": [
+            "A4",
+            "A4"
+          ],
+          "noteName": [
+            "A",
+            "A"
+          ]
+        },
+        {
+          "id": "27cf7e14-f919-4c0e-ad12-a0296eb5d8bf",
+          "startTicks": 1917,
+          "durationTicks": 459,
+          "noteNumber": 64,
+          "noteNameWithOctave": [
+            "E4",
+            "E4"
+          ],
+          "noteName": [
+            "E",
+            "E"
+          ]
+        },
+        {
+          "id": "52a85a21-d6cd-4a12-8f9e-751d31ae4798",
+          "startTicks": 1918,
+          "durationTicks": 458,
+          "noteNumber": 67,
+          "noteNameWithOctave": [
+            "G4",
+            "G4"
+          ],
+          "noteName": [
+            "G",
+            "G"
+          ]
+        },
+        {
+          "id": "be83f729-fb68-424b-a872-513d400406e4",
+          "startTicks": 1922,
+          "durationTicks": 454,
+          "noteNumber": 71,
+          "noteNameWithOctave": [
+            "B4",
+            "B4"
+          ],
+          "noteName": [
+            "B",
+            "B"
+          ]
+        },
+        {
+          "id": "109463c8-bd5a-4fc7-901e-c959233c0ef2",
+          "startTicks": 2400,
+          "durationTicks": 2376,
+          "noteNumber": 64,
+          "noteNameWithOctave": [
+            "E4",
+            "E4"
+          ],
+          "noteName": [
+            "E",
+            "E"
+          ]
+        },
+        {
+          "id": "d61d19d1-c62a-4288-bf05-5f492d0b5fe5",
+          "startTicks": 2400,
+          "durationTicks": 2376,
+          "noteNumber": 71,
+          "noteNameWithOctave": [
+            "B4",
+            "B4"
+          ],
+          "noteName": [
+            "B",
+            "B"
+          ]
+        },
+        {
+          "id": "b3ac9a08-87e9-4924-a3d3-209185237389",
+          "startTicks": 2400,
+          "durationTicks": 2376,
+          "noteNumber": 67,
+          "noteNameWithOctave": [
+            "G4",
+            "G4"
+          ],
+          "noteName": [
+            "G",
+            "G"
+          ]
+        },
+        {
+          "id": "5f3821be-168c-4735-94b7-621404869863",
+          "startTicks": 4800,
+          "durationTicks": 456,
+          "noteNumber": 67,
+          "noteNameWithOctave": [
+            "G4",
+            "G4"
+          ],
+          "noteName": [
+            "G",
+            "G"
+          ]
+        },
+        {
+          "id": "5a30d273-350b-458c-b939-03651750dd74",
+          "startTicks": 4800,
+          "durationTicks": 456,
+          "noteNumber": 64,
+          "noteNameWithOctave": [
+            "E4",
+            "E4"
+          ],
+          "noteName": [
+            "E",
+            "E"
+          ]
+        },
+        {
+          "id": "fcf0ea7f-bfa4-4133-8f92-7f5e5f8bc73f",
+          "startTicks": 4800,
+          "durationTicks": 456,
+          "noteNumber": 71,
+          "noteNameWithOctave": [
+            "B4",
+            "B4"
+          ],
+          "noteName": [
+            "B",
+            "B"
+          ]
+        },
+        {
+          "id": "5b6c347f-16c0-4bbe-a127-84b70b3494ca",
+          "startTicks": 5279,
+          "durationTicks": 457,
+          "noteNumber": 62,
+          "noteNameWithOctave": [
+            "D4",
+            "D4"
+          ],
+          "noteName": [
+            "D",
+            "D"
+          ]
+        },
+        {
+          "id": "da033075-6f27-42e2-9230-1c1ce9d370f1",
+          "startTicks": 5280,
+          "durationTicks": 456,
+          "noteNumber": 69,
+          "noteNameWithOctave": [
+            "A4",
+            "A4"
+          ],
+          "noteName": [
+            "A",
+            "A"
+          ]
+        },
+        {
+          "id": "38fc1044-a501-4158-b5a1-c2cd47a28d12",
+          "startTicks": 5281,
+          "durationTicks": 455,
+          "noteNumber": 65,
+          "noteNameWithOctave": [
+            "F4",
+            "F4"
+          ],
+          "noteName": [
+            "F",
+            "F"
+          ]
+        },
+        {
+          "id": "5bec6699-2945-4da3-b763-7810fdde5bee",
+          "startTicks": 5758,
+          "durationTicks": 458,
+          "noteNumber": 67,
+          "noteNameWithOctave": [
+            "G4",
+            "G4"
+          ],
+          "noteName": [
+            "G",
+            "G"
+          ]
+        },
+        {
+          "id": "eb55f78c-1415-4341-bcf0-235901e40832",
+          "startTicks": 5761,
+          "durationTicks": 455,
+          "noteNumber": 64,
+          "noteNameWithOctave": [
+            "E4",
+            "E4"
+          ],
+          "noteName": [
+            "E",
+            "E"
+          ]
+        },
+        {
+          "id": "0f550acf-0d1b-4d7e-b418-ab3a171ade70",
+          "startTicks": 5763,
+          "durationTicks": 453,
+          "noteNumber": 71,
+          "noteNameWithOctave": [
+            "B4",
+            "B4"
+          ],
+          "noteName": [
+            "B",
+            "B"
+          ]
+        },
+        {
+          "id": "851c719d-f050-4aa3-8ab4-31ed74fc391a",
+          "startTicks": 6240,
+          "durationTicks": 1416,
+          "noteNumber": 65,
+          "noteNameWithOctave": [
+            "F4",
+            "F4"
+          ],
+          "noteName": [
+            "F",
+            "F"
+          ]
+        },
+        {
+          "id": "932f52a0-9dca-461d-9758-f4b6b5c914a3",
+          "startTicks": 6240,
+          "durationTicks": 1416,
+          "noteNumber": 62,
+          "noteNameWithOctave": [
+            "D4",
+            "D4"
+          ],
+          "noteName": [
+            "D",
+            "D"
+          ]
+        },
+        {
+          "id": "0013acd6-a76b-4f60-a3e4-9d1713b753a2",
+          "startTicks": 6240,
+          "durationTicks": 1416,
+          "noteNumber": 69,
+          "noteNameWithOctave": [
+            "A4",
+            "A4"
+          ],
+          "noteName": [
+            "A",
+            "A"
+          ]
+        },
+        {
+          "id": "5ac02ffa-7a71-4e7d-808e-4eb5d5159755",
+          "startTicks": 7679,
+          "durationTicks": 937,
+          "noteNumber": 64,
+          "noteNameWithOctave": [
+            "E4",
+            "E4"
+          ],
+          "noteName": [
+            "E",
+            "E"
+          ]
+        },
+        {
+          "id": "4094faf5-b8f9-4b84-a1db-42c5f497e17d",
+          "startTicks": 7680,
+          "durationTicks": 936,
+          "noteNumber": 67,
+          "noteNameWithOctave": [
+            "G4",
+            "G4"
+          ],
+          "noteName": [
+            "G",
+            "G"
+          ]
+        },
+        {
+          "id": "cfb86eea-5264-4df2-bc52-48f54fdc11cf",
+          "startTicks": 7681,
+          "durationTicks": 935,
+          "noteNumber": 71,
+          "noteNameWithOctave": [
+            "B4",
+            "B4"
+          ],
+          "noteName": [
+            "B",
+            "B"
+          ]
+        },
+        {
+          "id": "0f1b2140-5991-44b3-b873-c1d8be521d36",
+          "startTicks": 8640,
+          "durationTicks": 456,
+          "noteNumber": 69,
+          "noteNameWithOctave": [
+            "A4",
+            "A4"
+          ],
+          "noteName": [
+            "A",
+            "A"
+          ]
+        },
+        {
+          "id": "8da6d929-1efc-4b0d-a325-dd26253eba80",
+          "startTicks": 8640,
+          "durationTicks": 456,
+          "noteNumber": 65,
+          "noteNameWithOctave": [
+            "F4",
+            "F4"
+          ],
+          "noteName": [
+            "F",
+            "F"
+          ]
+        },
+        {
+          "id": "49d167fd-8b7c-4b36-9a55-bce4aa71de8d",
+          "startTicks": 8640,
+          "durationTicks": 456,
+          "noteNumber": 62,
+          "noteNameWithOctave": [
+            "D4",
+            "D4"
+          ],
+          "noteName": [
+            "D",
+            "D"
+          ]
+        },
+        {
+          "id": "71d7590a-c9e9-4e32-9a98-7ce4a3576b28",
+          "startTicks": 9120,
+          "durationTicks": 228,
+          "noteNumber": 72,
+          "noteNameWithOctave": [
+            "C5",
+            "C5"
+          ],
+          "noteName": [
+            "C",
+            "C"
+          ]
+        },
+        {
+          "id": "e6e4f404-49e7-4cec-aa59-6501291a2fbb",
+          "startTicks": 9120,
+          "durationTicks": 228,
+          "noteNumber": 69,
+          "noteNameWithOctave": [
+            "A4",
+            "A4"
+          ],
+          "noteName": [
+            "A",
+            "A"
+          ]
+        },
+        {
+          "id": "c4f60903-f0fd-405c-b68f-62e46d4f4724",
+          "startTicks": 9120,
+          "durationTicks": 228,
+          "noteNumber": 65,
+          "noteNameWithOctave": [
+            "F4",
+            "F4"
+          ],
+          "noteName": [
+            "F",
+            "F"
+          ]
+        },
+        {
+          "id": "9d481afc-75e7-463d-b1f1-34e4b0350600",
+          "startTicks": 9360,
+          "durationTicks": 456,
+          "noteNumber": 65,
+          "noteNameWithOctave": [
+            "F4",
+            "F4"
+          ],
+          "noteName": [
+            "F",
+            "F"
+          ]
+        },
+        {
+          "id": "1af51f63-3d4a-4934-a451-f2c5746c7391",
+          "startTicks": 9360,
+          "durationTicks": 456,
+          "noteNumber": 69,
+          "noteNameWithOctave": [
+            "A4",
+            "A4"
+          ],
+          "noteName": [
+            "A",
+            "A"
+          ]
+        },
+        {
+          "id": "ddf15953-9c1e-4641-a483-15e24195fa9b",
+          "startTicks": 9360,
+          "durationTicks": 456,
+          "noteNumber": 72,
+          "noteNameWithOctave": [
+            "C5",
+            "C5"
+          ],
+          "noteName": [
+            "C",
+            "C"
+          ]
+        },
+        {
+          "id": "1a47db47-755a-4ab9-92cf-ca1c20997187",
+          "startTicks": 9839,
+          "durationTicks": 457,
+          "noteNumber": 67,
+          "noteNameWithOctave": [
+            "G4",
+            "G4"
+          ],
+          "noteName": [
+            "G",
+            "G"
+          ]
+        },
+        {
+          "id": "3ecde4da-1e69-4daa-96ce-f512936d1a35",
+          "startTicks": 9840,
+          "durationTicks": 456,
+          "noteNumber": 71,
+          "noteNameWithOctave": [
+            "B4",
+            "B4"
+          ],
+          "noteName": [
+            "B",
+            "B"
+          ]
+        },
+        {
+          "id": "b56c3ddd-f370-48a6-b04d-13b4d0a6878d",
+          "startTicks": 9841,
+          "durationTicks": 455,
+          "noteNumber": 64,
+          "noteNameWithOctave": [
+            "E4",
+            "E4"
+          ],
+          "noteName": [
+            "E",
+            "E"
+          ]
+        },
+        {
+          "id": "41052a17-2851-4a95-b8bc-7619b2d2a3bd",
+          "startTicks": 10318,
+          "durationTicks": 458,
+          "noteNumber": 65,
+          "noteNameWithOctave": [
+            "F4",
+            "F4"
+          ],
+          "noteName": [
+            "F",
+            "F"
+          ]
+        },
+        {
+          "id": "5cde8c7c-186d-41f1-aa64-5ed95d3f11f5",
+          "startTicks": 10321,
+          "durationTicks": 455,
+          "noteNumber": 69,
+          "noteNameWithOctave": [
+            "A4",
+            "A4"
+          ],
+          "noteName": [
+            "A",
+            "A"
+          ]
+        },
+        {
+          "id": "c94fafb6-3fd1-411b-b46c-6fb453ec67e3",
+          "startTicks": 10323,
+          "durationTicks": 453,
+          "noteNumber": 72,
+          "noteNameWithOctave": [
+            "C5",
+            "C5"
+          ],
+          "noteName": [
+            "C",
+            "C"
+          ]
+        },
+        {
+          "id": "48b6aae7-ce51-4716-917a-e03389a4c5b9",
+          "startTicks": 10798,
+          "durationTicks": 458,
+          "noteNumber": 71,
+          "noteNameWithOctave": [
+            "B4",
+            "B4"
+          ],
+          "noteName": [
+            "B",
+            "B"
+          ]
+        },
+        {
+          "id": "3d684910-5403-4007-a645-d7a189eb9261",
+          "startTicks": 10800,
+          "durationTicks": 456,
+          "noteNumber": 64,
+          "noteNameWithOctave": [
+            "E4",
+            "E4"
+          ],
+          "noteName": [
+            "E",
+            "E"
+          ]
+        },
+        {
+          "id": "42cd99b0-6c57-45ec-805a-b5a8cb18a09d",
+          "startTicks": 10804,
+          "durationTicks": 452,
+          "noteNumber": 67,
+          "noteNameWithOctave": [
+            "G4",
+            "G4"
+          ],
+          "noteName": [
+            "G",
+            "G"
+          ]
+        },
+        {
+          "id": "4e34306e-d2bf-4b97-824e-48696b0f0777",
+          "startTicks": 11280,
+          "durationTicks": 1416,
+          "noteNumber": 69,
+          "noteNameWithOctave": [
+            "A4",
+            "A4"
+          ],
+          "noteName": [
+            "A",
+            "A"
+          ]
+        },
+        {
+          "id": "b940e360-78a1-43fb-9238-b5f8713888d1",
+          "startTicks": 11280,
+          "durationTicks": 1416,
+          "noteNumber": 72,
+          "noteNameWithOctave": [
+            "C5",
+            "C5"
+          ],
+          "noteName": [
+            "C",
+            "C"
+          ]
+        },
+        {
+          "id": "8649558c-4ecd-4734-af2a-fde9fbf03ed7",
+          "startTicks": 11280,
+          "durationTicks": 1416,
+          "noteNumber": 65,
+          "noteNameWithOctave": [
+            "F4",
+            "F4"
+          ],
+          "noteName": [
+            "F",
+            "F"
+          ]
+        },
+        {
+          "id": "912bcc4e-e930-4f5c-aca7-11470466c391",
+          "startTicks": 13200,
+          "durationTicks": 936,
+          "noteNumber": 71,
+          "noteNameWithOctave": [
+            "B4",
+            "B4"
+          ],
+          "noteName": [
+            "B",
+            "B"
+          ]
+        },
+        {
+          "id": "2aaf4955-3d1f-480f-808e-aaec136986da",
+          "startTicks": 13200,
+          "durationTicks": 936,
+          "noteNumber": 64,
+          "noteNameWithOctave": [
+            "E4",
+            "E4"
+          ],
+          "noteName": [
+            "E",
+            "E"
+          ]
+        },
+        {
+          "id": "cecb7215-cfa8-4fa9-8e96-1cd922f58665",
+          "startTicks": 13200,
+          "durationTicks": 936,
+          "noteNumber": 67,
+          "noteNameWithOctave": [
+            "G4",
+            "G4"
+          ],
+          "noteName": [
+            "G",
+            "G"
+          ]
+        },
+        {
+          "id": "2d67ed6b-841c-4d82-b140-285798d25b25",
+          "startTicks": 14160,
+          "durationTicks": 456,
+          "noteNumber": 62,
+          "noteNameWithOctave": [
+            "D4",
+            "D4"
+          ],
+          "noteName": [
+            "D",
+            "D"
+          ]
+        },
+        {
+          "id": "6da20369-aac3-4e6a-b582-f0a24cefb9b9",
+          "startTicks": 14160,
+          "durationTicks": 456,
+          "noteNumber": 65,
+          "noteNameWithOctave": [
+            "F4",
+            "F4"
+          ],
+          "noteName": [
+            "F",
+            "F"
+          ]
+        },
+        {
+          "id": "523131dd-4b2a-4f27-84c5-5f618c22329c",
+          "startTicks": 14160,
+          "durationTicks": 456,
+          "noteNumber": 69,
+          "noteNameWithOctave": [
+            "A4",
+            "A4"
+          ],
+          "noteName": [
+            "A",
+            "A"
+          ]
+        },
+        {
+          "id": "c0e834cb-3899-4114-9f03-8a3c740941bf",
+          "startTicks": 14640,
+          "durationTicks": 936,
+          "noteNumber": 65,
+          "noteNameWithOctave": [
+            "F4",
+            "F4"
+          ],
+          "noteName": [
+            "F",
+            "F"
+          ]
+        },
+        {
+          "id": "108e0dd1-05e4-4c0d-8f2a-f59a5fcaa7af",
+          "startTicks": 14640,
+          "durationTicks": 936,
+          "noteNumber": 69,
+          "noteNameWithOctave": [
+            "A4",
+            "A4"
+          ],
+          "noteName": [
+            "A",
+            "A"
+          ]
+        },
+        {
+          "id": "9e0b989b-56b1-4a4b-95c8-cbde18599b9b",
+          "startTicks": 14640,
+          "durationTicks": 936,
+          "noteNumber": 72,
+          "noteNameWithOctave": [
+            "C5",
+            "C5"
+          ],
+          "noteName": [
+            "C",
+            "C"
+          ]
+        },
+        {
+          "id": "8d33f67a-e675-4cf7-8b4b-03e20f7d4358",
+          "startTicks": 15600,
+          "durationTicks": 456,
+          "noteNumber": 64,
+          "noteNameWithOctave": [
+            "E4",
+            "E4"
+          ],
+          "noteName": [
+            "E",
+            "E"
+          ]
+        },
+        {
+          "id": "e4515743-c121-403b-9e4e-91a7682374bf",
+          "startTicks": 15600,
+          "durationTicks": 456,
+          "noteNumber": 67,
+          "noteNameWithOctave": [
+            "G4",
+            "G4"
+          ],
+          "noteName": [
+            "G",
+            "G"
+          ]
+        },
+        {
+          "id": "0b8a2783-cb19-4c5b-a125-06da0d322cfc",
+          "startTicks": 15600,
+          "durationTicks": 456,
+          "noteNumber": 71,
+          "noteNameWithOctave": [
+            "B4",
+            "B4"
+          ],
+          "noteName": [
+            "B",
+            "B"
+          ]
+        },
+        {
+          "id": "a31db2d4-df5b-421c-ae10-a82adfe962ce",
+          "startTicks": 16079,
+          "durationTicks": 457,
+          "noteNumber": 65,
+          "noteNameWithOctave": [
+            "F4",
+            "F4"
+          ],
+          "noteName": [
+            "F",
+            "F"
+          ]
+        },
+        {
+          "id": "b0052812-3dc9-4483-9825-84723afa34e7",
+          "startTicks": 16080,
+          "durationTicks": 456,
+          "noteNumber": 69,
+          "noteNameWithOctave": [
+            "A4",
+            "A4"
+          ],
+          "noteName": [
+            "A",
+            "A"
+          ]
+        },
+        {
+          "id": "12c6e304-bed2-4cf8-b3d8-faedc77aa6b3",
+          "startTicks": 16081,
+          "durationTicks": 455,
+          "noteNumber": 62,
+          "noteNameWithOctave": [
+            "D4",
+            "D4"
+          ],
+          "noteName": [
+            "D",
+            "D"
+          ]
+        },
+        {
+          "id": "0f27d57d-b3bd-40b6-844a-87b8111327ba",
+          "startTicks": 16558,
+          "durationTicks": 458,
+          "noteNumber": 64,
+          "noteNameWithOctave": [
+            "E4",
+            "E4"
+          ],
+          "noteName": [
+            "E",
+            "E"
+          ]
+        },
+        {
+          "id": "17ea2f2b-d029-4db8-aa2f-236e4d5ed8d0",
+          "startTicks": 16561,
+          "durationTicks": 455,
+          "noteNumber": 67,
+          "noteNameWithOctave": [
+            "G4",
+            "G4"
+          ],
+          "noteName": [
+            "G",
+            "G"
+          ]
+        },
+        {
+          "id": "e1cc13ac-4fa7-4d83-9675-4ad4f84d4a6d",
+          "startTicks": 16563,
+          "durationTicks": 453,
+          "noteNumber": 71,
+          "noteNameWithOctave": [
+            "B4",
+            "B4"
+          ],
+          "noteName": [
+            "B",
+            "B"
+          ]
+        },
+        {
+          "id": "87ee1e75-99f1-49ab-8c88-760b85e3919d",
+          "startTicks": 17038,
+          "durationTicks": 458,
+          "noteNumber": 69,
+          "noteNameWithOctave": [
+            "A4",
+            "A4"
+          ],
+          "noteName": [
+            "A",
+            "A"
+          ]
+        },
+        {
+          "id": "820855d2-8e81-43e6-a502-50c284273e76",
+          "startTicks": 17040,
+          "durationTicks": 456,
+          "noteNumber": 62,
+          "noteNameWithOctave": [
+            "D4",
+            "D4"
+          ],
+          "noteName": [
+            "D",
+            "D"
+          ]
+        },
+        {
+          "id": "9bd531d1-f38b-460d-993b-b58cfbb78c0a",
+          "startTicks": 17044,
+          "durationTicks": 452,
+          "noteNumber": 65,
+          "noteNameWithOctave": [
+            "F4",
+            "F4"
+          ],
+          "noteName": [
+            "F",
+            "F"
+          ]
+        },
+        {
+          "id": "9cca9976-831e-45b4-acfe-8d6f47fe1478",
+          "startTicks": 17517,
+          "durationTicks": 459,
+          "noteNumber": 64,
+          "noteNameWithOctave": [
+            "E4",
+            "E4"
+          ],
+          "noteName": [
+            "E",
+            "E"
+          ]
+        },
+        {
+          "id": "d8b26845-88d4-44df-856f-d3c09bd168e0",
+          "startTicks": 17518,
+          "durationTicks": 458,
+          "noteNumber": 71,
+          "noteNameWithOctave": [
+            "B4",
+            "B4"
+          ],
+          "noteName": [
+            "B",
+            "B"
+          ]
+        },
+        {
+          "id": "ba11a107-aa85-4a2d-a7ba-df7983c052c5",
+          "startTicks": 17522,
+          "durationTicks": 454,
+          "noteNumber": 67,
+          "noteNameWithOctave": [
+            "G4",
+            "G4"
+          ],
+          "noteName": [
+            "G",
+            "G"
+          ]
+        },
+        {
+          "id": "4789ce87-e605-402d-aee8-8aba3b55c8b6",
+          "startTicks": 17992,
+          "durationTicks": 464,
+          "noteNumber": 69,
+          "noteNameWithOctave": [
+            "A4",
+            "A4"
+          ],
+          "noteName": [
+            "A",
+            "A"
+          ]
+        },
+        {
+          "id": "deb9c69e-a65f-479c-8d8e-433c90174364",
+          "startTicks": 17998,
+          "durationTicks": 458,
+          "noteNumber": 65,
+          "noteNameWithOctave": [
+            "F4",
+            "F4"
+          ],
+          "noteName": [
+            "F",
+            "F"
+          ]
+        },
+        {
+          "id": "5c65b185-3fb7-4751-8d4c-0ab742e8c423",
+          "startTicks": 18004,
+          "durationTicks": 452,
+          "noteNumber": 62,
+          "noteNameWithOctave": [
+            "D4",
+            "D4"
+          ],
+          "noteName": [
+            "D",
+            "D"
+          ]
+        }
+      ],
+      "durationTicks": 18456,
+      "name": "Piano",
+      "midiPatch": 0,
+      "lowestNote": 62,
+      "highestNote": 72
+    }
+  ],
+  "barsAndBeats": [
+    {
+      "index": 0,
+      "startTicks": 0,
+      "durationTicks": 2400,
+      "beatCount": 5,
+      "beats": [
+        {
+          "index": 0,
+          "startTicks": 0,
+          "durationTicks": 480,
+          "notes": []
+        },
+        {
+          "index": 1,
+          "startTicks": 480,
+          "durationTicks": 480,
+          "notes": []
+        },
+        {
+          "index": 2,
+          "startTicks": 960,
+          "durationTicks": 480,
+          "notes": []
+        },
+        {
+          "index": 3,
+          "startTicks": 1440,
+          "durationTicks": 480,
+          "notes": []
+        },
+        {
+          "index": 4,
+          "startTicks": 1920,
+          "durationTicks": 480,
+          "notes": []
+        }
+      ],
+      "notes": []
+    },
+    {
+      "index": 1,
+      "startTicks": 2400,
+      "durationTicks": 2400,
+      "beatCount": 5,
+      "beats": [
+        {
+          "index": 5,
+          "startTicks": 2400,
+          "durationTicks": 480,
+          "notes": []
+        },
+        {
+          "index": 6,
+          "startTicks": 2880,
+          "durationTicks": 480,
+          "notes": []
+        },
+        {
+          "index": 7,
+          "startTicks": 3360,
+          "durationTicks": 480,
+          "notes": []
+        },
+        {
+          "index": 8,
+          "startTicks": 3840,
+          "durationTicks": 480,
+          "notes": []
+        },
+        {
+          "index": 9,
+          "startTicks": 4320,
+          "durationTicks": 480,
+          "notes": []
+        }
+      ],
+      "notes": []
+    },
+    {
+      "index": 2,
+      "startTicks": 4800,
+      "durationTicks": 1440,
+      "beatCount": 3,
+      "beats": [
+        {
+          "index": 11,
+          "startTicks": 4800,
+          "durationTicks": 480,
+          "notes": []
+        },
+        {
+          "index": 12,
+          "startTicks": 5280,
+          "durationTicks": 480,
+          "notes": []
+        },
+        {
+          "index": 13,
+          "startTicks": 5760,
+          "durationTicks": 480,
+          "notes": []
+        }
+      ],
+      "notes": []
+    },
+    {
+      "index": 3,
+      "startTicks": 6240,
+      "durationTicks": 1440,
+      "beatCount": 3,
+      "beats": [
+        {
+          "index": 14,
+          "startTicks": 6240,
+          "durationTicks": 480,
+          "notes": []
+        },
+        {
+          "index": 15,
+          "startTicks": 6720,
+          "durationTicks": 480,
+          "notes": []
+        },
+        {
+          "index": 16,
+          "startTicks": 7200,
+          "durationTicks": 480,
+          "notes": []
+        }
+      ],
+      "notes": []
+    },
+    {
+      "index": 4,
+      "startTicks": 7680,
+      "durationTicks": 1680,
+      "beatCount": 7,
+      "beats": [
+        {
+          "index": 18,
+          "startTicks": 7680,
+          "durationTicks": 480,
+          "notes": []
+        },
+        {
+          "index": 19,
+          "startTicks": 7920,
+          "durationTicks": 480,
+          "notes": []
+        },
+        {
+          "index": 20,
+          "startTicks": 8160,
+          "durationTicks": 480,
+          "notes": []
+        },
+        {
+          "index": 21,
+          "startTicks": 8400,
+          "durationTicks": 480,
+          "notes": []
+        },
+        {
+          "index": 22,
+          "startTicks": 8640,
+          "durationTicks": 480,
+          "notes": []
+        },
+        {
+          "index": 23,
+          "startTicks": 8880,
+          "durationTicks": 480,
+          "notes": []
+        },
+        {
+          "index": 24,
+          "startTicks": 9120,
+          "durationTicks": 480,
+          "notes": []
+        }
+      ],
+      "notes": []
+    },
+    {
+      "index": 5,
+      "startTicks": 9360,
+      "durationTicks": 1920,
+      "beatCount": 4,
+      "beats": [
+        {
+          "index": 26,
+          "startTicks": 9360,
+          "durationTicks": 480,
+          "notes": []
+        },
+        {
+          "index": 27,
+          "startTicks": 9840,
+          "durationTicks": 480,
+          "notes": []
+        },
+        {
+          "index": 28,
+          "startTicks": 10320,
+          "durationTicks": 480,
+          "notes": []
+        },
+        {
+          "index": 29,
+          "startTicks": 10800,
+          "durationTicks": 480,
+          "notes": []
+        }
+      ],
+      "notes": []
+    },
+    {
+      "index": 6,
+      "startTicks": 11280,
+      "durationTicks": 1920,
+      "beatCount": 4,
+      "beats": [
+        {
+          "index": 30,
+          "startTicks": 11280,
+          "durationTicks": 480,
+          "notes": []
+        },
+        {
+          "index": 31,
+          "startTicks": 11760,
+          "durationTicks": 480,
+          "notes": []
+        },
+        {
+          "index": 32,
+          "startTicks": 12240,
+          "durationTicks": 480,
+          "notes": []
+        },
+        {
+          "index": 33,
+          "startTicks": 12720,
+          "durationTicks": 480,
+          "notes": []
+        }
+      ],
+      "notes": []
+    },
+    {
+      "index": 7,
+      "startTicks": 13200,
+      "durationTicks": 2400,
+      "beatCount": 5,
+      "beats": [
+        {
+          "index": 35,
+          "startTicks": 13200,
+          "durationTicks": 480,
+          "notes": []
+        },
+        {
+          "index": 36,
+          "startTicks": 13680,
+          "durationTicks": 480,
+          "notes": []
+        },
+        {
+          "index": 37,
+          "startTicks": 14160,
+          "durationTicks": 480,
+          "notes": []
+        },
+        {
+          "index": 38,
+          "startTicks": 14640,
+          "durationTicks": 480,
+          "notes": []
+        },
+        {
+          "index": 39,
+          "startTicks": 15120,
+          "durationTicks": 480,
+          "notes": []
+        }
+      ],
+      "notes": []
+    },
+    {
+      "index": 8,
+      "startTicks": 15600,
+      "durationTicks": 2880,
+      "beatCount": 3,
+      "beats": [
+        {
+          "index": 41,
+          "startTicks": 15600,
+          "durationTicks": 480,
+          "notes": []
+        },
+        {
+          "index": 42,
+          "startTicks": 16560,
+          "durationTicks": 480,
+          "notes": []
+        },
+        {
+          "index": 43,
+          "startTicks": 17520,
+          "durationTicks": 480,
+          "notes": []
+        }
+      ],
+      "notes": []
+    }
+  ],
+  "notesMap": {
+    "50c171b8-1469-4b84-b9c4-17e367903054": {
+      "id": "50c171b8-1469-4b84-b9c4-17e367903054",
+      "startTicks": 0,
+      "durationTicks": 456,
+      "noteNumber": 64,
+      "noteNameWithOctave": [
+        "E4",
+        "E4"
+      ],
+      "noteName": [
+        "E",
+        "E"
+      ]
+    },
+    "46d6b8bd-b4e1-4e91-b8c8-2bd7e17d7d7e": {
+      "id": "46d6b8bd-b4e1-4e91-b8c8-2bd7e17d7d7e",
+      "startTicks": 0,
+      "durationTicks": 456,
+      "noteNumber": 71,
+      "noteNameWithOctave": [
+        "B4",
+        "B4"
+      ],
+      "noteName": [
+        "B",
+        "B"
+      ]
+    },
+    "bf4d0d0b-e52e-43a1-8c35-97345266f8e0": {
+      "id": "bf4d0d0b-e52e-43a1-8c35-97345266f8e0",
+      "startTicks": 0,
+      "durationTicks": 456,
+      "noteNumber": 67,
+      "noteNameWithOctave": [
+        "G4",
+        "G4"
+      ],
+      "noteName": [
+        "G",
+        "G"
+      ]
+    },
+    "65d3e89a-b81e-4f11-b6ea-943c854696bd": {
+      "id": "65d3e89a-b81e-4f11-b6ea-943c854696bd",
+      "startTicks": 479,
+      "durationTicks": 457,
+      "noteNumber": 69,
+      "noteNameWithOctave": [
+        "A4",
+        "A4"
+      ],
+      "noteName": [
+        "A",
+        "A"
+      ]
+    },
+    "6b3c9cbc-2cd8-42ee-82f3-7aba1d720620": {
+      "id": "6b3c9cbc-2cd8-42ee-82f3-7aba1d720620",
+      "startTicks": 480,
+      "durationTicks": 456,
+      "noteNumber": 65,
+      "noteNameWithOctave": [
+        "F4",
+        "F4"
+      ],
+      "noteName": [
+        "F",
+        "F"
+      ]
+    },
+    "59f019b6-f36c-4e94-9479-5a3bcac7f563": {
+      "id": "59f019b6-f36c-4e94-9479-5a3bcac7f563",
+      "startTicks": 481,
+      "durationTicks": 455,
+      "noteNumber": 62,
+      "noteNameWithOctave": [
+        "D4",
+        "D4"
+      ],
+      "noteName": [
+        "D",
+        "D"
+      ]
+    },
+    "f64cc58b-2677-4692-8893-f66077e77bf4": {
+      "id": "f64cc58b-2677-4692-8893-f66077e77bf4",
+      "startTicks": 958,
+      "durationTicks": 458,
+      "noteNumber": 64,
+      "noteNameWithOctave": [
+        "E4",
+        "E4"
+      ],
+      "noteName": [
+        "E",
+        "E"
+      ]
+    },
+    "9060956d-f129-465e-8621-e0b098b49f59": {
+      "id": "9060956d-f129-465e-8621-e0b098b49f59",
+      "startTicks": 961,
+      "durationTicks": 455,
+      "noteNumber": 71,
+      "noteNameWithOctave": [
+        "B4",
+        "B4"
+      ],
+      "noteName": [
+        "B",
+        "B"
+      ]
+    },
+    "529af750-9564-4ab9-be03-57b6b4c24f0f": {
+      "id": "529af750-9564-4ab9-be03-57b6b4c24f0f",
+      "startTicks": 963,
+      "durationTicks": 453,
+      "noteNumber": 67,
+      "noteNameWithOctave": [
+        "G4",
+        "G4"
+      ],
+      "noteName": [
+        "G",
+        "G"
+      ]
+    },
+    "d941682b-5dd1-460c-9294-2c4d79386de5": {
+      "id": "d941682b-5dd1-460c-9294-2c4d79386de5",
+      "startTicks": 1438,
+      "durationTicks": 458,
+      "noteNumber": 65,
+      "noteNameWithOctave": [
+        "F4",
+        "F4"
+      ],
+      "noteName": [
+        "F",
+        "F"
+      ]
+    },
+    "e9ee57cb-6e99-44b0-bc38-1bc85bb3130b": {
+      "id": "e9ee57cb-6e99-44b0-bc38-1bc85bb3130b",
+      "startTicks": 1440,
+      "durationTicks": 456,
+      "noteNumber": 62,
+      "noteNameWithOctave": [
+        "D4",
+        "D4"
+      ],
+      "noteName": [
+        "D",
+        "D"
+      ]
+    },
+    "553a1a11-c434-4d0c-a90a-bea0f711f76f": {
+      "id": "553a1a11-c434-4d0c-a90a-bea0f711f76f",
+      "startTicks": 1444,
+      "durationTicks": 452,
+      "noteNumber": 69,
+      "noteNameWithOctave": [
+        "A4",
+        "A4"
+      ],
+      "noteName": [
+        "A",
+        "A"
+      ]
+    },
+    "27cf7e14-f919-4c0e-ad12-a0296eb5d8bf": {
+      "id": "27cf7e14-f919-4c0e-ad12-a0296eb5d8bf",
+      "startTicks": 1917,
+      "durationTicks": 459,
+      "noteNumber": 64,
+      "noteNameWithOctave": [
+        "E4",
+        "E4"
+      ],
+      "noteName": [
+        "E",
+        "E"
+      ]
+    },
+    "52a85a21-d6cd-4a12-8f9e-751d31ae4798": {
+      "id": "52a85a21-d6cd-4a12-8f9e-751d31ae4798",
+      "startTicks": 1918,
+      "durationTicks": 458,
+      "noteNumber": 67,
+      "noteNameWithOctave": [
+        "G4",
+        "G4"
+      ],
+      "noteName": [
+        "G",
+        "G"
+      ]
+    },
+    "be83f729-fb68-424b-a872-513d400406e4": {
+      "id": "be83f729-fb68-424b-a872-513d400406e4",
+      "startTicks": 1922,
+      "durationTicks": 454,
+      "noteNumber": 71,
+      "noteNameWithOctave": [
+        "B4",
+        "B4"
+      ],
+      "noteName": [
+        "B",
+        "B"
+      ]
+    },
+    "109463c8-bd5a-4fc7-901e-c959233c0ef2": {
+      "id": "109463c8-bd5a-4fc7-901e-c959233c0ef2",
+      "startTicks": 2400,
+      "durationTicks": 2376,
+      "noteNumber": 64,
+      "noteNameWithOctave": [
+        "E4",
+        "E4"
+      ],
+      "noteName": [
+        "E",
+        "E"
+      ]
+    },
+    "d61d19d1-c62a-4288-bf05-5f492d0b5fe5": {
+      "id": "d61d19d1-c62a-4288-bf05-5f492d0b5fe5",
+      "startTicks": 2400,
+      "durationTicks": 2376,
+      "noteNumber": 71,
+      "noteNameWithOctave": [
+        "B4",
+        "B4"
+      ],
+      "noteName": [
+        "B",
+        "B"
+      ]
+    },
+    "b3ac9a08-87e9-4924-a3d3-209185237389": {
+      "id": "b3ac9a08-87e9-4924-a3d3-209185237389",
+      "startTicks": 2400,
+      "durationTicks": 2376,
+      "noteNumber": 67,
+      "noteNameWithOctave": [
+        "G4",
+        "G4"
+      ],
+      "noteName": [
+        "G",
+        "G"
+      ]
+    },
+    "5f3821be-168c-4735-94b7-621404869863": {
+      "id": "5f3821be-168c-4735-94b7-621404869863",
+      "startTicks": 4800,
+      "durationTicks": 456,
+      "noteNumber": 67,
+      "noteNameWithOctave": [
+        "G4",
+        "G4"
+      ],
+      "noteName": [
+        "G",
+        "G"
+      ]
+    },
+    "5a30d273-350b-458c-b939-03651750dd74": {
+      "id": "5a30d273-350b-458c-b939-03651750dd74",
+      "startTicks": 4800,
+      "durationTicks": 456,
+      "noteNumber": 64,
+      "noteNameWithOctave": [
+        "E4",
+        "E4"
+      ],
+      "noteName": [
+        "E",
+        "E"
+      ]
+    },
+    "fcf0ea7f-bfa4-4133-8f92-7f5e5f8bc73f": {
+      "id": "fcf0ea7f-bfa4-4133-8f92-7f5e5f8bc73f",
+      "startTicks": 4800,
+      "durationTicks": 456,
+      "noteNumber": 71,
+      "noteNameWithOctave": [
+        "B4",
+        "B4"
+      ],
+      "noteName": [
+        "B",
+        "B"
+      ]
+    },
+    "5b6c347f-16c0-4bbe-a127-84b70b3494ca": {
+      "id": "5b6c347f-16c0-4bbe-a127-84b70b3494ca",
+      "startTicks": 5279,
+      "durationTicks": 457,
+      "noteNumber": 62,
+      "noteNameWithOctave": [
+        "D4",
+        "D4"
+      ],
+      "noteName": [
+        "D",
+        "D"
+      ]
+    },
+    "da033075-6f27-42e2-9230-1c1ce9d370f1": {
+      "id": "da033075-6f27-42e2-9230-1c1ce9d370f1",
+      "startTicks": 5280,
+      "durationTicks": 456,
+      "noteNumber": 69,
+      "noteNameWithOctave": [
+        "A4",
+        "A4"
+      ],
+      "noteName": [
+        "A",
+        "A"
+      ]
+    },
+    "38fc1044-a501-4158-b5a1-c2cd47a28d12": {
+      "id": "38fc1044-a501-4158-b5a1-c2cd47a28d12",
+      "startTicks": 5281,
+      "durationTicks": 455,
+      "noteNumber": 65,
+      "noteNameWithOctave": [
+        "F4",
+        "F4"
+      ],
+      "noteName": [
+        "F",
+        "F"
+      ]
+    },
+    "5bec6699-2945-4da3-b763-7810fdde5bee": {
+      "id": "5bec6699-2945-4da3-b763-7810fdde5bee",
+      "startTicks": 5758,
+      "durationTicks": 458,
+      "noteNumber": 67,
+      "noteNameWithOctave": [
+        "G4",
+        "G4"
+      ],
+      "noteName": [
+        "G",
+        "G"
+      ]
+    },
+    "eb55f78c-1415-4341-bcf0-235901e40832": {
+      "id": "eb55f78c-1415-4341-bcf0-235901e40832",
+      "startTicks": 5761,
+      "durationTicks": 455,
+      "noteNumber": 64,
+      "noteNameWithOctave": [
+        "E4",
+        "E4"
+      ],
+      "noteName": [
+        "E",
+        "E"
+      ]
+    },
+    "0f550acf-0d1b-4d7e-b418-ab3a171ade70": {
+      "id": "0f550acf-0d1b-4d7e-b418-ab3a171ade70",
+      "startTicks": 5763,
+      "durationTicks": 453,
+      "noteNumber": 71,
+      "noteNameWithOctave": [
+        "B4",
+        "B4"
+      ],
+      "noteName": [
+        "B",
+        "B"
+      ]
+    },
+    "851c719d-f050-4aa3-8ab4-31ed74fc391a": {
+      "id": "851c719d-f050-4aa3-8ab4-31ed74fc391a",
+      "startTicks": 6240,
+      "durationTicks": 1416,
+      "noteNumber": 65,
+      "noteNameWithOctave": [
+        "F4",
+        "F4"
+      ],
+      "noteName": [
+        "F",
+        "F"
+      ]
+    },
+    "932f52a0-9dca-461d-9758-f4b6b5c914a3": {
+      "id": "932f52a0-9dca-461d-9758-f4b6b5c914a3",
+      "startTicks": 6240,
+      "durationTicks": 1416,
+      "noteNumber": 62,
+      "noteNameWithOctave": [
+        "D4",
+        "D4"
+      ],
+      "noteName": [
+        "D",
+        "D"
+      ]
+    },
+    "0013acd6-a76b-4f60-a3e4-9d1713b753a2": {
+      "id": "0013acd6-a76b-4f60-a3e4-9d1713b753a2",
+      "startTicks": 6240,
+      "durationTicks": 1416,
+      "noteNumber": 69,
+      "noteNameWithOctave": [
+        "A4",
+        "A4"
+      ],
+      "noteName": [
+        "A",
+        "A"
+      ]
+    },
+    "5ac02ffa-7a71-4e7d-808e-4eb5d5159755": {
+      "id": "5ac02ffa-7a71-4e7d-808e-4eb5d5159755",
+      "startTicks": 7679,
+      "durationTicks": 937,
+      "noteNumber": 64,
+      "noteNameWithOctave": [
+        "E4",
+        "E4"
+      ],
+      "noteName": [
+        "E",
+        "E"
+      ]
+    },
+    "4094faf5-b8f9-4b84-a1db-42c5f497e17d": {
+      "id": "4094faf5-b8f9-4b84-a1db-42c5f497e17d",
+      "startTicks": 7680,
+      "durationTicks": 936,
+      "noteNumber": 67,
+      "noteNameWithOctave": [
+        "G4",
+        "G4"
+      ],
+      "noteName": [
+        "G",
+        "G"
+      ]
+    },
+    "cfb86eea-5264-4df2-bc52-48f54fdc11cf": {
+      "id": "cfb86eea-5264-4df2-bc52-48f54fdc11cf",
+      "startTicks": 7681,
+      "durationTicks": 935,
+      "noteNumber": 71,
+      "noteNameWithOctave": [
+        "B4",
+        "B4"
+      ],
+      "noteName": [
+        "B",
+        "B"
+      ]
+    },
+    "0f1b2140-5991-44b3-b873-c1d8be521d36": {
+      "id": "0f1b2140-5991-44b3-b873-c1d8be521d36",
+      "startTicks": 8640,
+      "durationTicks": 456,
+      "noteNumber": 69,
+      "noteNameWithOctave": [
+        "A4",
+        "A4"
+      ],
+      "noteName": [
+        "A",
+        "A"
+      ]
+    },
+    "8da6d929-1efc-4b0d-a325-dd26253eba80": {
+      "id": "8da6d929-1efc-4b0d-a325-dd26253eba80",
+      "startTicks": 8640,
+      "durationTicks": 456,
+      "noteNumber": 65,
+      "noteNameWithOctave": [
+        "F4",
+        "F4"
+      ],
+      "noteName": [
+        "F",
+        "F"
+      ]
+    },
+    "49d167fd-8b7c-4b36-9a55-bce4aa71de8d": {
+      "id": "49d167fd-8b7c-4b36-9a55-bce4aa71de8d",
+      "startTicks": 8640,
+      "durationTicks": 456,
+      "noteNumber": 62,
+      "noteNameWithOctave": [
+        "D4",
+        "D4"
+      ],
+      "noteName": [
+        "D",
+        "D"
+      ]
+    },
+    "71d7590a-c9e9-4e32-9a98-7ce4a3576b28": {
+      "id": "71d7590a-c9e9-4e32-9a98-7ce4a3576b28",
+      "startTicks": 9120,
+      "durationTicks": 228,
+      "noteNumber": 72,
+      "noteNameWithOctave": [
+        "C5",
+        "C5"
+      ],
+      "noteName": [
+        "C",
+        "C"
+      ]
+    },
+    "e6e4f404-49e7-4cec-aa59-6501291a2fbb": {
+      "id": "e6e4f404-49e7-4cec-aa59-6501291a2fbb",
+      "startTicks": 9120,
+      "durationTicks": 228,
+      "noteNumber": 69,
+      "noteNameWithOctave": [
+        "A4",
+        "A4"
+      ],
+      "noteName": [
+        "A",
+        "A"
+      ]
+    },
+    "c4f60903-f0fd-405c-b68f-62e46d4f4724": {
+      "id": "c4f60903-f0fd-405c-b68f-62e46d4f4724",
+      "startTicks": 9120,
+      "durationTicks": 228,
+      "noteNumber": 65,
+      "noteNameWithOctave": [
+        "F4",
+        "F4"
+      ],
+      "noteName": [
+        "F",
+        "F"
+      ]
+    },
+    "9d481afc-75e7-463d-b1f1-34e4b0350600": {
+      "id": "9d481afc-75e7-463d-b1f1-34e4b0350600",
+      "startTicks": 9360,
+      "durationTicks": 456,
+      "noteNumber": 65,
+      "noteNameWithOctave": [
+        "F4",
+        "F4"
+      ],
+      "noteName": [
+        "F",
+        "F"
+      ]
+    },
+    "1af51f63-3d4a-4934-a451-f2c5746c7391": {
+      "id": "1af51f63-3d4a-4934-a451-f2c5746c7391",
+      "startTicks": 9360,
+      "durationTicks": 456,
+      "noteNumber": 69,
+      "noteNameWithOctave": [
+        "A4",
+        "A4"
+      ],
+      "noteName": [
+        "A",
+        "A"
+      ]
+    },
+    "ddf15953-9c1e-4641-a483-15e24195fa9b": {
+      "id": "ddf15953-9c1e-4641-a483-15e24195fa9b",
+      "startTicks": 9360,
+      "durationTicks": 456,
+      "noteNumber": 72,
+      "noteNameWithOctave": [
+        "C5",
+        "C5"
+      ],
+      "noteName": [
+        "C",
+        "C"
+      ]
+    },
+    "1a47db47-755a-4ab9-92cf-ca1c20997187": {
+      "id": "1a47db47-755a-4ab9-92cf-ca1c20997187",
+      "startTicks": 9839,
+      "durationTicks": 457,
+      "noteNumber": 67,
+      "noteNameWithOctave": [
+        "G4",
+        "G4"
+      ],
+      "noteName": [
+        "G",
+        "G"
+      ]
+    },
+    "3ecde4da-1e69-4daa-96ce-f512936d1a35": {
+      "id": "3ecde4da-1e69-4daa-96ce-f512936d1a35",
+      "startTicks": 9840,
+      "durationTicks": 456,
+      "noteNumber": 71,
+      "noteNameWithOctave": [
+        "B4",
+        "B4"
+      ],
+      "noteName": [
+        "B",
+        "B"
+      ]
+    },
+    "b56c3ddd-f370-48a6-b04d-13b4d0a6878d": {
+      "id": "b56c3ddd-f370-48a6-b04d-13b4d0a6878d",
+      "startTicks": 9841,
+      "durationTicks": 455,
+      "noteNumber": 64,
+      "noteNameWithOctave": [
+        "E4",
+        "E4"
+      ],
+      "noteName": [
+        "E",
+        "E"
+      ]
+    },
+    "41052a17-2851-4a95-b8bc-7619b2d2a3bd": {
+      "id": "41052a17-2851-4a95-b8bc-7619b2d2a3bd",
+      "startTicks": 10318,
+      "durationTicks": 458,
+      "noteNumber": 65,
+      "noteNameWithOctave": [
+        "F4",
+        "F4"
+      ],
+      "noteName": [
+        "F",
+        "F"
+      ]
+    },
+    "5cde8c7c-186d-41f1-aa64-5ed95d3f11f5": {
+      "id": "5cde8c7c-186d-41f1-aa64-5ed95d3f11f5",
+      "startTicks": 10321,
+      "durationTicks": 455,
+      "noteNumber": 69,
+      "noteNameWithOctave": [
+        "A4",
+        "A4"
+      ],
+      "noteName": [
+        "A",
+        "A"
+      ]
+    },
+    "c94fafb6-3fd1-411b-b46c-6fb453ec67e3": {
+      "id": "c94fafb6-3fd1-411b-b46c-6fb453ec67e3",
+      "startTicks": 10323,
+      "durationTicks": 453,
+      "noteNumber": 72,
+      "noteNameWithOctave": [
+        "C5",
+        "C5"
+      ],
+      "noteName": [
+        "C",
+        "C"
+      ]
+    },
+    "48b6aae7-ce51-4716-917a-e03389a4c5b9": {
+      "id": "48b6aae7-ce51-4716-917a-e03389a4c5b9",
+      "startTicks": 10798,
+      "durationTicks": 458,
+      "noteNumber": 71,
+      "noteNameWithOctave": [
+        "B4",
+        "B4"
+      ],
+      "noteName": [
+        "B",
+        "B"
+      ]
+    },
+    "3d684910-5403-4007-a645-d7a189eb9261": {
+      "id": "3d684910-5403-4007-a645-d7a189eb9261",
+      "startTicks": 10800,
+      "durationTicks": 456,
+      "noteNumber": 64,
+      "noteNameWithOctave": [
+        "E4",
+        "E4"
+      ],
+      "noteName": [
+        "E",
+        "E"
+      ]
+    },
+    "42cd99b0-6c57-45ec-805a-b5a8cb18a09d": {
+      "id": "42cd99b0-6c57-45ec-805a-b5a8cb18a09d",
+      "startTicks": 10804,
+      "durationTicks": 452,
+      "noteNumber": 67,
+      "noteNameWithOctave": [
+        "G4",
+        "G4"
+      ],
+      "noteName": [
+        "G",
+        "G"
+      ]
+    },
+    "4e34306e-d2bf-4b97-824e-48696b0f0777": {
+      "id": "4e34306e-d2bf-4b97-824e-48696b0f0777",
+      "startTicks": 11280,
+      "durationTicks": 1416,
+      "noteNumber": 69,
+      "noteNameWithOctave": [
+        "A4",
+        "A4"
+      ],
+      "noteName": [
+        "A",
+        "A"
+      ]
+    },
+    "b940e360-78a1-43fb-9238-b5f8713888d1": {
+      "id": "b940e360-78a1-43fb-9238-b5f8713888d1",
+      "startTicks": 11280,
+      "durationTicks": 1416,
+      "noteNumber": 72,
+      "noteNameWithOctave": [
+        "C5",
+        "C5"
+      ],
+      "noteName": [
+        "C",
+        "C"
+      ]
+    },
+    "8649558c-4ecd-4734-af2a-fde9fbf03ed7": {
+      "id": "8649558c-4ecd-4734-af2a-fde9fbf03ed7",
+      "startTicks": 11280,
+      "durationTicks": 1416,
+      "noteNumber": 65,
+      "noteNameWithOctave": [
+        "F4",
+        "F4"
+      ],
+      "noteName": [
+        "F",
+        "F"
+      ]
+    },
+    "912bcc4e-e930-4f5c-aca7-11470466c391": {
+      "id": "912bcc4e-e930-4f5c-aca7-11470466c391",
+      "startTicks": 13200,
+      "durationTicks": 936,
+      "noteNumber": 71,
+      "noteNameWithOctave": [
+        "B4",
+        "B4"
+      ],
+      "noteName": [
+        "B",
+        "B"
+      ]
+    },
+    "2aaf4955-3d1f-480f-808e-aaec136986da": {
+      "id": "2aaf4955-3d1f-480f-808e-aaec136986da",
+      "startTicks": 13200,
+      "durationTicks": 936,
+      "noteNumber": 64,
+      "noteNameWithOctave": [
+        "E4",
+        "E4"
+      ],
+      "noteName": [
+        "E",
+        "E"
+      ]
+    },
+    "cecb7215-cfa8-4fa9-8e96-1cd922f58665": {
+      "id": "cecb7215-cfa8-4fa9-8e96-1cd922f58665",
+      "startTicks": 13200,
+      "durationTicks": 936,
+      "noteNumber": 67,
+      "noteNameWithOctave": [
+        "G4",
+        "G4"
+      ],
+      "noteName": [
+        "G",
+        "G"
+      ]
+    },
+    "2d67ed6b-841c-4d82-b140-285798d25b25": {
+      "id": "2d67ed6b-841c-4d82-b140-285798d25b25",
+      "startTicks": 14160,
+      "durationTicks": 456,
+      "noteNumber": 62,
+      "noteNameWithOctave": [
+        "D4",
+        "D4"
+      ],
+      "noteName": [
+        "D",
+        "D"
+      ]
+    },
+    "6da20369-aac3-4e6a-b582-f0a24cefb9b9": {
+      "id": "6da20369-aac3-4e6a-b582-f0a24cefb9b9",
+      "startTicks": 14160,
+      "durationTicks": 456,
+      "noteNumber": 65,
+      "noteNameWithOctave": [
+        "F4",
+        "F4"
+      ],
+      "noteName": [
+        "F",
+        "F"
+      ]
+    },
+    "523131dd-4b2a-4f27-84c5-5f618c22329c": {
+      "id": "523131dd-4b2a-4f27-84c5-5f618c22329c",
+      "startTicks": 14160,
+      "durationTicks": 456,
+      "noteNumber": 69,
+      "noteNameWithOctave": [
+        "A4",
+        "A4"
+      ],
+      "noteName": [
+        "A",
+        "A"
+      ]
+    },
+    "c0e834cb-3899-4114-9f03-8a3c740941bf": {
+      "id": "c0e834cb-3899-4114-9f03-8a3c740941bf",
+      "startTicks": 14640,
+      "durationTicks": 936,
+      "noteNumber": 65,
+      "noteNameWithOctave": [
+        "F4",
+        "F4"
+      ],
+      "noteName": [
+        "F",
+        "F"
+      ]
+    },
+    "108e0dd1-05e4-4c0d-8f2a-f59a5fcaa7af": {
+      "id": "108e0dd1-05e4-4c0d-8f2a-f59a5fcaa7af",
+      "startTicks": 14640,
+      "durationTicks": 936,
+      "noteNumber": 69,
+      "noteNameWithOctave": [
+        "A4",
+        "A4"
+      ],
+      "noteName": [
+        "A",
+        "A"
+      ]
+    },
+    "9e0b989b-56b1-4a4b-95c8-cbde18599b9b": {
+      "id": "9e0b989b-56b1-4a4b-95c8-cbde18599b9b",
+      "startTicks": 14640,
+      "durationTicks": 936,
+      "noteNumber": 72,
+      "noteNameWithOctave": [
+        "C5",
+        "C5"
+      ],
+      "noteName": [
+        "C",
+        "C"
+      ]
+    },
+    "8d33f67a-e675-4cf7-8b4b-03e20f7d4358": {
+      "id": "8d33f67a-e675-4cf7-8b4b-03e20f7d4358",
+      "startTicks": 15600,
+      "durationTicks": 456,
+      "noteNumber": 64,
+      "noteNameWithOctave": [
+        "E4",
+        "E4"
+      ],
+      "noteName": [
+        "E",
+        "E"
+      ]
+    },
+    "e4515743-c121-403b-9e4e-91a7682374bf": {
+      "id": "e4515743-c121-403b-9e4e-91a7682374bf",
+      "startTicks": 15600,
+      "durationTicks": 456,
+      "noteNumber": 67,
+      "noteNameWithOctave": [
+        "G4",
+        "G4"
+      ],
+      "noteName": [
+        "G",
+        "G"
+      ]
+    },
+    "0b8a2783-cb19-4c5b-a125-06da0d322cfc": {
+      "id": "0b8a2783-cb19-4c5b-a125-06da0d322cfc",
+      "startTicks": 15600,
+      "durationTicks": 456,
+      "noteNumber": 71,
+      "noteNameWithOctave": [
+        "B4",
+        "B4"
+      ],
+      "noteName": [
+        "B",
+        "B"
+      ]
+    },
+    "a31db2d4-df5b-421c-ae10-a82adfe962ce": {
+      "id": "a31db2d4-df5b-421c-ae10-a82adfe962ce",
+      "startTicks": 16079,
+      "durationTicks": 457,
+      "noteNumber": 65,
+      "noteNameWithOctave": [
+        "F4",
+        "F4"
+      ],
+      "noteName": [
+        "F",
+        "F"
+      ]
+    },
+    "b0052812-3dc9-4483-9825-84723afa34e7": {
+      "id": "b0052812-3dc9-4483-9825-84723afa34e7",
+      "startTicks": 16080,
+      "durationTicks": 456,
+      "noteNumber": 69,
+      "noteNameWithOctave": [
+        "A4",
+        "A4"
+      ],
+      "noteName": [
+        "A",
+        "A"
+      ]
+    },
+    "12c6e304-bed2-4cf8-b3d8-faedc77aa6b3": {
+      "id": "12c6e304-bed2-4cf8-b3d8-faedc77aa6b3",
+      "startTicks": 16081,
+      "durationTicks": 455,
+      "noteNumber": 62,
+      "noteNameWithOctave": [
+        "D4",
+        "D4"
+      ],
+      "noteName": [
+        "D",
+        "D"
+      ]
+    },
+    "0f27d57d-b3bd-40b6-844a-87b8111327ba": {
+      "id": "0f27d57d-b3bd-40b6-844a-87b8111327ba",
+      "startTicks": 16558,
+      "durationTicks": 458,
+      "noteNumber": 64,
+      "noteNameWithOctave": [
+        "E4",
+        "E4"
+      ],
+      "noteName": [
+        "E",
+        "E"
+      ]
+    },
+    "17ea2f2b-d029-4db8-aa2f-236e4d5ed8d0": {
+      "id": "17ea2f2b-d029-4db8-aa2f-236e4d5ed8d0",
+      "startTicks": 16561,
+      "durationTicks": 455,
+      "noteNumber": 67,
+      "noteNameWithOctave": [
+        "G4",
+        "G4"
+      ],
+      "noteName": [
+        "G",
+        "G"
+      ]
+    },
+    "e1cc13ac-4fa7-4d83-9675-4ad4f84d4a6d": {
+      "id": "e1cc13ac-4fa7-4d83-9675-4ad4f84d4a6d",
+      "startTicks": 16563,
+      "durationTicks": 453,
+      "noteNumber": 71,
+      "noteNameWithOctave": [
+        "B4",
+        "B4"
+      ],
+      "noteName": [
+        "B",
+        "B"
+      ]
+    },
+    "87ee1e75-99f1-49ab-8c88-760b85e3919d": {
+      "id": "87ee1e75-99f1-49ab-8c88-760b85e3919d",
+      "startTicks": 17038,
+      "durationTicks": 458,
+      "noteNumber": 69,
+      "noteNameWithOctave": [
+        "A4",
+        "A4"
+      ],
+      "noteName": [
+        "A",
+        "A"
+      ]
+    },
+    "820855d2-8e81-43e6-a502-50c284273e76": {
+      "id": "820855d2-8e81-43e6-a502-50c284273e76",
+      "startTicks": 17040,
+      "durationTicks": 456,
+      "noteNumber": 62,
+      "noteNameWithOctave": [
+        "D4",
+        "D4"
+      ],
+      "noteName": [
+        "D",
+        "D"
+      ]
+    },
+    "9bd531d1-f38b-460d-993b-b58cfbb78c0a": {
+      "id": "9bd531d1-f38b-460d-993b-b58cfbb78c0a",
+      "startTicks": 17044,
+      "durationTicks": 452,
+      "noteNumber": 65,
+      "noteNameWithOctave": [
+        "F4",
+        "F4"
+      ],
+      "noteName": [
+        "F",
+        "F"
+      ]
+    },
+    "9cca9976-831e-45b4-acfe-8d6f47fe1478": {
+      "id": "9cca9976-831e-45b4-acfe-8d6f47fe1478",
+      "startTicks": 17517,
+      "durationTicks": 459,
+      "noteNumber": 64,
+      "noteNameWithOctave": [
+        "E4",
+        "E4"
+      ],
+      "noteName": [
+        "E",
+        "E"
+      ]
+    },
+    "d8b26845-88d4-44df-856f-d3c09bd168e0": {
+      "id": "d8b26845-88d4-44df-856f-d3c09bd168e0",
+      "startTicks": 17518,
+      "durationTicks": 458,
+      "noteNumber": 71,
+      "noteNameWithOctave": [
+        "B4",
+        "B4"
+      ],
+      "noteName": [
+        "B",
+        "B"
+      ]
+    },
+    "ba11a107-aa85-4a2d-a7ba-df7983c052c5": {
+      "id": "ba11a107-aa85-4a2d-a7ba-df7983c052c5",
+      "startTicks": 17522,
+      "durationTicks": 454,
+      "noteNumber": 67,
+      "noteNameWithOctave": [
+        "G4",
+        "G4"
+      ],
+      "noteName": [
+        "G",
+        "G"
+      ]
+    },
+    "4789ce87-e605-402d-aee8-8aba3b55c8b6": {
+      "id": "4789ce87-e605-402d-aee8-8aba3b55c8b6",
+      "startTicks": 17992,
+      "durationTicks": 464,
+      "noteNumber": 69,
+      "noteNameWithOctave": [
+        "A4",
+        "A4"
+      ],
+      "noteName": [
+        "A",
+        "A"
+      ]
+    },
+    "deb9c69e-a65f-479c-8d8e-433c90174364": {
+      "id": "deb9c69e-a65f-479c-8d8e-433c90174364",
+      "startTicks": 17998,
+      "durationTicks": 458,
+      "noteNumber": 65,
+      "noteNameWithOctave": [
+        "F4",
+        "F4"
+      ],
+      "noteName": [
+        "F",
+        "F"
+      ]
+    },
+    "5c65b185-3fb7-4751-8d4c-0ab742e8c423": {
+      "id": "5c65b185-3fb7-4751-8d4c-0ab742e8c423",
+      "startTicks": 18004,
+      "durationTicks": 452,
+      "noteNumber": 62,
+      "noteNameWithOctave": [
+        "D4",
+        "D4"
+      ],
+      "noteName": [
+        "D",
+        "D"
+      ]
+    }
+  }
+}

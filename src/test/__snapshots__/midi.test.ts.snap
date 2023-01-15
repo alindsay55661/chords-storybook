@@ -3,8 +3,1496 @@
 exports[`analyze() 1`] = `
 {
   "notes": {
-    "byBeat": [
+    "byBar": [
       {
+        "beatCount": 4,
+        "beats": [
+          {
+            "durationTicks": 480,
+            "index": 0,
+            "notes": [
+              {
+                "durationTicks": 113,
+                "id": "removed",
+                "noteName": [
+                  "G",
+                  "G",
+                ],
+                "noteNameWithOctave": [
+                  "G4",
+                  "G4",
+                ],
+                "noteNumber": 67,
+                "startTicks": 0,
+              },
+              {
+                "durationTicks": 251,
+                "id": "removed",
+                "noteName": [
+                  "A",
+                  "A",
+                ],
+                "noteNameWithOctave": [
+                  "A2",
+                  "A2",
+                ],
+                "noteNumber": 45,
+                "startTicks": 2,
+              },
+              {
+                "durationTicks": 34,
+                "id": "removed",
+                "noteName": [
+                  "A",
+                  "A",
+                ],
+                "noteNameWithOctave": [
+                  "A3",
+                  "A3",
+                ],
+                "noteNumber": 57,
+                "startTicks": 253,
+              },
+              {
+                "durationTicks": 305,
+                "id": "removed",
+                "noteName": [
+                  "E",
+                  "E",
+                ],
+                "noteNameWithOctave": [
+                  "E4",
+                  "E4",
+                ],
+                "noteNumber": 64,
+                "startTicks": 0,
+              },
+              {
+                "durationTicks": 355,
+                "id": "removed",
+                "noteName": [
+                  "C",
+                  "C",
+                ],
+                "noteNameWithOctave": [
+                  "C5",
+                  "C5",
+                ],
+                "noteNumber": 72,
+                "startTicks": 2,
+              },
+              {
+                "durationTicks": 274,
+                "id": "removed",
+                "noteName": [
+                  "A",
+                  "A",
+                ],
+                "noteNameWithOctave": [
+                  "A4",
+                  "A4",
+                ],
+                "noteNumber": 69,
+                "startTicks": 98,
+              },
+              {
+                "durationTicks": 49,
+                "id": "removed",
+                "noteName": [
+                  "D",
+                  "D",
+                ],
+                "noteNameWithOctave": [
+                  "D4",
+                  "D4",
+                ],
+                "noteNumber": 62,
+                "startTicks": 379,
+              },
+              {
+                "durationTicks": 72,
+                "id": "removed",
+                "noteName": [
+                  "G",
+                  "G",
+                ],
+                "noteNameWithOctave": [
+                  "G4",
+                  "G4",
+                ],
+                "noteNumber": 67,
+                "startTicks": 377,
+              },
+              {
+                "durationTicks": 97,
+                "id": "removed",
+                "noteName": [
+                  "B",
+                  "B",
+                ],
+                "noteNameWithOctave": [
+                  "B4",
+                  "B4",
+                ],
+                "noteNumber": 71,
+                "startTicks": 368,
+              },
+              {
+                "durationTicks": 35,
+                "id": "removed",
+                "noteName": [
+                  "A",
+                  "A",
+                ],
+                "noteNameWithOctave": [
+                  "A3",
+                  "A3",
+                ],
+                "noteNumber": 57,
+                "startTicks": 484,
+              },
+              {
+                "durationTicks": 55,
+                "id": "removed",
+                "noteName": [
+                  "D",
+                  "D",
+                ],
+                "noteNameWithOctave": [
+                  "D4",
+                  "D4",
+                ],
+                "noteNumber": 62,
+                "startTicks": 602,
+              },
+              {
+                "durationTicks": 43,
+                "id": "removed",
+                "noteName": [
+                  "A",
+                  "A",
+                ],
+                "noteNameWithOctave": [
+                  "A3",
+                  "A3",
+                ],
+                "noteNumber": 57,
+                "startTicks": 710,
+              },
+              {
+                "durationTicks": 34,
+                "id": "removed",
+                "noteName": [
+                  "A",
+                  "A",
+                ],
+                "noteNameWithOctave": [
+                  "A2",
+                  "A2",
+                ],
+                "noteNumber": 45,
+                "startTicks": 839,
+              },
+              {
+                "durationTicks": 128,
+                "id": "removed",
+                "noteName": [
+                  "G",
+                  "G",
+                ],
+                "noteNameWithOctave": [
+                  "G4",
+                  "G4",
+                ],
+                "noteNumber": 67,
+                "startTicks": 957,
+              },
+              {
+                "durationTicks": 264,
+                "id": "removed",
+                "noteName": [
+                  "E",
+                  "E",
+                ],
+                "noteNameWithOctave": [
+                  "E4",
+                  "E4",
+                ],
+                "noteNumber": 64,
+                "startTicks": 959,
+              },
+              {
+                "durationTicks": 38,
+                "id": "removed",
+                "noteName": [
+                  "A",
+                  "A",
+                ],
+                "noteNameWithOctave": [
+                  "A3",
+                  "A3",
+                ],
+                "noteNumber": 57,
+                "startTicks": 1190,
+              },
+              {
+                "durationTicks": 240,
+                "id": "removed",
+                "noteName": [
+                  "A",
+                  "A",
+                ],
+                "noteNameWithOctave": [
+                  "A4",
+                  "A4",
+                ],
+                "noteNumber": 69,
+                "startTicks": 1079,
+              },
+              {
+                "durationTicks": 395,
+                "id": "removed",
+                "noteName": [
+                  "C",
+                  "C",
+                ],
+                "noteNameWithOctave": [
+                  "C5",
+                  "C5",
+                ],
+                "noteNumber": 72,
+                "startTicks": 960,
+              },
+              {
+                "durationTicks": 103,
+                "id": "removed",
+                "noteName": [
+                  "D",
+                  "D",
+                ],
+                "noteNameWithOctave": [
+                  "D4",
+                  "D4",
+                ],
+                "noteNumber": 62,
+                "startTicks": 1318,
+              },
+              {
+                "durationTicks": 113,
+                "id": "removed",
+                "noteName": [
+                  "G",
+                  "G",
+                ],
+                "noteNameWithOctave": [
+                  "G4",
+                  "G4",
+                ],
+                "noteNumber": 67,
+                "startTicks": 1318,
+              },
+              {
+                "durationTicks": 167,
+                "id": "removed",
+                "noteName": [
+                  "B",
+                  "B",
+                ],
+                "noteNameWithOctave": [
+                  "B4",
+                  "B4",
+                ],
+                "noteNumber": 71,
+                "startTicks": 1312,
+              },
+              {
+                "durationTicks": 40,
+                "id": "removed",
+                "noteName": [
+                  "A",
+                  "A",
+                ],
+                "noteNameWithOctave": [
+                  "A3",
+                  "A3",
+                ],
+                "noteNumber": 57,
+                "startTicks": 1439,
+              },
+              {
+                "durationTicks": 83,
+                "id": "removed",
+                "noteName": [
+                  "D",
+                  "D",
+                ],
+                "noteNameWithOctave": [
+                  "D4",
+                  "D4",
+                ],
+                "noteNumber": 62,
+                "startTicks": 1561,
+              },
+              {
+                "durationTicks": 38,
+                "id": "removed",
+                "noteName": [
+                  "A",
+                  "A",
+                ],
+                "noteNameWithOctave": [
+                  "A3",
+                  "A3",
+                ],
+                "noteNumber": 57,
+                "startTicks": 1684,
+              },
+              {
+                "durationTicks": 33,
+                "id": "removed",
+                "noteName": [
+                  "D",
+                  "D",
+                ],
+                "noteNameWithOctave": [
+                  "D3",
+                  "D3",
+                ],
+                "noteNumber": 50,
+                "startTicks": 1804,
+              },
+              {
+                "durationTicks": 3,
+                "id": "removed",
+                "noteName": [
+                  "E",
+                  "E",
+                ],
+                "noteNameWithOctave": [
+                  "E4",
+                  "E4",
+                ],
+                "noteNumber": 64,
+                "startTicks": 1917,
+              },
+            ],
+            "startTicks": 0,
+          },
+          {
+            "durationTicks": 480,
+            "index": 1,
+            "notes": [
+              {
+                "durationTicks": 113,
+                "id": "removed",
+                "noteName": [
+                  "G",
+                  "G",
+                ],
+                "noteNameWithOctave": [
+                  "G4",
+                  "G4",
+                ],
+                "noteNumber": 67,
+                "startTicks": 0,
+              },
+              {
+                "durationTicks": 251,
+                "id": "removed",
+                "noteName": [
+                  "A",
+                  "A",
+                ],
+                "noteNameWithOctave": [
+                  "A2",
+                  "A2",
+                ],
+                "noteNumber": 45,
+                "startTicks": 2,
+              },
+              {
+                "durationTicks": 34,
+                "id": "removed",
+                "noteName": [
+                  "A",
+                  "A",
+                ],
+                "noteNameWithOctave": [
+                  "A3",
+                  "A3",
+                ],
+                "noteNumber": 57,
+                "startTicks": 253,
+              },
+              {
+                "durationTicks": 305,
+                "id": "removed",
+                "noteName": [
+                  "E",
+                  "E",
+                ],
+                "noteNameWithOctave": [
+                  "E4",
+                  "E4",
+                ],
+                "noteNumber": 64,
+                "startTicks": 0,
+              },
+              {
+                "durationTicks": 355,
+                "id": "removed",
+                "noteName": [
+                  "C",
+                  "C",
+                ],
+                "noteNameWithOctave": [
+                  "C5",
+                  "C5",
+                ],
+                "noteNumber": 72,
+                "startTicks": 2,
+              },
+              {
+                "durationTicks": 274,
+                "id": "removed",
+                "noteName": [
+                  "A",
+                  "A",
+                ],
+                "noteNameWithOctave": [
+                  "A4",
+                  "A4",
+                ],
+                "noteNumber": 69,
+                "startTicks": 98,
+              },
+              {
+                "durationTicks": 49,
+                "id": "removed",
+                "noteName": [
+                  "D",
+                  "D",
+                ],
+                "noteNameWithOctave": [
+                  "D4",
+                  "D4",
+                ],
+                "noteNumber": 62,
+                "startTicks": 379,
+              },
+              {
+                "durationTicks": 72,
+                "id": "removed",
+                "noteName": [
+                  "G",
+                  "G",
+                ],
+                "noteNameWithOctave": [
+                  "G4",
+                  "G4",
+                ],
+                "noteNumber": 67,
+                "startTicks": 377,
+              },
+              {
+                "durationTicks": 97,
+                "id": "removed",
+                "noteName": [
+                  "B",
+                  "B",
+                ],
+                "noteNameWithOctave": [
+                  "B4",
+                  "B4",
+                ],
+                "noteNumber": 71,
+                "startTicks": 368,
+              },
+              {
+                "durationTicks": 35,
+                "id": "removed",
+                "noteName": [
+                  "A",
+                  "A",
+                ],
+                "noteNameWithOctave": [
+                  "A3",
+                  "A3",
+                ],
+                "noteNumber": 57,
+                "startTicks": 484,
+              },
+              {
+                "durationTicks": 55,
+                "id": "removed",
+                "noteName": [
+                  "D",
+                  "D",
+                ],
+                "noteNameWithOctave": [
+                  "D4",
+                  "D4",
+                ],
+                "noteNumber": 62,
+                "startTicks": 602,
+              },
+              {
+                "durationTicks": 43,
+                "id": "removed",
+                "noteName": [
+                  "A",
+                  "A",
+                ],
+                "noteNameWithOctave": [
+                  "A3",
+                  "A3",
+                ],
+                "noteNumber": 57,
+                "startTicks": 710,
+              },
+              {
+                "durationTicks": 34,
+                "id": "removed",
+                "noteName": [
+                  "A",
+                  "A",
+                ],
+                "noteNameWithOctave": [
+                  "A2",
+                  "A2",
+                ],
+                "noteNumber": 45,
+                "startTicks": 839,
+              },
+              {
+                "durationTicks": 128,
+                "id": "removed",
+                "noteName": [
+                  "G",
+                  "G",
+                ],
+                "noteNameWithOctave": [
+                  "G4",
+                  "G4",
+                ],
+                "noteNumber": 67,
+                "startTicks": 957,
+              },
+              {
+                "durationTicks": 264,
+                "id": "removed",
+                "noteName": [
+                  "E",
+                  "E",
+                ],
+                "noteNameWithOctave": [
+                  "E4",
+                  "E4",
+                ],
+                "noteNumber": 64,
+                "startTicks": 959,
+              },
+              {
+                "durationTicks": 38,
+                "id": "removed",
+                "noteName": [
+                  "A",
+                  "A",
+                ],
+                "noteNameWithOctave": [
+                  "A3",
+                  "A3",
+                ],
+                "noteNumber": 57,
+                "startTicks": 1190,
+              },
+              {
+                "durationTicks": 240,
+                "id": "removed",
+                "noteName": [
+                  "A",
+                  "A",
+                ],
+                "noteNameWithOctave": [
+                  "A4",
+                  "A4",
+                ],
+                "noteNumber": 69,
+                "startTicks": 1079,
+              },
+              {
+                "durationTicks": 395,
+                "id": "removed",
+                "noteName": [
+                  "C",
+                  "C",
+                ],
+                "noteNameWithOctave": [
+                  "C5",
+                  "C5",
+                ],
+                "noteNumber": 72,
+                "startTicks": 960,
+              },
+              {
+                "durationTicks": 103,
+                "id": "removed",
+                "noteName": [
+                  "D",
+                  "D",
+                ],
+                "noteNameWithOctave": [
+                  "D4",
+                  "D4",
+                ],
+                "noteNumber": 62,
+                "startTicks": 1318,
+              },
+              {
+                "durationTicks": 113,
+                "id": "removed",
+                "noteName": [
+                  "G",
+                  "G",
+                ],
+                "noteNameWithOctave": [
+                  "G4",
+                  "G4",
+                ],
+                "noteNumber": 67,
+                "startTicks": 1318,
+              },
+              {
+                "durationTicks": 167,
+                "id": "removed",
+                "noteName": [
+                  "B",
+                  "B",
+                ],
+                "noteNameWithOctave": [
+                  "B4",
+                  "B4",
+                ],
+                "noteNumber": 71,
+                "startTicks": 1312,
+              },
+              {
+                "durationTicks": 40,
+                "id": "removed",
+                "noteName": [
+                  "A",
+                  "A",
+                ],
+                "noteNameWithOctave": [
+                  "A3",
+                  "A3",
+                ],
+                "noteNumber": 57,
+                "startTicks": 1439,
+              },
+              {
+                "durationTicks": 83,
+                "id": "removed",
+                "noteName": [
+                  "D",
+                  "D",
+                ],
+                "noteNameWithOctave": [
+                  "D4",
+                  "D4",
+                ],
+                "noteNumber": 62,
+                "startTicks": 1561,
+              },
+              {
+                "durationTicks": 38,
+                "id": "removed",
+                "noteName": [
+                  "A",
+                  "A",
+                ],
+                "noteNameWithOctave": [
+                  "A3",
+                  "A3",
+                ],
+                "noteNumber": 57,
+                "startTicks": 1684,
+              },
+              {
+                "durationTicks": 33,
+                "id": "removed",
+                "noteName": [
+                  "D",
+                  "D",
+                ],
+                "noteNameWithOctave": [
+                  "D3",
+                  "D3",
+                ],
+                "noteNumber": 50,
+                "startTicks": 1804,
+              },
+              {
+                "durationTicks": 3,
+                "id": "removed",
+                "noteName": [
+                  "E",
+                  "E",
+                ],
+                "noteNameWithOctave": [
+                  "E4",
+                  "E4",
+                ],
+                "noteNumber": 64,
+                "startTicks": 1917,
+              },
+            ],
+            "startTicks": 480,
+          },
+          {
+            "durationTicks": 480,
+            "index": 2,
+            "notes": [
+              {
+                "durationTicks": 113,
+                "id": "removed",
+                "noteName": [
+                  "G",
+                  "G",
+                ],
+                "noteNameWithOctave": [
+                  "G4",
+                  "G4",
+                ],
+                "noteNumber": 67,
+                "startTicks": 0,
+              },
+              {
+                "durationTicks": 251,
+                "id": "removed",
+                "noteName": [
+                  "A",
+                  "A",
+                ],
+                "noteNameWithOctave": [
+                  "A2",
+                  "A2",
+                ],
+                "noteNumber": 45,
+                "startTicks": 2,
+              },
+              {
+                "durationTicks": 34,
+                "id": "removed",
+                "noteName": [
+                  "A",
+                  "A",
+                ],
+                "noteNameWithOctave": [
+                  "A3",
+                  "A3",
+                ],
+                "noteNumber": 57,
+                "startTicks": 253,
+              },
+              {
+                "durationTicks": 305,
+                "id": "removed",
+                "noteName": [
+                  "E",
+                  "E",
+                ],
+                "noteNameWithOctave": [
+                  "E4",
+                  "E4",
+                ],
+                "noteNumber": 64,
+                "startTicks": 0,
+              },
+              {
+                "durationTicks": 355,
+                "id": "removed",
+                "noteName": [
+                  "C",
+                  "C",
+                ],
+                "noteNameWithOctave": [
+                  "C5",
+                  "C5",
+                ],
+                "noteNumber": 72,
+                "startTicks": 2,
+              },
+              {
+                "durationTicks": 274,
+                "id": "removed",
+                "noteName": [
+                  "A",
+                  "A",
+                ],
+                "noteNameWithOctave": [
+                  "A4",
+                  "A4",
+                ],
+                "noteNumber": 69,
+                "startTicks": 98,
+              },
+              {
+                "durationTicks": 49,
+                "id": "removed",
+                "noteName": [
+                  "D",
+                  "D",
+                ],
+                "noteNameWithOctave": [
+                  "D4",
+                  "D4",
+                ],
+                "noteNumber": 62,
+                "startTicks": 379,
+              },
+              {
+                "durationTicks": 72,
+                "id": "removed",
+                "noteName": [
+                  "G",
+                  "G",
+                ],
+                "noteNameWithOctave": [
+                  "G4",
+                  "G4",
+                ],
+                "noteNumber": 67,
+                "startTicks": 377,
+              },
+              {
+                "durationTicks": 97,
+                "id": "removed",
+                "noteName": [
+                  "B",
+                  "B",
+                ],
+                "noteNameWithOctave": [
+                  "B4",
+                  "B4",
+                ],
+                "noteNumber": 71,
+                "startTicks": 368,
+              },
+              {
+                "durationTicks": 35,
+                "id": "removed",
+                "noteName": [
+                  "A",
+                  "A",
+                ],
+                "noteNameWithOctave": [
+                  "A3",
+                  "A3",
+                ],
+                "noteNumber": 57,
+                "startTicks": 484,
+              },
+              {
+                "durationTicks": 55,
+                "id": "removed",
+                "noteName": [
+                  "D",
+                  "D",
+                ],
+                "noteNameWithOctave": [
+                  "D4",
+                  "D4",
+                ],
+                "noteNumber": 62,
+                "startTicks": 602,
+              },
+              {
+                "durationTicks": 43,
+                "id": "removed",
+                "noteName": [
+                  "A",
+                  "A",
+                ],
+                "noteNameWithOctave": [
+                  "A3",
+                  "A3",
+                ],
+                "noteNumber": 57,
+                "startTicks": 710,
+              },
+              {
+                "durationTicks": 34,
+                "id": "removed",
+                "noteName": [
+                  "A",
+                  "A",
+                ],
+                "noteNameWithOctave": [
+                  "A2",
+                  "A2",
+                ],
+                "noteNumber": 45,
+                "startTicks": 839,
+              },
+              {
+                "durationTicks": 128,
+                "id": "removed",
+                "noteName": [
+                  "G",
+                  "G",
+                ],
+                "noteNameWithOctave": [
+                  "G4",
+                  "G4",
+                ],
+                "noteNumber": 67,
+                "startTicks": 957,
+              },
+              {
+                "durationTicks": 264,
+                "id": "removed",
+                "noteName": [
+                  "E",
+                  "E",
+                ],
+                "noteNameWithOctave": [
+                  "E4",
+                  "E4",
+                ],
+                "noteNumber": 64,
+                "startTicks": 959,
+              },
+              {
+                "durationTicks": 38,
+                "id": "removed",
+                "noteName": [
+                  "A",
+                  "A",
+                ],
+                "noteNameWithOctave": [
+                  "A3",
+                  "A3",
+                ],
+                "noteNumber": 57,
+                "startTicks": 1190,
+              },
+              {
+                "durationTicks": 240,
+                "id": "removed",
+                "noteName": [
+                  "A",
+                  "A",
+                ],
+                "noteNameWithOctave": [
+                  "A4",
+                  "A4",
+                ],
+                "noteNumber": 69,
+                "startTicks": 1079,
+              },
+              {
+                "durationTicks": 395,
+                "id": "removed",
+                "noteName": [
+                  "C",
+                  "C",
+                ],
+                "noteNameWithOctave": [
+                  "C5",
+                  "C5",
+                ],
+                "noteNumber": 72,
+                "startTicks": 960,
+              },
+              {
+                "durationTicks": 103,
+                "id": "removed",
+                "noteName": [
+                  "D",
+                  "D",
+                ],
+                "noteNameWithOctave": [
+                  "D4",
+                  "D4",
+                ],
+                "noteNumber": 62,
+                "startTicks": 1318,
+              },
+              {
+                "durationTicks": 113,
+                "id": "removed",
+                "noteName": [
+                  "G",
+                  "G",
+                ],
+                "noteNameWithOctave": [
+                  "G4",
+                  "G4",
+                ],
+                "noteNumber": 67,
+                "startTicks": 1318,
+              },
+              {
+                "durationTicks": 167,
+                "id": "removed",
+                "noteName": [
+                  "B",
+                  "B",
+                ],
+                "noteNameWithOctave": [
+                  "B4",
+                  "B4",
+                ],
+                "noteNumber": 71,
+                "startTicks": 1312,
+              },
+              {
+                "durationTicks": 40,
+                "id": "removed",
+                "noteName": [
+                  "A",
+                  "A",
+                ],
+                "noteNameWithOctave": [
+                  "A3",
+                  "A3",
+                ],
+                "noteNumber": 57,
+                "startTicks": 1439,
+              },
+              {
+                "durationTicks": 83,
+                "id": "removed",
+                "noteName": [
+                  "D",
+                  "D",
+                ],
+                "noteNameWithOctave": [
+                  "D4",
+                  "D4",
+                ],
+                "noteNumber": 62,
+                "startTicks": 1561,
+              },
+              {
+                "durationTicks": 38,
+                "id": "removed",
+                "noteName": [
+                  "A",
+                  "A",
+                ],
+                "noteNameWithOctave": [
+                  "A3",
+                  "A3",
+                ],
+                "noteNumber": 57,
+                "startTicks": 1684,
+              },
+              {
+                "durationTicks": 33,
+                "id": "removed",
+                "noteName": [
+                  "D",
+                  "D",
+                ],
+                "noteNameWithOctave": [
+                  "D3",
+                  "D3",
+                ],
+                "noteNumber": 50,
+                "startTicks": 1804,
+              },
+              {
+                "durationTicks": 3,
+                "id": "removed",
+                "noteName": [
+                  "E",
+                  "E",
+                ],
+                "noteNameWithOctave": [
+                  "E4",
+                  "E4",
+                ],
+                "noteNumber": 64,
+                "startTicks": 1917,
+              },
+            ],
+            "startTicks": 960,
+          },
+          {
+            "durationTicks": 480,
+            "index": 3,
+            "notes": [
+              {
+                "durationTicks": 113,
+                "id": "removed",
+                "noteName": [
+                  "G",
+                  "G",
+                ],
+                "noteNameWithOctave": [
+                  "G4",
+                  "G4",
+                ],
+                "noteNumber": 67,
+                "startTicks": 0,
+              },
+              {
+                "durationTicks": 251,
+                "id": "removed",
+                "noteName": [
+                  "A",
+                  "A",
+                ],
+                "noteNameWithOctave": [
+                  "A2",
+                  "A2",
+                ],
+                "noteNumber": 45,
+                "startTicks": 2,
+              },
+              {
+                "durationTicks": 34,
+                "id": "removed",
+                "noteName": [
+                  "A",
+                  "A",
+                ],
+                "noteNameWithOctave": [
+                  "A3",
+                  "A3",
+                ],
+                "noteNumber": 57,
+                "startTicks": 253,
+              },
+              {
+                "durationTicks": 305,
+                "id": "removed",
+                "noteName": [
+                  "E",
+                  "E",
+                ],
+                "noteNameWithOctave": [
+                  "E4",
+                  "E4",
+                ],
+                "noteNumber": 64,
+                "startTicks": 0,
+              },
+              {
+                "durationTicks": 355,
+                "id": "removed",
+                "noteName": [
+                  "C",
+                  "C",
+                ],
+                "noteNameWithOctave": [
+                  "C5",
+                  "C5",
+                ],
+                "noteNumber": 72,
+                "startTicks": 2,
+              },
+              {
+                "durationTicks": 274,
+                "id": "removed",
+                "noteName": [
+                  "A",
+                  "A",
+                ],
+                "noteNameWithOctave": [
+                  "A4",
+                  "A4",
+                ],
+                "noteNumber": 69,
+                "startTicks": 98,
+              },
+              {
+                "durationTicks": 49,
+                "id": "removed",
+                "noteName": [
+                  "D",
+                  "D",
+                ],
+                "noteNameWithOctave": [
+                  "D4",
+                  "D4",
+                ],
+                "noteNumber": 62,
+                "startTicks": 379,
+              },
+              {
+                "durationTicks": 72,
+                "id": "removed",
+                "noteName": [
+                  "G",
+                  "G",
+                ],
+                "noteNameWithOctave": [
+                  "G4",
+                  "G4",
+                ],
+                "noteNumber": 67,
+                "startTicks": 377,
+              },
+              {
+                "durationTicks": 97,
+                "id": "removed",
+                "noteName": [
+                  "B",
+                  "B",
+                ],
+                "noteNameWithOctave": [
+                  "B4",
+                  "B4",
+                ],
+                "noteNumber": 71,
+                "startTicks": 368,
+              },
+              {
+                "durationTicks": 35,
+                "id": "removed",
+                "noteName": [
+                  "A",
+                  "A",
+                ],
+                "noteNameWithOctave": [
+                  "A3",
+                  "A3",
+                ],
+                "noteNumber": 57,
+                "startTicks": 484,
+              },
+              {
+                "durationTicks": 55,
+                "id": "removed",
+                "noteName": [
+                  "D",
+                  "D",
+                ],
+                "noteNameWithOctave": [
+                  "D4",
+                  "D4",
+                ],
+                "noteNumber": 62,
+                "startTicks": 602,
+              },
+              {
+                "durationTicks": 43,
+                "id": "removed",
+                "noteName": [
+                  "A",
+                  "A",
+                ],
+                "noteNameWithOctave": [
+                  "A3",
+                  "A3",
+                ],
+                "noteNumber": 57,
+                "startTicks": 710,
+              },
+              {
+                "durationTicks": 34,
+                "id": "removed",
+                "noteName": [
+                  "A",
+                  "A",
+                ],
+                "noteNameWithOctave": [
+                  "A2",
+                  "A2",
+                ],
+                "noteNumber": 45,
+                "startTicks": 839,
+              },
+              {
+                "durationTicks": 128,
+                "id": "removed",
+                "noteName": [
+                  "G",
+                  "G",
+                ],
+                "noteNameWithOctave": [
+                  "G4",
+                  "G4",
+                ],
+                "noteNumber": 67,
+                "startTicks": 957,
+              },
+              {
+                "durationTicks": 264,
+                "id": "removed",
+                "noteName": [
+                  "E",
+                  "E",
+                ],
+                "noteNameWithOctave": [
+                  "E4",
+                  "E4",
+                ],
+                "noteNumber": 64,
+                "startTicks": 959,
+              },
+              {
+                "durationTicks": 38,
+                "id": "removed",
+                "noteName": [
+                  "A",
+                  "A",
+                ],
+                "noteNameWithOctave": [
+                  "A3",
+                  "A3",
+                ],
+                "noteNumber": 57,
+                "startTicks": 1190,
+              },
+              {
+                "durationTicks": 240,
+                "id": "removed",
+                "noteName": [
+                  "A",
+                  "A",
+                ],
+                "noteNameWithOctave": [
+                  "A4",
+                  "A4",
+                ],
+                "noteNumber": 69,
+                "startTicks": 1079,
+              },
+              {
+                "durationTicks": 395,
+                "id": "removed",
+                "noteName": [
+                  "C",
+                  "C",
+                ],
+                "noteNameWithOctave": [
+                  "C5",
+                  "C5",
+                ],
+                "noteNumber": 72,
+                "startTicks": 960,
+              },
+              {
+                "durationTicks": 103,
+                "id": "removed",
+                "noteName": [
+                  "D",
+                  "D",
+                ],
+                "noteNameWithOctave": [
+                  "D4",
+                  "D4",
+                ],
+                "noteNumber": 62,
+                "startTicks": 1318,
+              },
+              {
+                "durationTicks": 113,
+                "id": "removed",
+                "noteName": [
+                  "G",
+                  "G",
+                ],
+                "noteNameWithOctave": [
+                  "G4",
+                  "G4",
+                ],
+                "noteNumber": 67,
+                "startTicks": 1318,
+              },
+              {
+                "durationTicks": 167,
+                "id": "removed",
+                "noteName": [
+                  "B",
+                  "B",
+                ],
+                "noteNameWithOctave": [
+                  "B4",
+                  "B4",
+                ],
+                "noteNumber": 71,
+                "startTicks": 1312,
+              },
+              {
+                "durationTicks": 40,
+                "id": "removed",
+                "noteName": [
+                  "A",
+                  "A",
+                ],
+                "noteNameWithOctave": [
+                  "A3",
+                  "A3",
+                ],
+                "noteNumber": 57,
+                "startTicks": 1439,
+              },
+              {
+                "durationTicks": 83,
+                "id": "removed",
+                "noteName": [
+                  "D",
+                  "D",
+                ],
+                "noteNameWithOctave": [
+                  "D4",
+                  "D4",
+                ],
+                "noteNumber": 62,
+                "startTicks": 1561,
+              },
+              {
+                "durationTicks": 38,
+                "id": "removed",
+                "noteName": [
+                  "A",
+                  "A",
+                ],
+                "noteNameWithOctave": [
+                  "A3",
+                  "A3",
+                ],
+                "noteNumber": 57,
+                "startTicks": 1684,
+              },
+              {
+                "durationTicks": 33,
+                "id": "removed",
+                "noteName": [
+                  "D",
+                  "D",
+                ],
+                "noteNameWithOctave": [
+                  "D3",
+                  "D3",
+                ],
+                "noteNumber": 50,
+                "startTicks": 1804,
+              },
+              {
+                "durationTicks": 3,
+                "id": "removed",
+                "noteName": [
+                  "E",
+                  "E",
+                ],
+                "noteNameWithOctave": [
+                  "E4",
+                  "E4",
+                ],
+                "noteNumber": 64,
+                "startTicks": 1917,
+              },
+            ],
+            "startTicks": 1440,
+          },
+        ],
+        "durationTicks": 1920,
         "index": 0,
         "notes": [
           {
@@ -133,12 +1621,6 @@ exports[`analyze() 1`] = `
             "noteNumber": 71,
             "startTicks": 368,
           },
-        ],
-        "startTicks": 0,
-      },
-      {
-        "index": 1,
-        "notes": [
           {
             "durationTicks": 35,
             "id": "removed",
@@ -195,40 +1677,6 @@ exports[`analyze() 1`] = `
             "noteNumber": 45,
             "startTicks": 839,
           },
-          {
-            "durationTicks": 128,
-            "id": "removed",
-            "noteName": [
-              "G",
-              "G",
-            ],
-            "noteNameWithOctave": [
-              "G4",
-              "G4",
-            ],
-            "noteNumber": 67,
-            "startTicks": 957,
-          },
-          {
-            "durationTicks": 264,
-            "id": "removed",
-            "noteName": [
-              "E",
-              "E",
-            ],
-            "noteNameWithOctave": [
-              "E4",
-              "E4",
-            ],
-            "noteNumber": 64,
-            "startTicks": 959,
-          },
-        ],
-        "startTicks": 480,
-      },
-      {
-        "index": 2,
-        "notes": [
           {
             "durationTicks": 128,
             "id": "removed",
@@ -355,12 +1803,723 @@ exports[`analyze() 1`] = `
             "noteNumber": 57,
             "startTicks": 1439,
           },
+          {
+            "durationTicks": 83,
+            "id": "removed",
+            "noteName": [
+              "D",
+              "D",
+            ],
+            "noteNameWithOctave": [
+              "D4",
+              "D4",
+            ],
+            "noteNumber": 62,
+            "startTicks": 1561,
+          },
+          {
+            "durationTicks": 38,
+            "id": "removed",
+            "noteName": [
+              "A",
+              "A",
+            ],
+            "noteNameWithOctave": [
+              "A3",
+              "A3",
+            ],
+            "noteNumber": 57,
+            "startTicks": 1684,
+          },
+          {
+            "durationTicks": 33,
+            "id": "removed",
+            "noteName": [
+              "D",
+              "D",
+            ],
+            "noteNameWithOctave": [
+              "D3",
+              "D3",
+            ],
+            "noteNumber": 50,
+            "startTicks": 1804,
+          },
+          {
+            "durationTicks": 3,
+            "id": "removed",
+            "noteName": [
+              "E",
+              "E",
+            ],
+            "noteNameWithOctave": [
+              "E4",
+              "E4",
+            ],
+            "noteNumber": 64,
+            "startTicks": 1917,
+          },
         ],
-        "startTicks": 960,
+        "startTicks": 0,
       },
       {
-        "index": 3,
+        "beatCount": 4,
+        "beats": [
+          {
+            "durationTicks": 480,
+            "index": 4,
+            "notes": [
+              {
+                "durationTicks": 113,
+                "id": "removed",
+                "noteName": [
+                  "G",
+                  "G",
+                ],
+                "noteNameWithOctave": [
+                  "G4",
+                  "G4",
+                ],
+                "noteNumber": 67,
+                "startTicks": 0,
+              },
+              {
+                "durationTicks": 251,
+                "id": "removed",
+                "noteName": [
+                  "A",
+                  "A",
+                ],
+                "noteNameWithOctave": [
+                  "A2",
+                  "A2",
+                ],
+                "noteNumber": 45,
+                "startTicks": 2,
+              },
+              {
+                "durationTicks": 34,
+                "id": "removed",
+                "noteName": [
+                  "A",
+                  "A",
+                ],
+                "noteNameWithOctave": [
+                  "A3",
+                  "A3",
+                ],
+                "noteNumber": 57,
+                "startTicks": 253,
+              },
+              {
+                "durationTicks": 305,
+                "id": "removed",
+                "noteName": [
+                  "E",
+                  "E",
+                ],
+                "noteNameWithOctave": [
+                  "E4",
+                  "E4",
+                ],
+                "noteNumber": 64,
+                "startTicks": 0,
+              },
+              {
+                "durationTicks": 355,
+                "id": "removed",
+                "noteName": [
+                  "C",
+                  "C",
+                ],
+                "noteNameWithOctave": [
+                  "C5",
+                  "C5",
+                ],
+                "noteNumber": 72,
+                "startTicks": 2,
+              },
+              {
+                "durationTicks": 274,
+                "id": "removed",
+                "noteName": [
+                  "A",
+                  "A",
+                ],
+                "noteNameWithOctave": [
+                  "A4",
+                  "A4",
+                ],
+                "noteNumber": 69,
+                "startTicks": 98,
+              },
+              {
+                "durationTicks": 49,
+                "id": "removed",
+                "noteName": [
+                  "D",
+                  "D",
+                ],
+                "noteNameWithOctave": [
+                  "D4",
+                  "D4",
+                ],
+                "noteNumber": 62,
+                "startTicks": 379,
+              },
+              {
+                "durationTicks": 72,
+                "id": "removed",
+                "noteName": [
+                  "G",
+                  "G",
+                ],
+                "noteNameWithOctave": [
+                  "G4",
+                  "G4",
+                ],
+                "noteNumber": 67,
+                "startTicks": 377,
+              },
+              {
+                "durationTicks": 97,
+                "id": "removed",
+                "noteName": [
+                  "B",
+                  "B",
+                ],
+                "noteNameWithOctave": [
+                  "B4",
+                  "B4",
+                ],
+                "noteNumber": 71,
+                "startTicks": 368,
+              },
+              {
+                "durationTicks": 35,
+                "id": "removed",
+                "noteName": [
+                  "A",
+                  "A",
+                ],
+                "noteNameWithOctave": [
+                  "A3",
+                  "A3",
+                ],
+                "noteNumber": 57,
+                "startTicks": 484,
+              },
+              {
+                "durationTicks": 55,
+                "id": "removed",
+                "noteName": [
+                  "D",
+                  "D",
+                ],
+                "noteNameWithOctave": [
+                  "D4",
+                  "D4",
+                ],
+                "noteNumber": 62,
+                "startTicks": 602,
+              },
+              {
+                "durationTicks": 43,
+                "id": "removed",
+                "noteName": [
+                  "A",
+                  "A",
+                ],
+                "noteNameWithOctave": [
+                  "A3",
+                  "A3",
+                ],
+                "noteNumber": 57,
+                "startTicks": 710,
+              },
+              {
+                "durationTicks": 34,
+                "id": "removed",
+                "noteName": [
+                  "A",
+                  "A",
+                ],
+                "noteNameWithOctave": [
+                  "A2",
+                  "A2",
+                ],
+                "noteNumber": 45,
+                "startTicks": 839,
+              },
+              {
+                "durationTicks": 128,
+                "id": "removed",
+                "noteName": [
+                  "G",
+                  "G",
+                ],
+                "noteNameWithOctave": [
+                  "G4",
+                  "G4",
+                ],
+                "noteNumber": 67,
+                "startTicks": 957,
+              },
+              {
+                "durationTicks": 264,
+                "id": "removed",
+                "noteName": [
+                  "E",
+                  "E",
+                ],
+                "noteNameWithOctave": [
+                  "E4",
+                  "E4",
+                ],
+                "noteNumber": 64,
+                "startTicks": 959,
+              },
+              {
+                "durationTicks": 38,
+                "id": "removed",
+                "noteName": [
+                  "A",
+                  "A",
+                ],
+                "noteNameWithOctave": [
+                  "A3",
+                  "A3",
+                ],
+                "noteNumber": 57,
+                "startTicks": 1190,
+              },
+              {
+                "durationTicks": 240,
+                "id": "removed",
+                "noteName": [
+                  "A",
+                  "A",
+                ],
+                "noteNameWithOctave": [
+                  "A4",
+                  "A4",
+                ],
+                "noteNumber": 69,
+                "startTicks": 1079,
+              },
+              {
+                "durationTicks": 395,
+                "id": "removed",
+                "noteName": [
+                  "C",
+                  "C",
+                ],
+                "noteNameWithOctave": [
+                  "C5",
+                  "C5",
+                ],
+                "noteNumber": 72,
+                "startTicks": 960,
+              },
+              {
+                "durationTicks": 103,
+                "id": "removed",
+                "noteName": [
+                  "D",
+                  "D",
+                ],
+                "noteNameWithOctave": [
+                  "D4",
+                  "D4",
+                ],
+                "noteNumber": 62,
+                "startTicks": 1318,
+              },
+              {
+                "durationTicks": 113,
+                "id": "removed",
+                "noteName": [
+                  "G",
+                  "G",
+                ],
+                "noteNameWithOctave": [
+                  "G4",
+                  "G4",
+                ],
+                "noteNumber": 67,
+                "startTicks": 1318,
+              },
+              {
+                "durationTicks": 167,
+                "id": "removed",
+                "noteName": [
+                  "B",
+                  "B",
+                ],
+                "noteNameWithOctave": [
+                  "B4",
+                  "B4",
+                ],
+                "noteNumber": 71,
+                "startTicks": 1312,
+              },
+              {
+                "durationTicks": 40,
+                "id": "removed",
+                "noteName": [
+                  "A",
+                  "A",
+                ],
+                "noteNameWithOctave": [
+                  "A3",
+                  "A3",
+                ],
+                "noteNumber": 57,
+                "startTicks": 1439,
+              },
+              {
+                "durationTicks": 83,
+                "id": "removed",
+                "noteName": [
+                  "D",
+                  "D",
+                ],
+                "noteNameWithOctave": [
+                  "D4",
+                  "D4",
+                ],
+                "noteNumber": 62,
+                "startTicks": 1561,
+              },
+              {
+                "durationTicks": 38,
+                "id": "removed",
+                "noteName": [
+                  "A",
+                  "A",
+                ],
+                "noteNameWithOctave": [
+                  "A3",
+                  "A3",
+                ],
+                "noteNumber": 57,
+                "startTicks": 1684,
+              },
+              {
+                "durationTicks": 33,
+                "id": "removed",
+                "noteName": [
+                  "D",
+                  "D",
+                ],
+                "noteNameWithOctave": [
+                  "D3",
+                  "D3",
+                ],
+                "noteNumber": 50,
+                "startTicks": 1804,
+              },
+              {
+                "durationTicks": 3,
+                "id": "removed",
+                "noteName": [
+                  "E",
+                  "E",
+                ],
+                "noteNameWithOctave": [
+                  "E4",
+                  "E4",
+                ],
+                "noteNumber": 64,
+                "startTicks": 1917,
+              },
+            ],
+            "startTicks": 1920,
+          },
+        ],
+        "durationTicks": 1920,
+        "index": 1,
         "notes": [
+          {
+            "durationTicks": 113,
+            "id": "removed",
+            "noteName": [
+              "G",
+              "G",
+            ],
+            "noteNameWithOctave": [
+              "G4",
+              "G4",
+            ],
+            "noteNumber": 67,
+            "startTicks": 0,
+          },
+          {
+            "durationTicks": 251,
+            "id": "removed",
+            "noteName": [
+              "A",
+              "A",
+            ],
+            "noteNameWithOctave": [
+              "A2",
+              "A2",
+            ],
+            "noteNumber": 45,
+            "startTicks": 2,
+          },
+          {
+            "durationTicks": 34,
+            "id": "removed",
+            "noteName": [
+              "A",
+              "A",
+            ],
+            "noteNameWithOctave": [
+              "A3",
+              "A3",
+            ],
+            "noteNumber": 57,
+            "startTicks": 253,
+          },
+          {
+            "durationTicks": 305,
+            "id": "removed",
+            "noteName": [
+              "E",
+              "E",
+            ],
+            "noteNameWithOctave": [
+              "E4",
+              "E4",
+            ],
+            "noteNumber": 64,
+            "startTicks": 0,
+          },
+          {
+            "durationTicks": 355,
+            "id": "removed",
+            "noteName": [
+              "C",
+              "C",
+            ],
+            "noteNameWithOctave": [
+              "C5",
+              "C5",
+            ],
+            "noteNumber": 72,
+            "startTicks": 2,
+          },
+          {
+            "durationTicks": 274,
+            "id": "removed",
+            "noteName": [
+              "A",
+              "A",
+            ],
+            "noteNameWithOctave": [
+              "A4",
+              "A4",
+            ],
+            "noteNumber": 69,
+            "startTicks": 98,
+          },
+          {
+            "durationTicks": 49,
+            "id": "removed",
+            "noteName": [
+              "D",
+              "D",
+            ],
+            "noteNameWithOctave": [
+              "D4",
+              "D4",
+            ],
+            "noteNumber": 62,
+            "startTicks": 379,
+          },
+          {
+            "durationTicks": 72,
+            "id": "removed",
+            "noteName": [
+              "G",
+              "G",
+            ],
+            "noteNameWithOctave": [
+              "G4",
+              "G4",
+            ],
+            "noteNumber": 67,
+            "startTicks": 377,
+          },
+          {
+            "durationTicks": 97,
+            "id": "removed",
+            "noteName": [
+              "B",
+              "B",
+            ],
+            "noteNameWithOctave": [
+              "B4",
+              "B4",
+            ],
+            "noteNumber": 71,
+            "startTicks": 368,
+          },
+          {
+            "durationTicks": 35,
+            "id": "removed",
+            "noteName": [
+              "A",
+              "A",
+            ],
+            "noteNameWithOctave": [
+              "A3",
+              "A3",
+            ],
+            "noteNumber": 57,
+            "startTicks": 484,
+          },
+          {
+            "durationTicks": 55,
+            "id": "removed",
+            "noteName": [
+              "D",
+              "D",
+            ],
+            "noteNameWithOctave": [
+              "D4",
+              "D4",
+            ],
+            "noteNumber": 62,
+            "startTicks": 602,
+          },
+          {
+            "durationTicks": 43,
+            "id": "removed",
+            "noteName": [
+              "A",
+              "A",
+            ],
+            "noteNameWithOctave": [
+              "A3",
+              "A3",
+            ],
+            "noteNumber": 57,
+            "startTicks": 710,
+          },
+          {
+            "durationTicks": 34,
+            "id": "removed",
+            "noteName": [
+              "A",
+              "A",
+            ],
+            "noteNameWithOctave": [
+              "A2",
+              "A2",
+            ],
+            "noteNumber": 45,
+            "startTicks": 839,
+          },
+          {
+            "durationTicks": 128,
+            "id": "removed",
+            "noteName": [
+              "G",
+              "G",
+            ],
+            "noteNameWithOctave": [
+              "G4",
+              "G4",
+            ],
+            "noteNumber": 67,
+            "startTicks": 957,
+          },
+          {
+            "durationTicks": 264,
+            "id": "removed",
+            "noteName": [
+              "E",
+              "E",
+            ],
+            "noteNameWithOctave": [
+              "E4",
+              "E4",
+            ],
+            "noteNumber": 64,
+            "startTicks": 959,
+          },
+          {
+            "durationTicks": 38,
+            "id": "removed",
+            "noteName": [
+              "A",
+              "A",
+            ],
+            "noteNameWithOctave": [
+              "A3",
+              "A3",
+            ],
+            "noteNumber": 57,
+            "startTicks": 1190,
+          },
+          {
+            "durationTicks": 240,
+            "id": "removed",
+            "noteName": [
+              "A",
+              "A",
+            ],
+            "noteNameWithOctave": [
+              "A4",
+              "A4",
+            ],
+            "noteNumber": 69,
+            "startTicks": 1079,
+          },
+          {
+            "durationTicks": 395,
+            "id": "removed",
+            "noteName": [
+              "C",
+              "C",
+            ],
+            "noteNameWithOctave": [
+              "C5",
+              "C5",
+            ],
+            "noteNumber": 72,
+            "startTicks": 960,
+          },
+          {
+            "durationTicks": 103,
+            "id": "removed",
+            "noteName": [
+              "D",
+              "D",
+            ],
+            "noteNameWithOctave": [
+              "D4",
+              "D4",
+            ],
+            "noteNumber": 62,
+            "startTicks": 1318,
+          },
+          {
+            "durationTicks": 113,
+            "id": "removed",
+            "noteName": [
+              "G",
+              "G",
+            ],
+            "noteNameWithOctave": [
+              "G4",
+              "G4",
+            ],
+            "noteNumber": 67,
+            "startTicks": 1318,
+          },
           {
             "durationTicks": 167,
             "id": "removed",
@@ -446,58 +2605,18 @@ exports[`analyze() 1`] = `
             "startTicks": 1917,
           },
         ],
-        "startTicks": 1440,
-      },
-      {
-        "index": 4,
-        "notes": [
-          {
-            "durationTicks": 3,
-            "id": "removed",
-            "noteName": [
-              "E",
-              "E",
-            ],
-            "noteNameWithOctave": [
-              "E4",
-              "E4",
-            ],
-            "noteNumber": 64,
-            "startTicks": 1917,
-          },
-        ],
-        "startTicks": 1920,
+        "startTicks": 2400,
       },
     ],
-    "duration": {
-      "A": 1027,
-      "B": 264,
-      "C": 750,
-      "D": 323,
-      "E": 572,
-      "G": 426,
-    },
-    "frequency": {
-      "A": 10,
-      "B": 2,
-      "C": 2,
-      "D": 5,
-      "E": 3,
-      "G": 4,
-    },
+    "duration": {},
+    "frequency": {},
     "map": {},
-    "presence": {
-      "A": 1,
-      "B": 0.2438918433076174,
-      "C": 0.6079095198861508,
-      "D": 0.3573140588719945,
-      "E": 0.4976630963972735,
-      "G": 0.41138491498764135,
-    },
+    "presence": {},
   },
   "scales": [],
   "timeSignatures": [
     {
+      "beatTicksMultiplier": 1,
       "beatsInSignature": 4,
       "denominator": 4,
       "numerator": 4,
@@ -509,7 +2628,6 @@ exports[`analyze() 1`] = `
     "durationTicks": 1920,
     "microsecondsPerBeat": 517241,
     "ticksPerBeat": 480,
-    "totalBeats": 4,
   },
   "tracks": [],
 }
@@ -518,20 +2636,36 @@ exports[`analyze() 1`] = `
 exports[`chord detection 1`] = `
 [
   {
-    "chordNotes": Set {},
-    "chords": [],
+    "chordNotes": Set {
+      "G",
+      "A",
+      "E",
+      "C",
+      "D",
+      "B",
+    },
+    "chords": [
+      "Cmaj13/G",
+      "CM7add13/G",
+      "D13sus4/G",
+      "Am11/G",
+    ],
     "distribution": {
       "ticks": {
-        "A": 116,
-        "B": 78,
-        "D": 116,
-        "E": 114,
+        "A": 1027,
+        "B": 264,
+        "C": 750,
+        "D": 323,
+        "E": 572,
+        "G": 426,
       },
       "time": {
-        "A": 0.06041666666666667,
-        "B": 0.040625,
-        "D": 0.06041666666666667,
-        "E": 0.059375,
+        "A": 0.5348958333333333,
+        "B": 0.1375,
+        "C": 0.390625,
+        "D": 0.16822916666666668,
+        "E": 0.29791666666666666,
+        "G": 0.221875,
       },
     },
     "durationTicks": 1920,
@@ -542,8 +2676,51 @@ exports[`chord detection 1`] = `
       "C",
       "D",
       "B",
+      "Gb",
     },
-    "startTicks": 1440,
+    "startTicks": 0,
+    "uniqueNotes": [],
+    "unit": "bar",
+    "unitNumber": 0,
+  },
+  {
+    "chordNotes": Set {
+      "E",
+      "A",
+      "Gb",
+      "D",
+      "G",
+    },
+    "chords": [],
+    "distribution": {
+      "ticks": {
+        "A": 906,
+        "B": 65,
+        "D": 877,
+        "E": 240,
+        "G": 248,
+        "Gb": 418,
+      },
+      "time": {
+        "A": 0.471875,
+        "B": 0.033854166666666664,
+        "D": 0.45677083333333335,
+        "E": 0.125,
+        "G": 0.12916666666666668,
+        "Gb": 0.21770833333333334,
+      },
+    },
+    "durationTicks": 1920,
+    "notes": Set {
+      "G",
+      "A",
+      "E",
+      "C",
+      "D",
+      "B",
+      "Gb",
+    },
+    "startTicks": 1920,
     "uniqueNotes": [],
     "unit": "bar",
     "unitNumber": 0,
@@ -552,31 +2729,20 @@ exports[`chord detection 1`] = `
     "chordNotes": Set {},
     "chords": [],
     "distribution": {
-      "ticks": {
-        "A": 149,
-        "B": 65,
-        "D": 120,
-        "G": 53,
-        "Gb": 31,
-      },
-      "time": {
-        "A": 0.07760416666666667,
-        "B": 0.033854166666666664,
-        "D": 0.0625,
-        "G": 0.027604166666666666,
-        "Gb": 0.016145833333333335,
-      },
+      "ticks": {},
+      "time": {},
     },
     "durationTicks": 1920,
     "notes": Set {
-      "E",
-      "A",
-      "Gb",
-      "D",
       "G",
+      "A",
+      "E",
+      "C",
+      "D",
       "B",
+      "Gb",
     },
-    "startTicks": 3360,
+    "startTicks": 4320,
     "uniqueNotes": [],
     "unit": "bar",
     "unitNumber": 0,
@@ -779,8 +2945,33 @@ exports[`detectScales() 1`] = `
 
 exports[`parseMidi() should parse to a known format 1`] = `
 {
+  "barsAndBeats": [
+    {
+      "beatCount": 4,
+      "beats": [
+        {
+          "durationTicks": 480,
+          "index": 0,
+          "notes": [],
+          "startTicks": 0,
+        },
+        {
+          "durationTicks": 480,
+          "index": 1,
+          "notes": [],
+          "startTicks": 480,
+        },
+      ],
+      "durationTicks": 1920,
+      "index": 0,
+      "notes": [],
+      "startTicks": 960,
+    },
+  ],
+  "notesMap": {},
   "timeSignatures": [
     {
+      "beatTicksMultiplier": 1,
       "beatsInSignature": 1,
       "denominator": 4,
       "numerator": 4,
@@ -792,7 +2983,6 @@ exports[`parseMidi() should parse to a known format 1`] = `
     "durationTicks": 479,
     "microsecondsPerBeat": 517241,
     "ticksPerBeat": 480,
-    "totalBeats": 1,
   },
   "tracks": [
     {

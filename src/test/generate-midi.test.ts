@@ -25,6 +25,7 @@ test.skip('save parsed midi files to disk', () => {
     'ghostbusters.mid',
     'groove.mid',
     'sample.mid',
+    'timesigs.mid',
     'takefivedavebrubeck.mid',
   ]
 

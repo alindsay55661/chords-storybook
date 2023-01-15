@@ -1,13 +1,19 @@
 import { expect, test } from 'vitest'
 import { readFileSync } from 'node:fs'
-import { parseMidi, buildNote, Note, TimeSignature } from '../utils/parse'
+import {
+  parseMidi,
+  buildNote,
+  makeBarsAndBeats,
+  Note,
+  TimeSignature,
+} from '../utils/parse'
 import { analyze } from '../utils/analyze'
 import { detectScales } from '../utils/scales'
 import { detectChords, updateDistribution, ChordRange } from '../utils/chords'
 
 function removeUuids(data: any, type: string) {
   switch (type) {
-    case 'tracks': {
+    case 'parsed': {
       const cleaned = data.tracks.map((track: any) => {
         track.notes = track.notes.map((note: any) => {
           return { ...note, id: 'removed' }
@@ -15,17 +21,27 @@ function removeUuids(data: any, type: string) {
         return { ...track, id: 'removed' }
       })
       data.tracks = cleaned
+      data.notesMap = {}
       break
     }
 
     case 'stats': {
-      const cleaned = data.notes.byBeat.map((beat: any) => {
-        beat.notes = beat.notes.map((note: any) => {
+      const cleanedBars = data.notes.byBar.map((bar: any) => {
+        bar.beats = bar.beats.map((beat: any) => {
+          beat.notes = beat.notes.map((note: any) => {
+            return { ...note, id: 'removed' }
+          })
+          return beat
+        })
+
+        bar.notes = bar.notes.map((note: any) => {
           return { ...note, id: 'removed' }
         })
-        return beat
+
+        return bar
       })
-      data.notes.byBeat = cleaned
+
+      data.notes.byBar = cleanedBars
       data.notes.map = {}
       data.tracks = []
       break
@@ -57,7 +73,7 @@ test('parseMidi() should parse to a known format', () => {
   expect(parsed.tracks[0].notes[0].noteName).toEqual(['A', 'A'])
   expect(parsed.tracks[0].notes[2].noteName).toEqual(['Bb', 'A#'])
 
-  const cleaned = removeUuids(parsed, 'tracks')
+  const cleaned = removeUuids(parsed, 'parsed')
 
   expect(cleaned).toMatchSnapshot()
 })
@@ -73,6 +89,7 @@ test('parseMidi() should parse multiple time signatures', () => {
       numerator: 5,
       startBeat: 0,
       startTicks: 0,
+      beatTicksMultiplier: 1,
     },
     {
       beatsInSignature: 9,
@@ -80,6 +97,7 @@ test('parseMidi() should parse multiple time signatures', () => {
       numerator: 3,
       startBeat: 305,
       startTicks: 146400,
+      beatTicksMultiplier: 1,
     },
     {
       beatsInSignature: 97,
@@ -87,6 +105,7 @@ test('parseMidi() should parse multiple time signatures', () => {
       numerator: 5,
       startBeat: 314,
       startTicks: 150720,
+      beatTicksMultiplier: 1,
     },
   ]
 
@@ -118,6 +137,20 @@ test('analyze()', () => {
   expect(cleaned).toMatchSnapshot()
 })
 
+test('makeBars()', () => {
+  const path = `${__dirname}/midi/timesigs.mid`
+  const data = readFileSync(path)
+  const parsed = parseMidi(data)
+
+  const bars = makeBarsAndBeats(
+    parsed.timeSignatures,
+    parsed.timings.ticksPerBeat,
+  )
+
+  const analyzed = analyze(parsed)
+  const chords = detectChords(analyzed, { unit: 'bar' })
+})
+
 test('detectScales()', () => {
   const presence = {
     A: 1,
@@ -146,39 +179,41 @@ test('updateDistribution()', () => {
     uniqueNotes: [],
   }
 
+  const b = buildNote
+
   // Starts outside bucket, ends in bucket
-  const noteA = buildNote({ startTicks: 50, noteNumber: 57 }, 110) as Note
+  const A = b({ startTicks: 50, noteNumber: 57, durationTicks: 60 }) as Note
   // Starts in bucket, ends in bucket
-  const noteB = buildNote({ startTicks: 110, noteNumber: 59 }, 140) as Note
+  const B = b({ startTicks: 110, noteNumber: 59, durationTicks: 30 }) as Note
   // Starts in bucket, ends outside bucket
-  const noteC = buildNote({ startTicks: 180, noteNumber: 60 }, 210) as Note
+  const C = b({ startTicks: 180, noteNumber: 60, durationTicks: 30 }) as Note
   // Starts before bucket, ends after bucket
   // This case note possible using buildNote :)
 
   // Starts after bucket, ends after bucket
-  const noteE = buildNote({ startTicks: 280, noteNumber: 64 }, 290) as Note
+  const E = b({ startTicks: 280, noteNumber: 64, durationTicks: 10 }) as Note
   // Starts before bucket, ends before bucket
-  const noteF = buildNote({ startTicks: 50, noteNumber: 65 }, 60) as Note
+  const F = b({ startTicks: 50, noteNumber: 65, durationTicks: 10 }) as Note
 
-  expect(updateDistribution(cr, noteA).distribution).toEqual({
+  expect(updateDistribution(cr, A).distribution).toEqual({
     ticks: { A: 10 },
   })
-  expect(updateDistribution(cr, noteB).distribution).toEqual({
+  expect(updateDistribution(cr, B).distribution).toEqual({
     ticks: { A: 10, B: 30 },
   })
-  expect(updateDistribution(cr, noteC).distribution).toEqual({
+  expect(updateDistribution(cr, C).distribution).toEqual({
     ticks: { A: 10, B: 30, C: 20 },
   })
 
-  expect(updateDistribution(cr, noteE).distribution).toEqual({
+  expect(updateDistribution(cr, E).distribution).toEqual({
     ticks: { A: 10, B: 30, C: 20 },
   })
-  expect(updateDistribution(cr, noteF).distribution).toEqual({
+  expect(updateDistribution(cr, F).distribution).toEqual({
     ticks: { A: 10, B: 30, C: 20 },
   })
 
   // Add A a 2nd time should increase ticks & percentage
-  expect(updateDistribution(cr, noteA).distribution).toEqual({
+  expect(updateDistribution(cr, A).distribution).toEqual({
     ticks: { A: 20, B: 30, C: 20 },
   })
 

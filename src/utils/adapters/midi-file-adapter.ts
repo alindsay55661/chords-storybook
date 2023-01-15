@@ -1,5 +1,6 @@
 import {
   buildNote,
+  makeBarsAndBeats,
   MidiPart,
   TimeSignature,
   Track,
@@ -32,19 +33,19 @@ export function buildMidiPart(data: ArrayLike<number>): MidiPart {
 
   // By convention the first track in format 1 is metadata only
   const firstTrack = json.tracks.shift() as mf.MidiEvent[]
+  const notesMap = {}
   const tracks = json.tracks.reduce((result: MidiPart['tracks'], track) => {
-    const processed = processTrack(track)
+    const processed = processTrack(track, notesMap)
     if (processed.notes.length) result.push(processed)
     return result
   }, [])
 
   const ticksPerBeat = json.header.ticksPerBeat || 960
   const durationTicks = Math.max(...tracks.map(track => track.durationTicks))
-  const totalBeats = Math.ceil(durationTicks / ticksPerBeat)
   const { timings, timeSignatures } = extractPartDataFromTrack(
     firstTrack,
     ticksPerBeat,
-    totalBeats,
+    durationTicks,
   )
 
   return {
@@ -52,19 +53,20 @@ export function buildMidiPart(data: ArrayLike<number>): MidiPart {
       ...timings,
       durationTicks,
       ticksPerBeat,
-      totalBeats,
     },
     timeSignatures,
     tracks,
+    barsAndBeats: makeBarsAndBeats(timeSignatures, ticksPerBeat),
+    notesMap,
   }
 }
 
 function extractPartDataFromTrack(
   firstTrack: mf.MidiEvent[],
   ticksPerBeat: number,
-  totalBeats: number,
+  durationTicks: number,
 ) {
-  let startTicks: number = 0
+  let currentTicks: number = 0
   const defaultPartData: any = {
     timings: {
       microsecondsPerBeat: 0,
@@ -74,19 +76,21 @@ function extractPartDataFromTrack(
 
   const data = firstTrack.reduce((result, event) => {
     // Increment startTicks for all events (deltaTime is relative)
-    startTicks += event.deltaTime
+    currentTicks += event.deltaTime
 
     switch (event.type) {
       case TEMPO:
         result.timings.microsecondsPerBeat = event.microsecondsPerBeat
         break
       case TIME_SIGNATURE:
+        const beatTicksMultiplier = 4 / event.denominator
         const signature: TimeSignature = {
-          startTicks,
-          startBeat: Math.floor(startTicks / ticksPerBeat),
+          startTicks: currentTicks,
+          startBeat: 0,
           beatsInSignature: 0,
           numerator: event.numerator,
           denominator: event.denominator,
+          beatTicksMultiplier,
         }
         result.timeSignatures.push(signature)
         break
@@ -95,12 +99,22 @@ function extractPartDataFromTrack(
   }, defaultPartData)
 
   // Update timeSignature data
+  let startBeat = 0
   data.timeSignatures = data.timeSignatures.map(
     (ts: TimeSignature, idx: number) => {
-      const beatsInSignature = data.timeSignatures[idx + 1]
-        ? data.timeSignatures[idx + 1].startBeat - ts.startBeat
-        : totalBeats - ts.startBeat
-      return { ...ts, beatsInSignature }
+      const nextSignature = data.timeSignatures[idx + 1]
+      let startTicks = nextSignature ? nextSignature.startTicks : durationTicks
+
+      const beatsInSignature = Math.ceil(
+        (startTicks - ts.startTicks) / (ticksPerBeat * ts.beatTicksMultiplier),
+      )
+
+      const updated = { ...ts, startBeat, beatsInSignature }
+
+      // Increment
+      startBeat = startBeat + beatsInSignature
+
+      return updated
     },
   )
 
@@ -110,7 +124,10 @@ function extractPartDataFromTrack(
 type NoteEvent = mf.MidiEvent & Record<string, any>
 type NoteEvents = Record<string, NoteEvent>
 
-function processTrack(noteEvents: mf.MidiEvent[]): Track {
+function processTrack(
+  noteEvents: mf.MidiEvent[],
+  notesMap: Record<string, Note>,
+): Track {
   let currentTicks: number = 0
   const notesOn: NoteEvents = {}
   const notes: Note[] = []
@@ -149,12 +166,12 @@ function processTrack(noteEvents: mf.MidiEvent[]): Track {
           lowHigh.highestNote = event.noteNumber
         break
       case NOTE_OFF:
-        processNote(event.noteNumber, notesOn, notes, currentTicks)
+        processNote(event.noteNumber, notesOn, notes, currentTicks, notesMap)
         break
       case END_OF_TRACK:
         // Terminate all remaining notes
         Object.keys(notesOn).forEach(number => {
-          processNote(number, notesOn, notes, currentTicks)
+          processNote(number, notesOn, notes, currentTicks, notesMap)
         })
         break
       default:
@@ -175,13 +192,18 @@ function processNote(
   notesOn: NoteEvents,
   notes: Note[],
   currentTicks: number,
+  notesMap: Record<string, Note>,
 ) {
   // some midi files have multiple NOTE_OFF events...
   if (!notesOn[number]) return
 
   const { noteNumber, startTicks } = notesOn[number]
-  const note = buildNote({ noteNumber, startTicks }, currentTicks)
-  if (note) notes.push(note)
+  const durationTicks = currentTicks - startTicks
+  const note = buildNote({ noteNumber, startTicks, durationTicks })
+  if (note) {
+    notes.push(note)
+    notesMap[note.id] = note
+  }
   delete notesOn[number]
 
   return note

@@ -1,5 +1,5 @@
 import type { Scale } from '@tonaljs/scale'
-import type { MidiPart, Beat, Track, Note } from './parse'
+import type { MidiPart, Bar, Track, Note } from './parse'
 
 export type DetectUnit = 'bar' | 'beat'
 
@@ -8,7 +8,7 @@ export type NoteStats = {
   duration: Record<string, number>
   presence?: Record<string, number>
   map: Record<string, Note>
-  byBeat: Beat[]
+  byBar: Bar[]
 }
 
 export type Stats = Pick<MidiPart, 'timings' | 'timeSignatures'> & {
@@ -26,7 +26,7 @@ export function analyze(part: MidiPart): Stats {
       duration: {},
       presence: {},
       map: {},
-      byBeat: new Array(part.timings.totalBeats),
+      byBar: [],
     },
     scales: [],
     tracks: [],
@@ -38,45 +38,59 @@ export function analyze(part: MidiPart): Stats {
   // 3 - scale recognition helps with proper chord spelling
   // 4 - chord recognition is the last thing to take place
 
-  // 1 - Note analysis
-  part.tracks.forEach(track => {
-    stats.tracks.push(track)
-    track.notes.forEach(note => {
-      stats = analyzeNote(note, stats)
+  // 1 - Note analysis (Hydrate barsAndBeats)
+  const notes = Object.values(part.notesMap)
+  function isNoteInRange(note: Note, startTicks: number, endTicks: number) {
+    const noteEndTicks = note.startTicks + note.durationTicks
+
+    // Note starts and ends in the range (CONTAINED - most common)
+    if (note.startTicks >= startTicks && note.startTicks <= endTicks) {
+      return true
+    }
+
+    // Note starts in the range and ends after the range (HEAD)
+    if (note.startTicks >= startTicks && noteEndTicks > endTicks) {
+      return true
+    }
+
+    // Note starts before the range and ends in the range (TAIL)
+    if (note.startTicks < startTicks && noteEndTicks <= endTicks) {
+      return true
+    }
+
+    // Note starts before the range and ends after range (THROUGH)
+    if (note.startTicks < startTicks && noteEndTicks > endTicks) {
+      return true
+    }
+  }
+
+  part.barsAndBeats.forEach(bar => {
+    // Find notes in this bar
+    const barEndTicks = bar.startTicks + bar.durationTicks
+    const notesInBar = notes.filter(note => {
+      if (isNoteInRange(note, bar.startTicks, barEndTicks)) return note
+    })
+    bar.notes = notesInBar
+
+    // Find notes in this bar's beats
+    bar.beats.forEach(beat => {
+      const beatEndTicks = beat.startTicks + beat.durationTicks
+      const notesInBeat = notesInBar.filter(note => {
+        if (isNoteInRange(note, beat.startTicks, beatEndTicks)) return note
+      })
+      beat.notes = notesInBeat
     })
   })
+
+  stats.notes.byBar = part.barsAndBeats
+  stats.tracks = part.tracks
+  // stats.notes.frequency = updateFrequencyStats(note, stats)
+  // stats.notes.duration = updateDurationStats(note, stats)
 
   // 2 - Note "presence" calculation
   stats.notes.presence = updatePresenceStats(stats) as Record<string, number>
 
   // 3-4 are done with other funciton calls
-  return stats
-}
-
-// Adds this note to the current stats
-function analyzeNote(note: Note, stats: Stats) {
-  // Add note stats
-  stats.notes.frequency = updateFrequencyStats(note, stats)
-  stats.notes.duration = updateDurationStats(note, stats)
-  stats.notes.map[note.id] = note
-
-  const noteOnTicks = note.startTicks
-  const noteOffTicks = note.startTicks + note.durationTicks
-  const noteStartRange = Math.floor(noteOnTicks / stats.timings.ticksPerBeat)
-  const noteEndRange = Math.floor(noteOffTicks / stats.timings.ticksPerBeat)
-
-  // loop is limited to a note's own buckets (typically 1-2)
-  for (let i = noteStartRange; i <= noteEndRange; i++) {
-    const beat = stats.notes.byBeat[i] ?? {
-      index: i,
-      startTicks: i * stats.timings.ticksPerBeat,
-      notes: [],
-    }
-
-    beat.notes.push(note)
-    stats.notes.byBeat[i] = beat
-  }
-
   return stats
 }
 

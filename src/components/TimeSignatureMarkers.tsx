@@ -21,7 +21,10 @@ export default function TimeSignatureMarkers({
   })
 
   return (
-    <div style={{ width: `${width}px` }}>
+    <div
+      className="relative h-6"
+      style={{ width: `${width}px` }}
+    >
       {markers.map(marker => (
         <div
           key={marker.key}
@@ -29,9 +32,16 @@ export default function TimeSignatureMarkers({
           style={{ left: `${marker.x}px` }}
         >
           <div className="flex-shrink-0">{marker.label}</div>
-          <div className="w-0.5 h-full flex-grow bg-black"></div>
         </div>
       ))}
     </div>
   )
 }
+
+// ;<div
+//   key={marker.key}
+//   className="absolute h-full bg-slate-100"
+//   style={{ left: `${marker.x}px`, width: `${marker.w - 2}px` }}
+// >
+//   <div className=" text-center p-1 text-xs">{marker.label}</div>
+// </div>

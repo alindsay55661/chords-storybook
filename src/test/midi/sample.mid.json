@@ -2,8 +2,7 @@
   "timings": {
     "microsecondsPerBeat": 517241,
     "durationTicks": 1920,
-    "ticksPerBeat": 480,
-    "totalBeats": 4
+    "ticksPerBeat": 480
   },
   "timeSignatures": [
     {
@@ -11,15 +10,16 @@
       "startBeat": 0,
       "beatsInSignature": 4,
       "numerator": 4,
-      "denominator": 4
+      "denominator": 4,
+      "beatTicksMultiplier": 1
     }
   ],
   "tracks": [
     {
-      "id": "fa3221af-fcf6-4ea8-b3d6-744ed6adf7df",
+      "id": "b317d551-9c41-4f1d-a2da-e3e4ef9df55b",
       "notes": [
         {
-          "id": "3128d623-8e2b-47a7-9e89-abbab47254bc",
+          "id": "2359a0c4-fdcd-45aa-b64b-df2d5fd26d7e",
           "startTicks": 0,
           "durationTicks": 113,
           "noteNumber": 67,
@@ -33,7 +33,7 @@
           ]
         },
         {
-          "id": "1c1857c4-4a34-4dde-85cf-3f1f9acdc5d7",
+          "id": "c6bb870c-d409-4437-b1e8-8d4f29ef1b87",
           "startTicks": 2,
           "durationTicks": 251,
           "noteNumber": 45,
@@ -47,7 +47,7 @@
           ]
         },
         {
-          "id": "092044bf-55ce-464a-8c71-1d941b51e292",
+          "id": "0880111a-ff5c-4f2b-861e-e92acc4c1b7b",
           "startTicks": 253,
           "durationTicks": 34,
           "noteNumber": 57,
@@ -61,7 +61,7 @@
           ]
         },
         {
-          "id": "603b95df-7176-41fe-8115-10519cc535a8",
+          "id": "a7091722-be6a-44b1-82e5-7b395fa351a8",
           "startTicks": 0,
           "durationTicks": 305,
           "noteNumber": 64,
@@ -75,7 +75,7 @@
           ]
         },
         {
-          "id": "df3d9a6d-b1b0-49f9-97ec-2c6f0589e385",
+          "id": "38c14af1-f4a4-4054-aa57-98293c911477",
           "startTicks": 2,
           "durationTicks": 355,
           "noteNumber": 72,
@@ -89,7 +89,7 @@
           ]
         },
         {
-          "id": "c42b11bc-d8ab-4afd-abf3-72ed2c60e1c2",
+          "id": "0bab4a4b-4f61-45af-b24c-11b4286c29bc",
           "startTicks": 98,
           "durationTicks": 274,
           "noteNumber": 69,
@@ -103,7 +103,7 @@
           ]
         },
         {
-          "id": "f5865bf3-b7be-420a-b50e-724e29ed2c6f",
+          "id": "6e7d8720-7f03-4685-bf8c-d8980033bb6b",
           "startTicks": 379,
           "durationTicks": 49,
           "noteNumber": 62,
@@ -117,7 +117,7 @@
           ]
         },
         {
-          "id": "cd33ea20-2b8b-46e0-ad4d-90b59cea1c4a",
+          "id": "136d8c97-3f69-4fb2-b74b-70acfb237544",
           "startTicks": 377,
           "durationTicks": 72,
           "noteNumber": 67,
@@ -131,7 +131,7 @@
           ]
         },
         {
-          "id": "31da458a-14ef-4490-9e10-8cf0bc96f5c3",
+          "id": "8f9d0e69-59b8-49a2-83f3-5a7c70b7dc7c",
           "startTicks": 368,
           "durationTicks": 97,
           "noteNumber": 71,
@@ -145,7 +145,7 @@
           ]
         },
         {
-          "id": "bb01a4d0-aab5-4f95-a654-be7bbe0872e5",
+          "id": "c3eb2168-1199-41a5-ac22-19770b798ca7",
           "startTicks": 484,
           "durationTicks": 35,
           "noteNumber": 57,
@@ -159,7 +159,7 @@
           ]
         },
         {
-          "id": "00406a53-27bc-4796-bd5a-a527e8724592",
+          "id": "884b3a7c-e97f-42e1-a003-f6e1b29aaaac",
           "startTicks": 602,
           "durationTicks": 55,
           "noteNumber": 62,
@@ -173,7 +173,7 @@
           ]
         },
         {
-          "id": "1202b724-0830-4d9e-9704-a6c0ce3d9edf",
+          "id": "b42ee8d0-e7cd-4722-b632-816afa386796",
           "startTicks": 710,
           "durationTicks": 43,
           "noteNumber": 57,
@@ -187,7 +187,7 @@
           ]
         },
         {
-          "id": "7e2c8cc9-1d93-4bc0-b60b-d4107fb0e163",
+          "id": "121b6021-a292-4b7c-86a8-6cabc518b80b",
           "startTicks": 839,
           "durationTicks": 34,
           "noteNumber": 45,
@@ -201,7 +201,7 @@
           ]
         },
         {
-          "id": "68f631ae-dfca-4ce9-a9c0-f594c8ac8394",
+          "id": "77e35b7d-9938-4526-95c5-9f408f26529c",
           "startTicks": 957,
           "durationTicks": 128,
           "noteNumber": 67,
@@ -215,7 +215,7 @@
           ]
         },
         {
-          "id": "74d2d93f-0b55-4cd6-8c54-b78e4c8a9ddb",
+          "id": "9f427af0-6d04-4da3-a2e1-517edd80c3d6",
           "startTicks": 959,
           "durationTicks": 264,
           "noteNumber": 64,
@@ -229,7 +229,7 @@
           ]
         },
         {
-          "id": "53664e81-4f50-4ad9-b5ab-f4921bc59512",
+          "id": "948db81f-e202-46af-8bb1-d52e69bd1950",
           "startTicks": 1190,
           "durationTicks": 38,
           "noteNumber": 57,
@@ -243,7 +243,7 @@
           ]
         },
         {
-          "id": "b5ad26d7-0826-4f78-ad75-cc34c46ecc9a",
+          "id": "9050ea81-8652-4b93-8591-26004bc73fbe",
           "startTicks": 1079,
           "durationTicks": 240,
           "noteNumber": 69,
@@ -257,7 +257,7 @@
           ]
         },
         {
-          "id": "7e8a4066-5bfb-4e4e-aad2-402e92de3a9b",
+          "id": "8ceee782-21bc-41c2-a2f9-7b8e59808789",
           "startTicks": 960,
           "durationTicks": 395,
           "noteNumber": 72,
@@ -271,7 +271,7 @@
           ]
         },
         {
-          "id": "711c8eb7-35ea-4012-8e16-76048fd9a8b9",
+          "id": "6ff87948-66e8-4a01-8ecb-91b2247b4959",
           "startTicks": 1318,
           "durationTicks": 103,
           "noteNumber": 62,
@@ -285,7 +285,7 @@
           ]
         },
         {
-          "id": "afb4b3ff-8882-4527-adcb-5cc418b8df32",
+          "id": "2e35083c-0a9f-42a4-ab7d-5637e50861e5",
           "startTicks": 1318,
           "durationTicks": 113,
           "noteNumber": 67,
@@ -299,7 +299,7 @@
           ]
         },
         {
-          "id": "e3d2f730-c897-484c-aad3-0c667b1a0870",
+          "id": "645864f9-f092-4274-864f-a1e0e5132583",
           "startTicks": 1312,
           "durationTicks": 167,
           "noteNumber": 71,
@@ -313,7 +313,7 @@
           ]
         },
         {
-          "id": "890dd361-ccc2-4415-b590-09228782dcff",
+          "id": "275e2d9a-ba94-47b6-8302-4d16e48c120f",
           "startTicks": 1439,
           "durationTicks": 40,
           "noteNumber": 57,
@@ -327,7 +327,7 @@
           ]
         },
         {
-          "id": "414520d5-c994-4606-8765-265efb36d6eb",
+          "id": "75b267f1-52dd-4085-beae-a2382e1c4ba8",
           "startTicks": 1561,
           "durationTicks": 83,
           "noteNumber": 62,
@@ -341,7 +341,7 @@
           ]
         },
         {
-          "id": "9ce0cd13-b688-41d2-984c-60bdea7d4da8",
+          "id": "f9e0b160-9eff-4d5d-9276-ad8975fe429f",
           "startTicks": 1684,
           "durationTicks": 38,
           "noteNumber": 57,
@@ -355,7 +355,7 @@
           ]
         },
         {
-          "id": "abcfff63-b30d-460c-a255-f84dcb1ba14c",
+          "id": "4adcfb9d-6b7f-4cb6-9ddc-41467ebe0ace",
           "startTicks": 1804,
           "durationTicks": 33,
           "noteNumber": 50,
@@ -369,7 +369,7 @@
           ]
         },
         {
-          "id": "0a7b83e5-decb-4630-a9fe-8fc1229a7579",
+          "id": "8a3e3463-c658-4ce5-95ee-5353563d1100",
           "startTicks": 1917,
           "durationTicks": 3,
           "noteNumber": 64,
@@ -388,5 +388,421 @@
       "lowestNote": 45,
       "highestNote": 72
     }
-  ]
+  ],
+  "barsAndBeats": [
+    {
+      "index": 0,
+      "startTicks": 0,
+      "durationTicks": 1920,
+      "beatCount": 4,
+      "beats": [
+        {
+          "index": 0,
+          "startTicks": 0,
+          "durationTicks": 480,
+          "notes": []
+        },
+        {
+          "index": 1,
+          "startTicks": 480,
+          "durationTicks": 480,
+          "notes": []
+        },
+        {
+          "index": 2,
+          "startTicks": 960,
+          "durationTicks": 480,
+          "notes": []
+        },
+        {
+          "index": 3,
+          "startTicks": 1440,
+          "durationTicks": 480,
+          "notes": []
+        }
+      ],
+      "notes": []
+    },
+    {
+      "index": 1,
+      "startTicks": 2400,
+      "durationTicks": 1920,
+      "beatCount": 4,
+      "beats": [
+        {
+          "index": 4,
+          "startTicks": 1920,
+          "durationTicks": 480,
+          "notes": []
+        }
+      ],
+      "notes": []
+    }
+  ],
+  "notesMap": {
+    "2359a0c4-fdcd-45aa-b64b-df2d5fd26d7e": {
+      "id": "2359a0c4-fdcd-45aa-b64b-df2d5fd26d7e",
+      "startTicks": 0,
+      "durationTicks": 113,
+      "noteNumber": 67,
+      "noteNameWithOctave": [
+        "G4",
+        "G4"
+      ],
+      "noteName": [
+        "G",
+        "G"
+      ]
+    },
+    "c6bb870c-d409-4437-b1e8-8d4f29ef1b87": {
+      "id": "c6bb870c-d409-4437-b1e8-8d4f29ef1b87",
+      "startTicks": 2,
+      "durationTicks": 251,
+      "noteNumber": 45,
+      "noteNameWithOctave": [
+        "A2",
+        "A2"
+      ],
+      "noteName": [
+        "A",
+        "A"
+      ]
+    },
+    "0880111a-ff5c-4f2b-861e-e92acc4c1b7b": {
+      "id": "0880111a-ff5c-4f2b-861e-e92acc4c1b7b",
+      "startTicks": 253,
+      "durationTicks": 34,
+      "noteNumber": 57,
+      "noteNameWithOctave": [
+        "A3",
+        "A3"
+      ],
+      "noteName": [
+        "A",
+        "A"
+      ]
+    },
+    "a7091722-be6a-44b1-82e5-7b395fa351a8": {
+      "id": "a7091722-be6a-44b1-82e5-7b395fa351a8",
+      "startTicks": 0,
+      "durationTicks": 305,
+      "noteNumber": 64,
+      "noteNameWithOctave": [
+        "E4",
+        "E4"
+      ],
+      "noteName": [
+        "E",
+        "E"
+      ]
+    },
+    "38c14af1-f4a4-4054-aa57-98293c911477": {
+      "id": "38c14af1-f4a4-4054-aa57-98293c911477",
+      "startTicks": 2,
+      "durationTicks": 355,
+      "noteNumber": 72,
+      "noteNameWithOctave": [
+        "C5",
+        "C5"
+      ],
+      "noteName": [
+        "C",
+        "C"
+      ]
+    },
+    "0bab4a4b-4f61-45af-b24c-11b4286c29bc": {
+      "id": "0bab4a4b-4f61-45af-b24c-11b4286c29bc",
+      "startTicks": 98,
+      "durationTicks": 274,
+      "noteNumber": 69,
+      "noteNameWithOctave": [
+        "A4",
+        "A4"
+      ],
+      "noteName": [
+        "A",
+        "A"
+      ]
+    },
+    "6e7d8720-7f03-4685-bf8c-d8980033bb6b": {
+      "id": "6e7d8720-7f03-4685-bf8c-d8980033bb6b",
+      "startTicks": 379,
+      "durationTicks": 49,
+      "noteNumber": 62,
+      "noteNameWithOctave": [
+        "D4",
+        "D4"
+      ],
+      "noteName": [
+        "D",
+        "D"
+      ]
+    },
+    "136d8c97-3f69-4fb2-b74b-70acfb237544": {
+      "id": "136d8c97-3f69-4fb2-b74b-70acfb237544",
+      "startTicks": 377,
+      "durationTicks": 72,
+      "noteNumber": 67,
+      "noteNameWithOctave": [
+        "G4",
+        "G4"
+      ],
+      "noteName": [
+        "G",
+        "G"
+      ]
+    },
+    "8f9d0e69-59b8-49a2-83f3-5a7c70b7dc7c": {
+      "id": "8f9d0e69-59b8-49a2-83f3-5a7c70b7dc7c",
+      "startTicks": 368,
+      "durationTicks": 97,
+      "noteNumber": 71,
+      "noteNameWithOctave": [
+        "B4",
+        "B4"
+      ],
+      "noteName": [
+        "B",
+        "B"
+      ]
+    },
+    "c3eb2168-1199-41a5-ac22-19770b798ca7": {
+      "id": "c3eb2168-1199-41a5-ac22-19770b798ca7",
+      "startTicks": 484,
+      "durationTicks": 35,
+      "noteNumber": 57,
+      "noteNameWithOctave": [
+        "A3",
+        "A3"
+      ],
+      "noteName": [
+        "A",
+        "A"
+      ]
+    },
+    "884b3a7c-e97f-42e1-a003-f6e1b29aaaac": {
+      "id": "884b3a7c-e97f-42e1-a003-f6e1b29aaaac",
+      "startTicks": 602,
+      "durationTicks": 55,
+      "noteNumber": 62,
+      "noteNameWithOctave": [
+        "D4",
+        "D4"
+      ],
+      "noteName": [
+        "D",
+        "D"
+      ]
+    },
+    "b42ee8d0-e7cd-4722-b632-816afa386796": {
+      "id": "b42ee8d0-e7cd-4722-b632-816afa386796",
+      "startTicks": 710,
+      "durationTicks": 43,
+      "noteNumber": 57,
+      "noteNameWithOctave": [
+        "A3",
+        "A3"
+      ],
+      "noteName": [
+        "A",
+        "A"
+      ]
+    },
+    "121b6021-a292-4b7c-86a8-6cabc518b80b": {
+      "id": "121b6021-a292-4b7c-86a8-6cabc518b80b",
+      "startTicks": 839,
+      "durationTicks": 34,
+      "noteNumber": 45,
+      "noteNameWithOctave": [
+        "A2",
+        "A2"
+      ],
+      "noteName": [
+        "A",
+        "A"
+      ]
+    },
+    "77e35b7d-9938-4526-95c5-9f408f26529c": {
+      "id": "77e35b7d-9938-4526-95c5-9f408f26529c",
+      "startTicks": 957,
+      "durationTicks": 128,
+      "noteNumber": 67,
+      "noteNameWithOctave": [
+        "G4",
+        "G4"
+      ],
+      "noteName": [
+        "G",
+        "G"
+      ]
+    },
+    "9f427af0-6d04-4da3-a2e1-517edd80c3d6": {
+      "id": "9f427af0-6d04-4da3-a2e1-517edd80c3d6",
+      "startTicks": 959,
+      "durationTicks": 264,
+      "noteNumber": 64,
+      "noteNameWithOctave": [
+        "E4",
+        "E4"
+      ],
+      "noteName": [
+        "E",
+        "E"
+      ]
+    },
+    "948db81f-e202-46af-8bb1-d52e69bd1950": {
+      "id": "948db81f-e202-46af-8bb1-d52e69bd1950",
+      "startTicks": 1190,
+      "durationTicks": 38,
+      "noteNumber": 57,
+      "noteNameWithOctave": [
+        "A3",
+        "A3"
+      ],
+      "noteName": [
+        "A",
+        "A"
+      ]
+    },
+    "9050ea81-8652-4b93-8591-26004bc73fbe": {
+      "id": "9050ea81-8652-4b93-8591-26004bc73fbe",
+      "startTicks": 1079,
+      "durationTicks": 240,
+      "noteNumber": 69,
+      "noteNameWithOctave": [
+        "A4",
+        "A4"
+      ],
+      "noteName": [
+        "A",
+        "A"
+      ]
+    },
+    "8ceee782-21bc-41c2-a2f9-7b8e59808789": {
+      "id": "8ceee782-21bc-41c2-a2f9-7b8e59808789",
+      "startTicks": 960,
+      "durationTicks": 395,
+      "noteNumber": 72,
+      "noteNameWithOctave": [
+        "C5",
+        "C5"
+      ],
+      "noteName": [
+        "C",
+        "C"
+      ]
+    },
+    "6ff87948-66e8-4a01-8ecb-91b2247b4959": {
+      "id": "6ff87948-66e8-4a01-8ecb-91b2247b4959",
+      "startTicks": 1318,
+      "durationTicks": 103,
+      "noteNumber": 62,
+      "noteNameWithOctave": [
+        "D4",
+        "D4"
+      ],
+      "noteName": [
+        "D",
+        "D"
+      ]
+    },
+    "2e35083c-0a9f-42a4-ab7d-5637e50861e5": {
+      "id": "2e35083c-0a9f-42a4-ab7d-5637e50861e5",
+      "startTicks": 1318,
+      "durationTicks": 113,
+      "noteNumber": 67,
+      "noteNameWithOctave": [
+        "G4",
+        "G4"
+      ],
+      "noteName": [
+        "G",
+        "G"
+      ]
+    },
+    "645864f9-f092-4274-864f-a1e0e5132583": {
+      "id": "645864f9-f092-4274-864f-a1e0e5132583",
+      "startTicks": 1312,
+      "durationTicks": 167,
+      "noteNumber": 71,
+      "noteNameWithOctave": [
+        "B4",
+        "B4"
+      ],
+      "noteName": [
+        "B",
+        "B"
+      ]
+    },
+    "275e2d9a-ba94-47b6-8302-4d16e48c120f": {
+      "id": "275e2d9a-ba94-47b6-8302-4d16e48c120f",
+      "startTicks": 1439,
+      "durationTicks": 40,
+      "noteNumber": 57,
+      "noteNameWithOctave": [
+        "A3",
+        "A3"
+      ],
+      "noteName": [
+        "A",
+        "A"
+      ]
+    },
+    "75b267f1-52dd-4085-beae-a2382e1c4ba8": {
+      "id": "75b267f1-52dd-4085-beae-a2382e1c4ba8",
+      "startTicks": 1561,
+      "durationTicks": 83,
+      "noteNumber": 62,
+      "noteNameWithOctave": [
+        "D4",
+        "D4"
+      ],
+      "noteName": [
+        "D",
+        "D"
+      ]
+    },
+    "f9e0b160-9eff-4d5d-9276-ad8975fe429f": {
+      "id": "f9e0b160-9eff-4d5d-9276-ad8975fe429f",
+      "startTicks": 1684,
+      "durationTicks": 38,
+      "noteNumber": 57,
+      "noteNameWithOctave": [
+        "A3",
+        "A3"
+      ],
+      "noteName": [
+        "A",
+        "A"
+      ]
+    },
+    "4adcfb9d-6b7f-4cb6-9ddc-41467ebe0ace": {
+      "id": "4adcfb9d-6b7f-4cb6-9ddc-41467ebe0ace",
+      "startTicks": 1804,
+      "durationTicks": 33,
+      "noteNumber": 50,
+      "noteNameWithOctave": [
+        "D3",
+        "D3"
+      ],
+      "noteName": [
+        "D",
+        "D"
+      ]
+    },
+    "8a3e3463-c658-4ce5-95ee-5353563d1100": {
+      "id": "8a3e3463-c658-4ce5-95ee-5353563d1100",
+      "startTicks": 1917,
+      "durationTicks": 3,
+      "noteNumber": 64,
+      "noteNameWithOctave": [
+        "E4",
+        "E4"
+      ],
+      "noteName": [
+        "E",
+        "E"
+      ]
+    }
+  }
 }
