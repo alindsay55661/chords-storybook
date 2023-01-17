@@ -7,7 +7,7 @@ import { analyze } from './utils/analyze'
 import { parseMidi } from './utils/parse'
 
 function App() {
-  const [zoom, setZoom] = useState(20)
+  const [zoom, setZoom] = useState(100)
   const [trackHeight, setTrackHeight] = useState(128)
   const [song, setSong] = useState(data.chordTest)
 
@@ -79,7 +79,7 @@ function App() {
         chordDetectUnit="beat"
         zoom={zoom}
         trackHeight={trackHeight}
-        maxHeight="400px"
+        maxHeight="500px"
       />
     </div>
   )
