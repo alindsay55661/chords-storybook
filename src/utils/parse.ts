@@ -2,7 +2,7 @@ import Tonal from 'tonal'
 import { v4 as uuid } from 'uuid'
 import { buildMidiPart } from './adapters/midi-file-adapter'
 
-export type MidiPart = {
+export type BaseSongData = {
   timings: Timings
   timeSignatures: TimeSignature[]
   tracks: Track[]
@@ -14,11 +14,11 @@ export type Timings = {
   durationTicks: number
   ticksPerBeat: number
   microsecondsPerBeat: number
-  bars?: Bar[]
 }
 
 export type TimeSignature = {
   startTicks: number
+  durationTicks: number
   startBeat: number
   beatsInSignature: number
   numerator: number
@@ -34,6 +34,7 @@ export type Track = {
   durationTicks: number
   name?: string
   midiPatch?: number
+  midiChannel?: number
 }
 
 export type Bar = {
@@ -59,16 +60,19 @@ export type Note = {
   noteNumber: number
   noteNameWithOctave: string[]
   noteName: string[]
+  midiChannel: number
 }
 
-export function parseMidi(data: ArrayLike<number>): MidiPart {
+export function parseMidi(data: ArrayLike<number>): BaseSongData {
   // Adapters leverage generic 'buildNote' and 'makeBars' logic
   // during custom format translation
   return buildMidiPart(data)
 }
 
 export function buildNote(
-  note: Pick<Note, 'startTicks' | 'noteNumber' | 'durationTicks'>,
+  note: Pick<Note, 'startTicks' | 'noteNumber' | 'durationTicks'> & {
+    midiChannel?: number
+  },
 ): Note | false {
   const { startTicks, noteNumber, durationTicks } = note
 
@@ -77,6 +81,7 @@ export function buildNote(
 
   return {
     id: uuid(),
+    midiChannel: note.midiChannel ?? 1,
     startTicks,
     durationTicks,
     noteNumber,
@@ -108,16 +113,17 @@ export function makeBarsAndBeats(
     let beatsInCurrentBatch = 0
     let beats: Beat[] = []
     let startTicks = ts.startTicks
-    const durationTicks = ticksPerBeat * ts.beatTicksMultiplier * ts.numerator
+    const beatDurationTicks = ticksPerBeat * ts.beatTicksMultiplier
+    const durationTicks = beatDurationTicks * ts.numerator
 
-    while (signatureBeatsProcessed <= ts.beatsInSignature) {
+    while (signatureBeatsProcessed < ts.beatsInSignature) {
       if (beatsInCurrentBatch === 0) barStartTicks = startTicks
 
       // Create beat
       beats.push({
         index: totalBeatsProcessed,
         startTicks: startTicks,
-        durationTicks: ticksPerBeat,
+        durationTicks: beatDurationTicks,
         notes: [],
       })
 
@@ -147,12 +153,12 @@ export function makeBarsAndBeats(
       }
     }
 
-    // Create range for last bar if needed
+    // Complete final bar if not complete
     if (beats.length && idx === timeSignatures.length - 1) {
       bars.push({
         index: totalBarsProcessed,
-        startTicks,
-        durationTicks,
+        startTicks: beats[0].startTicks,
+        durationTicks: ticksPerBeat * beats.length,
         beatCount: ts.numerator,
         beats,
         notes: [],

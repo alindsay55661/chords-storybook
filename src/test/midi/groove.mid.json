@@ -7,8 +7,9 @@
   "timeSignatures": [
     {
       "startTicks": 0,
+      "durationTicks": 15303,
       "startBeat": 0,
-      "beatsInSignature": 31.88125,
+      "beatsInSignature": 32,
       "numerator": 4,
       "denominator": 4,
       "beatTicksMultiplier": 1
@@ -16,10 +17,11 @@
   ],
   "tracks": [
     {
-      "id": "9556b13c-bb08-4269-84fa-0755eefb798b",
+      "id": "2c8cbd25-eb7d-4ee8-99e9-0f64e9e225cc",
       "notes": [
         {
-          "id": "c8d023c9-91fb-41ca-891a-1bb5751ee469",
+          "id": "82b4575c-849a-4828-8e2c-db54bac52ff5",
+          "midiChannel": 0,
           "startTicks": 0,
           "durationTicks": 113,
           "noteNumber": 67,
@@ -33,7 +35,8 @@
           ]
         },
         {
-          "id": "96858ebf-b5c1-4e54-98d9-75fa31d3f0d6",
+          "id": "7c9d4c12-d6b4-426b-b9bd-73b98c28064d",
+          "midiChannel": 0,
           "startTicks": 2,
           "durationTicks": 251,
           "noteNumber": 45,
@@ -47,7 +50,8 @@
           ]
         },
         {
-          "id": "c241e710-ac30-4f9f-9667-38d4963610f7",
+          "id": "62891448-481f-43ed-8fc9-a68b657eb93b",
+          "midiChannel": 0,
           "startTicks": 253,
           "durationTicks": 34,
           "noteNumber": 57,
@@ -61,7 +65,8 @@
           ]
         },
         {
-          "id": "3794b7ea-191f-4ba6-bad0-8494008e4cdd",
+          "id": "e9d00949-d12a-4a1c-a1d5-81fbfe7290d2",
+          "midiChannel": 0,
           "startTicks": 0,
           "durationTicks": 305,
           "noteNumber": 64,
@@ -75,7 +80,8 @@
           ]
         },
         {
-          "id": "0e5d8374-a1df-460d-b50b-4dcfaa0ff1d2",
+          "id": "999c5142-56e1-4b15-93e8-d44928b60c11",
+          "midiChannel": 0,
           "startTicks": 2,
           "durationTicks": 355,
           "noteNumber": 72,
@@ -89,7 +95,8 @@
           ]
         },
         {
-          "id": "3d5ca8f8-8a58-4b32-a69c-41be85daa805",
+          "id": "352c4c73-d06b-4a86-bb6e-627ec1ea443b",
+          "midiChannel": 0,
           "startTicks": 98,
           "durationTicks": 274,
           "noteNumber": 69,
@@ -103,7 +110,8 @@
           ]
         },
         {
-          "id": "ab8904b0-f53c-4ef1-8144-316c7767fa47",
+          "id": "8c10fd15-977c-4675-afef-9f82d9279de1",
+          "midiChannel": 0,
           "startTicks": 379,
           "durationTicks": 49,
           "noteNumber": 62,
@@ -117,7 +125,8 @@
           ]
         },
         {
-          "id": "83d48655-af54-4573-8c67-19e955f6371e",
+          "id": "ea2bd418-d428-4d03-b042-43fcefb32e12",
+          "midiChannel": 0,
           "startTicks": 377,
           "durationTicks": 72,
           "noteNumber": 67,
@@ -131,7 +140,8 @@
           ]
         },
         {
-          "id": "322653ba-0659-4fc9-97c4-482a6fef4536",
+          "id": "54a37bbd-0b80-45f6-af5f-12eafdbe64c1",
+          "midiChannel": 0,
           "startTicks": 368,
           "durationTicks": 97,
           "noteNumber": 71,
@@ -145,7 +155,8 @@
           ]
         },
         {
-          "id": "f36d9ffe-9011-40a3-b251-ca0f2d9330df",
+          "id": "fe30d7d3-9546-477b-ac52-616bb23472ad",
+          "midiChannel": 0,
           "startTicks": 484,
           "durationTicks": 35,
           "noteNumber": 57,
@@ -159,7 +170,8 @@
           ]
         },
         {
-          "id": "f5faf7c2-2e5e-46a5-848a-e1700254e249",
+          "id": "c2235e47-3f36-4554-bc7c-7d3084f6df0e",
+          "midiChannel": 0,
           "startTicks": 602,
           "durationTicks": 55,
           "noteNumber": 62,
@@ -173,7 +185,8 @@
           ]
         },
         {
-          "id": "3decde35-1c20-4bd8-bddb-336d4f4e2810",
+          "id": "7ed75545-5182-42d9-8131-6274c448938c",
+          "midiChannel": 0,
           "startTicks": 710,
           "durationTicks": 43,
           "noteNumber": 57,
@@ -187,7 +200,8 @@
           ]
         },
         {
-          "id": "b43d7911-2570-45dd-a19c-11a2171b919e",
+          "id": "2ce09581-1875-4d72-bcb8-6563e49a090f",
+          "midiChannel": 0,
           "startTicks": 839,
           "durationTicks": 34,
           "noteNumber": 45,
@@ -201,7 +215,8 @@
           ]
         },
         {
-          "id": "086a5725-e1e4-483e-bfd8-2c5951894ebb",
+          "id": "37f95851-e0f2-46a8-98dd-e597e0ffb49a",
+          "midiChannel": 0,
           "startTicks": 957,
           "durationTicks": 128,
           "noteNumber": 67,
@@ -215,7 +230,8 @@
           ]
         },
         {
-          "id": "52aea2c4-4608-4999-a013-55950553fa13",
+          "id": "2781e2b5-fcb6-40e8-8a41-3684cb2e1297",
+          "midiChannel": 0,
           "startTicks": 959,
           "durationTicks": 264,
           "noteNumber": 64,
@@ -229,7 +245,8 @@
           ]
         },
         {
-          "id": "c14a6004-cd5d-46d6-957c-ff3a852baf3f",
+          "id": "2ea2112b-9e74-4129-bd0f-20e637e02df2",
+          "midiChannel": 0,
           "startTicks": 1190,
           "durationTicks": 38,
           "noteNumber": 57,
@@ -243,7 +260,8 @@
           ]
         },
         {
-          "id": "858b229f-98a2-40e2-a9a4-0fe40fa4a582",
+          "id": "48c275d5-f410-4d2b-8e47-e5bac62d5370",
+          "midiChannel": 0,
           "startTicks": 1079,
           "durationTicks": 240,
           "noteNumber": 69,
@@ -257,7 +275,8 @@
           ]
         },
         {
-          "id": "2a22ffd3-4b2a-4bca-a89d-fbfd687f07f3",
+          "id": "d63d4c63-5a3b-4560-87ba-7bffa82bbbca",
+          "midiChannel": 0,
           "startTicks": 960,
           "durationTicks": 395,
           "noteNumber": 72,
@@ -271,7 +290,8 @@
           ]
         },
         {
-          "id": "2ddab5a0-624c-4117-ae19-84c339f7c873",
+          "id": "6f0a4316-c0ee-4950-a624-7870e7a59d42",
+          "midiChannel": 0,
           "startTicks": 1318,
           "durationTicks": 103,
           "noteNumber": 62,
@@ -285,7 +305,8 @@
           ]
         },
         {
-          "id": "0910ebd5-cc01-457e-b3a8-0cc7f2299f12",
+          "id": "704c38c0-bf39-4316-867a-fa3a6b452d8f",
+          "midiChannel": 0,
           "startTicks": 1318,
           "durationTicks": 113,
           "noteNumber": 67,
@@ -299,7 +320,8 @@
           ]
         },
         {
-          "id": "32bf8237-5bdf-4b5c-9fcc-966ee26c6092",
+          "id": "99c9e498-589e-4227-b77c-4e31156760fc",
+          "midiChannel": 0,
           "startTicks": 1312,
           "durationTicks": 167,
           "noteNumber": 71,
@@ -313,7 +335,8 @@
           ]
         },
         {
-          "id": "2b497f1a-1c15-46a9-9443-a0d1e764132f",
+          "id": "7d08dac5-8260-46d5-90d3-d2466e714a19",
+          "midiChannel": 0,
           "startTicks": 1439,
           "durationTicks": 40,
           "noteNumber": 57,
@@ -327,7 +350,8 @@
           ]
         },
         {
-          "id": "8789b876-e1d7-4c7b-9d19-5b5e7f3861c7",
+          "id": "0ec1e38d-87df-4589-9cd1-43b5f19dac77",
+          "midiChannel": 0,
           "startTicks": 1561,
           "durationTicks": 83,
           "noteNumber": 62,
@@ -341,7 +365,8 @@
           ]
         },
         {
-          "id": "9e9079cb-24c3-42f6-888f-318a69ecbf75",
+          "id": "9b0be5c9-5c11-4603-96fc-04e2941a739f",
+          "midiChannel": 0,
           "startTicks": 1684,
           "durationTicks": 38,
           "noteNumber": 57,
@@ -355,7 +380,8 @@
           ]
         },
         {
-          "id": "6dd0909f-91ba-427e-91fb-238d06564c82",
+          "id": "75fa3079-41fb-4cb3-9935-2e831e368b5b",
+          "midiChannel": 0,
           "startTicks": 1804,
           "durationTicks": 33,
           "noteNumber": 50,
@@ -369,7 +395,8 @@
           ]
         },
         {
-          "id": "3793edf3-9fbe-4194-ac83-846c0df45000",
+          "id": "42865b91-ecd0-40d9-bc23-befd205d7196",
+          "midiChannel": 0,
           "startTicks": 1917,
           "durationTicks": 114,
           "noteNumber": 64,
@@ -383,7 +410,8 @@
           ]
         },
         {
-          "id": "9e0717f1-6cdd-443d-9393-ea6cf6f83c97",
+          "id": "bd255e00-2335-40de-b3b2-e118aeeafd07",
+          "midiChannel": 0,
           "startTicks": 2159,
           "durationTicks": 30,
           "noteNumber": 57,
@@ -397,7 +425,8 @@
           ]
         },
         {
-          "id": "f500c9ce-4a47-4e88-bbd6-1948a41a5988",
+          "id": "2945704f-c5f5-4b43-9957-dea2a65374aa",
+          "midiChannel": 0,
           "startTicks": 1924,
           "durationTicks": 332,
           "noteNumber": 69,
@@ -411,7 +440,8 @@
           ]
         },
         {
-          "id": "ec065e4a-8e28-4435-9667-6c83eb424580",
+          "id": "ce766142-756c-4e59-9692-e93a230acd69",
+          "midiChannel": 0,
           "startTicks": 2038,
           "durationTicks": 220,
           "noteNumber": 66,
@@ -425,7 +455,8 @@
           ]
         },
         {
-          "id": "e2aed444-2c47-45cf-98bb-8fff7e79a2b4",
+          "id": "ccb2f335-d6aa-434f-bc85-24cae1a04b8b",
+          "midiChannel": 0,
           "startTicks": 1920,
           "durationTicks": 425,
           "noteNumber": 62,
@@ -439,7 +470,8 @@
           ]
         },
         {
-          "id": "a0ac6556-d5af-425a-b49f-f792ba2df399",
+          "id": "f0e5de7b-83e2-4a93-b121-a72f5a9a5a79",
+          "midiChannel": 0,
           "startTicks": 2281,
           "durationTicks": 79,
           "noteNumber": 64,
@@ -453,7 +485,8 @@
           ]
         },
         {
-          "id": "25625538-e60f-4618-abb4-5126e5e2d6ac",
+          "id": "204c2593-9edb-428d-9a7a-c77ca5659add",
+          "midiChannel": 0,
           "startTicks": 2275,
           "durationTicks": 105,
           "noteNumber": 67,
@@ -467,7 +500,8 @@
           ]
         },
         {
-          "id": "090f143b-8b22-41af-9ac2-dcaf59b3115d",
+          "id": "2099354d-44ab-4e69-97c1-87b0922c649e",
+          "midiChannel": 0,
           "startTicks": 2402,
           "durationTicks": 34,
           "noteNumber": 57,
@@ -481,7 +515,8 @@
           ]
         },
         {
-          "id": "33d78dfe-164d-4a94-8ffb-b6a25ac5bcc8",
+          "id": "008da0a1-66b4-469d-a858-e92756ff56c7",
+          "midiChannel": 0,
           "startTicks": 2517,
           "durationTicks": 58,
           "noteNumber": 62,
@@ -495,7 +530,8 @@
           ]
         },
         {
-          "id": "6e888f79-33cb-47c3-a477-9b1a3d22bde5",
+          "id": "1b065ede-632f-47ea-9952-454b477d51f5",
+          "midiChannel": 0,
           "startTicks": 2640,
           "durationTicks": 33,
           "noteNumber": 57,
@@ -509,7 +545,8 @@
           ]
         },
         {
-          "id": "14c8e1ab-0302-46f3-b6f6-b916fe76e617",
+          "id": "d1cce12f-237e-437f-b587-242bdc66768f",
+          "midiChannel": 0,
           "startTicks": 2764,
           "durationTicks": 68,
           "noteNumber": 62,
@@ -523,7 +560,8 @@
           ]
         },
         {
-          "id": "3e8213d7-a5a7-4907-9715-cb4623839e38",
+          "id": "7774feef-f051-4381-90d2-75b08f07dc71",
+          "midiChannel": 0,
           "startTicks": 2766,
           "durationTicks": 78,
           "noteNumber": 66,
@@ -537,7 +575,8 @@
           ]
         },
         {
-          "id": "c2fd69e1-6469-4c95-9764-27ef5a037938",
+          "id": "666c975d-8b26-4977-8e6c-f8299d71acb2",
+          "midiChannel": 0,
           "startTicks": 2768,
           "durationTicks": 81,
           "noteNumber": 69,
@@ -551,7 +590,8 @@
           ]
         },
         {
-          "id": "443ae25b-17e8-4ff7-831e-59aaecc0d4c9",
+          "id": "3ab31899-d623-48a8-9dd1-a8951346c8ed",
+          "midiChannel": 0,
           "startTicks": 2883,
           "durationTicks": 34,
           "noteNumber": 57,
@@ -565,7 +605,8 @@
           ]
         },
         {
-          "id": "9af73dd8-22ac-4956-a4af-e8d7f99a3895",
+          "id": "586804ec-1c9d-4dff-9a1f-7e0c2214adc5",
+          "midiChannel": 0,
           "startTicks": 3005,
           "durationTicks": 89,
           "noteNumber": 66,
@@ -579,7 +620,8 @@
           ]
         },
         {
-          "id": "d68cc18a-fe34-46e3-b1a4-6e53ca23fb16",
+          "id": "f09612ff-65d8-4aac-8188-c7459f251dfd",
+          "midiChannel": 0,
           "startTicks": 3003,
           "durationTicks": 147,
           "noteNumber": 69,
@@ -593,7 +635,8 @@
           ]
         },
         {
-          "id": "4b246ca9-1aad-4e9c-bcb1-89348defe03c",
+          "id": "3c3b87bf-34f3-4bbf-99b9-e47deb1934e7",
+          "midiChannel": 0,
           "startTicks": 3129,
           "durationTicks": 50,
           "noteNumber": 64,
@@ -607,7 +650,8 @@
           ]
         },
         {
-          "id": "afe69438-f3b0-4a45-92ca-48de81a2a7b1",
+          "id": "09406191-4de2-45ee-b089-fd72b3299edc",
+          "midiChannel": 0,
           "startTicks": 3004,
           "durationTicks": 206,
           "noteNumber": 62,
@@ -621,7 +665,8 @@
           ]
         },
         {
-          "id": "18416188-46b9-480c-8697-4f7b10b1d862",
+          "id": "98f6c690-56f5-4268-afc2-33a52d390a35",
+          "midiChannel": 0,
           "startTicks": 3135,
           "durationTicks": 90,
           "noteNumber": 67,
@@ -635,7 +680,8 @@
           ]
         },
         {
-          "id": "7daf4c60-fb53-4859-8314-72f3eede8ccd",
+          "id": "ced5a497-9a98-4b04-995c-711809b591e2",
+          "midiChannel": 0,
           "startTicks": 3240,
           "durationTicks": 66,
           "noteNumber": 57,
@@ -649,7 +695,8 @@
           ]
         },
         {
-          "id": "df5b1a1a-8298-4219-81a6-722be63f0771",
+          "id": "6384743a-a518-4129-8af0-9d1bbe9bedba",
+          "midiChannel": 0,
           "startTicks": 3370,
           "durationTicks": 31,
           "noteNumber": 66,
@@ -663,7 +710,8 @@
           ]
         },
         {
-          "id": "f19aa6c8-9bc8-4881-a0f8-c513a6e33af3",
+          "id": "ea300792-4529-48bf-bb41-c81df7f31399",
+          "midiChannel": 0,
           "startTicks": 3364,
           "durationTicks": 44,
           "noteNumber": 62,
@@ -677,7 +725,8 @@
           ]
         },
         {
-          "id": "0ee86e41-a0c6-4e87-976a-56fbb0876345",
+          "id": "eb340d84-68f0-483e-be25-1dde4c9976c3",
+          "midiChannel": 0,
           "startTicks": 3366,
           "durationTicks": 61,
           "noteNumber": 69,
@@ -691,7 +740,8 @@
           ]
         },
         {
-          "id": "7a8d687f-b667-42bf-b1ed-364c2eaee815",
+          "id": "2e265895-d5ae-4f80-9ed2-ec2d8dc00863",
+          "midiChannel": 0,
           "startTicks": 3476,
           "durationTicks": 48,
           "noteNumber": 57,
@@ -705,7 +755,8 @@
           ]
         },
         {
-          "id": "ed363e2b-2732-4e39-87e2-438a87514783",
+          "id": "90793eb5-e322-44c2-95f4-d9332f263aa9",
+          "midiChannel": 0,
           "startTicks": 3599,
           "durationTicks": 53,
           "noteNumber": 67,
@@ -719,7 +770,8 @@
           ]
         },
         {
-          "id": "d11ee057-1a57-474e-9d3d-7de795968717",
+          "id": "70053b58-7cf7-4911-bdd4-3bea92141d63",
+          "midiChannel": 0,
           "startTicks": 3603,
           "durationTicks": 65,
           "noteNumber": 71,
@@ -733,7 +785,8 @@
           ]
         },
         {
-          "id": "0620c606-aa22-4f29-8d5b-0aa80974e84d",
+          "id": "c5da23ee-f6cb-4bc5-ba16-f4670c888833",
+          "midiChannel": 0,
           "startTicks": 3597,
           "durationTicks": 76,
           "noteNumber": 62,
@@ -747,7 +800,8 @@
           ]
         },
         {
-          "id": "08a2b1ce-8c86-4052-8890-f96a74302e09",
+          "id": "f7065c77-fa6b-4e80-9bdc-df32f40c3bbc",
+          "midiChannel": 0,
           "startTicks": 3719,
           "durationTicks": 40,
           "noteNumber": 57,
@@ -761,7 +815,8 @@
           ]
         },
         {
-          "id": "4fcba9a5-f4c5-4c46-9ee0-ea91a53bf8ba",
+          "id": "b66a007c-a7d9-4528-8875-abc0b2bd4b8d",
+          "midiChannel": 0,
           "startTicks": 3841,
           "durationTicks": 123,
           "noteNumber": 67,
@@ -775,7 +830,8 @@
           ]
         },
         {
-          "id": "14e21a74-ec74-402e-80c5-3dda287aefa0",
+          "id": "8770ceed-6809-447d-b569-c3d7f77bb777",
+          "midiChannel": 0,
           "startTicks": 3840,
           "durationTicks": 277,
           "noteNumber": 64,
@@ -789,7 +845,8 @@
           ]
         },
         {
-          "id": "cd407ac3-179d-4897-8294-1f05e3b6839c",
+          "id": "c37478fa-3660-489a-9cb4-fccb44b87422",
+          "midiChannel": 0,
           "startTicks": 4073,
           "durationTicks": 88,
           "noteNumber": 57,
@@ -803,7 +860,8 @@
           ]
         },
         {
-          "id": "28b53dfa-fc20-4052-a3ac-34564115415c",
+          "id": "e8631edd-254f-4114-8844-aba3c1868882",
+          "midiChannel": 0,
           "startTicks": 3844,
           "durationTicks": 372,
           "noteNumber": 72,
@@ -817,7 +875,8 @@
           ]
         },
         {
-          "id": "32d3a0c5-e524-4a05-8f2d-de6ae4c7e67c",
+          "id": "9ea5758b-8fcf-46c9-b5ad-72158b7bb069",
+          "midiChannel": 0,
           "startTicks": 3955,
           "durationTicks": 268,
           "noteNumber": 69,
@@ -831,7 +890,8 @@
           ]
         },
         {
-          "id": "b9ad5c1a-5e93-418b-b943-d88dc63c7202",
+          "id": "761275a1-a842-4517-a779-2cd9d577158a",
+          "midiChannel": 0,
           "startTicks": 4202,
           "durationTicks": 87,
           "noteNumber": 62,
@@ -845,7 +905,8 @@
           ]
         },
         {
-          "id": "11f2be1e-d1a6-41ef-be57-c321ff1b9d60",
+          "id": "25e841ce-16bb-4c01-a797-0e15229f5158",
+          "midiChannel": 0,
           "startTicks": 4207,
           "durationTicks": 94,
           "noteNumber": 67,
@@ -859,7 +920,8 @@
           ]
         },
         {
-          "id": "d0a9ddd1-01ac-4767-92f3-82e77efbdc76",
+          "id": "77707442-d98f-46db-baf5-4c46a03e5781",
+          "midiChannel": 0,
           "startTicks": 4186,
           "durationTicks": 136,
           "noteNumber": 71,
@@ -873,7 +935,8 @@
           ]
         },
         {
-          "id": "6305f557-9053-4d6c-b44b-fca5a208e98e",
+          "id": "b62eefe2-9049-4f86-a2b7-42ed45435236",
+          "midiChannel": 0,
           "startTicks": 4321,
           "durationTicks": 29,
           "noteNumber": 57,
@@ -887,7 +950,8 @@
           ]
         },
         {
-          "id": "5b1e723d-548c-44ef-88b7-e71d83569276",
+          "id": "eedca6fa-39a6-4df7-8af0-6507055915a2",
+          "midiChannel": 0,
           "startTicks": 4436,
           "durationTicks": 55,
           "noteNumber": 62,
@@ -901,7 +965,8 @@
           ]
         },
         {
-          "id": "e4fb093a-1597-436a-a0ba-2981f6b15902",
+          "id": "995f1acb-59ff-4c89-8e41-8ac88e6d4963",
+          "midiChannel": 0,
           "startTicks": 4564,
           "durationTicks": 59,
           "noteNumber": 45,
@@ -915,7 +980,8 @@
           ]
         },
         {
-          "id": "d11ec2ce-c2d7-4dad-8e80-ac8c899ca654",
+          "id": "5ab8cdaf-faef-487b-868d-19e41933449b",
+          "midiChannel": 0,
           "startTicks": 4685,
           "durationTicks": 59,
           "noteNumber": 57,
@@ -929,7 +995,8 @@
           ]
         },
         {
-          "id": "a86ed358-95d5-45e8-b157-62fb312f8a27",
+          "id": "78ef338e-ed0a-426e-a508-4c1dec8551f3",
+          "midiChannel": 0,
           "startTicks": 4802,
           "durationTicks": 114,
           "noteNumber": 67,
@@ -943,7 +1010,8 @@
           ]
         },
         {
-          "id": "905070b9-6944-4a3b-a296-c7df29eaae22",
+          "id": "8716b61e-d3c8-417d-b415-3c5b63b754ce",
+          "midiChannel": 0,
           "startTicks": 4808,
           "durationTicks": 287,
           "noteNumber": 64,
@@ -957,7 +1025,8 @@
           ]
         },
         {
-          "id": "8433630d-2bf7-47c7-843a-eb995a3c0663",
+          "id": "aaa4a422-06be-4e2a-bb91-cc5c8671e24d",
+          "midiChannel": 0,
           "startTicks": 5047,
           "durationTicks": 88,
           "noteNumber": 57,
@@ -971,7 +1040,8 @@
           ]
         },
         {
-          "id": "aff7172b-df21-43e7-acda-b1896149f1ce",
+          "id": "37ea0414-d236-4a20-8e3e-848d23e6a698",
+          "midiChannel": 0,
           "startTicks": 4817,
           "durationTicks": 378,
           "noteNumber": 72,
@@ -985,7 +1055,8 @@
           ]
         },
         {
-          "id": "c778186b-4a93-4db3-8266-c1a46221a708",
+          "id": "c0267928-07f7-45bf-adeb-f427f495e189",
+          "midiChannel": 0,
           "startTicks": 4919,
           "durationTicks": 290,
           "noteNumber": 69,
@@ -999,7 +1070,8 @@
           ]
         },
         {
-          "id": "20f92ec3-2fb8-4ff7-8e30-21f0c321165c",
+          "id": "c556af75-e00b-42da-b173-6087d93e4893",
+          "midiChannel": 0,
           "startTicks": 5169,
           "durationTicks": 80,
           "noteNumber": 62,
@@ -1013,7 +1085,8 @@
           ]
         },
         {
-          "id": "900d2d1a-c7cf-4786-a858-4393c201e471",
+          "id": "7f3ab0d1-2882-4b2f-9f28-b323fc3f5b90",
+          "midiChannel": 0,
           "startTicks": 5174,
           "durationTicks": 100,
           "noteNumber": 67,
@@ -1027,7 +1100,8 @@
           ]
         },
         {
-          "id": "4409ee44-d730-4e8c-bbe6-4f945517bcf5",
+          "id": "a1141a26-55d4-4ae8-9b62-e20578d23f91",
+          "midiChannel": 0,
           "startTicks": 5283,
           "durationTicks": 34,
           "noteNumber": 57,
@@ -1041,7 +1115,8 @@
           ]
         },
         {
-          "id": "3a6cf273-6b75-4132-806e-2bdf2d464a2f",
+          "id": "c9502720-2311-45de-9082-0506e117efb7",
+          "midiChannel": 0,
           "startTicks": 5160,
           "durationTicks": 172,
           "noteNumber": 71,
@@ -1055,7 +1130,8 @@
           ]
         },
         {
-          "id": "57cd6ad4-8fac-45d9-aae3-22381c8f44f9",
+          "id": "713a864e-4880-41d8-885b-45f5d0899316",
+          "midiChannel": 0,
           "startTicks": 5402,
           "durationTicks": 88,
           "noteNumber": 62,
@@ -1069,7 +1145,8 @@
           ]
         },
         {
-          "id": "7996f562-3a6c-4703-9c72-61ea03489fdc",
+          "id": "a5be097a-45d3-41bf-baac-238b6a9ea432",
+          "midiChannel": 0,
           "startTicks": 5528,
           "durationTicks": 60,
           "noteNumber": 57,
@@ -1083,7 +1160,8 @@
           ]
         },
         {
-          "id": "f27e8585-7ed3-4828-b77b-bd4a360b63fc",
+          "id": "4bbb9090-28b6-4380-a921-83fdcb4b71ff",
+          "midiChannel": 0,
           "startTicks": 5645,
           "durationTicks": 67,
           "noteNumber": 52,
@@ -1097,7 +1175,8 @@
           ]
         },
         {
-          "id": "bdceecb9-857c-4d38-acd7-fdb9a3b23603",
+          "id": "f8a93d04-4e23-4ec6-ad01-e7b3d7845178",
+          "midiChannel": 0,
           "startTicks": 5761,
           "durationTicks": 128,
           "noteNumber": 64,
@@ -1111,7 +1190,8 @@
           ]
         },
         {
-          "id": "32382045-70bd-4924-8058-2f157d0c7827",
+          "id": "f9f44745-620e-4fa3-8c61-5ace90f93f0d",
+          "midiChannel": 0,
           "startTicks": 5760,
           "durationTicks": 299,
           "noteNumber": 62,
@@ -1125,7 +1205,8 @@
           ]
         },
         {
-          "id": "546e0bc6-1590-4765-a69c-c25f80895b55",
+          "id": "0964707e-64ba-4258-a6e2-440dc6429d48",
+          "midiChannel": 0,
           "startTicks": 5996,
           "durationTicks": 86,
           "noteNumber": 50,
@@ -1139,7 +1220,8 @@
           ]
         },
         {
-          "id": "9db2eaee-33da-45a7-afbf-28f94691e842",
+          "id": "f2af2411-b60b-461d-82be-be2da75cfd37",
+          "midiChannel": 0,
           "startTicks": 5765,
           "durationTicks": 320,
           "noteNumber": 69,
@@ -1153,7 +1235,8 @@
           ]
         },
         {
-          "id": "0cb02e62-477f-4d09-b357-1e26bdc15086",
+          "id": "bb032b7d-4280-4bbd-9638-a188a6976e7f",
+          "midiChannel": 0,
           "startTicks": 5887,
           "durationTicks": 234,
           "noteNumber": 66,
@@ -1167,7 +1250,8 @@
           ]
         },
         {
-          "id": "c9be5dda-315d-4998-bbe6-30d3a773670a",
+          "id": "c74e3c01-14ab-4166-b83c-e08b41bc37ca",
+          "midiChannel": 0,
           "startTicks": 6131,
           "durationTicks": 34,
           "noteNumber": 62,
@@ -1181,7 +1265,8 @@
           ]
         },
         {
-          "id": "d8429353-ee83-4497-98a6-0568c0709aaa",
+          "id": "94eb0585-c868-4228-9872-21b6bba018b4",
+          "midiChannel": 0,
           "startTicks": 6122,
           "durationTicks": 52,
           "noteNumber": 64,
@@ -1195,7 +1280,8 @@
           ]
         },
         {
-          "id": "f1b1b6d6-f559-49a8-8359-333c4a29873a",
+          "id": "060ec4b0-3942-43df-91a1-b0822f48f801",
+          "midiChannel": 0,
           "startTicks": 6123,
           "durationTicks": 71,
           "noteNumber": 67,
@@ -1209,7 +1295,8 @@
           ]
         },
         {
-          "id": "961a2207-9fcc-428c-bcad-17b29de4ce35",
+          "id": "3b6c4ae1-18c3-4b18-88a7-e398c1019918",
+          "midiChannel": 0,
           "startTicks": 6241,
           "durationTicks": 36,
           "noteNumber": 50,
@@ -1223,7 +1310,8 @@
           ]
         },
         {
-          "id": "bd6f45c6-c01a-45b1-8110-b87ce076217a",
+          "id": "7821ef20-c36b-4d00-be29-30eb4d23838e",
+          "midiChannel": 0,
           "startTicks": 6361,
           "durationTicks": 30,
           "noteNumber": 66,
@@ -1237,7 +1325,8 @@
           ]
         },
         {
-          "id": "b94b24bb-9a92-4517-88cf-5e1cbce7a6bd",
+          "id": "57634222-475e-425b-9a3b-922e25528233",
+          "midiChannel": 0,
           "startTicks": 6360,
           "durationTicks": 34,
           "noteNumber": 62,
@@ -1251,7 +1340,8 @@
           ]
         },
         {
-          "id": "21585c52-e3d1-4394-8149-532e0b9df1a9",
+          "id": "fc979ece-57ed-4d29-a453-10c8b11a2fdf",
+          "midiChannel": 0,
           "startTicks": 6362,
           "durationTicks": 33,
           "noteNumber": 69,
@@ -1265,7 +1355,8 @@
           ]
         },
         {
-          "id": "29e2b90d-693b-498e-9a7d-7ee34108d104",
+          "id": "ca328fe1-49db-40b6-81b1-6e758a4ff958",
+          "midiChannel": 0,
           "startTicks": 6602,
           "durationTicks": 63,
           "noteNumber": 66,
@@ -1279,7 +1370,8 @@
           ]
         },
         {
-          "id": "d9aff53f-2fa1-4c0f-bfdd-dccff8831d2a",
+          "id": "84356ff5-3fba-4be8-b3ca-61a578e93b5a",
+          "midiChannel": 0,
           "startTicks": 6602,
           "durationTicks": 76,
           "noteNumber": 62,
@@ -1293,7 +1385,8 @@
           ]
         },
         {
-          "id": "9ae79ae1-9580-48c9-93b7-6ade3eb07fcd",
+          "id": "1e5671b3-1390-4f08-8d4a-42603ada0780",
+          "midiChannel": 0,
           "startTicks": 6602,
           "durationTicks": 91,
           "noteNumber": 69,
@@ -1307,7 +1400,8 @@
           ]
         },
         {
-          "id": "b2a4c52a-c609-48f5-8c8b-33d97b8f9e9b",
+          "id": "a2d16c8d-3888-4d83-ab34-46d63d138465",
+          "midiChannel": 0,
           "startTicks": 6838,
           "durationTicks": 83,
           "noteNumber": 50,
@@ -1321,7 +1415,8 @@
           ]
         },
         {
-          "id": "ec2d8ce8-35ab-4d13-bfc2-2f1d8337f4ed",
+          "id": "3b3c7802-a200-41b8-a032-c8cceb107972",
+          "midiChannel": 0,
           "startTicks": 6952,
           "durationTicks": 87,
           "noteNumber": 62,
@@ -1335,7 +1430,8 @@
           ]
         },
         {
-          "id": "79fe1335-61d9-4044-a45e-a468742696ae",
+          "id": "2dbc12f1-0f2f-473a-aef1-98f9649e04be",
+          "midiChannel": 0,
           "startTicks": 7076,
           "durationTicks": 44,
           "noteNumber": 51,
@@ -1349,7 +1445,8 @@
           ]
         },
         {
-          "id": "2c3b4616-e369-4cc1-9278-2a938c291de9",
+          "id": "4a75c913-3094-4f94-a2e8-e0335439862f",
+          "midiChannel": 0,
           "startTicks": 7190,
           "durationTicks": 84,
           "noteNumber": 52,
@@ -1363,7 +1460,8 @@
           ]
         },
         {
-          "id": "cf6da802-96d7-4d71-94f2-cbfbdc0f620a",
+          "id": "8e6aacec-230e-48b5-8285-6319f9025bb1",
+          "midiChannel": 0,
           "startTicks": 7320,
           "durationTicks": 64,
           "noteNumber": 62,
@@ -1377,7 +1475,8 @@
           ]
         },
         {
-          "id": "58523ee4-4920-407f-b0ff-d6ffe1e813af",
+          "id": "c2dc165f-e234-4d40-b0cc-f265de20d790",
+          "midiChannel": 0,
           "startTicks": 7324,
           "durationTicks": 61,
           "noteNumber": 71,
@@ -1391,7 +1490,8 @@
           ]
         },
         {
-          "id": "a397f38c-4eb2-499e-a49b-a004d1de4b38",
+          "id": "03ee3896-d451-4e98-9afc-264b20b24761",
+          "midiChannel": 0,
           "startTicks": 7320,
           "durationTicks": 76,
           "noteNumber": 68,
@@ -1405,7 +1505,8 @@
           ]
         },
         {
-          "id": "344d2fda-83ea-4142-adc3-91e610a2dd66",
+          "id": "6e5119dd-c8c1-467c-b5a5-f1d8bd2c7efe",
+          "midiChannel": 0,
           "startTicks": 7437,
           "durationTicks": 43,
           "noteNumber": 52,
@@ -1419,7 +1520,8 @@
           ]
         },
         {
-          "id": "e4472a99-f3fe-4900-bfb7-d94776670c21",
+          "id": "1c084c91-971f-4cfa-b400-31dfcd13790b",
+          "midiChannel": 0,
           "startTicks": 7560,
           "durationTicks": 105,
           "noteNumber": 40,
@@ -1433,7 +1535,8 @@
           ]
         },
         {
-          "id": "725c1294-1ddf-45eb-811e-150706685da4",
+          "id": "16322cf3-f3f9-4090-8066-365878d70401",
+          "midiChannel": 0,
           "startTicks": 7695,
           "durationTicks": 111,
           "noteNumber": 67,
@@ -1447,7 +1550,8 @@
           ]
         },
         {
-          "id": "c2d6ebea-8bc7-484b-a5cc-be3593614176",
+          "id": "3cf53057-ee49-4c3a-8833-4f59c90ea327",
+          "midiChannel": 0,
           "startTicks": 7694,
           "durationTicks": 313,
           "noteNumber": 64,
@@ -1461,7 +1565,8 @@
           ]
         },
         {
-          "id": "914a8acf-f61f-429a-b063-816d1fcce301",
+          "id": "71895152-5ef7-4c02-8093-a1f404937006",
+          "midiChannel": 0,
           "startTicks": 7688,
           "durationTicks": 337,
           "noteNumber": 45,
@@ -1475,7 +1580,8 @@
           ]
         },
         {
-          "id": "6578b703-0849-45d8-98e7-5be83c587c68",
+          "id": "c9a505f9-fdf5-4c07-85b8-03f37972cf27",
+          "midiChannel": 0,
           "startTicks": 7695,
           "durationTicks": 380,
           "noteNumber": 72,
@@ -1489,7 +1595,8 @@
           ]
         },
         {
-          "id": "bc788507-d350-41ec-9f1d-eb50ff19acfa",
+          "id": "de9dbc87-de2f-455d-895b-e8e7c015a715",
+          "midiChannel": 0,
           "startTicks": 7801,
           "durationTicks": 277,
           "noteNumber": 69,
@@ -1503,7 +1610,8 @@
           ]
         },
         {
-          "id": "8093fe89-83fe-4264-9009-f11fd87a2475",
+          "id": "577351b0-b690-4162-80b8-115c83db4301",
+          "midiChannel": 0,
           "startTicks": 8049,
           "durationTicks": 50,
           "noteNumber": 62,
@@ -1517,7 +1625,8 @@
           ]
         },
         {
-          "id": "5fe2995e-78cc-4025-a037-8542479c2967",
+          "id": "4078725a-5ed0-4dc7-a6b3-0990cad53897",
+          "midiChannel": 0,
           "startTicks": 8048,
           "durationTicks": 58,
           "noteNumber": 67,
@@ -1531,7 +1640,8 @@
           ]
         },
         {
-          "id": "43f87b7f-d24d-4c51-b334-b0276a34b1dc",
+          "id": "2e37f4e3-2a50-4035-a930-6df4e766fb06",
+          "midiChannel": 0,
           "startTicks": 8046,
           "durationTicks": 92,
           "noteNumber": 71,
@@ -1545,7 +1655,8 @@
           ]
         },
         {
-          "id": "e0c05fc9-abac-41c5-8bcd-6470adde144d",
+          "id": "86286783-ff01-4829-8c06-e05b9beaecfc",
+          "midiChannel": 0,
           "startTicks": 8162,
           "durationTicks": 36,
           "noteNumber": 57,
@@ -1559,7 +1670,8 @@
           ]
         },
         {
-          "id": "c672ff30-be31-4eda-a5b3-bb385208d2d8",
+          "id": "f1060962-ddb4-4587-848f-954e8558c4a7",
+          "midiChannel": 0,
           "startTicks": 8289,
           "durationTicks": 36,
           "noteNumber": 62,
@@ -1573,7 +1685,8 @@
           ]
         },
         {
-          "id": "5fe0b3b9-4847-4356-8c16-cbdc852e269a",
+          "id": "36d4d38a-225c-495d-9a49-ec401262e52a",
+          "midiChannel": 0,
           "startTicks": 8411,
           "durationTicks": 40,
           "noteNumber": 57,
@@ -1587,7 +1700,8 @@
           ]
         },
         {
-          "id": "8b90ac79-dd59-46a7-b747-3d3de848936b",
+          "id": "3d37a591-3516-4fee-9b17-61bd90ad1880",
+          "midiChannel": 0,
           "startTicks": 8516,
           "durationTicks": 30,
           "noteNumber": 52,
@@ -1601,7 +1715,8 @@
           ]
         },
         {
-          "id": "fcdaa7e4-071f-427e-8f78-183d96897801",
+          "id": "2c879edf-23d3-4dcc-b3cd-e29ab638987a",
+          "midiChannel": 0,
           "startTicks": 8640,
           "durationTicks": 126,
           "noteNumber": 67,
@@ -1615,7 +1730,8 @@
           ]
         },
         {
-          "id": "5d45743f-f86a-412c-bc29-32cf5ee1cf20",
+          "id": "0b6aa284-fa0f-415e-94fb-6f3b4a673b9b",
+          "midiChannel": 0,
           "startTicks": 8637,
           "durationTicks": 267,
           "noteNumber": 64,
@@ -1629,7 +1745,8 @@
           ]
         },
         {
-          "id": "285140ba-3c0d-4aa7-acf2-98f896eb9614",
+          "id": "0c1df345-a980-429b-9ce6-9fe19103c36f",
+          "midiChannel": 0,
           "startTicks": 8887,
           "durationTicks": 36,
           "noteNumber": 57,
@@ -1643,7 +1760,8 @@
           ]
         },
         {
-          "id": "e4707a16-596b-448a-81bb-30052394620b",
+          "id": "6ed1bae3-374f-4649-80e0-d99110879a39",
+          "midiChannel": 0,
           "startTicks": 8767,
           "durationTicks": 264,
           "noteNumber": 69,
@@ -1657,7 +1775,8 @@
           ]
         },
         {
-          "id": "8603ac1d-6b3b-469b-b983-dde0e87af77b",
+          "id": "17d5dbf7-5ad1-4db0-9f97-a0fe966007a8",
+          "midiChannel": 0,
           "startTicks": 8642,
           "durationTicks": 393,
           "noteNumber": 72,
@@ -1671,7 +1790,8 @@
           ]
         },
         {
-          "id": "629968fc-a9db-407e-ab5a-dceb5a8bd9ca",
+          "id": "71261d23-76f1-46d1-a497-d91d8795df3c",
+          "midiChannel": 0,
           "startTicks": 9003,
           "durationTicks": 66,
           "noteNumber": 62,
@@ -1685,7 +1805,8 @@
           ]
         },
         {
-          "id": "0f998ae3-0ef4-4dfb-943e-e542e3af9e4a",
+          "id": "8637cfa0-be94-4935-94f0-010e17faf2cd",
+          "midiChannel": 0,
           "startTicks": 9003,
           "durationTicks": 92,
           "noteNumber": 67,
@@ -1699,7 +1820,8 @@
           ]
         },
         {
-          "id": "db10c2b1-51d9-4d01-8d51-fd9efbd5515a",
+          "id": "2202bcb1-25a9-4899-bff6-584ea80864aa",
+          "midiChannel": 0,
           "startTicks": 8996,
           "durationTicks": 127,
           "noteNumber": 71,
@@ -1713,7 +1835,8 @@
           ]
         },
         {
-          "id": "b3d3f79c-0bf8-44f6-b471-05eb6152a71a",
+          "id": "e09ea435-3be8-4fae-81e3-afe9a4132828",
+          "midiChannel": 0,
           "startTicks": 9116,
           "durationTicks": 32,
           "noteNumber": 57,
@@ -1727,7 +1850,8 @@
           ]
         },
         {
-          "id": "a59ee563-eea1-46ea-993d-c0b078b5ab91",
+          "id": "15d4902a-3917-4cf4-938e-cdff94f63208",
+          "midiChannel": 0,
           "startTicks": 9234,
           "durationTicks": 78,
           "noteNumber": 62,
@@ -1741,7 +1865,8 @@
           ]
         },
         {
-          "id": "42b2a457-f39e-4d59-aa7b-6a7ca2442f44",
+          "id": "68b820c6-efab-487e-9120-b9a3bb24ba9e",
+          "midiChannel": 0,
           "startTicks": 9365,
           "durationTicks": 53,
           "noteNumber": 52,
@@ -1755,7 +1880,8 @@
           ]
         },
         {
-          "id": "9d329b6d-b277-40f4-a9e6-307f809937c7",
+          "id": "08dc49f3-9333-4772-9bfd-fc5ed93d7c7b",
+          "midiChannel": 0,
           "startTicks": 9480,
           "durationTicks": 33,
           "noteNumber": 45,
@@ -1769,7 +1895,8 @@
           ]
         },
         {
-          "id": "aca1db9d-23d4-42ba-a53c-8ebd3339a9f0",
+          "id": "ee37d7ed-4346-482e-b526-d251240ef7b7",
+          "midiChannel": 0,
           "startTicks": 9737,
           "durationTicks": 142,
           "noteNumber": 50,
@@ -1783,7 +1910,8 @@
           ]
         },
         {
-          "id": "9e15010b-6ecd-493a-b76c-f5e4d92301ba",
+          "id": "697b1c5f-b731-4584-9fbf-79d0f3589bc7",
+          "midiChannel": 0,
           "startTicks": 9600,
           "durationTicks": 361,
           "noteNumber": 62,
@@ -1797,7 +1925,8 @@
           ]
         },
         {
-          "id": "8e424209-9dd7-4c09-b312-cb45d3626a57",
+          "id": "163aa2aa-616e-418b-9102-5df32711798a",
+          "midiChannel": 0,
           "startTicks": 9600,
           "durationTicks": 399,
           "noteNumber": 69,
@@ -1811,7 +1940,8 @@
           ]
         },
         {
-          "id": "13aff9a2-8d27-45d5-a9be-17958e7c2127",
+          "id": "8d3be980-63d2-4b3a-a1e5-86997349846a",
+          "midiChannel": 0,
           "startTicks": 9973,
           "durationTicks": 35,
           "noteNumber": 64,
@@ -1825,7 +1955,8 @@
           ]
         },
         {
-          "id": "757eacbb-6c30-422a-80e3-2ad8ce1a6921",
+          "id": "104f3be7-881f-4a26-9322-b8321e75b9b8",
+          "midiChannel": 0,
           "startTicks": 9603,
           "durationTicks": 411,
           "noteNumber": 66,
@@ -1839,7 +1970,8 @@
           ]
         },
         {
-          "id": "784c4b69-ebb3-4d6a-9742-1219f92e1d30",
+          "id": "eca28216-81c0-4a15-af25-e6b3849859f7",
+          "midiChannel": 0,
           "startTicks": 9962,
           "durationTicks": 75,
           "noteNumber": 62,
@@ -1853,7 +1985,8 @@
           ]
         },
         {
-          "id": "c761720d-d1d1-42c9-99c0-8e2d37d7a363",
+          "id": "f0e8f713-b69c-4825-8bdf-85b0daf72f36",
+          "midiChannel": 0,
           "startTicks": 9969,
           "durationTicks": 85,
           "noteNumber": 67,
@@ -1867,7 +2000,8 @@
           ]
         },
         {
-          "id": "a9b40c42-cdc2-4c6d-b073-c76e043dbf1e",
+          "id": "2abcc176-d040-4d92-987d-702ea7604526",
+          "midiChannel": 0,
           "startTicks": 10082,
           "durationTicks": 45,
           "noteNumber": 50,
@@ -1881,7 +2015,8 @@
           ]
         },
         {
-          "id": "3295ef12-1239-4397-a8e4-5986043e3eca",
+          "id": "9548caeb-110b-4e02-a7c1-8c34a698ab5b",
+          "midiChannel": 0,
           "startTicks": 10208,
           "durationTicks": 58,
           "noteNumber": 62,
@@ -1895,7 +2030,8 @@
           ]
         },
         {
-          "id": "51bf5be2-b896-4d47-9429-0e6599c613c6",
+          "id": "dd8dd9bc-ba49-4248-ac30-b93f16478248",
+          "midiChannel": 0,
           "startTicks": 10326,
           "durationTicks": 39,
           "noteNumber": 50,
@@ -1909,7 +2045,8 @@
           ]
         },
         {
-          "id": "ec23815f-769d-4eef-af1e-1787c2cd3792",
+          "id": "d6276d6e-d68d-4387-b3a8-0d4d6ec82788",
+          "midiChannel": 0,
           "startTicks": 10443,
           "durationTicks": 65,
           "noteNumber": 62,
@@ -1923,7 +2060,8 @@
           ]
         },
         {
-          "id": "eef40b65-c07e-40d9-ab8a-e4ba83434749",
+          "id": "277aab3c-c62f-4fe3-bb60-28d4b2881ecc",
+          "midiChannel": 0,
           "startTicks": 10445,
           "durationTicks": 72,
           "noteNumber": 66,
@@ -1937,7 +2075,8 @@
           ]
         },
         {
-          "id": "4975faee-a352-4501-8a48-c6fcd22e8768",
+          "id": "1a9c7a28-aea6-46f3-bf93-896341e4dadd",
+          "midiChannel": 0,
           "startTicks": 10449,
           "durationTicks": 79,
           "noteNumber": 69,
@@ -1951,7 +2090,8 @@
           ]
         },
         {
-          "id": "2ff6a0fd-36b1-48f9-9fab-ee01eb41d0a5",
+          "id": "02dfe54f-8c69-4f82-9745-a0acd0591f01",
+          "midiChannel": 0,
           "startTicks": 10565,
           "durationTicks": 77,
           "noteNumber": 50,
@@ -1965,7 +2105,8 @@
           ]
         },
         {
-          "id": "d66ae1c2-ccd3-41fe-aeb5-cc903ed28ac7",
+          "id": "cd99a908-5a51-4f70-8359-dcf2911abd75",
+          "midiChannel": 0,
           "startTicks": 10687,
           "durationTicks": 151,
           "noteNumber": 66,
@@ -1979,7 +2120,8 @@
           ]
         },
         {
-          "id": "d925e861-ce14-4eba-ba3f-fd90dc1350e0",
+          "id": "97869dd1-b8fa-474c-8227-d75f3544e203",
+          "midiChannel": 0,
           "startTicks": 10690,
           "durationTicks": 152,
           "noteNumber": 69,
@@ -1993,7 +2135,8 @@
           ]
         },
         {
-          "id": "46c4c398-4085-4b0e-ba87-980818e16349",
+          "id": "b2982b7f-d81c-4fdb-b257-4ab80ca1834f",
+          "midiChannel": 0,
           "startTicks": 10686,
           "durationTicks": 206,
           "noteNumber": 62,
@@ -2007,7 +2150,8 @@
           ]
         },
         {
-          "id": "e966f198-c9af-4fc7-a3fd-a40ec9cc9590",
+          "id": "1ac0bf7f-cd6e-4255-9781-815505a2da87",
+          "midiChannel": 0,
           "startTicks": 10807,
           "durationTicks": 142,
           "noteNumber": 64,
@@ -2021,7 +2165,8 @@
           ]
         },
         {
-          "id": "e26ae59f-9b5d-45fc-a64a-a8932c7a2297",
+          "id": "82d86265-b34d-46a8-8b7c-06ee2377c3d4",
+          "midiChannel": 0,
           "startTicks": 10809,
           "durationTicks": 214,
           "noteNumber": 67,
@@ -2035,7 +2180,8 @@
           ]
         },
         {
-          "id": "81f80b54-cf1d-45ba-99ac-27be1a970f6b",
+          "id": "10175cd5-def2-40b0-841b-5866e48b397e",
+          "midiChannel": 0,
           "startTicks": 10924,
           "durationTicks": 115,
           "noteNumber": 51,
@@ -2049,7 +2195,8 @@
           ]
         },
         {
-          "id": "fd623315-e8e1-498f-ab16-99eb04361b34",
+          "id": "5dff2a8c-cc08-40af-bb3e-cf3b989b4082",
+          "midiChannel": 0,
           "startTicks": 11039,
           "durationTicks": 135,
           "noteNumber": 52,
@@ -2063,7 +2210,8 @@
           ]
         },
         {
-          "id": "56c2b6ee-e4ec-489c-917d-9c0f109a4b49",
+          "id": "3dcb8d0e-3339-4d2d-83af-a431e8558f7a",
+          "midiChannel": 0,
           "startTicks": 11167,
           "durationTicks": 37,
           "noteNumber": 68,
@@ -2077,7 +2225,8 @@
           ]
         },
         {
-          "id": "2de61581-4961-4758-bb7d-a3e6c86989ac",
+          "id": "7cacdfb2-5c16-4bf2-9912-637a03ec548f",
+          "midiChannel": 0,
           "startTicks": 11165,
           "durationTicks": 42,
           "noteNumber": 71,
@@ -2091,7 +2240,8 @@
           ]
         },
         {
-          "id": "2c614d57-7070-4803-b1bc-8647c3f3038b",
+          "id": "6f3a41cd-36e5-45b4-b1ad-8131bf8a792a",
+          "midiChannel": 0,
           "startTicks": 11167,
           "durationTicks": 44,
           "noteNumber": 62,
@@ -2105,7 +2255,8 @@
           ]
         },
         {
-          "id": "a5c7fb76-e0d0-4e85-afe3-da40fd1face2",
+          "id": "5750be1f-30c1-4147-b0ca-16cab33cc681",
+          "midiChannel": 0,
           "startTicks": 11286,
           "durationTicks": 66,
           "noteNumber": 52,
@@ -2119,7 +2270,8 @@
           ]
         },
         {
-          "id": "f925c7ba-5b5e-4145-a13f-0b5f0ccebc34",
+          "id": "a9770c6e-3478-4697-b009-0a2b1e01116b",
+          "midiChannel": 0,
           "startTicks": 11403,
           "durationTicks": 93,
           "noteNumber": 45,
@@ -2133,7 +2285,8 @@
           ]
         },
         {
-          "id": "6f634a54-a5da-4ef5-9d87-cb57963755f4",
+          "id": "e68e2edc-0642-4b96-a24d-395b8030a35c",
+          "midiChannel": 0,
           "startTicks": 11525,
           "durationTicks": 121,
           "noteNumber": 67,
@@ -2147,7 +2300,8 @@
           ]
         },
         {
-          "id": "5de7eb6d-3adb-4738-978e-5b44dd7999c2",
+          "id": "238b1477-3ace-4b41-a20b-291b9444b93a",
+          "midiChannel": 0,
           "startTicks": 11523,
           "durationTicks": 272,
           "noteNumber": 64,
@@ -2161,7 +2315,8 @@
           ]
         },
         {
-          "id": "1f678902-0abf-4dd7-82ed-d12468460f36",
+          "id": "d13ad448-35d8-414a-9cf9-912585777d67",
+          "midiChannel": 0,
           "startTicks": 11767,
           "durationTicks": 38,
           "noteNumber": 57,
@@ -2175,7 +2330,8 @@
           ]
         },
         {
-          "id": "f1cf9c43-0de0-4aa0-b88a-9420c22baa03",
+          "id": "cc4ddd77-f693-4a34-9825-bd27d59276ac",
+          "midiChannel": 0,
           "startTicks": 11634,
           "durationTicks": 250,
           "noteNumber": 69,
@@ -2189,7 +2345,8 @@
           ]
         },
         {
-          "id": "b5262dc4-5ee5-49a2-bdb5-c8d58ec86b2a",
+          "id": "d65804c6-06af-40aa-9605-83063ecc65a0",
+          "midiChannel": 0,
           "startTicks": 11529,
           "durationTicks": 373,
           "noteNumber": 72,
@@ -2203,7 +2360,8 @@
           ]
         },
         {
-          "id": "0fd6dea7-c4ff-4f67-86c1-098c2e237f4d",
+          "id": "15748312-1a53-47f0-ab73-65ce97ef48a1",
+          "midiChannel": 0,
           "startTicks": 11883,
           "durationTicks": 75,
           "noteNumber": 67,
@@ -2217,7 +2375,8 @@
           ]
         },
         {
-          "id": "3b4b91c0-afa8-444c-b371-928b59ad141a",
+          "id": "e00f2a1b-98f9-4114-94dd-70f6cb8645a1",
+          "midiChannel": 0,
           "startTicks": 11884,
           "durationTicks": 75,
           "noteNumber": 62,
@@ -2231,7 +2390,8 @@
           ]
         },
         {
-          "id": "6151c747-defc-41cd-8402-666cd905ce87",
+          "id": "39856bb3-ab74-48f1-b4c7-565bc380f256",
+          "midiChannel": 0,
           "startTicks": 11881,
           "durationTicks": 113,
           "noteNumber": 71,
@@ -2245,7 +2405,8 @@
           ]
         },
         {
-          "id": "41d8188f-ebf5-422c-b654-0fcc0d515518",
+          "id": "8ccf80e5-77b5-4a46-9c40-8de4aa1fc2b0",
+          "midiChannel": 0,
           "startTicks": 12125,
           "durationTicks": 45,
           "noteNumber": 62,
@@ -2259,7 +2420,8 @@
           ]
         },
         {
-          "id": "0eb7330e-020b-48bc-a5d2-b255aac24db6",
+          "id": "0a3a61b3-aac4-4878-8ac5-3a88535f5731",
+          "midiChannel": 0,
           "startTicks": 12255,
           "durationTicks": 47,
           "noteNumber": 57,
@@ -2273,7 +2435,8 @@
           ]
         },
         {
-          "id": "9430713e-2a6a-43a8-a787-2de624d02034",
+          "id": "3ccdc0a0-a164-497c-891e-f6113cec3b7e",
+          "midiChannel": 0,
           "startTicks": 12359,
           "durationTicks": 28,
           "noteNumber": 52,
@@ -2287,7 +2450,8 @@
           ]
         },
         {
-          "id": "2f621a9a-c721-497b-8133-75bfef2aa193",
+          "id": "66148253-5cab-44cd-86f0-9a00a6b83a48",
+          "midiChannel": 0,
           "startTicks": 12482,
           "durationTicks": 125,
           "noteNumber": 67,
@@ -2301,7 +2465,8 @@
           ]
         },
         {
-          "id": "c81e86ed-732d-41de-92cc-db05f7376fdf",
+          "id": "67d3c6e4-fa2c-44d8-80ed-cb9af710980e",
+          "midiChannel": 0,
           "startTicks": 12481,
           "durationTicks": 287,
           "noteNumber": 64,
@@ -2315,7 +2480,8 @@
           ]
         },
         {
-          "id": "9712e8c3-45f1-48dd-a314-82e47d211fdf",
+          "id": "9cb368b9-1078-4e0d-ae32-b123f52582ee",
+          "midiChannel": 0,
           "startTicks": 12725,
           "durationTicks": 96,
           "noteNumber": 57,
@@ -2329,7 +2495,8 @@
           ]
         },
         {
-          "id": "32160f00-f767-41cc-9cb7-0c5c22b5a128",
+          "id": "4cf3d7bd-924a-4847-8826-e720d54ed1cd",
+          "midiChannel": 0,
           "startTicks": 12596,
           "durationTicks": 286,
           "noteNumber": 69,
@@ -2343,7 +2510,8 @@
           ]
         },
         {
-          "id": "af3a9db0-8a65-4e15-9124-c513f3de8ba8",
+          "id": "022a7b2b-0ecd-4c80-8281-f7b595d005cb",
+          "midiChannel": 0,
           "startTicks": 12485,
           "durationTicks": 410,
           "noteNumber": 72,
@@ -2357,7 +2525,8 @@
           ]
         },
         {
-          "id": "fea0c5a0-98cf-4d32-a29c-7994f979f9d4",
+          "id": "19a0ccdb-b0ca-4026-b4de-662c5504e9a4",
+          "midiChannel": 0,
           "startTicks": 12848,
           "durationTicks": 79,
           "noteNumber": 62,
@@ -2371,7 +2540,8 @@
           ]
         },
         {
-          "id": "ff5cdfd4-67b9-44d8-a8b9-f3c7c1e1e030",
+          "id": "c2d78fa8-d30b-4b0b-aea3-6549234fc46d",
+          "midiChannel": 0,
           "startTicks": 12846,
           "durationTicks": 112,
           "noteNumber": 67,
@@ -2385,7 +2555,8 @@
           ]
         },
         {
-          "id": "b816401d-2c20-4f05-8fe9-6a35f000ca4e",
+          "id": "d7f3612c-4983-427b-b47c-a269af21e2c8",
+          "midiChannel": 0,
           "startTicks": 12847,
           "durationTicks": 162,
           "noteNumber": 71,
@@ -2399,7 +2570,8 @@
           ]
         },
         {
-          "id": "e5c4d6fd-90db-4226-818e-785c0e28df9c",
+          "id": "0fc93318-e4ff-4806-a973-5cd0c00e2038",
+          "midiChannel": 0,
           "startTicks": 13079,
           "durationTicks": 94,
           "noteNumber": 62,
@@ -2413,7 +2585,8 @@
           ]
         },
         {
-          "id": "8b0db569-ad75-4f4c-8877-cfd733496436",
+          "id": "faf39acc-3703-4f8a-8edd-55ae1e727028",
+          "midiChannel": 0,
           "startTicks": 13199,
           "durationTicks": 43,
           "noteNumber": 57,
@@ -2427,7 +2600,8 @@
           ]
         },
         {
-          "id": "d67a7680-b2da-4307-b926-ca67ec2faa5a",
+          "id": "dbabf72e-8c2c-47cc-a513-595ffa3a1efd",
+          "midiChannel": 0,
           "startTicks": 13313,
           "durationTicks": 65,
           "noteNumber": 52,
@@ -2441,7 +2615,8 @@
           ]
         },
         {
-          "id": "d9714e50-933c-4269-be6b-d8f1fcf5fd3a",
+          "id": "82c5e2b0-3158-4452-baef-853ec52e6e06",
+          "midiChannel": 0,
           "startTicks": 13444,
           "durationTicks": 124,
           "noteNumber": 59,
@@ -2455,7 +2630,8 @@
           ]
         },
         {
-          "id": "0f3ec88c-c85d-4ad8-858c-bf1f4998950b",
+          "id": "d8cb3776-ebaa-4020-b9d2-c179b963ff66",
+          "midiChannel": 0,
           "startTicks": 13440,
           "durationTicks": 206,
           "noteNumber": 55,
@@ -2469,7 +2645,8 @@
           ]
         },
         {
-          "id": "4ae75cfc-9b62-4642-8d77-20c76d36df4f",
+          "id": "110312e1-5bc9-43b8-9268-2451ae5ddc28",
+          "midiChannel": 0,
           "startTicks": 13573,
           "durationTicks": 90,
           "noteNumber": 60,
@@ -2483,7 +2660,8 @@
           ]
         },
         {
-          "id": "c1daa0e8-6a00-4dca-908f-81e809382715",
+          "id": "131a9ac6-384a-4ac7-9df5-0bc47a1a2ef5",
+          "midiChannel": 0,
           "startTicks": 13442,
           "durationTicks": 232,
           "noteNumber": 64,
@@ -2497,7 +2675,8 @@
           ]
         },
         {
-          "id": "99cda89e-14e4-4b4a-aab0-db51f5c7ae16",
+          "id": "e2d1485a-7193-41b9-b892-c826bc1dd3f6",
+          "midiChannel": 0,
           "startTicks": 13685,
           "durationTicks": 57,
           "noteNumber": 52,
@@ -2511,7 +2690,8 @@
           ]
         },
         {
-          "id": "37da0064-476e-4899-94b3-a69dd7cc3ca8",
+          "id": "bb8103ea-74d6-4652-9814-4c1b290c100b",
+          "midiChannel": 0,
           "startTicks": 13803,
           "durationTicks": 58,
           "noteNumber": 55,
@@ -2525,7 +2705,8 @@
           ]
         },
         {
-          "id": "17e541c3-4d9f-4baa-a70d-d4166f8f089e",
+          "id": "ed2bf860-e7cb-4cd2-b3f0-7302fd38508a",
+          "midiChannel": 0,
           "startTicks": 13806,
           "durationTicks": 60,
           "noteNumber": 60,
@@ -2539,7 +2720,8 @@
           ]
         },
         {
-          "id": "edad6df8-c093-40ee-ac0c-29d162f4ab04",
+          "id": "e6e7def1-7cd5-48d7-af04-aa2c6cf62e60",
+          "midiChannel": 0,
           "startTicks": 13807,
           "durationTicks": 82,
           "noteNumber": 64,
@@ -2553,7 +2735,8 @@
           ]
         },
         {
-          "id": "32596d4a-247a-418e-9581-5ed012be812d",
+          "id": "9628e1b4-e578-4817-a774-254a0405e807",
+          "midiChannel": 0,
           "startTicks": 13929,
           "durationTicks": 31,
           "noteNumber": 52,
@@ -2567,7 +2750,8 @@
           ]
         },
         {
-          "id": "8cd6f0be-8201-440b-8ccb-4833eb85d798",
+          "id": "12b1a2a5-d532-4b67-8b4b-b5837f701d48",
+          "midiChannel": 0,
           "startTicks": 14044,
           "durationTicks": 63,
           "noteNumber": 55,
@@ -2581,7 +2765,8 @@
           ]
         },
         {
-          "id": "d1620840-654b-49d2-bb41-495218405ee1",
+          "id": "2918f3df-d6cc-493f-97a7-4bbb573c70f7",
+          "midiChannel": 0,
           "startTicks": 14170,
           "durationTicks": 31,
           "noteNumber": 52,
@@ -2595,7 +2780,8 @@
           ]
         },
         {
-          "id": "28466fce-b514-4bb7-aa00-202550795b4a",
+          "id": "3d08ac2b-41e2-4f67-9bbe-e121132cc27f",
+          "midiChannel": 0,
           "startTicks": 14279,
           "durationTicks": 62,
           "noteNumber": 55,
@@ -2609,7 +2795,8 @@
           ]
         },
         {
-          "id": "9dfc3cf7-6b3f-447a-b085-add42fda6a8b",
+          "id": "4d32d6de-a8b8-407f-87f4-4fa056bf053b",
+          "midiChannel": 0,
           "startTicks": 14279,
           "durationTicks": 69,
           "noteNumber": 60,
@@ -2623,7 +2810,8 @@
           ]
         },
         {
-          "id": "4c996f9e-5485-449f-94d5-9c0bf796be74",
+          "id": "999b01c1-3103-45ff-91a9-581b5dfc6bb9",
+          "midiChannel": 0,
           "startTicks": 14281,
           "durationTicks": 76,
           "noteNumber": 64,
@@ -2637,7 +2825,8 @@
           ]
         },
         {
-          "id": "48b32bdb-4f88-409c-a090-49791b40952d",
+          "id": "a467fbb3-8f8f-453a-ac20-f5bfbb6855bb",
+          "midiChannel": 0,
           "startTicks": 14405,
           "durationTicks": 43,
           "noteNumber": 52,
@@ -2651,7 +2840,8 @@
           ]
         },
         {
-          "id": "1b8a6ff5-5dd8-4d59-b41f-8227e9523916",
+          "id": "f77546a7-6bf7-467a-8dfc-9bc05ae4b72a",
+          "midiChannel": 0,
           "startTicks": 14522,
           "durationTicks": 45,
           "noteNumber": 47,
@@ -2665,7 +2855,8 @@
           ]
         },
         {
-          "id": "1febb429-2c14-4603-8608-62eacd86837a",
+          "id": "d247d877-7da6-4a92-8c70-b22f66a37538",
+          "midiChannel": 0,
           "startTicks": 14645,
           "durationTicks": 652,
           "noteNumber": 66,
@@ -2679,7 +2870,8 @@
           ]
         },
         {
-          "id": "595fce79-8732-4cbb-b97d-6bb121d6e3a9",
+          "id": "901eef06-0443-4ac4-a2ba-231610f98f1a",
+          "midiChannel": 0,
           "startTicks": 14645,
           "durationTicks": 657,
           "noteNumber": 63,
@@ -2693,7 +2885,8 @@
           ]
         },
         {
-          "id": "4c00abbb-1dbf-4580-8f35-cab2c7eb66a9",
+          "id": "7dc54e28-a46a-4748-af02-d1f0f600627b",
+          "midiChannel": 0,
           "startTicks": 14643,
           "durationTicks": 660,
           "noteNumber": 57,
@@ -2980,8 +3173,9 @@
     }
   ],
   "notesMap": {
-    "c8d023c9-91fb-41ca-891a-1bb5751ee469": {
-      "id": "c8d023c9-91fb-41ca-891a-1bb5751ee469",
+    "82b4575c-849a-4828-8e2c-db54bac52ff5": {
+      "id": "82b4575c-849a-4828-8e2c-db54bac52ff5",
+      "midiChannel": 0,
       "startTicks": 0,
       "durationTicks": 113,
       "noteNumber": 67,
@@ -2994,8 +3188,9 @@
         "G"
       ]
     },
-    "96858ebf-b5c1-4e54-98d9-75fa31d3f0d6": {
-      "id": "96858ebf-b5c1-4e54-98d9-75fa31d3f0d6",
+    "7c9d4c12-d6b4-426b-b9bd-73b98c28064d": {
+      "id": "7c9d4c12-d6b4-426b-b9bd-73b98c28064d",
+      "midiChannel": 0,
       "startTicks": 2,
       "durationTicks": 251,
       "noteNumber": 45,
@@ -3008,8 +3203,9 @@
         "A"
       ]
     },
-    "c241e710-ac30-4f9f-9667-38d4963610f7": {
-      "id": "c241e710-ac30-4f9f-9667-38d4963610f7",
+    "62891448-481f-43ed-8fc9-a68b657eb93b": {
+      "id": "62891448-481f-43ed-8fc9-a68b657eb93b",
+      "midiChannel": 0,
       "startTicks": 253,
       "durationTicks": 34,
       "noteNumber": 57,
@@ -3022,8 +3218,9 @@
         "A"
       ]
     },
-    "3794b7ea-191f-4ba6-bad0-8494008e4cdd": {
-      "id": "3794b7ea-191f-4ba6-bad0-8494008e4cdd",
+    "e9d00949-d12a-4a1c-a1d5-81fbfe7290d2": {
+      "id": "e9d00949-d12a-4a1c-a1d5-81fbfe7290d2",
+      "midiChannel": 0,
       "startTicks": 0,
       "durationTicks": 305,
       "noteNumber": 64,
@@ -3036,8 +3233,9 @@
         "E"
       ]
     },
-    "0e5d8374-a1df-460d-b50b-4dcfaa0ff1d2": {
-      "id": "0e5d8374-a1df-460d-b50b-4dcfaa0ff1d2",
+    "999c5142-56e1-4b15-93e8-d44928b60c11": {
+      "id": "999c5142-56e1-4b15-93e8-d44928b60c11",
+      "midiChannel": 0,
       "startTicks": 2,
       "durationTicks": 355,
       "noteNumber": 72,
@@ -3050,8 +3248,9 @@
         "C"
       ]
     },
-    "3d5ca8f8-8a58-4b32-a69c-41be85daa805": {
-      "id": "3d5ca8f8-8a58-4b32-a69c-41be85daa805",
+    "352c4c73-d06b-4a86-bb6e-627ec1ea443b": {
+      "id": "352c4c73-d06b-4a86-bb6e-627ec1ea443b",
+      "midiChannel": 0,
       "startTicks": 98,
       "durationTicks": 274,
       "noteNumber": 69,
@@ -3064,8 +3263,9 @@
         "A"
       ]
     },
-    "ab8904b0-f53c-4ef1-8144-316c7767fa47": {
-      "id": "ab8904b0-f53c-4ef1-8144-316c7767fa47",
+    "8c10fd15-977c-4675-afef-9f82d9279de1": {
+      "id": "8c10fd15-977c-4675-afef-9f82d9279de1",
+      "midiChannel": 0,
       "startTicks": 379,
       "durationTicks": 49,
       "noteNumber": 62,
@@ -3078,8 +3278,9 @@
         "D"
       ]
     },
-    "83d48655-af54-4573-8c67-19e955f6371e": {
-      "id": "83d48655-af54-4573-8c67-19e955f6371e",
+    "ea2bd418-d428-4d03-b042-43fcefb32e12": {
+      "id": "ea2bd418-d428-4d03-b042-43fcefb32e12",
+      "midiChannel": 0,
       "startTicks": 377,
       "durationTicks": 72,
       "noteNumber": 67,
@@ -3092,8 +3293,9 @@
         "G"
       ]
     },
-    "322653ba-0659-4fc9-97c4-482a6fef4536": {
-      "id": "322653ba-0659-4fc9-97c4-482a6fef4536",
+    "54a37bbd-0b80-45f6-af5f-12eafdbe64c1": {
+      "id": "54a37bbd-0b80-45f6-af5f-12eafdbe64c1",
+      "midiChannel": 0,
       "startTicks": 368,
       "durationTicks": 97,
       "noteNumber": 71,
@@ -3106,8 +3308,9 @@
         "B"
       ]
     },
-    "f36d9ffe-9011-40a3-b251-ca0f2d9330df": {
-      "id": "f36d9ffe-9011-40a3-b251-ca0f2d9330df",
+    "fe30d7d3-9546-477b-ac52-616bb23472ad": {
+      "id": "fe30d7d3-9546-477b-ac52-616bb23472ad",
+      "midiChannel": 0,
       "startTicks": 484,
       "durationTicks": 35,
       "noteNumber": 57,
@@ -3120,8 +3323,9 @@
         "A"
       ]
     },
-    "f5faf7c2-2e5e-46a5-848a-e1700254e249": {
-      "id": "f5faf7c2-2e5e-46a5-848a-e1700254e249",
+    "c2235e47-3f36-4554-bc7c-7d3084f6df0e": {
+      "id": "c2235e47-3f36-4554-bc7c-7d3084f6df0e",
+      "midiChannel": 0,
       "startTicks": 602,
       "durationTicks": 55,
       "noteNumber": 62,
@@ -3134,8 +3338,9 @@
         "D"
       ]
     },
-    "3decde35-1c20-4bd8-bddb-336d4f4e2810": {
-      "id": "3decde35-1c20-4bd8-bddb-336d4f4e2810",
+    "7ed75545-5182-42d9-8131-6274c448938c": {
+      "id": "7ed75545-5182-42d9-8131-6274c448938c",
+      "midiChannel": 0,
       "startTicks": 710,
       "durationTicks": 43,
       "noteNumber": 57,
@@ -3148,8 +3353,9 @@
         "A"
       ]
     },
-    "b43d7911-2570-45dd-a19c-11a2171b919e": {
-      "id": "b43d7911-2570-45dd-a19c-11a2171b919e",
+    "2ce09581-1875-4d72-bcb8-6563e49a090f": {
+      "id": "2ce09581-1875-4d72-bcb8-6563e49a090f",
+      "midiChannel": 0,
       "startTicks": 839,
       "durationTicks": 34,
       "noteNumber": 45,
@@ -3162,8 +3368,9 @@
         "A"
       ]
     },
-    "086a5725-e1e4-483e-bfd8-2c5951894ebb": {
-      "id": "086a5725-e1e4-483e-bfd8-2c5951894ebb",
+    "37f95851-e0f2-46a8-98dd-e597e0ffb49a": {
+      "id": "37f95851-e0f2-46a8-98dd-e597e0ffb49a",
+      "midiChannel": 0,
       "startTicks": 957,
       "durationTicks": 128,
       "noteNumber": 67,
@@ -3176,8 +3383,9 @@
         "G"
       ]
     },
-    "52aea2c4-4608-4999-a013-55950553fa13": {
-      "id": "52aea2c4-4608-4999-a013-55950553fa13",
+    "2781e2b5-fcb6-40e8-8a41-3684cb2e1297": {
+      "id": "2781e2b5-fcb6-40e8-8a41-3684cb2e1297",
+      "midiChannel": 0,
       "startTicks": 959,
       "durationTicks": 264,
       "noteNumber": 64,
@@ -3190,8 +3398,9 @@
         "E"
       ]
     },
-    "c14a6004-cd5d-46d6-957c-ff3a852baf3f": {
-      "id": "c14a6004-cd5d-46d6-957c-ff3a852baf3f",
+    "2ea2112b-9e74-4129-bd0f-20e637e02df2": {
+      "id": "2ea2112b-9e74-4129-bd0f-20e637e02df2",
+      "midiChannel": 0,
       "startTicks": 1190,
       "durationTicks": 38,
       "noteNumber": 57,
@@ -3204,8 +3413,9 @@
         "A"
       ]
     },
-    "858b229f-98a2-40e2-a9a4-0fe40fa4a582": {
-      "id": "858b229f-98a2-40e2-a9a4-0fe40fa4a582",
+    "48c275d5-f410-4d2b-8e47-e5bac62d5370": {
+      "id": "48c275d5-f410-4d2b-8e47-e5bac62d5370",
+      "midiChannel": 0,
       "startTicks": 1079,
       "durationTicks": 240,
       "noteNumber": 69,
@@ -3218,8 +3428,9 @@
         "A"
       ]
     },
-    "2a22ffd3-4b2a-4bca-a89d-fbfd687f07f3": {
-      "id": "2a22ffd3-4b2a-4bca-a89d-fbfd687f07f3",
+    "d63d4c63-5a3b-4560-87ba-7bffa82bbbca": {
+      "id": "d63d4c63-5a3b-4560-87ba-7bffa82bbbca",
+      "midiChannel": 0,
       "startTicks": 960,
       "durationTicks": 395,
       "noteNumber": 72,
@@ -3232,8 +3443,9 @@
         "C"
       ]
     },
-    "2ddab5a0-624c-4117-ae19-84c339f7c873": {
-      "id": "2ddab5a0-624c-4117-ae19-84c339f7c873",
+    "6f0a4316-c0ee-4950-a624-7870e7a59d42": {
+      "id": "6f0a4316-c0ee-4950-a624-7870e7a59d42",
+      "midiChannel": 0,
       "startTicks": 1318,
       "durationTicks": 103,
       "noteNumber": 62,
@@ -3246,8 +3458,9 @@
         "D"
       ]
     },
-    "0910ebd5-cc01-457e-b3a8-0cc7f2299f12": {
-      "id": "0910ebd5-cc01-457e-b3a8-0cc7f2299f12",
+    "704c38c0-bf39-4316-867a-fa3a6b452d8f": {
+      "id": "704c38c0-bf39-4316-867a-fa3a6b452d8f",
+      "midiChannel": 0,
       "startTicks": 1318,
       "durationTicks": 113,
       "noteNumber": 67,
@@ -3260,8 +3473,9 @@
         "G"
       ]
     },
-    "32bf8237-5bdf-4b5c-9fcc-966ee26c6092": {
-      "id": "32bf8237-5bdf-4b5c-9fcc-966ee26c6092",
+    "99c9e498-589e-4227-b77c-4e31156760fc": {
+      "id": "99c9e498-589e-4227-b77c-4e31156760fc",
+      "midiChannel": 0,
       "startTicks": 1312,
       "durationTicks": 167,
       "noteNumber": 71,
@@ -3274,8 +3488,9 @@
         "B"
       ]
     },
-    "2b497f1a-1c15-46a9-9443-a0d1e764132f": {
-      "id": "2b497f1a-1c15-46a9-9443-a0d1e764132f",
+    "7d08dac5-8260-46d5-90d3-d2466e714a19": {
+      "id": "7d08dac5-8260-46d5-90d3-d2466e714a19",
+      "midiChannel": 0,
       "startTicks": 1439,
       "durationTicks": 40,
       "noteNumber": 57,
@@ -3288,8 +3503,9 @@
         "A"
       ]
     },
-    "8789b876-e1d7-4c7b-9d19-5b5e7f3861c7": {
-      "id": "8789b876-e1d7-4c7b-9d19-5b5e7f3861c7",
+    "0ec1e38d-87df-4589-9cd1-43b5f19dac77": {
+      "id": "0ec1e38d-87df-4589-9cd1-43b5f19dac77",
+      "midiChannel": 0,
       "startTicks": 1561,
       "durationTicks": 83,
       "noteNumber": 62,
@@ -3302,8 +3518,9 @@
         "D"
       ]
     },
-    "9e9079cb-24c3-42f6-888f-318a69ecbf75": {
-      "id": "9e9079cb-24c3-42f6-888f-318a69ecbf75",
+    "9b0be5c9-5c11-4603-96fc-04e2941a739f": {
+      "id": "9b0be5c9-5c11-4603-96fc-04e2941a739f",
+      "midiChannel": 0,
       "startTicks": 1684,
       "durationTicks": 38,
       "noteNumber": 57,
@@ -3316,8 +3533,9 @@
         "A"
       ]
     },
-    "6dd0909f-91ba-427e-91fb-238d06564c82": {
-      "id": "6dd0909f-91ba-427e-91fb-238d06564c82",
+    "75fa3079-41fb-4cb3-9935-2e831e368b5b": {
+      "id": "75fa3079-41fb-4cb3-9935-2e831e368b5b",
+      "midiChannel": 0,
       "startTicks": 1804,
       "durationTicks": 33,
       "noteNumber": 50,
@@ -3330,8 +3548,9 @@
         "D"
       ]
     },
-    "3793edf3-9fbe-4194-ac83-846c0df45000": {
-      "id": "3793edf3-9fbe-4194-ac83-846c0df45000",
+    "42865b91-ecd0-40d9-bc23-befd205d7196": {
+      "id": "42865b91-ecd0-40d9-bc23-befd205d7196",
+      "midiChannel": 0,
       "startTicks": 1917,
       "durationTicks": 114,
       "noteNumber": 64,
@@ -3344,8 +3563,9 @@
         "E"
       ]
     },
-    "9e0717f1-6cdd-443d-9393-ea6cf6f83c97": {
-      "id": "9e0717f1-6cdd-443d-9393-ea6cf6f83c97",
+    "bd255e00-2335-40de-b3b2-e118aeeafd07": {
+      "id": "bd255e00-2335-40de-b3b2-e118aeeafd07",
+      "midiChannel": 0,
       "startTicks": 2159,
       "durationTicks": 30,
       "noteNumber": 57,
@@ -3358,8 +3578,9 @@
         "A"
       ]
     },
-    "f500c9ce-4a47-4e88-bbd6-1948a41a5988": {
-      "id": "f500c9ce-4a47-4e88-bbd6-1948a41a5988",
+    "2945704f-c5f5-4b43-9957-dea2a65374aa": {
+      "id": "2945704f-c5f5-4b43-9957-dea2a65374aa",
+      "midiChannel": 0,
       "startTicks": 1924,
       "durationTicks": 332,
       "noteNumber": 69,
@@ -3372,8 +3593,9 @@
         "A"
       ]
     },
-    "ec065e4a-8e28-4435-9667-6c83eb424580": {
-      "id": "ec065e4a-8e28-4435-9667-6c83eb424580",
+    "ce766142-756c-4e59-9692-e93a230acd69": {
+      "id": "ce766142-756c-4e59-9692-e93a230acd69",
+      "midiChannel": 0,
       "startTicks": 2038,
       "durationTicks": 220,
       "noteNumber": 66,
@@ -3386,8 +3608,9 @@
         "F#"
       ]
     },
-    "e2aed444-2c47-45cf-98bb-8fff7e79a2b4": {
-      "id": "e2aed444-2c47-45cf-98bb-8fff7e79a2b4",
+    "ccb2f335-d6aa-434f-bc85-24cae1a04b8b": {
+      "id": "ccb2f335-d6aa-434f-bc85-24cae1a04b8b",
+      "midiChannel": 0,
       "startTicks": 1920,
       "durationTicks": 425,
       "noteNumber": 62,
@@ -3400,8 +3623,9 @@
         "D"
       ]
     },
-    "a0ac6556-d5af-425a-b49f-f792ba2df399": {
-      "id": "a0ac6556-d5af-425a-b49f-f792ba2df399",
+    "f0e5de7b-83e2-4a93-b121-a72f5a9a5a79": {
+      "id": "f0e5de7b-83e2-4a93-b121-a72f5a9a5a79",
+      "midiChannel": 0,
       "startTicks": 2281,
       "durationTicks": 79,
       "noteNumber": 64,
@@ -3414,8 +3638,9 @@
         "E"
       ]
     },
-    "25625538-e60f-4618-abb4-5126e5e2d6ac": {
-      "id": "25625538-e60f-4618-abb4-5126e5e2d6ac",
+    "204c2593-9edb-428d-9a7a-c77ca5659add": {
+      "id": "204c2593-9edb-428d-9a7a-c77ca5659add",
+      "midiChannel": 0,
       "startTicks": 2275,
       "durationTicks": 105,
       "noteNumber": 67,
@@ -3428,8 +3653,9 @@
         "G"
       ]
     },
-    "090f143b-8b22-41af-9ac2-dcaf59b3115d": {
-      "id": "090f143b-8b22-41af-9ac2-dcaf59b3115d",
+    "2099354d-44ab-4e69-97c1-87b0922c649e": {
+      "id": "2099354d-44ab-4e69-97c1-87b0922c649e",
+      "midiChannel": 0,
       "startTicks": 2402,
       "durationTicks": 34,
       "noteNumber": 57,
@@ -3442,8 +3668,9 @@
         "A"
       ]
     },
-    "33d78dfe-164d-4a94-8ffb-b6a25ac5bcc8": {
-      "id": "33d78dfe-164d-4a94-8ffb-b6a25ac5bcc8",
+    "008da0a1-66b4-469d-a858-e92756ff56c7": {
+      "id": "008da0a1-66b4-469d-a858-e92756ff56c7",
+      "midiChannel": 0,
       "startTicks": 2517,
       "durationTicks": 58,
       "noteNumber": 62,
@@ -3456,8 +3683,9 @@
         "D"
       ]
     },
-    "6e888f79-33cb-47c3-a477-9b1a3d22bde5": {
-      "id": "6e888f79-33cb-47c3-a477-9b1a3d22bde5",
+    "1b065ede-632f-47ea-9952-454b477d51f5": {
+      "id": "1b065ede-632f-47ea-9952-454b477d51f5",
+      "midiChannel": 0,
       "startTicks": 2640,
       "durationTicks": 33,
       "noteNumber": 57,
@@ -3470,8 +3698,9 @@
         "A"
       ]
     },
-    "14c8e1ab-0302-46f3-b6f6-b916fe76e617": {
-      "id": "14c8e1ab-0302-46f3-b6f6-b916fe76e617",
+    "d1cce12f-237e-437f-b587-242bdc66768f": {
+      "id": "d1cce12f-237e-437f-b587-242bdc66768f",
+      "midiChannel": 0,
       "startTicks": 2764,
       "durationTicks": 68,
       "noteNumber": 62,
@@ -3484,8 +3713,9 @@
         "D"
       ]
     },
-    "3e8213d7-a5a7-4907-9715-cb4623839e38": {
-      "id": "3e8213d7-a5a7-4907-9715-cb4623839e38",
+    "7774feef-f051-4381-90d2-75b08f07dc71": {
+      "id": "7774feef-f051-4381-90d2-75b08f07dc71",
+      "midiChannel": 0,
       "startTicks": 2766,
       "durationTicks": 78,
       "noteNumber": 66,
@@ -3498,8 +3728,9 @@
         "F#"
       ]
     },
-    "c2fd69e1-6469-4c95-9764-27ef5a037938": {
-      "id": "c2fd69e1-6469-4c95-9764-27ef5a037938",
+    "666c975d-8b26-4977-8e6c-f8299d71acb2": {
+      "id": "666c975d-8b26-4977-8e6c-f8299d71acb2",
+      "midiChannel": 0,
       "startTicks": 2768,
       "durationTicks": 81,
       "noteNumber": 69,
@@ -3512,8 +3743,9 @@
         "A"
       ]
     },
-    "443ae25b-17e8-4ff7-831e-59aaecc0d4c9": {
-      "id": "443ae25b-17e8-4ff7-831e-59aaecc0d4c9",
+    "3ab31899-d623-48a8-9dd1-a8951346c8ed": {
+      "id": "3ab31899-d623-48a8-9dd1-a8951346c8ed",
+      "midiChannel": 0,
       "startTicks": 2883,
       "durationTicks": 34,
       "noteNumber": 57,
@@ -3526,8 +3758,9 @@
         "A"
       ]
     },
-    "9af73dd8-22ac-4956-a4af-e8d7f99a3895": {
-      "id": "9af73dd8-22ac-4956-a4af-e8d7f99a3895",
+    "586804ec-1c9d-4dff-9a1f-7e0c2214adc5": {
+      "id": "586804ec-1c9d-4dff-9a1f-7e0c2214adc5",
+      "midiChannel": 0,
       "startTicks": 3005,
       "durationTicks": 89,
       "noteNumber": 66,
@@ -3540,8 +3773,9 @@
         "F#"
       ]
     },
-    "d68cc18a-fe34-46e3-b1a4-6e53ca23fb16": {
-      "id": "d68cc18a-fe34-46e3-b1a4-6e53ca23fb16",
+    "f09612ff-65d8-4aac-8188-c7459f251dfd": {
+      "id": "f09612ff-65d8-4aac-8188-c7459f251dfd",
+      "midiChannel": 0,
       "startTicks": 3003,
       "durationTicks": 147,
       "noteNumber": 69,
@@ -3554,8 +3788,9 @@
         "A"
       ]
     },
-    "4b246ca9-1aad-4e9c-bcb1-89348defe03c": {
-      "id": "4b246ca9-1aad-4e9c-bcb1-89348defe03c",
+    "3c3b87bf-34f3-4bbf-99b9-e47deb1934e7": {
+      "id": "3c3b87bf-34f3-4bbf-99b9-e47deb1934e7",
+      "midiChannel": 0,
       "startTicks": 3129,
       "durationTicks": 50,
       "noteNumber": 64,
@@ -3568,8 +3803,9 @@
         "E"
       ]
     },
-    "afe69438-f3b0-4a45-92ca-48de81a2a7b1": {
-      "id": "afe69438-f3b0-4a45-92ca-48de81a2a7b1",
+    "09406191-4de2-45ee-b089-fd72b3299edc": {
+      "id": "09406191-4de2-45ee-b089-fd72b3299edc",
+      "midiChannel": 0,
       "startTicks": 3004,
       "durationTicks": 206,
       "noteNumber": 62,
@@ -3582,8 +3818,9 @@
         "D"
       ]
     },
-    "18416188-46b9-480c-8697-4f7b10b1d862": {
-      "id": "18416188-46b9-480c-8697-4f7b10b1d862",
+    "98f6c690-56f5-4268-afc2-33a52d390a35": {
+      "id": "98f6c690-56f5-4268-afc2-33a52d390a35",
+      "midiChannel": 0,
       "startTicks": 3135,
       "durationTicks": 90,
       "noteNumber": 67,
@@ -3596,8 +3833,9 @@
         "G"
       ]
     },
-    "7daf4c60-fb53-4859-8314-72f3eede8ccd": {
-      "id": "7daf4c60-fb53-4859-8314-72f3eede8ccd",
+    "ced5a497-9a98-4b04-995c-711809b591e2": {
+      "id": "ced5a497-9a98-4b04-995c-711809b591e2",
+      "midiChannel": 0,
       "startTicks": 3240,
       "durationTicks": 66,
       "noteNumber": 57,
@@ -3610,8 +3848,9 @@
         "A"
       ]
     },
-    "df5b1a1a-8298-4219-81a6-722be63f0771": {
-      "id": "df5b1a1a-8298-4219-81a6-722be63f0771",
+    "6384743a-a518-4129-8af0-9d1bbe9bedba": {
+      "id": "6384743a-a518-4129-8af0-9d1bbe9bedba",
+      "midiChannel": 0,
       "startTicks": 3370,
       "durationTicks": 31,
       "noteNumber": 66,
@@ -3624,8 +3863,9 @@
         "F#"
       ]
     },
-    "f19aa6c8-9bc8-4881-a0f8-c513a6e33af3": {
-      "id": "f19aa6c8-9bc8-4881-a0f8-c513a6e33af3",
+    "ea300792-4529-48bf-bb41-c81df7f31399": {
+      "id": "ea300792-4529-48bf-bb41-c81df7f31399",
+      "midiChannel": 0,
       "startTicks": 3364,
       "durationTicks": 44,
       "noteNumber": 62,
@@ -3638,8 +3878,9 @@
         "D"
       ]
     },
-    "0ee86e41-a0c6-4e87-976a-56fbb0876345": {
-      "id": "0ee86e41-a0c6-4e87-976a-56fbb0876345",
+    "eb340d84-68f0-483e-be25-1dde4c9976c3": {
+      "id": "eb340d84-68f0-483e-be25-1dde4c9976c3",
+      "midiChannel": 0,
       "startTicks": 3366,
       "durationTicks": 61,
       "noteNumber": 69,
@@ -3652,8 +3893,9 @@
         "A"
       ]
     },
-    "7a8d687f-b667-42bf-b1ed-364c2eaee815": {
-      "id": "7a8d687f-b667-42bf-b1ed-364c2eaee815",
+    "2e265895-d5ae-4f80-9ed2-ec2d8dc00863": {
+      "id": "2e265895-d5ae-4f80-9ed2-ec2d8dc00863",
+      "midiChannel": 0,
       "startTicks": 3476,
       "durationTicks": 48,
       "noteNumber": 57,
@@ -3666,8 +3908,9 @@
         "A"
       ]
     },
-    "ed363e2b-2732-4e39-87e2-438a87514783": {
-      "id": "ed363e2b-2732-4e39-87e2-438a87514783",
+    "90793eb5-e322-44c2-95f4-d9332f263aa9": {
+      "id": "90793eb5-e322-44c2-95f4-d9332f263aa9",
+      "midiChannel": 0,
       "startTicks": 3599,
       "durationTicks": 53,
       "noteNumber": 67,
@@ -3680,8 +3923,9 @@
         "G"
       ]
     },
-    "d11ee057-1a57-474e-9d3d-7de795968717": {
-      "id": "d11ee057-1a57-474e-9d3d-7de795968717",
+    "70053b58-7cf7-4911-bdd4-3bea92141d63": {
+      "id": "70053b58-7cf7-4911-bdd4-3bea92141d63",
+      "midiChannel": 0,
       "startTicks": 3603,
       "durationTicks": 65,
       "noteNumber": 71,
@@ -3694,8 +3938,9 @@
         "B"
       ]
     },
-    "0620c606-aa22-4f29-8d5b-0aa80974e84d": {
-      "id": "0620c606-aa22-4f29-8d5b-0aa80974e84d",
+    "c5da23ee-f6cb-4bc5-ba16-f4670c888833": {
+      "id": "c5da23ee-f6cb-4bc5-ba16-f4670c888833",
+      "midiChannel": 0,
       "startTicks": 3597,
       "durationTicks": 76,
       "noteNumber": 62,
@@ -3708,8 +3953,9 @@
         "D"
       ]
     },
-    "08a2b1ce-8c86-4052-8890-f96a74302e09": {
-      "id": "08a2b1ce-8c86-4052-8890-f96a74302e09",
+    "f7065c77-fa6b-4e80-9bdc-df32f40c3bbc": {
+      "id": "f7065c77-fa6b-4e80-9bdc-df32f40c3bbc",
+      "midiChannel": 0,
       "startTicks": 3719,
       "durationTicks": 40,
       "noteNumber": 57,
@@ -3722,8 +3968,9 @@
         "A"
       ]
     },
-    "4fcba9a5-f4c5-4c46-9ee0-ea91a53bf8ba": {
-      "id": "4fcba9a5-f4c5-4c46-9ee0-ea91a53bf8ba",
+    "b66a007c-a7d9-4528-8875-abc0b2bd4b8d": {
+      "id": "b66a007c-a7d9-4528-8875-abc0b2bd4b8d",
+      "midiChannel": 0,
       "startTicks": 3841,
       "durationTicks": 123,
       "noteNumber": 67,
@@ -3736,8 +3983,9 @@
         "G"
       ]
     },
-    "14e21a74-ec74-402e-80c5-3dda287aefa0": {
-      "id": "14e21a74-ec74-402e-80c5-3dda287aefa0",
+    "8770ceed-6809-447d-b569-c3d7f77bb777": {
+      "id": "8770ceed-6809-447d-b569-c3d7f77bb777",
+      "midiChannel": 0,
       "startTicks": 3840,
       "durationTicks": 277,
       "noteNumber": 64,
@@ -3750,8 +3998,9 @@
         "E"
       ]
     },
-    "cd407ac3-179d-4897-8294-1f05e3b6839c": {
-      "id": "cd407ac3-179d-4897-8294-1f05e3b6839c",
+    "c37478fa-3660-489a-9cb4-fccb44b87422": {
+      "id": "c37478fa-3660-489a-9cb4-fccb44b87422",
+      "midiChannel": 0,
       "startTicks": 4073,
       "durationTicks": 88,
       "noteNumber": 57,
@@ -3764,8 +4013,9 @@
         "A"
       ]
     },
-    "28b53dfa-fc20-4052-a3ac-34564115415c": {
-      "id": "28b53dfa-fc20-4052-a3ac-34564115415c",
+    "e8631edd-254f-4114-8844-aba3c1868882": {
+      "id": "e8631edd-254f-4114-8844-aba3c1868882",
+      "midiChannel": 0,
       "startTicks": 3844,
       "durationTicks": 372,
       "noteNumber": 72,
@@ -3778,8 +4028,9 @@
         "C"
       ]
     },
-    "32d3a0c5-e524-4a05-8f2d-de6ae4c7e67c": {
-      "id": "32d3a0c5-e524-4a05-8f2d-de6ae4c7e67c",
+    "9ea5758b-8fcf-46c9-b5ad-72158b7bb069": {
+      "id": "9ea5758b-8fcf-46c9-b5ad-72158b7bb069",
+      "midiChannel": 0,
       "startTicks": 3955,
       "durationTicks": 268,
       "noteNumber": 69,
@@ -3792,8 +4043,9 @@
         "A"
       ]
     },
-    "b9ad5c1a-5e93-418b-b943-d88dc63c7202": {
-      "id": "b9ad5c1a-5e93-418b-b943-d88dc63c7202",
+    "761275a1-a842-4517-a779-2cd9d577158a": {
+      "id": "761275a1-a842-4517-a779-2cd9d577158a",
+      "midiChannel": 0,
       "startTicks": 4202,
       "durationTicks": 87,
       "noteNumber": 62,
@@ -3806,8 +4058,9 @@
         "D"
       ]
     },
-    "11f2be1e-d1a6-41ef-be57-c321ff1b9d60": {
-      "id": "11f2be1e-d1a6-41ef-be57-c321ff1b9d60",
+    "25e841ce-16bb-4c01-a797-0e15229f5158": {
+      "id": "25e841ce-16bb-4c01-a797-0e15229f5158",
+      "midiChannel": 0,
       "startTicks": 4207,
       "durationTicks": 94,
       "noteNumber": 67,
@@ -3820,8 +4073,9 @@
         "G"
       ]
     },
-    "d0a9ddd1-01ac-4767-92f3-82e77efbdc76": {
-      "id": "d0a9ddd1-01ac-4767-92f3-82e77efbdc76",
+    "77707442-d98f-46db-baf5-4c46a03e5781": {
+      "id": "77707442-d98f-46db-baf5-4c46a03e5781",
+      "midiChannel": 0,
       "startTicks": 4186,
       "durationTicks": 136,
       "noteNumber": 71,
@@ -3834,8 +4088,9 @@
         "B"
       ]
     },
-    "6305f557-9053-4d6c-b44b-fca5a208e98e": {
-      "id": "6305f557-9053-4d6c-b44b-fca5a208e98e",
+    "b62eefe2-9049-4f86-a2b7-42ed45435236": {
+      "id": "b62eefe2-9049-4f86-a2b7-42ed45435236",
+      "midiChannel": 0,
       "startTicks": 4321,
       "durationTicks": 29,
       "noteNumber": 57,
@@ -3848,8 +4103,9 @@
         "A"
       ]
     },
-    "5b1e723d-548c-44ef-88b7-e71d83569276": {
-      "id": "5b1e723d-548c-44ef-88b7-e71d83569276",
+    "eedca6fa-39a6-4df7-8af0-6507055915a2": {
+      "id": "eedca6fa-39a6-4df7-8af0-6507055915a2",
+      "midiChannel": 0,
       "startTicks": 4436,
       "durationTicks": 55,
       "noteNumber": 62,
@@ -3862,8 +4118,9 @@
         "D"
       ]
     },
-    "e4fb093a-1597-436a-a0ba-2981f6b15902": {
-      "id": "e4fb093a-1597-436a-a0ba-2981f6b15902",
+    "995f1acb-59ff-4c89-8e41-8ac88e6d4963": {
+      "id": "995f1acb-59ff-4c89-8e41-8ac88e6d4963",
+      "midiChannel": 0,
       "startTicks": 4564,
       "durationTicks": 59,
       "noteNumber": 45,
@@ -3876,8 +4133,9 @@
         "A"
       ]
     },
-    "d11ec2ce-c2d7-4dad-8e80-ac8c899ca654": {
-      "id": "d11ec2ce-c2d7-4dad-8e80-ac8c899ca654",
+    "5ab8cdaf-faef-487b-868d-19e41933449b": {
+      "id": "5ab8cdaf-faef-487b-868d-19e41933449b",
+      "midiChannel": 0,
       "startTicks": 4685,
       "durationTicks": 59,
       "noteNumber": 57,
@@ -3890,8 +4148,9 @@
         "A"
       ]
     },
-    "a86ed358-95d5-45e8-b157-62fb312f8a27": {
-      "id": "a86ed358-95d5-45e8-b157-62fb312f8a27",
+    "78ef338e-ed0a-426e-a508-4c1dec8551f3": {
+      "id": "78ef338e-ed0a-426e-a508-4c1dec8551f3",
+      "midiChannel": 0,
       "startTicks": 4802,
       "durationTicks": 114,
       "noteNumber": 67,
@@ -3904,8 +4163,9 @@
         "G"
       ]
     },
-    "905070b9-6944-4a3b-a296-c7df29eaae22": {
-      "id": "905070b9-6944-4a3b-a296-c7df29eaae22",
+    "8716b61e-d3c8-417d-b415-3c5b63b754ce": {
+      "id": "8716b61e-d3c8-417d-b415-3c5b63b754ce",
+      "midiChannel": 0,
       "startTicks": 4808,
       "durationTicks": 287,
       "noteNumber": 64,
@@ -3918,8 +4178,9 @@
         "E"
       ]
     },
-    "8433630d-2bf7-47c7-843a-eb995a3c0663": {
-      "id": "8433630d-2bf7-47c7-843a-eb995a3c0663",
+    "aaa4a422-06be-4e2a-bb91-cc5c8671e24d": {
+      "id": "aaa4a422-06be-4e2a-bb91-cc5c8671e24d",
+      "midiChannel": 0,
       "startTicks": 5047,
       "durationTicks": 88,
       "noteNumber": 57,
@@ -3932,8 +4193,9 @@
         "A"
       ]
     },
-    "aff7172b-df21-43e7-acda-b1896149f1ce": {
-      "id": "aff7172b-df21-43e7-acda-b1896149f1ce",
+    "37ea0414-d236-4a20-8e3e-848d23e6a698": {
+      "id": "37ea0414-d236-4a20-8e3e-848d23e6a698",
+      "midiChannel": 0,
       "startTicks": 4817,
       "durationTicks": 378,
       "noteNumber": 72,
@@ -3946,8 +4208,9 @@
         "C"
       ]
     },
-    "c778186b-4a93-4db3-8266-c1a46221a708": {
-      "id": "c778186b-4a93-4db3-8266-c1a46221a708",
+    "c0267928-07f7-45bf-adeb-f427f495e189": {
+      "id": "c0267928-07f7-45bf-adeb-f427f495e189",
+      "midiChannel": 0,
       "startTicks": 4919,
       "durationTicks": 290,
       "noteNumber": 69,
@@ -3960,8 +4223,9 @@
         "A"
       ]
     },
-    "20f92ec3-2fb8-4ff7-8e30-21f0c321165c": {
-      "id": "20f92ec3-2fb8-4ff7-8e30-21f0c321165c",
+    "c556af75-e00b-42da-b173-6087d93e4893": {
+      "id": "c556af75-e00b-42da-b173-6087d93e4893",
+      "midiChannel": 0,
       "startTicks": 5169,
       "durationTicks": 80,
       "noteNumber": 62,
@@ -3974,8 +4238,9 @@
         "D"
       ]
     },
-    "900d2d1a-c7cf-4786-a858-4393c201e471": {
-      "id": "900d2d1a-c7cf-4786-a858-4393c201e471",
+    "7f3ab0d1-2882-4b2f-9f28-b323fc3f5b90": {
+      "id": "7f3ab0d1-2882-4b2f-9f28-b323fc3f5b90",
+      "midiChannel": 0,
       "startTicks": 5174,
       "durationTicks": 100,
       "noteNumber": 67,
@@ -3988,8 +4253,9 @@
         "G"
       ]
     },
-    "4409ee44-d730-4e8c-bbe6-4f945517bcf5": {
-      "id": "4409ee44-d730-4e8c-bbe6-4f945517bcf5",
+    "a1141a26-55d4-4ae8-9b62-e20578d23f91": {
+      "id": "a1141a26-55d4-4ae8-9b62-e20578d23f91",
+      "midiChannel": 0,
       "startTicks": 5283,
       "durationTicks": 34,
       "noteNumber": 57,
@@ -4002,8 +4268,9 @@
         "A"
       ]
     },
-    "3a6cf273-6b75-4132-806e-2bdf2d464a2f": {
-      "id": "3a6cf273-6b75-4132-806e-2bdf2d464a2f",
+    "c9502720-2311-45de-9082-0506e117efb7": {
+      "id": "c9502720-2311-45de-9082-0506e117efb7",
+      "midiChannel": 0,
       "startTicks": 5160,
       "durationTicks": 172,
       "noteNumber": 71,
@@ -4016,8 +4283,9 @@
         "B"
       ]
     },
-    "57cd6ad4-8fac-45d9-aae3-22381c8f44f9": {
-      "id": "57cd6ad4-8fac-45d9-aae3-22381c8f44f9",
+    "713a864e-4880-41d8-885b-45f5d0899316": {
+      "id": "713a864e-4880-41d8-885b-45f5d0899316",
+      "midiChannel": 0,
       "startTicks": 5402,
       "durationTicks": 88,
       "noteNumber": 62,
@@ -4030,8 +4298,9 @@
         "D"
       ]
     },
-    "7996f562-3a6c-4703-9c72-61ea03489fdc": {
-      "id": "7996f562-3a6c-4703-9c72-61ea03489fdc",
+    "a5be097a-45d3-41bf-baac-238b6a9ea432": {
+      "id": "a5be097a-45d3-41bf-baac-238b6a9ea432",
+      "midiChannel": 0,
       "startTicks": 5528,
       "durationTicks": 60,
       "noteNumber": 57,
@@ -4044,8 +4313,9 @@
         "A"
       ]
     },
-    "f27e8585-7ed3-4828-b77b-bd4a360b63fc": {
-      "id": "f27e8585-7ed3-4828-b77b-bd4a360b63fc",
+    "4bbb9090-28b6-4380-a921-83fdcb4b71ff": {
+      "id": "4bbb9090-28b6-4380-a921-83fdcb4b71ff",
+      "midiChannel": 0,
       "startTicks": 5645,
       "durationTicks": 67,
       "noteNumber": 52,
@@ -4058,8 +4328,9 @@
         "E"
       ]
     },
-    "bdceecb9-857c-4d38-acd7-fdb9a3b23603": {
-      "id": "bdceecb9-857c-4d38-acd7-fdb9a3b23603",
+    "f8a93d04-4e23-4ec6-ad01-e7b3d7845178": {
+      "id": "f8a93d04-4e23-4ec6-ad01-e7b3d7845178",
+      "midiChannel": 0,
       "startTicks": 5761,
       "durationTicks": 128,
       "noteNumber": 64,
@@ -4072,8 +4343,9 @@
         "E"
       ]
     },
-    "32382045-70bd-4924-8058-2f157d0c7827": {
-      "id": "32382045-70bd-4924-8058-2f157d0c7827",
+    "f9f44745-620e-4fa3-8c61-5ace90f93f0d": {
+      "id": "f9f44745-620e-4fa3-8c61-5ace90f93f0d",
+      "midiChannel": 0,
       "startTicks": 5760,
       "durationTicks": 299,
       "noteNumber": 62,
@@ -4086,8 +4358,9 @@
         "D"
       ]
     },
-    "546e0bc6-1590-4765-a69c-c25f80895b55": {
-      "id": "546e0bc6-1590-4765-a69c-c25f80895b55",
+    "0964707e-64ba-4258-a6e2-440dc6429d48": {
+      "id": "0964707e-64ba-4258-a6e2-440dc6429d48",
+      "midiChannel": 0,
       "startTicks": 5996,
       "durationTicks": 86,
       "noteNumber": 50,
@@ -4100,8 +4373,9 @@
         "D"
       ]
     },
-    "9db2eaee-33da-45a7-afbf-28f94691e842": {
-      "id": "9db2eaee-33da-45a7-afbf-28f94691e842",
+    "f2af2411-b60b-461d-82be-be2da75cfd37": {
+      "id": "f2af2411-b60b-461d-82be-be2da75cfd37",
+      "midiChannel": 0,
       "startTicks": 5765,
       "durationTicks": 320,
       "noteNumber": 69,
@@ -4114,8 +4388,9 @@
         "A"
       ]
     },
-    "0cb02e62-477f-4d09-b357-1e26bdc15086": {
-      "id": "0cb02e62-477f-4d09-b357-1e26bdc15086",
+    "bb032b7d-4280-4bbd-9638-a188a6976e7f": {
+      "id": "bb032b7d-4280-4bbd-9638-a188a6976e7f",
+      "midiChannel": 0,
       "startTicks": 5887,
       "durationTicks": 234,
       "noteNumber": 66,
@@ -4128,8 +4403,9 @@
         "F#"
       ]
     },
-    "c9be5dda-315d-4998-bbe6-30d3a773670a": {
-      "id": "c9be5dda-315d-4998-bbe6-30d3a773670a",
+    "c74e3c01-14ab-4166-b83c-e08b41bc37ca": {
+      "id": "c74e3c01-14ab-4166-b83c-e08b41bc37ca",
+      "midiChannel": 0,
       "startTicks": 6131,
       "durationTicks": 34,
       "noteNumber": 62,
@@ -4142,8 +4418,9 @@
         "D"
       ]
     },
-    "d8429353-ee83-4497-98a6-0568c0709aaa": {
-      "id": "d8429353-ee83-4497-98a6-0568c0709aaa",
+    "94eb0585-c868-4228-9872-21b6bba018b4": {
+      "id": "94eb0585-c868-4228-9872-21b6bba018b4",
+      "midiChannel": 0,
       "startTicks": 6122,
       "durationTicks": 52,
       "noteNumber": 64,
@@ -4156,8 +4433,9 @@
         "E"
       ]
     },
-    "f1b1b6d6-f559-49a8-8359-333c4a29873a": {
-      "id": "f1b1b6d6-f559-49a8-8359-333c4a29873a",
+    "060ec4b0-3942-43df-91a1-b0822f48f801": {
+      "id": "060ec4b0-3942-43df-91a1-b0822f48f801",
+      "midiChannel": 0,
       "startTicks": 6123,
       "durationTicks": 71,
       "noteNumber": 67,
@@ -4170,8 +4448,9 @@
         "G"
       ]
     },
-    "961a2207-9fcc-428c-bcad-17b29de4ce35": {
-      "id": "961a2207-9fcc-428c-bcad-17b29de4ce35",
+    "3b6c4ae1-18c3-4b18-88a7-e398c1019918": {
+      "id": "3b6c4ae1-18c3-4b18-88a7-e398c1019918",
+      "midiChannel": 0,
       "startTicks": 6241,
       "durationTicks": 36,
       "noteNumber": 50,
@@ -4184,8 +4463,9 @@
         "D"
       ]
     },
-    "bd6f45c6-c01a-45b1-8110-b87ce076217a": {
-      "id": "bd6f45c6-c01a-45b1-8110-b87ce076217a",
+    "7821ef20-c36b-4d00-be29-30eb4d23838e": {
+      "id": "7821ef20-c36b-4d00-be29-30eb4d23838e",
+      "midiChannel": 0,
       "startTicks": 6361,
       "durationTicks": 30,
       "noteNumber": 66,
@@ -4198,8 +4478,9 @@
         "F#"
       ]
     },
-    "b94b24bb-9a92-4517-88cf-5e1cbce7a6bd": {
-      "id": "b94b24bb-9a92-4517-88cf-5e1cbce7a6bd",
+    "57634222-475e-425b-9a3b-922e25528233": {
+      "id": "57634222-475e-425b-9a3b-922e25528233",
+      "midiChannel": 0,
       "startTicks": 6360,
       "durationTicks": 34,
       "noteNumber": 62,
@@ -4212,8 +4493,9 @@
         "D"
       ]
     },
-    "21585c52-e3d1-4394-8149-532e0b9df1a9": {
-      "id": "21585c52-e3d1-4394-8149-532e0b9df1a9",
+    "fc979ece-57ed-4d29-a453-10c8b11a2fdf": {
+      "id": "fc979ece-57ed-4d29-a453-10c8b11a2fdf",
+      "midiChannel": 0,
       "startTicks": 6362,
       "durationTicks": 33,
       "noteNumber": 69,
@@ -4226,8 +4508,9 @@
         "A"
       ]
     },
-    "29e2b90d-693b-498e-9a7d-7ee34108d104": {
-      "id": "29e2b90d-693b-498e-9a7d-7ee34108d104",
+    "ca328fe1-49db-40b6-81b1-6e758a4ff958": {
+      "id": "ca328fe1-49db-40b6-81b1-6e758a4ff958",
+      "midiChannel": 0,
       "startTicks": 6602,
       "durationTicks": 63,
       "noteNumber": 66,
@@ -4240,8 +4523,9 @@
         "F#"
       ]
     },
-    "d9aff53f-2fa1-4c0f-bfdd-dccff8831d2a": {
-      "id": "d9aff53f-2fa1-4c0f-bfdd-dccff8831d2a",
+    "84356ff5-3fba-4be8-b3ca-61a578e93b5a": {
+      "id": "84356ff5-3fba-4be8-b3ca-61a578e93b5a",
+      "midiChannel": 0,
       "startTicks": 6602,
       "durationTicks": 76,
       "noteNumber": 62,
@@ -4254,8 +4538,9 @@
         "D"
       ]
     },
-    "9ae79ae1-9580-48c9-93b7-6ade3eb07fcd": {
-      "id": "9ae79ae1-9580-48c9-93b7-6ade3eb07fcd",
+    "1e5671b3-1390-4f08-8d4a-42603ada0780": {
+      "id": "1e5671b3-1390-4f08-8d4a-42603ada0780",
+      "midiChannel": 0,
       "startTicks": 6602,
       "durationTicks": 91,
       "noteNumber": 69,
@@ -4268,8 +4553,9 @@
         "A"
       ]
     },
-    "b2a4c52a-c609-48f5-8c8b-33d97b8f9e9b": {
-      "id": "b2a4c52a-c609-48f5-8c8b-33d97b8f9e9b",
+    "a2d16c8d-3888-4d83-ab34-46d63d138465": {
+      "id": "a2d16c8d-3888-4d83-ab34-46d63d138465",
+      "midiChannel": 0,
       "startTicks": 6838,
       "durationTicks": 83,
       "noteNumber": 50,
@@ -4282,8 +4568,9 @@
         "D"
       ]
     },
-    "ec2d8ce8-35ab-4d13-bfc2-2f1d8337f4ed": {
-      "id": "ec2d8ce8-35ab-4d13-bfc2-2f1d8337f4ed",
+    "3b3c7802-a200-41b8-a032-c8cceb107972": {
+      "id": "3b3c7802-a200-41b8-a032-c8cceb107972",
+      "midiChannel": 0,
       "startTicks": 6952,
       "durationTicks": 87,
       "noteNumber": 62,
@@ -4296,8 +4583,9 @@
         "D"
       ]
     },
-    "79fe1335-61d9-4044-a45e-a468742696ae": {
-      "id": "79fe1335-61d9-4044-a45e-a468742696ae",
+    "2dbc12f1-0f2f-473a-aef1-98f9649e04be": {
+      "id": "2dbc12f1-0f2f-473a-aef1-98f9649e04be",
+      "midiChannel": 0,
       "startTicks": 7076,
       "durationTicks": 44,
       "noteNumber": 51,
@@ -4310,8 +4598,9 @@
         "D#"
       ]
     },
-    "2c3b4616-e369-4cc1-9278-2a938c291de9": {
-      "id": "2c3b4616-e369-4cc1-9278-2a938c291de9",
+    "4a75c913-3094-4f94-a2e8-e0335439862f": {
+      "id": "4a75c913-3094-4f94-a2e8-e0335439862f",
+      "midiChannel": 0,
       "startTicks": 7190,
       "durationTicks": 84,
       "noteNumber": 52,
@@ -4324,8 +4613,9 @@
         "E"
       ]
     },
-    "cf6da802-96d7-4d71-94f2-cbfbdc0f620a": {
-      "id": "cf6da802-96d7-4d71-94f2-cbfbdc0f620a",
+    "8e6aacec-230e-48b5-8285-6319f9025bb1": {
+      "id": "8e6aacec-230e-48b5-8285-6319f9025bb1",
+      "midiChannel": 0,
       "startTicks": 7320,
       "durationTicks": 64,
       "noteNumber": 62,
@@ -4338,8 +4628,9 @@
         "D"
       ]
     },
-    "58523ee4-4920-407f-b0ff-d6ffe1e813af": {
-      "id": "58523ee4-4920-407f-b0ff-d6ffe1e813af",
+    "c2dc165f-e234-4d40-b0cc-f265de20d790": {
+      "id": "c2dc165f-e234-4d40-b0cc-f265de20d790",
+      "midiChannel": 0,
       "startTicks": 7324,
       "durationTicks": 61,
       "noteNumber": 71,
@@ -4352,8 +4643,9 @@
         "B"
       ]
     },
-    "a397f38c-4eb2-499e-a49b-a004d1de4b38": {
-      "id": "a397f38c-4eb2-499e-a49b-a004d1de4b38",
+    "03ee3896-d451-4e98-9afc-264b20b24761": {
+      "id": "03ee3896-d451-4e98-9afc-264b20b24761",
+      "midiChannel": 0,
       "startTicks": 7320,
       "durationTicks": 76,
       "noteNumber": 68,
@@ -4366,8 +4658,9 @@
         "G#"
       ]
     },
-    "344d2fda-83ea-4142-adc3-91e610a2dd66": {
-      "id": "344d2fda-83ea-4142-adc3-91e610a2dd66",
+    "6e5119dd-c8c1-467c-b5a5-f1d8bd2c7efe": {
+      "id": "6e5119dd-c8c1-467c-b5a5-f1d8bd2c7efe",
+      "midiChannel": 0,
       "startTicks": 7437,
       "durationTicks": 43,
       "noteNumber": 52,
@@ -4380,8 +4673,9 @@
         "E"
       ]
     },
-    "e4472a99-f3fe-4900-bfb7-d94776670c21": {
-      "id": "e4472a99-f3fe-4900-bfb7-d94776670c21",
+    "1c084c91-971f-4cfa-b400-31dfcd13790b": {
+      "id": "1c084c91-971f-4cfa-b400-31dfcd13790b",
+      "midiChannel": 0,
       "startTicks": 7560,
       "durationTicks": 105,
       "noteNumber": 40,
@@ -4394,8 +4688,9 @@
         "E"
       ]
     },
-    "725c1294-1ddf-45eb-811e-150706685da4": {
-      "id": "725c1294-1ddf-45eb-811e-150706685da4",
+    "16322cf3-f3f9-4090-8066-365878d70401": {
+      "id": "16322cf3-f3f9-4090-8066-365878d70401",
+      "midiChannel": 0,
       "startTicks": 7695,
       "durationTicks": 111,
       "noteNumber": 67,
@@ -4408,8 +4703,9 @@
         "G"
       ]
     },
-    "c2d6ebea-8bc7-484b-a5cc-be3593614176": {
-      "id": "c2d6ebea-8bc7-484b-a5cc-be3593614176",
+    "3cf53057-ee49-4c3a-8833-4f59c90ea327": {
+      "id": "3cf53057-ee49-4c3a-8833-4f59c90ea327",
+      "midiChannel": 0,
       "startTicks": 7694,
       "durationTicks": 313,
       "noteNumber": 64,
@@ -4422,8 +4718,9 @@
         "E"
       ]
     },
-    "914a8acf-f61f-429a-b063-816d1fcce301": {
-      "id": "914a8acf-f61f-429a-b063-816d1fcce301",
+    "71895152-5ef7-4c02-8093-a1f404937006": {
+      "id": "71895152-5ef7-4c02-8093-a1f404937006",
+      "midiChannel": 0,
       "startTicks": 7688,
       "durationTicks": 337,
       "noteNumber": 45,
@@ -4436,8 +4733,9 @@
         "A"
       ]
     },
-    "6578b703-0849-45d8-98e7-5be83c587c68": {
-      "id": "6578b703-0849-45d8-98e7-5be83c587c68",
+    "c9a505f9-fdf5-4c07-85b8-03f37972cf27": {
+      "id": "c9a505f9-fdf5-4c07-85b8-03f37972cf27",
+      "midiChannel": 0,
       "startTicks": 7695,
       "durationTicks": 380,
       "noteNumber": 72,
@@ -4450,8 +4748,9 @@
         "C"
       ]
     },
-    "bc788507-d350-41ec-9f1d-eb50ff19acfa": {
-      "id": "bc788507-d350-41ec-9f1d-eb50ff19acfa",
+    "de9dbc87-de2f-455d-895b-e8e7c015a715": {
+      "id": "de9dbc87-de2f-455d-895b-e8e7c015a715",
+      "midiChannel": 0,
       "startTicks": 7801,
       "durationTicks": 277,
       "noteNumber": 69,
@@ -4464,8 +4763,9 @@
         "A"
       ]
     },
-    "8093fe89-83fe-4264-9009-f11fd87a2475": {
-      "id": "8093fe89-83fe-4264-9009-f11fd87a2475",
+    "577351b0-b690-4162-80b8-115c83db4301": {
+      "id": "577351b0-b690-4162-80b8-115c83db4301",
+      "midiChannel": 0,
       "startTicks": 8049,
       "durationTicks": 50,
       "noteNumber": 62,
@@ -4478,8 +4778,9 @@
         "D"
       ]
     },
-    "5fe2995e-78cc-4025-a037-8542479c2967": {
-      "id": "5fe2995e-78cc-4025-a037-8542479c2967",
+    "4078725a-5ed0-4dc7-a6b3-0990cad53897": {
+      "id": "4078725a-5ed0-4dc7-a6b3-0990cad53897",
+      "midiChannel": 0,
       "startTicks": 8048,
       "durationTicks": 58,
       "noteNumber": 67,
@@ -4492,8 +4793,9 @@
         "G"
       ]
     },
-    "43f87b7f-d24d-4c51-b334-b0276a34b1dc": {
-      "id": "43f87b7f-d24d-4c51-b334-b0276a34b1dc",
+    "2e37f4e3-2a50-4035-a930-6df4e766fb06": {
+      "id": "2e37f4e3-2a50-4035-a930-6df4e766fb06",
+      "midiChannel": 0,
       "startTicks": 8046,
       "durationTicks": 92,
       "noteNumber": 71,
@@ -4506,8 +4808,9 @@
         "B"
       ]
     },
-    "e0c05fc9-abac-41c5-8bcd-6470adde144d": {
-      "id": "e0c05fc9-abac-41c5-8bcd-6470adde144d",
+    "86286783-ff01-4829-8c06-e05b9beaecfc": {
+      "id": "86286783-ff01-4829-8c06-e05b9beaecfc",
+      "midiChannel": 0,
       "startTicks": 8162,
       "durationTicks": 36,
       "noteNumber": 57,
@@ -4520,8 +4823,9 @@
         "A"
       ]
     },
-    "c672ff30-be31-4eda-a5b3-bb385208d2d8": {
-      "id": "c672ff30-be31-4eda-a5b3-bb385208d2d8",
+    "f1060962-ddb4-4587-848f-954e8558c4a7": {
+      "id": "f1060962-ddb4-4587-848f-954e8558c4a7",
+      "midiChannel": 0,
       "startTicks": 8289,
       "durationTicks": 36,
       "noteNumber": 62,
@@ -4534,8 +4838,9 @@
         "D"
       ]
     },
-    "5fe0b3b9-4847-4356-8c16-cbdc852e269a": {
-      "id": "5fe0b3b9-4847-4356-8c16-cbdc852e269a",
+    "36d4d38a-225c-495d-9a49-ec401262e52a": {
+      "id": "36d4d38a-225c-495d-9a49-ec401262e52a",
+      "midiChannel": 0,
       "startTicks": 8411,
       "durationTicks": 40,
       "noteNumber": 57,
@@ -4548,8 +4853,9 @@
         "A"
       ]
     },
-    "8b90ac79-dd59-46a7-b747-3d3de848936b": {
-      "id": "8b90ac79-dd59-46a7-b747-3d3de848936b",
+    "3d37a591-3516-4fee-9b17-61bd90ad1880": {
+      "id": "3d37a591-3516-4fee-9b17-61bd90ad1880",
+      "midiChannel": 0,
       "startTicks": 8516,
       "durationTicks": 30,
       "noteNumber": 52,
@@ -4562,8 +4868,9 @@
         "E"
       ]
     },
-    "fcdaa7e4-071f-427e-8f78-183d96897801": {
-      "id": "fcdaa7e4-071f-427e-8f78-183d96897801",
+    "2c879edf-23d3-4dcc-b3cd-e29ab638987a": {
+      "id": "2c879edf-23d3-4dcc-b3cd-e29ab638987a",
+      "midiChannel": 0,
       "startTicks": 8640,
       "durationTicks": 126,
       "noteNumber": 67,
@@ -4576,8 +4883,9 @@
         "G"
       ]
     },
-    "5d45743f-f86a-412c-bc29-32cf5ee1cf20": {
-      "id": "5d45743f-f86a-412c-bc29-32cf5ee1cf20",
+    "0b6aa284-fa0f-415e-94fb-6f3b4a673b9b": {
+      "id": "0b6aa284-fa0f-415e-94fb-6f3b4a673b9b",
+      "midiChannel": 0,
       "startTicks": 8637,
       "durationTicks": 267,
       "noteNumber": 64,
@@ -4590,8 +4898,9 @@
         "E"
       ]
     },
-    "285140ba-3c0d-4aa7-acf2-98f896eb9614": {
-      "id": "285140ba-3c0d-4aa7-acf2-98f896eb9614",
+    "0c1df345-a980-429b-9ce6-9fe19103c36f": {
+      "id": "0c1df345-a980-429b-9ce6-9fe19103c36f",
+      "midiChannel": 0,
       "startTicks": 8887,
       "durationTicks": 36,
       "noteNumber": 57,
@@ -4604,8 +4913,9 @@
         "A"
       ]
     },
-    "e4707a16-596b-448a-81bb-30052394620b": {
-      "id": "e4707a16-596b-448a-81bb-30052394620b",
+    "6ed1bae3-374f-4649-80e0-d99110879a39": {
+      "id": "6ed1bae3-374f-4649-80e0-d99110879a39",
+      "midiChannel": 0,
       "startTicks": 8767,
       "durationTicks": 264,
       "noteNumber": 69,
@@ -4618,8 +4928,9 @@
         "A"
       ]
     },
-    "8603ac1d-6b3b-469b-b983-dde0e87af77b": {
-      "id": "8603ac1d-6b3b-469b-b983-dde0e87af77b",
+    "17d5dbf7-5ad1-4db0-9f97-a0fe966007a8": {
+      "id": "17d5dbf7-5ad1-4db0-9f97-a0fe966007a8",
+      "midiChannel": 0,
       "startTicks": 8642,
       "durationTicks": 393,
       "noteNumber": 72,
@@ -4632,8 +4943,9 @@
         "C"
       ]
     },
-    "629968fc-a9db-407e-ab5a-dceb5a8bd9ca": {
-      "id": "629968fc-a9db-407e-ab5a-dceb5a8bd9ca",
+    "71261d23-76f1-46d1-a497-d91d8795df3c": {
+      "id": "71261d23-76f1-46d1-a497-d91d8795df3c",
+      "midiChannel": 0,
       "startTicks": 9003,
       "durationTicks": 66,
       "noteNumber": 62,
@@ -4646,8 +4958,9 @@
         "D"
       ]
     },
-    "0f998ae3-0ef4-4dfb-943e-e542e3af9e4a": {
-      "id": "0f998ae3-0ef4-4dfb-943e-e542e3af9e4a",
+    "8637cfa0-be94-4935-94f0-010e17faf2cd": {
+      "id": "8637cfa0-be94-4935-94f0-010e17faf2cd",
+      "midiChannel": 0,
       "startTicks": 9003,
       "durationTicks": 92,
       "noteNumber": 67,
@@ -4660,8 +4973,9 @@
         "G"
       ]
     },
-    "db10c2b1-51d9-4d01-8d51-fd9efbd5515a": {
-      "id": "db10c2b1-51d9-4d01-8d51-fd9efbd5515a",
+    "2202bcb1-25a9-4899-bff6-584ea80864aa": {
+      "id": "2202bcb1-25a9-4899-bff6-584ea80864aa",
+      "midiChannel": 0,
       "startTicks": 8996,
       "durationTicks": 127,
       "noteNumber": 71,
@@ -4674,8 +4988,9 @@
         "B"
       ]
     },
-    "b3d3f79c-0bf8-44f6-b471-05eb6152a71a": {
-      "id": "b3d3f79c-0bf8-44f6-b471-05eb6152a71a",
+    "e09ea435-3be8-4fae-81e3-afe9a4132828": {
+      "id": "e09ea435-3be8-4fae-81e3-afe9a4132828",
+      "midiChannel": 0,
       "startTicks": 9116,
       "durationTicks": 32,
       "noteNumber": 57,
@@ -4688,8 +5003,9 @@
         "A"
       ]
     },
-    "a59ee563-eea1-46ea-993d-c0b078b5ab91": {
-      "id": "a59ee563-eea1-46ea-993d-c0b078b5ab91",
+    "15d4902a-3917-4cf4-938e-cdff94f63208": {
+      "id": "15d4902a-3917-4cf4-938e-cdff94f63208",
+      "midiChannel": 0,
       "startTicks": 9234,
       "durationTicks": 78,
       "noteNumber": 62,
@@ -4702,8 +5018,9 @@
         "D"
       ]
     },
-    "42b2a457-f39e-4d59-aa7b-6a7ca2442f44": {
-      "id": "42b2a457-f39e-4d59-aa7b-6a7ca2442f44",
+    "68b820c6-efab-487e-9120-b9a3bb24ba9e": {
+      "id": "68b820c6-efab-487e-9120-b9a3bb24ba9e",
+      "midiChannel": 0,
       "startTicks": 9365,
       "durationTicks": 53,
       "noteNumber": 52,
@@ -4716,8 +5033,9 @@
         "E"
       ]
     },
-    "9d329b6d-b277-40f4-a9e6-307f809937c7": {
-      "id": "9d329b6d-b277-40f4-a9e6-307f809937c7",
+    "08dc49f3-9333-4772-9bfd-fc5ed93d7c7b": {
+      "id": "08dc49f3-9333-4772-9bfd-fc5ed93d7c7b",
+      "midiChannel": 0,
       "startTicks": 9480,
       "durationTicks": 33,
       "noteNumber": 45,
@@ -4730,8 +5048,9 @@
         "A"
       ]
     },
-    "aca1db9d-23d4-42ba-a53c-8ebd3339a9f0": {
-      "id": "aca1db9d-23d4-42ba-a53c-8ebd3339a9f0",
+    "ee37d7ed-4346-482e-b526-d251240ef7b7": {
+      "id": "ee37d7ed-4346-482e-b526-d251240ef7b7",
+      "midiChannel": 0,
       "startTicks": 9737,
       "durationTicks": 142,
       "noteNumber": 50,
@@ -4744,8 +5063,9 @@
         "D"
       ]
     },
-    "9e15010b-6ecd-493a-b76c-f5e4d92301ba": {
-      "id": "9e15010b-6ecd-493a-b76c-f5e4d92301ba",
+    "697b1c5f-b731-4584-9fbf-79d0f3589bc7": {
+      "id": "697b1c5f-b731-4584-9fbf-79d0f3589bc7",
+      "midiChannel": 0,
       "startTicks": 9600,
       "durationTicks": 361,
       "noteNumber": 62,
@@ -4758,8 +5078,9 @@
         "D"
       ]
     },
-    "8e424209-9dd7-4c09-b312-cb45d3626a57": {
-      "id": "8e424209-9dd7-4c09-b312-cb45d3626a57",
+    "163aa2aa-616e-418b-9102-5df32711798a": {
+      "id": "163aa2aa-616e-418b-9102-5df32711798a",
+      "midiChannel": 0,
       "startTicks": 9600,
       "durationTicks": 399,
       "noteNumber": 69,
@@ -4772,8 +5093,9 @@
         "A"
       ]
     },
-    "13aff9a2-8d27-45d5-a9be-17958e7c2127": {
-      "id": "13aff9a2-8d27-45d5-a9be-17958e7c2127",
+    "8d3be980-63d2-4b3a-a1e5-86997349846a": {
+      "id": "8d3be980-63d2-4b3a-a1e5-86997349846a",
+      "midiChannel": 0,
       "startTicks": 9973,
       "durationTicks": 35,
       "noteNumber": 64,
@@ -4786,8 +5108,9 @@
         "E"
       ]
     },
-    "757eacbb-6c30-422a-80e3-2ad8ce1a6921": {
-      "id": "757eacbb-6c30-422a-80e3-2ad8ce1a6921",
+    "104f3be7-881f-4a26-9322-b8321e75b9b8": {
+      "id": "104f3be7-881f-4a26-9322-b8321e75b9b8",
+      "midiChannel": 0,
       "startTicks": 9603,
       "durationTicks": 411,
       "noteNumber": 66,
@@ -4800,8 +5123,9 @@
         "F#"
       ]
     },
-    "784c4b69-ebb3-4d6a-9742-1219f92e1d30": {
-      "id": "784c4b69-ebb3-4d6a-9742-1219f92e1d30",
+    "eca28216-81c0-4a15-af25-e6b3849859f7": {
+      "id": "eca28216-81c0-4a15-af25-e6b3849859f7",
+      "midiChannel": 0,
       "startTicks": 9962,
       "durationTicks": 75,
       "noteNumber": 62,
@@ -4814,8 +5138,9 @@
         "D"
       ]
     },
-    "c761720d-d1d1-42c9-99c0-8e2d37d7a363": {
-      "id": "c761720d-d1d1-42c9-99c0-8e2d37d7a363",
+    "f0e8f713-b69c-4825-8bdf-85b0daf72f36": {
+      "id": "f0e8f713-b69c-4825-8bdf-85b0daf72f36",
+      "midiChannel": 0,
       "startTicks": 9969,
       "durationTicks": 85,
       "noteNumber": 67,
@@ -4828,8 +5153,9 @@
         "G"
       ]
     },
-    "a9b40c42-cdc2-4c6d-b073-c76e043dbf1e": {
-      "id": "a9b40c42-cdc2-4c6d-b073-c76e043dbf1e",
+    "2abcc176-d040-4d92-987d-702ea7604526": {
+      "id": "2abcc176-d040-4d92-987d-702ea7604526",
+      "midiChannel": 0,
       "startTicks": 10082,
       "durationTicks": 45,
       "noteNumber": 50,
@@ -4842,8 +5168,9 @@
         "D"
       ]
     },
-    "3295ef12-1239-4397-a8e4-5986043e3eca": {
-      "id": "3295ef12-1239-4397-a8e4-5986043e3eca",
+    "9548caeb-110b-4e02-a7c1-8c34a698ab5b": {
+      "id": "9548caeb-110b-4e02-a7c1-8c34a698ab5b",
+      "midiChannel": 0,
       "startTicks": 10208,
       "durationTicks": 58,
       "noteNumber": 62,
@@ -4856,8 +5183,9 @@
         "D"
       ]
     },
-    "51bf5be2-b896-4d47-9429-0e6599c613c6": {
-      "id": "51bf5be2-b896-4d47-9429-0e6599c613c6",
+    "dd8dd9bc-ba49-4248-ac30-b93f16478248": {
+      "id": "dd8dd9bc-ba49-4248-ac30-b93f16478248",
+      "midiChannel": 0,
       "startTicks": 10326,
       "durationTicks": 39,
       "noteNumber": 50,
@@ -4870,8 +5198,9 @@
         "D"
       ]
     },
-    "ec23815f-769d-4eef-af1e-1787c2cd3792": {
-      "id": "ec23815f-769d-4eef-af1e-1787c2cd3792",
+    "d6276d6e-d68d-4387-b3a8-0d4d6ec82788": {
+      "id": "d6276d6e-d68d-4387-b3a8-0d4d6ec82788",
+      "midiChannel": 0,
       "startTicks": 10443,
       "durationTicks": 65,
       "noteNumber": 62,
@@ -4884,8 +5213,9 @@
         "D"
       ]
     },
-    "eef40b65-c07e-40d9-ab8a-e4ba83434749": {
-      "id": "eef40b65-c07e-40d9-ab8a-e4ba83434749",
+    "277aab3c-c62f-4fe3-bb60-28d4b2881ecc": {
+      "id": "277aab3c-c62f-4fe3-bb60-28d4b2881ecc",
+      "midiChannel": 0,
       "startTicks": 10445,
       "durationTicks": 72,
       "noteNumber": 66,
@@ -4898,8 +5228,9 @@
         "F#"
       ]
     },
-    "4975faee-a352-4501-8a48-c6fcd22e8768": {
-      "id": "4975faee-a352-4501-8a48-c6fcd22e8768",
+    "1a9c7a28-aea6-46f3-bf93-896341e4dadd": {
+      "id": "1a9c7a28-aea6-46f3-bf93-896341e4dadd",
+      "midiChannel": 0,
       "startTicks": 10449,
       "durationTicks": 79,
       "noteNumber": 69,
@@ -4912,8 +5243,9 @@
         "A"
       ]
     },
-    "2ff6a0fd-36b1-48f9-9fab-ee01eb41d0a5": {
-      "id": "2ff6a0fd-36b1-48f9-9fab-ee01eb41d0a5",
+    "02dfe54f-8c69-4f82-9745-a0acd0591f01": {
+      "id": "02dfe54f-8c69-4f82-9745-a0acd0591f01",
+      "midiChannel": 0,
       "startTicks": 10565,
       "durationTicks": 77,
       "noteNumber": 50,
@@ -4926,8 +5258,9 @@
         "D"
       ]
     },
-    "d66ae1c2-ccd3-41fe-aeb5-cc903ed28ac7": {
-      "id": "d66ae1c2-ccd3-41fe-aeb5-cc903ed28ac7",
+    "cd99a908-5a51-4f70-8359-dcf2911abd75": {
+      "id": "cd99a908-5a51-4f70-8359-dcf2911abd75",
+      "midiChannel": 0,
       "startTicks": 10687,
       "durationTicks": 151,
       "noteNumber": 66,
@@ -4940,8 +5273,9 @@
         "F#"
       ]
     },
-    "d925e861-ce14-4eba-ba3f-fd90dc1350e0": {
-      "id": "d925e861-ce14-4eba-ba3f-fd90dc1350e0",
+    "97869dd1-b8fa-474c-8227-d75f3544e203": {
+      "id": "97869dd1-b8fa-474c-8227-d75f3544e203",
+      "midiChannel": 0,
       "startTicks": 10690,
       "durationTicks": 152,
       "noteNumber": 69,
@@ -4954,8 +5288,9 @@
         "A"
       ]
     },
-    "46c4c398-4085-4b0e-ba87-980818e16349": {
-      "id": "46c4c398-4085-4b0e-ba87-980818e16349",
+    "b2982b7f-d81c-4fdb-b257-4ab80ca1834f": {
+      "id": "b2982b7f-d81c-4fdb-b257-4ab80ca1834f",
+      "midiChannel": 0,
       "startTicks": 10686,
       "durationTicks": 206,
       "noteNumber": 62,
@@ -4968,8 +5303,9 @@
         "D"
       ]
     },
-    "e966f198-c9af-4fc7-a3fd-a40ec9cc9590": {
-      "id": "e966f198-c9af-4fc7-a3fd-a40ec9cc9590",
+    "1ac0bf7f-cd6e-4255-9781-815505a2da87": {
+      "id": "1ac0bf7f-cd6e-4255-9781-815505a2da87",
+      "midiChannel": 0,
       "startTicks": 10807,
       "durationTicks": 142,
       "noteNumber": 64,
@@ -4982,8 +5318,9 @@
         "E"
       ]
     },
-    "e26ae59f-9b5d-45fc-a64a-a8932c7a2297": {
-      "id": "e26ae59f-9b5d-45fc-a64a-a8932c7a2297",
+    "82d86265-b34d-46a8-8b7c-06ee2377c3d4": {
+      "id": "82d86265-b34d-46a8-8b7c-06ee2377c3d4",
+      "midiChannel": 0,
       "startTicks": 10809,
       "durationTicks": 214,
       "noteNumber": 67,
@@ -4996,8 +5333,9 @@
         "G"
       ]
     },
-    "81f80b54-cf1d-45ba-99ac-27be1a970f6b": {
-      "id": "81f80b54-cf1d-45ba-99ac-27be1a970f6b",
+    "10175cd5-def2-40b0-841b-5866e48b397e": {
+      "id": "10175cd5-def2-40b0-841b-5866e48b397e",
+      "midiChannel": 0,
       "startTicks": 10924,
       "durationTicks": 115,
       "noteNumber": 51,
@@ -5010,8 +5348,9 @@
         "D#"
       ]
     },
-    "fd623315-e8e1-498f-ab16-99eb04361b34": {
-      "id": "fd623315-e8e1-498f-ab16-99eb04361b34",
+    "5dff2a8c-cc08-40af-bb3e-cf3b989b4082": {
+      "id": "5dff2a8c-cc08-40af-bb3e-cf3b989b4082",
+      "midiChannel": 0,
       "startTicks": 11039,
       "durationTicks": 135,
       "noteNumber": 52,
@@ -5024,8 +5363,9 @@
         "E"
       ]
     },
-    "56c2b6ee-e4ec-489c-917d-9c0f109a4b49": {
-      "id": "56c2b6ee-e4ec-489c-917d-9c0f109a4b49",
+    "3dcb8d0e-3339-4d2d-83af-a431e8558f7a": {
+      "id": "3dcb8d0e-3339-4d2d-83af-a431e8558f7a",
+      "midiChannel": 0,
       "startTicks": 11167,
       "durationTicks": 37,
       "noteNumber": 68,
@@ -5038,8 +5378,9 @@
         "G#"
       ]
     },
-    "2de61581-4961-4758-bb7d-a3e6c86989ac": {
-      "id": "2de61581-4961-4758-bb7d-a3e6c86989ac",
+    "7cacdfb2-5c16-4bf2-9912-637a03ec548f": {
+      "id": "7cacdfb2-5c16-4bf2-9912-637a03ec548f",
+      "midiChannel": 0,
       "startTicks": 11165,
       "durationTicks": 42,
       "noteNumber": 71,
@@ -5052,8 +5393,9 @@
         "B"
       ]
     },
-    "2c614d57-7070-4803-b1bc-8647c3f3038b": {
-      "id": "2c614d57-7070-4803-b1bc-8647c3f3038b",
+    "6f3a41cd-36e5-45b4-b1ad-8131bf8a792a": {
+      "id": "6f3a41cd-36e5-45b4-b1ad-8131bf8a792a",
+      "midiChannel": 0,
       "startTicks": 11167,
       "durationTicks": 44,
       "noteNumber": 62,
@@ -5066,8 +5408,9 @@
         "D"
       ]
     },
-    "a5c7fb76-e0d0-4e85-afe3-da40fd1face2": {
-      "id": "a5c7fb76-e0d0-4e85-afe3-da40fd1face2",
+    "5750be1f-30c1-4147-b0ca-16cab33cc681": {
+      "id": "5750be1f-30c1-4147-b0ca-16cab33cc681",
+      "midiChannel": 0,
       "startTicks": 11286,
       "durationTicks": 66,
       "noteNumber": 52,
@@ -5080,8 +5423,9 @@
         "E"
       ]
     },
-    "f925c7ba-5b5e-4145-a13f-0b5f0ccebc34": {
-      "id": "f925c7ba-5b5e-4145-a13f-0b5f0ccebc34",
+    "a9770c6e-3478-4697-b009-0a2b1e01116b": {
+      "id": "a9770c6e-3478-4697-b009-0a2b1e01116b",
+      "midiChannel": 0,
       "startTicks": 11403,
       "durationTicks": 93,
       "noteNumber": 45,
@@ -5094,8 +5438,9 @@
         "A"
       ]
     },
-    "6f634a54-a5da-4ef5-9d87-cb57963755f4": {
-      "id": "6f634a54-a5da-4ef5-9d87-cb57963755f4",
+    "e68e2edc-0642-4b96-a24d-395b8030a35c": {
+      "id": "e68e2edc-0642-4b96-a24d-395b8030a35c",
+      "midiChannel": 0,
       "startTicks": 11525,
       "durationTicks": 121,
       "noteNumber": 67,
@@ -5108,8 +5453,9 @@
         "G"
       ]
     },
-    "5de7eb6d-3adb-4738-978e-5b44dd7999c2": {
-      "id": "5de7eb6d-3adb-4738-978e-5b44dd7999c2",
+    "238b1477-3ace-4b41-a20b-291b9444b93a": {
+      "id": "238b1477-3ace-4b41-a20b-291b9444b93a",
+      "midiChannel": 0,
       "startTicks": 11523,
       "durationTicks": 272,
       "noteNumber": 64,
@@ -5122,8 +5468,9 @@
         "E"
       ]
     },
-    "1f678902-0abf-4dd7-82ed-d12468460f36": {
-      "id": "1f678902-0abf-4dd7-82ed-d12468460f36",
+    "d13ad448-35d8-414a-9cf9-912585777d67": {
+      "id": "d13ad448-35d8-414a-9cf9-912585777d67",
+      "midiChannel": 0,
       "startTicks": 11767,
       "durationTicks": 38,
       "noteNumber": 57,
@@ -5136,8 +5483,9 @@
         "A"
       ]
     },
-    "f1cf9c43-0de0-4aa0-b88a-9420c22baa03": {
-      "id": "f1cf9c43-0de0-4aa0-b88a-9420c22baa03",
+    "cc4ddd77-f693-4a34-9825-bd27d59276ac": {
+      "id": "cc4ddd77-f693-4a34-9825-bd27d59276ac",
+      "midiChannel": 0,
       "startTicks": 11634,
       "durationTicks": 250,
       "noteNumber": 69,
@@ -5150,8 +5498,9 @@
         "A"
       ]
     },
-    "b5262dc4-5ee5-49a2-bdb5-c8d58ec86b2a": {
-      "id": "b5262dc4-5ee5-49a2-bdb5-c8d58ec86b2a",
+    "d65804c6-06af-40aa-9605-83063ecc65a0": {
+      "id": "d65804c6-06af-40aa-9605-83063ecc65a0",
+      "midiChannel": 0,
       "startTicks": 11529,
       "durationTicks": 373,
       "noteNumber": 72,
@@ -5164,8 +5513,9 @@
         "C"
       ]
     },
-    "0fd6dea7-c4ff-4f67-86c1-098c2e237f4d": {
-      "id": "0fd6dea7-c4ff-4f67-86c1-098c2e237f4d",
+    "15748312-1a53-47f0-ab73-65ce97ef48a1": {
+      "id": "15748312-1a53-47f0-ab73-65ce97ef48a1",
+      "midiChannel": 0,
       "startTicks": 11883,
       "durationTicks": 75,
       "noteNumber": 67,
@@ -5178,8 +5528,9 @@
         "G"
       ]
     },
-    "3b4b91c0-afa8-444c-b371-928b59ad141a": {
-      "id": "3b4b91c0-afa8-444c-b371-928b59ad141a",
+    "e00f2a1b-98f9-4114-94dd-70f6cb8645a1": {
+      "id": "e00f2a1b-98f9-4114-94dd-70f6cb8645a1",
+      "midiChannel": 0,
       "startTicks": 11884,
       "durationTicks": 75,
       "noteNumber": 62,
@@ -5192,8 +5543,9 @@
         "D"
       ]
     },
-    "6151c747-defc-41cd-8402-666cd905ce87": {
-      "id": "6151c747-defc-41cd-8402-666cd905ce87",
+    "39856bb3-ab74-48f1-b4c7-565bc380f256": {
+      "id": "39856bb3-ab74-48f1-b4c7-565bc380f256",
+      "midiChannel": 0,
       "startTicks": 11881,
       "durationTicks": 113,
       "noteNumber": 71,
@@ -5206,8 +5558,9 @@
         "B"
       ]
     },
-    "41d8188f-ebf5-422c-b654-0fcc0d515518": {
-      "id": "41d8188f-ebf5-422c-b654-0fcc0d515518",
+    "8ccf80e5-77b5-4a46-9c40-8de4aa1fc2b0": {
+      "id": "8ccf80e5-77b5-4a46-9c40-8de4aa1fc2b0",
+      "midiChannel": 0,
       "startTicks": 12125,
       "durationTicks": 45,
       "noteNumber": 62,
@@ -5220,8 +5573,9 @@
         "D"
       ]
     },
-    "0eb7330e-020b-48bc-a5d2-b255aac24db6": {
-      "id": "0eb7330e-020b-48bc-a5d2-b255aac24db6",
+    "0a3a61b3-aac4-4878-8ac5-3a88535f5731": {
+      "id": "0a3a61b3-aac4-4878-8ac5-3a88535f5731",
+      "midiChannel": 0,
       "startTicks": 12255,
       "durationTicks": 47,
       "noteNumber": 57,
@@ -5234,8 +5588,9 @@
         "A"
       ]
     },
-    "9430713e-2a6a-43a8-a787-2de624d02034": {
-      "id": "9430713e-2a6a-43a8-a787-2de624d02034",
+    "3ccdc0a0-a164-497c-891e-f6113cec3b7e": {
+      "id": "3ccdc0a0-a164-497c-891e-f6113cec3b7e",
+      "midiChannel": 0,
       "startTicks": 12359,
       "durationTicks": 28,
       "noteNumber": 52,
@@ -5248,8 +5603,9 @@
         "E"
       ]
     },
-    "2f621a9a-c721-497b-8133-75bfef2aa193": {
-      "id": "2f621a9a-c721-497b-8133-75bfef2aa193",
+    "66148253-5cab-44cd-86f0-9a00a6b83a48": {
+      "id": "66148253-5cab-44cd-86f0-9a00a6b83a48",
+      "midiChannel": 0,
       "startTicks": 12482,
       "durationTicks": 125,
       "noteNumber": 67,
@@ -5262,8 +5618,9 @@
         "G"
       ]
     },
-    "c81e86ed-732d-41de-92cc-db05f7376fdf": {
-      "id": "c81e86ed-732d-41de-92cc-db05f7376fdf",
+    "67d3c6e4-fa2c-44d8-80ed-cb9af710980e": {
+      "id": "67d3c6e4-fa2c-44d8-80ed-cb9af710980e",
+      "midiChannel": 0,
       "startTicks": 12481,
       "durationTicks": 287,
       "noteNumber": 64,
@@ -5276,8 +5633,9 @@
         "E"
       ]
     },
-    "9712e8c3-45f1-48dd-a314-82e47d211fdf": {
-      "id": "9712e8c3-45f1-48dd-a314-82e47d211fdf",
+    "9cb368b9-1078-4e0d-ae32-b123f52582ee": {
+      "id": "9cb368b9-1078-4e0d-ae32-b123f52582ee",
+      "midiChannel": 0,
       "startTicks": 12725,
       "durationTicks": 96,
       "noteNumber": 57,
@@ -5290,8 +5648,9 @@
         "A"
       ]
     },
-    "32160f00-f767-41cc-9cb7-0c5c22b5a128": {
-      "id": "32160f00-f767-41cc-9cb7-0c5c22b5a128",
+    "4cf3d7bd-924a-4847-8826-e720d54ed1cd": {
+      "id": "4cf3d7bd-924a-4847-8826-e720d54ed1cd",
+      "midiChannel": 0,
       "startTicks": 12596,
       "durationTicks": 286,
       "noteNumber": 69,
@@ -5304,8 +5663,9 @@
         "A"
       ]
     },
-    "af3a9db0-8a65-4e15-9124-c513f3de8ba8": {
-      "id": "af3a9db0-8a65-4e15-9124-c513f3de8ba8",
+    "022a7b2b-0ecd-4c80-8281-f7b595d005cb": {
+      "id": "022a7b2b-0ecd-4c80-8281-f7b595d005cb",
+      "midiChannel": 0,
       "startTicks": 12485,
       "durationTicks": 410,
       "noteNumber": 72,
@@ -5318,8 +5678,9 @@
         "C"
       ]
     },
-    "fea0c5a0-98cf-4d32-a29c-7994f979f9d4": {
-      "id": "fea0c5a0-98cf-4d32-a29c-7994f979f9d4",
+    "19a0ccdb-b0ca-4026-b4de-662c5504e9a4": {
+      "id": "19a0ccdb-b0ca-4026-b4de-662c5504e9a4",
+      "midiChannel": 0,
       "startTicks": 12848,
       "durationTicks": 79,
       "noteNumber": 62,
@@ -5332,8 +5693,9 @@
         "D"
       ]
     },
-    "ff5cdfd4-67b9-44d8-a8b9-f3c7c1e1e030": {
-      "id": "ff5cdfd4-67b9-44d8-a8b9-f3c7c1e1e030",
+    "c2d78fa8-d30b-4b0b-aea3-6549234fc46d": {
+      "id": "c2d78fa8-d30b-4b0b-aea3-6549234fc46d",
+      "midiChannel": 0,
       "startTicks": 12846,
       "durationTicks": 112,
       "noteNumber": 67,
@@ -5346,8 +5708,9 @@
         "G"
       ]
     },
-    "b816401d-2c20-4f05-8fe9-6a35f000ca4e": {
-      "id": "b816401d-2c20-4f05-8fe9-6a35f000ca4e",
+    "d7f3612c-4983-427b-b47c-a269af21e2c8": {
+      "id": "d7f3612c-4983-427b-b47c-a269af21e2c8",
+      "midiChannel": 0,
       "startTicks": 12847,
       "durationTicks": 162,
       "noteNumber": 71,
@@ -5360,8 +5723,9 @@
         "B"
       ]
     },
-    "e5c4d6fd-90db-4226-818e-785c0e28df9c": {
-      "id": "e5c4d6fd-90db-4226-818e-785c0e28df9c",
+    "0fc93318-e4ff-4806-a973-5cd0c00e2038": {
+      "id": "0fc93318-e4ff-4806-a973-5cd0c00e2038",
+      "midiChannel": 0,
       "startTicks": 13079,
       "durationTicks": 94,
       "noteNumber": 62,
@@ -5374,8 +5738,9 @@
         "D"
       ]
     },
-    "8b0db569-ad75-4f4c-8877-cfd733496436": {
-      "id": "8b0db569-ad75-4f4c-8877-cfd733496436",
+    "faf39acc-3703-4f8a-8edd-55ae1e727028": {
+      "id": "faf39acc-3703-4f8a-8edd-55ae1e727028",
+      "midiChannel": 0,
       "startTicks": 13199,
       "durationTicks": 43,
       "noteNumber": 57,
@@ -5388,8 +5753,9 @@
         "A"
       ]
     },
-    "d67a7680-b2da-4307-b926-ca67ec2faa5a": {
-      "id": "d67a7680-b2da-4307-b926-ca67ec2faa5a",
+    "dbabf72e-8c2c-47cc-a513-595ffa3a1efd": {
+      "id": "dbabf72e-8c2c-47cc-a513-595ffa3a1efd",
+      "midiChannel": 0,
       "startTicks": 13313,
       "durationTicks": 65,
       "noteNumber": 52,
@@ -5402,8 +5768,9 @@
         "E"
       ]
     },
-    "d9714e50-933c-4269-be6b-d8f1fcf5fd3a": {
-      "id": "d9714e50-933c-4269-be6b-d8f1fcf5fd3a",
+    "82c5e2b0-3158-4452-baef-853ec52e6e06": {
+      "id": "82c5e2b0-3158-4452-baef-853ec52e6e06",
+      "midiChannel": 0,
       "startTicks": 13444,
       "durationTicks": 124,
       "noteNumber": 59,
@@ -5416,8 +5783,9 @@
         "B"
       ]
     },
-    "0f3ec88c-c85d-4ad8-858c-bf1f4998950b": {
-      "id": "0f3ec88c-c85d-4ad8-858c-bf1f4998950b",
+    "d8cb3776-ebaa-4020-b9d2-c179b963ff66": {
+      "id": "d8cb3776-ebaa-4020-b9d2-c179b963ff66",
+      "midiChannel": 0,
       "startTicks": 13440,
       "durationTicks": 206,
       "noteNumber": 55,
@@ -5430,8 +5798,9 @@
         "G"
       ]
     },
-    "4ae75cfc-9b62-4642-8d77-20c76d36df4f": {
-      "id": "4ae75cfc-9b62-4642-8d77-20c76d36df4f",
+    "110312e1-5bc9-43b8-9268-2451ae5ddc28": {
+      "id": "110312e1-5bc9-43b8-9268-2451ae5ddc28",
+      "midiChannel": 0,
       "startTicks": 13573,
       "durationTicks": 90,
       "noteNumber": 60,
@@ -5444,8 +5813,9 @@
         "C"
       ]
     },
-    "c1daa0e8-6a00-4dca-908f-81e809382715": {
-      "id": "c1daa0e8-6a00-4dca-908f-81e809382715",
+    "131a9ac6-384a-4ac7-9df5-0bc47a1a2ef5": {
+      "id": "131a9ac6-384a-4ac7-9df5-0bc47a1a2ef5",
+      "midiChannel": 0,
       "startTicks": 13442,
       "durationTicks": 232,
       "noteNumber": 64,
@@ -5458,8 +5828,9 @@
         "E"
       ]
     },
-    "99cda89e-14e4-4b4a-aab0-db51f5c7ae16": {
-      "id": "99cda89e-14e4-4b4a-aab0-db51f5c7ae16",
+    "e2d1485a-7193-41b9-b892-c826bc1dd3f6": {
+      "id": "e2d1485a-7193-41b9-b892-c826bc1dd3f6",
+      "midiChannel": 0,
       "startTicks": 13685,
       "durationTicks": 57,
       "noteNumber": 52,
@@ -5472,8 +5843,9 @@
         "E"
       ]
     },
-    "37da0064-476e-4899-94b3-a69dd7cc3ca8": {
-      "id": "37da0064-476e-4899-94b3-a69dd7cc3ca8",
+    "bb8103ea-74d6-4652-9814-4c1b290c100b": {
+      "id": "bb8103ea-74d6-4652-9814-4c1b290c100b",
+      "midiChannel": 0,
       "startTicks": 13803,
       "durationTicks": 58,
       "noteNumber": 55,
@@ -5486,8 +5858,9 @@
         "G"
       ]
     },
-    "17e541c3-4d9f-4baa-a70d-d4166f8f089e": {
-      "id": "17e541c3-4d9f-4baa-a70d-d4166f8f089e",
+    "ed2bf860-e7cb-4cd2-b3f0-7302fd38508a": {
+      "id": "ed2bf860-e7cb-4cd2-b3f0-7302fd38508a",
+      "midiChannel": 0,
       "startTicks": 13806,
       "durationTicks": 60,
       "noteNumber": 60,
@@ -5500,8 +5873,9 @@
         "C"
       ]
     },
-    "edad6df8-c093-40ee-ac0c-29d162f4ab04": {
-      "id": "edad6df8-c093-40ee-ac0c-29d162f4ab04",
+    "e6e7def1-7cd5-48d7-af04-aa2c6cf62e60": {
+      "id": "e6e7def1-7cd5-48d7-af04-aa2c6cf62e60",
+      "midiChannel": 0,
       "startTicks": 13807,
       "durationTicks": 82,
       "noteNumber": 64,
@@ -5514,8 +5888,9 @@
         "E"
       ]
     },
-    "32596d4a-247a-418e-9581-5ed012be812d": {
-      "id": "32596d4a-247a-418e-9581-5ed012be812d",
+    "9628e1b4-e578-4817-a774-254a0405e807": {
+      "id": "9628e1b4-e578-4817-a774-254a0405e807",
+      "midiChannel": 0,
       "startTicks": 13929,
       "durationTicks": 31,
       "noteNumber": 52,
@@ -5528,8 +5903,9 @@
         "E"
       ]
     },
-    "8cd6f0be-8201-440b-8ccb-4833eb85d798": {
-      "id": "8cd6f0be-8201-440b-8ccb-4833eb85d798",
+    "12b1a2a5-d532-4b67-8b4b-b5837f701d48": {
+      "id": "12b1a2a5-d532-4b67-8b4b-b5837f701d48",
+      "midiChannel": 0,
       "startTicks": 14044,
       "durationTicks": 63,
       "noteNumber": 55,
@@ -5542,8 +5918,9 @@
         "G"
       ]
     },
-    "d1620840-654b-49d2-bb41-495218405ee1": {
-      "id": "d1620840-654b-49d2-bb41-495218405ee1",
+    "2918f3df-d6cc-493f-97a7-4bbb573c70f7": {
+      "id": "2918f3df-d6cc-493f-97a7-4bbb573c70f7",
+      "midiChannel": 0,
       "startTicks": 14170,
       "durationTicks": 31,
       "noteNumber": 52,
@@ -5556,8 +5933,9 @@
         "E"
       ]
     },
-    "28466fce-b514-4bb7-aa00-202550795b4a": {
-      "id": "28466fce-b514-4bb7-aa00-202550795b4a",
+    "3d08ac2b-41e2-4f67-9bbe-e121132cc27f": {
+      "id": "3d08ac2b-41e2-4f67-9bbe-e121132cc27f",
+      "midiChannel": 0,
       "startTicks": 14279,
       "durationTicks": 62,
       "noteNumber": 55,
@@ -5570,8 +5948,9 @@
         "G"
       ]
     },
-    "9dfc3cf7-6b3f-447a-b085-add42fda6a8b": {
-      "id": "9dfc3cf7-6b3f-447a-b085-add42fda6a8b",
+    "4d32d6de-a8b8-407f-87f4-4fa056bf053b": {
+      "id": "4d32d6de-a8b8-407f-87f4-4fa056bf053b",
+      "midiChannel": 0,
       "startTicks": 14279,
       "durationTicks": 69,
       "noteNumber": 60,
@@ -5584,8 +5963,9 @@
         "C"
       ]
     },
-    "4c996f9e-5485-449f-94d5-9c0bf796be74": {
-      "id": "4c996f9e-5485-449f-94d5-9c0bf796be74",
+    "999b01c1-3103-45ff-91a9-581b5dfc6bb9": {
+      "id": "999b01c1-3103-45ff-91a9-581b5dfc6bb9",
+      "midiChannel": 0,
       "startTicks": 14281,
       "durationTicks": 76,
       "noteNumber": 64,
@@ -5598,8 +5978,9 @@
         "E"
       ]
     },
-    "48b32bdb-4f88-409c-a090-49791b40952d": {
-      "id": "48b32bdb-4f88-409c-a090-49791b40952d",
+    "a467fbb3-8f8f-453a-ac20-f5bfbb6855bb": {
+      "id": "a467fbb3-8f8f-453a-ac20-f5bfbb6855bb",
+      "midiChannel": 0,
       "startTicks": 14405,
       "durationTicks": 43,
       "noteNumber": 52,
@@ -5612,8 +5993,9 @@
         "E"
       ]
     },
-    "1b8a6ff5-5dd8-4d59-b41f-8227e9523916": {
-      "id": "1b8a6ff5-5dd8-4d59-b41f-8227e9523916",
+    "f77546a7-6bf7-467a-8dfc-9bc05ae4b72a": {
+      "id": "f77546a7-6bf7-467a-8dfc-9bc05ae4b72a",
+      "midiChannel": 0,
       "startTicks": 14522,
       "durationTicks": 45,
       "noteNumber": 47,
@@ -5626,8 +6008,9 @@
         "B"
       ]
     },
-    "1febb429-2c14-4603-8608-62eacd86837a": {
-      "id": "1febb429-2c14-4603-8608-62eacd86837a",
+    "d247d877-7da6-4a92-8c70-b22f66a37538": {
+      "id": "d247d877-7da6-4a92-8c70-b22f66a37538",
+      "midiChannel": 0,
       "startTicks": 14645,
       "durationTicks": 652,
       "noteNumber": 66,
@@ -5640,8 +6023,9 @@
         "F#"
       ]
     },
-    "595fce79-8732-4cbb-b97d-6bb121d6e3a9": {
-      "id": "595fce79-8732-4cbb-b97d-6bb121d6e3a9",
+    "901eef06-0443-4ac4-a2ba-231610f98f1a": {
+      "id": "901eef06-0443-4ac4-a2ba-231610f98f1a",
+      "midiChannel": 0,
       "startTicks": 14645,
       "durationTicks": 657,
       "noteNumber": 63,
@@ -5654,8 +6038,9 @@
         "D#"
       ]
     },
-    "4c00abbb-1dbf-4580-8f35-cab2c7eb66a9": {
-      "id": "4c00abbb-1dbf-4580-8f35-cab2c7eb66a9",
+    "7dc54e28-a46a-4748-af02-d1f0f600627b": {
+      "id": "7dc54e28-a46a-4748-af02-d1f0f600627b",
+      "midiChannel": 0,
       "startTicks": 14643,
       "durationTicks": 660,
       "noteNumber": 57,

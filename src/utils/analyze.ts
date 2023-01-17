@@ -1,5 +1,5 @@
 import type { Scale } from '@tonaljs/scale'
-import type { MidiPart, Bar, Track, Note } from './parse'
+import type { BaseSongData, Bar, Track, Note } from './parse'
 
 export type DetectUnit = 'bar' | 'beat'
 
@@ -11,16 +11,16 @@ export type NoteStats = {
   byBar: Bar[]
 }
 
-export type Stats = Pick<MidiPart, 'timings' | 'timeSignatures'> & {
+export type Song = Pick<BaseSongData, 'timings' | 'timeSignatures'> & {
   notes: NoteStats
   scales: Scale[]
   tracks: Track[]
 }
 
-export function analyze(part: MidiPart): Stats {
-  let stats: Stats = {
-    timings: part.timings,
-    timeSignatures: part.timeSignatures,
+export function analyze(sd: BaseSongData): Song {
+  let song: Song = {
+    timings: sd.timings,
+    timeSignatures: sd.timeSignatures,
     notes: {
       frequency: {},
       duration: {},
@@ -39,7 +39,7 @@ export function analyze(part: MidiPart): Stats {
   // 4 - chord recognition is the last thing to take place
 
   // 1 - Note analysis (Hydrate barsAndBeats)
-  const notes = Object.values(part.notesMap)
+  const notes = Object.values(sd.notesMap)
   function isNoteInRange(note: Note, startTicks: number, endTicks: number) {
     const noteEndTicks = note.startTicks + note.durationTicks
 
@@ -64,7 +64,7 @@ export function analyze(part: MidiPart): Stats {
     }
   }
 
-  part.barsAndBeats.forEach(bar => {
+  sd.barsAndBeats.forEach(bar => {
     // Find notes in this bar
     const barEndTicks = bar.startTicks + bar.durationTicks
     const notesInBar = notes.filter(note => {
@@ -82,42 +82,42 @@ export function analyze(part: MidiPart): Stats {
     })
   })
 
-  stats.notes.byBar = part.barsAndBeats
-  stats.tracks = part.tracks
-  // stats.notes.frequency = updateFrequencyStats(note, stats)
-  // stats.notes.duration = updateDurationStats(note, stats)
+  song.notes.byBar = sd.barsAndBeats
+  song.tracks = sd.tracks
+  // song.notes.frequency = updateFrequencyStats(note, song)
+  // song.notes.duration = updateDurationStats(note, song)
 
   // 2 - Note "presence" calculation
-  stats.notes.presence = updatePresenceStats(stats) as Record<string, number>
+  song.notes.presence = updatePresenceStats(song) as Record<string, number>
 
   // 3-4 are done with other funciton calls
-  return stats
+  return song
 }
 
-function updateFrequencyStats(note: Note, stats: Stats) {
+function updateFrequencyStats(note: Note, song: Song) {
   const name = note.noteName[0]
-  const frequency = stats.notes.frequency ?? {}
+  const frequency = song.notes.frequency ?? {}
   frequency[name] = frequency[name] ?? 0
   frequency[name] = frequency[name] + 1
   return frequency
 }
 
-function updateDurationStats(note: Note, stats: Stats) {
+function updateDurationStats(note: Note, song: Song) {
   const name = note.noteName[0]
-  const duration = stats.notes.duration ?? {}
+  const duration = song.notes.duration ?? {}
   duration[name] = duration[name] ?? 0
   duration[name] = duration[name] + note.durationTicks
   return duration
 }
 
 export function updatePresenceStats(
-  stats: Stats,
+  song: Song,
   noteDurationWeight: number = 1,
   noteFrequencyWeight: number = 0.3,
 ) {
-  const presence = stats.notes.presence ?? {}
-  const duration = normalizeToOne(stats.notes.duration)
-  const frequency = normalizeToOne(stats.notes.frequency)
+  const presence = song.notes.presence ?? {}
+  const duration = normalizeToOne(song.notes.duration)
+  const frequency = normalizeToOne(song.notes.frequency)
 
   Object.keys(frequency).forEach(name => {
     presence[name] =

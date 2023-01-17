@@ -1,7 +1,7 @@
 import {
   buildNote,
   makeBarsAndBeats,
-  MidiPart,
+  BaseSongData,
   TimeSignature,
   Track,
   Note,
@@ -9,6 +9,7 @@ import {
 } from '../parse'
 import { v4 as uuid } from 'uuid'
 import mf from 'midi-file'
+import { note } from 'tonal'
 
 // Constants based on midi-file parsing
 const TEMPO = 'setTempo'
@@ -23,7 +24,7 @@ export function midiBufferToJson(data: ArrayLike<number>) {
   return mf.parseMidi(data)
 }
 
-export function buildMidiPart(data: ArrayLike<number>): MidiPart {
+export function buildMidiPart(data: ArrayLike<number>): BaseSongData {
   const json = midiBufferToJson(data)
 
   // Only process format 1 midi
@@ -34,7 +35,7 @@ export function buildMidiPart(data: ArrayLike<number>): MidiPart {
   // By convention the first track in format 1 is metadata only
   const firstTrack = json.tracks.shift() as mf.MidiEvent[]
   const notesMap = {}
-  const tracks = json.tracks.reduce((result: MidiPart['tracks'], track) => {
+  const tracks = json.tracks.reduce((result: BaseSongData['tracks'], track) => {
     const processed = processTrack(track, notesMap)
     if (processed.notes.length) result.push(processed)
     return result
@@ -64,7 +65,7 @@ export function buildMidiPart(data: ArrayLike<number>): MidiPart {
 function extractPartDataFromTrack(
   firstTrack: mf.MidiEvent[],
   ticksPerBeat: number,
-  durationTicks: number,
+  songDurationTicks: number,
 ) {
   let currentTicks: number = 0
   const defaultPartData: any = {
@@ -86,6 +87,7 @@ function extractPartDataFromTrack(
         const beatTicksMultiplier = 4 / event.denominator
         const signature: TimeSignature = {
           startTicks: currentTicks,
+          durationTicks: 0,
           startBeat: 0,
           beatsInSignature: 0,
           numerator: event.numerator,
@@ -103,13 +105,16 @@ function extractPartDataFromTrack(
   data.timeSignatures = data.timeSignatures.map(
     (ts: TimeSignature, idx: number) => {
       const nextSignature = data.timeSignatures[idx + 1]
-      let startTicks = nextSignature ? nextSignature.startTicks : durationTicks
+      const startTicks = nextSignature
+        ? nextSignature.startTicks
+        : songDurationTicks
+      const durationTicks = startTicks - ts.startTicks
 
       const beatsInSignature = Math.ceil(
-        (startTicks - ts.startTicks) / (ticksPerBeat * ts.beatTicksMultiplier),
+        durationTicks / (ticksPerBeat * ts.beatTicksMultiplier),
       )
 
-      const updated = { ...ts, startBeat, beatsInSignature }
+      const updated = { ...ts, durationTicks, startBeat, beatsInSignature }
 
       // Increment
       startBeat = startBeat + beatsInSignature
@@ -152,6 +157,9 @@ function processTrack(
         break
       case PROGRAM_CHANGE:
         track.midiPatch = event.programNumber
+        track.midiChannel = event.channel
+        if (event.channel === 9 && !track.name) track.name = 'Percussion'
+        if (event.channel === 10 && !track.name) track.name = 'Percussion'
         if (!track.name) track.name = GMPatchNames.general[track.midiPatch]
         break
       case NOTE_ON:
@@ -197,9 +205,14 @@ function processNote(
   // some midi files have multiple NOTE_OFF events...
   if (!notesOn[number]) return
 
-  const { noteNumber, startTicks } = notesOn[number]
+  const { noteNumber, startTicks, channel } = notesOn[number]
   const durationTicks = currentTicks - startTicks
-  const note = buildNote({ noteNumber, startTicks, durationTicks })
+  const note = buildNote({
+    noteNumber,
+    startTicks,
+    durationTicks,
+    midiChannel: channel,
+  })
   if (note) {
     notes.push(note)
     notesMap[note.id] = note

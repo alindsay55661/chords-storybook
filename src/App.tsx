@@ -4,9 +4,10 @@ import MidiTracks from './components/MidiTracks'
 import { analyzed as data } from './stories/musicData'
 
 function App() {
-  const [zoom, setZoom] = useState(10)
-  const analyzed = data.ghostBusters
-  const { timings, timeSignatures, tracks } = analyzed
+  const [zoom, setZoom] = useState(20)
+  const song = data.takeFive
+  // const song = data.ghostBusters
+  // const song = data.timeSigs
 
   return (
     <div>
@@ -21,12 +22,10 @@ function App() {
         }}
       ></input>
       <MidiTracks
-        analyzed={analyzed}
-        tracks={tracks}
-        timings={timings}
-        timeSignatures={timeSignatures}
+        song={song}
         zoom={zoom}
-        trackHeight={64}
+        trackHeight={84}
+        maxHeight="400px"
       />
     </div>
   )

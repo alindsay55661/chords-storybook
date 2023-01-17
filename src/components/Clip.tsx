@@ -17,7 +17,6 @@ function Clip({
   durationTicks = 0,
   lowestNote = 0,
   highestNote = 127,
-  name = 'clip',
   onNoteClick,
 }: ClipProps) {
   const height = highestNote - lowestNote + 1
@@ -29,9 +28,9 @@ function Clip({
   }
 
   return (
-    <div className="clip bg-sky-50 rounded border-2 border-sky-100 flex flex-col h-full">
-      <div className="clip-title bg-sky-100 py-0.5 px-1 text-sky-800 flex-shrink-0"></div>
-      <div className="clip-notes py-4 flex-grow">
+    <div className="clip flex h-full flex-col rounded border-2 border-sky-100 bg-sky-50">
+      <div className="clip-title flex-shrink-0 bg-sky-100 py-0.5 px-1 text-sky-800"></div>
+      <div className="clip-notes flex-grow py-4">
         <svg
           viewBox={`${startTicks} 0 ${durationTicks} ${height}`}
           preserveAspectRatio="none"
@@ -49,7 +48,14 @@ function Clip({
                 height="1"
                 x={note.startTicks}
                 y={highestNote - note.noteNumber}
-                className="fill-sky-800 hover:outline-4 hover:outline-sky-900 hover:fill-slate-100 hover:drop-shadow"
+                style={{
+                  fill: `${
+                    note.midiChannel === 9 || note.midiChannel === 10
+                      ? 'hsla(200, 48%, 29%, 0.3)'
+                      : 'hsla(200, 98%, 29%, 1)'
+                  }`,
+                }}
+                className="fill-sky-800"
               />
             )
           })}

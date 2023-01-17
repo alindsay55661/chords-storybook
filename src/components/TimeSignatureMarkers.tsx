@@ -4,15 +4,17 @@ type SignatureProps = {
   timeSignatures: TimeSignature[]
   timings: Timings
   width: number
+  leftOffset: number
 }
 export default function TimeSignatureMarkers({
   timings,
   timeSignatures,
   width,
+  leftOffset,
 }: SignatureProps) {
   const ticksPerPixel = timings.durationTicks / width
   const markers = timeSignatures.map((ts, idx) => {
-    const x = ts.startTicks / ticksPerPixel
+    const x = ts.startTicks / ticksPerPixel + leftOffset
     return {
       key: `${ts.numerator}-${ts.denominator}-${idx}`,
       x,
@@ -22,26 +24,23 @@ export default function TimeSignatureMarkers({
 
   return (
     <div
-      className="relative h-6"
-      style={{ width: `${width}px` }}
+      className="relative h-5 bg-slate-700 text-white"
+      style={{ width: `${width + leftOffset}px` }}
     >
+      <div className="sticky left-0 z-50 h-full w-[80px] overflow-hidden bg-slate-700 shadow-right">
+        <div className="py-0.5 px-2  text-xs">Time Sig.</div>
+      </div>
       {markers.map(marker => (
         <div
           key={marker.key}
-          className="absolute flex flex-col h-full"
+          className="absolute top-0 flex h-full flex-col border-l border-slate-500"
           style={{ left: `${marker.x}px` }}
         >
-          <div className="flex-shrink-0">{marker.label}</div>
+          <div className="flex-shrink-0 pt-0.5 pl-1 text-xs">
+            {marker.label}
+          </div>
         </div>
       ))}
     </div>
   )
 }
-
-// ;<div
-//   key={marker.key}
-//   className="absolute h-full bg-slate-100"
-//   style={{ left: `${marker.x}px`, width: `${marker.w - 2}px` }}
-// >
-//   <div className=" text-center p-1 text-xs">{marker.label}</div>
-// </div>

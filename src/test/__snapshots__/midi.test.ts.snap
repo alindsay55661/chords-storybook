@@ -14,6 +14,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 113,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "G",
                   "G",
@@ -28,6 +29,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 251,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "A",
                   "A",
@@ -42,6 +44,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 34,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "A",
                   "A",
@@ -56,6 +59,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 305,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "E",
                   "E",
@@ -70,6 +74,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 355,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "C",
                   "C",
@@ -84,6 +89,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 274,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "A",
                   "A",
@@ -98,6 +104,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 49,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "D",
                   "D",
@@ -112,6 +119,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 72,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "G",
                   "G",
@@ -126,6 +134,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 97,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "B",
                   "B",
@@ -140,6 +149,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 35,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "A",
                   "A",
@@ -154,6 +164,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 55,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "D",
                   "D",
@@ -168,6 +179,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 43,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "A",
                   "A",
@@ -182,6 +194,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 34,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "A",
                   "A",
@@ -196,6 +209,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 128,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "G",
                   "G",
@@ -210,6 +224,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 264,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "E",
                   "E",
@@ -224,6 +239,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 38,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "A",
                   "A",
@@ -238,6 +254,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 240,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "A",
                   "A",
@@ -252,6 +269,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 395,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "C",
                   "C",
@@ -266,6 +284,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 103,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "D",
                   "D",
@@ -280,6 +299,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 113,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "G",
                   "G",
@@ -294,6 +314,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 167,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "B",
                   "B",
@@ -308,6 +329,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 40,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "A",
                   "A",
@@ -322,6 +344,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 83,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "D",
                   "D",
@@ -336,6 +359,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 38,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "A",
                   "A",
@@ -350,6 +374,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 33,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "D",
                   "D",
@@ -364,6 +389,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 3,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "E",
                   "E",
@@ -385,6 +411,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 113,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "G",
                   "G",
@@ -399,6 +426,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 251,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "A",
                   "A",
@@ -413,6 +441,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 34,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "A",
                   "A",
@@ -427,6 +456,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 305,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "E",
                   "E",
@@ -441,6 +471,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 355,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "C",
                   "C",
@@ -455,6 +486,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 274,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "A",
                   "A",
@@ -469,6 +501,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 49,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "D",
                   "D",
@@ -483,6 +516,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 72,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "G",
                   "G",
@@ -497,6 +531,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 97,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "B",
                   "B",
@@ -511,6 +546,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 35,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "A",
                   "A",
@@ -525,6 +561,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 55,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "D",
                   "D",
@@ -539,6 +576,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 43,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "A",
                   "A",
@@ -553,6 +591,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 34,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "A",
                   "A",
@@ -567,6 +606,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 128,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "G",
                   "G",
@@ -581,6 +621,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 264,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "E",
                   "E",
@@ -595,6 +636,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 38,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "A",
                   "A",
@@ -609,6 +651,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 240,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "A",
                   "A",
@@ -623,6 +666,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 395,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "C",
                   "C",
@@ -637,6 +681,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 103,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "D",
                   "D",
@@ -651,6 +696,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 113,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "G",
                   "G",
@@ -665,6 +711,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 167,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "B",
                   "B",
@@ -679,6 +726,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 40,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "A",
                   "A",
@@ -693,6 +741,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 83,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "D",
                   "D",
@@ -707,6 +756,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 38,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "A",
                   "A",
@@ -721,6 +771,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 33,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "D",
                   "D",
@@ -735,6 +786,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 3,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "E",
                   "E",
@@ -756,6 +808,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 113,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "G",
                   "G",
@@ -770,6 +823,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 251,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "A",
                   "A",
@@ -784,6 +838,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 34,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "A",
                   "A",
@@ -798,6 +853,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 305,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "E",
                   "E",
@@ -812,6 +868,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 355,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "C",
                   "C",
@@ -826,6 +883,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 274,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "A",
                   "A",
@@ -840,6 +898,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 49,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "D",
                   "D",
@@ -854,6 +913,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 72,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "G",
                   "G",
@@ -868,6 +928,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 97,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "B",
                   "B",
@@ -882,6 +943,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 35,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "A",
                   "A",
@@ -896,6 +958,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 55,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "D",
                   "D",
@@ -910,6 +973,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 43,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "A",
                   "A",
@@ -924,6 +988,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 34,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "A",
                   "A",
@@ -938,6 +1003,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 128,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "G",
                   "G",
@@ -952,6 +1018,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 264,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "E",
                   "E",
@@ -966,6 +1033,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 38,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "A",
                   "A",
@@ -980,6 +1048,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 240,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "A",
                   "A",
@@ -994,6 +1063,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 395,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "C",
                   "C",
@@ -1008,6 +1078,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 103,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "D",
                   "D",
@@ -1022,6 +1093,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 113,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "G",
                   "G",
@@ -1036,6 +1108,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 167,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "B",
                   "B",
@@ -1050,6 +1123,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 40,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "A",
                   "A",
@@ -1064,6 +1138,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 83,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "D",
                   "D",
@@ -1078,6 +1153,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 38,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "A",
                   "A",
@@ -1092,6 +1168,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 33,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "D",
                   "D",
@@ -1106,6 +1183,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 3,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "E",
                   "E",
@@ -1127,6 +1205,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 113,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "G",
                   "G",
@@ -1141,6 +1220,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 251,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "A",
                   "A",
@@ -1155,6 +1235,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 34,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "A",
                   "A",
@@ -1169,6 +1250,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 305,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "E",
                   "E",
@@ -1183,6 +1265,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 355,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "C",
                   "C",
@@ -1197,6 +1280,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 274,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "A",
                   "A",
@@ -1211,6 +1295,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 49,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "D",
                   "D",
@@ -1225,6 +1310,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 72,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "G",
                   "G",
@@ -1239,6 +1325,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 97,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "B",
                   "B",
@@ -1253,6 +1340,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 35,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "A",
                   "A",
@@ -1267,6 +1355,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 55,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "D",
                   "D",
@@ -1281,6 +1370,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 43,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "A",
                   "A",
@@ -1295,6 +1385,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 34,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "A",
                   "A",
@@ -1309,6 +1400,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 128,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "G",
                   "G",
@@ -1323,6 +1415,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 264,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "E",
                   "E",
@@ -1337,6 +1430,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 38,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "A",
                   "A",
@@ -1351,6 +1445,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 240,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "A",
                   "A",
@@ -1365,6 +1460,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 395,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "C",
                   "C",
@@ -1379,6 +1475,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 103,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "D",
                   "D",
@@ -1393,6 +1490,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 113,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "G",
                   "G",
@@ -1407,6 +1505,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 167,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "B",
                   "B",
@@ -1421,6 +1520,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 40,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "A",
                   "A",
@@ -1435,6 +1535,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 83,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "D",
                   "D",
@@ -1449,6 +1550,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 38,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "A",
                   "A",
@@ -1463,6 +1565,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 33,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "D",
                   "D",
@@ -1477,6 +1580,7 @@ exports[`analyze() 1`] = `
               {
                 "durationTicks": 3,
                 "id": "removed",
+                "midiChannel": 0,
                 "noteName": [
                   "E",
                   "E",
@@ -1498,6 +1602,7 @@ exports[`analyze() 1`] = `
           {
             "durationTicks": 113,
             "id": "removed",
+            "midiChannel": 0,
             "noteName": [
               "G",
               "G",
@@ -1512,6 +1617,7 @@ exports[`analyze() 1`] = `
           {
             "durationTicks": 251,
             "id": "removed",
+            "midiChannel": 0,
             "noteName": [
               "A",
               "A",
@@ -1526,6 +1632,7 @@ exports[`analyze() 1`] = `
           {
             "durationTicks": 34,
             "id": "removed",
+            "midiChannel": 0,
             "noteName": [
               "A",
               "A",
@@ -1540,6 +1647,7 @@ exports[`analyze() 1`] = `
           {
             "durationTicks": 305,
             "id": "removed",
+            "midiChannel": 0,
             "noteName": [
               "E",
               "E",
@@ -1554,6 +1662,7 @@ exports[`analyze() 1`] = `
           {
             "durationTicks": 355,
             "id": "removed",
+            "midiChannel": 0,
             "noteName": [
               "C",
               "C",
@@ -1568,6 +1677,7 @@ exports[`analyze() 1`] = `
           {
             "durationTicks": 274,
             "id": "removed",
+            "midiChannel": 0,
             "noteName": [
               "A",
               "A",
@@ -1582,6 +1692,7 @@ exports[`analyze() 1`] = `
           {
             "durationTicks": 49,
             "id": "removed",
+            "midiChannel": 0,
             "noteName": [
               "D",
               "D",
@@ -1596,6 +1707,7 @@ exports[`analyze() 1`] = `
           {
             "durationTicks": 72,
             "id": "removed",
+            "midiChannel": 0,
             "noteName": [
               "G",
               "G",
@@ -1610,6 +1722,7 @@ exports[`analyze() 1`] = `
           {
             "durationTicks": 97,
             "id": "removed",
+            "midiChannel": 0,
             "noteName": [
               "B",
               "B",
@@ -1624,6 +1737,7 @@ exports[`analyze() 1`] = `
           {
             "durationTicks": 35,
             "id": "removed",
+            "midiChannel": 0,
             "noteName": [
               "A",
               "A",
@@ -1638,6 +1752,7 @@ exports[`analyze() 1`] = `
           {
             "durationTicks": 55,
             "id": "removed",
+            "midiChannel": 0,
             "noteName": [
               "D",
               "D",
@@ -1652,6 +1767,7 @@ exports[`analyze() 1`] = `
           {
             "durationTicks": 43,
             "id": "removed",
+            "midiChannel": 0,
             "noteName": [
               "A",
               "A",
@@ -1666,6 +1782,7 @@ exports[`analyze() 1`] = `
           {
             "durationTicks": 34,
             "id": "removed",
+            "midiChannel": 0,
             "noteName": [
               "A",
               "A",
@@ -1680,6 +1797,7 @@ exports[`analyze() 1`] = `
           {
             "durationTicks": 128,
             "id": "removed",
+            "midiChannel": 0,
             "noteName": [
               "G",
               "G",
@@ -1694,6 +1812,7 @@ exports[`analyze() 1`] = `
           {
             "durationTicks": 264,
             "id": "removed",
+            "midiChannel": 0,
             "noteName": [
               "E",
               "E",
@@ -1708,6 +1827,7 @@ exports[`analyze() 1`] = `
           {
             "durationTicks": 38,
             "id": "removed",
+            "midiChannel": 0,
             "noteName": [
               "A",
               "A",
@@ -1722,6 +1842,7 @@ exports[`analyze() 1`] = `
           {
             "durationTicks": 240,
             "id": "removed",
+            "midiChannel": 0,
             "noteName": [
               "A",
               "A",
@@ -1736,6 +1857,7 @@ exports[`analyze() 1`] = `
           {
             "durationTicks": 395,
             "id": "removed",
+            "midiChannel": 0,
             "noteName": [
               "C",
               "C",
@@ -1750,6 +1872,7 @@ exports[`analyze() 1`] = `
           {
             "durationTicks": 103,
             "id": "removed",
+            "midiChannel": 0,
             "noteName": [
               "D",
               "D",
@@ -1764,6 +1887,7 @@ exports[`analyze() 1`] = `
           {
             "durationTicks": 113,
             "id": "removed",
+            "midiChannel": 0,
             "noteName": [
               "G",
               "G",
@@ -1778,6 +1902,7 @@ exports[`analyze() 1`] = `
           {
             "durationTicks": 167,
             "id": "removed",
+            "midiChannel": 0,
             "noteName": [
               "B",
               "B",
@@ -1792,6 +1917,7 @@ exports[`analyze() 1`] = `
           {
             "durationTicks": 40,
             "id": "removed",
+            "midiChannel": 0,
             "noteName": [
               "A",
               "A",
@@ -1806,6 +1932,7 @@ exports[`analyze() 1`] = `
           {
             "durationTicks": 83,
             "id": "removed",
+            "midiChannel": 0,
             "noteName": [
               "D",
               "D",
@@ -1820,6 +1947,7 @@ exports[`analyze() 1`] = `
           {
             "durationTicks": 38,
             "id": "removed",
+            "midiChannel": 0,
             "noteName": [
               "A",
               "A",
@@ -1834,6 +1962,7 @@ exports[`analyze() 1`] = `
           {
             "durationTicks": 33,
             "id": "removed",
+            "midiChannel": 0,
             "noteName": [
               "D",
               "D",
@@ -1848,6 +1977,7 @@ exports[`analyze() 1`] = `
           {
             "durationTicks": 3,
             "id": "removed",
+            "midiChannel": 0,
             "noteName": [
               "E",
               "E",
@@ -1862,751 +1992,6 @@ exports[`analyze() 1`] = `
         ],
         "startTicks": 0,
       },
-      {
-        "beatCount": 4,
-        "beats": [
-          {
-            "durationTicks": 480,
-            "index": 4,
-            "notes": [
-              {
-                "durationTicks": 113,
-                "id": "removed",
-                "noteName": [
-                  "G",
-                  "G",
-                ],
-                "noteNameWithOctave": [
-                  "G4",
-                  "G4",
-                ],
-                "noteNumber": 67,
-                "startTicks": 0,
-              },
-              {
-                "durationTicks": 251,
-                "id": "removed",
-                "noteName": [
-                  "A",
-                  "A",
-                ],
-                "noteNameWithOctave": [
-                  "A2",
-                  "A2",
-                ],
-                "noteNumber": 45,
-                "startTicks": 2,
-              },
-              {
-                "durationTicks": 34,
-                "id": "removed",
-                "noteName": [
-                  "A",
-                  "A",
-                ],
-                "noteNameWithOctave": [
-                  "A3",
-                  "A3",
-                ],
-                "noteNumber": 57,
-                "startTicks": 253,
-              },
-              {
-                "durationTicks": 305,
-                "id": "removed",
-                "noteName": [
-                  "E",
-                  "E",
-                ],
-                "noteNameWithOctave": [
-                  "E4",
-                  "E4",
-                ],
-                "noteNumber": 64,
-                "startTicks": 0,
-              },
-              {
-                "durationTicks": 355,
-                "id": "removed",
-                "noteName": [
-                  "C",
-                  "C",
-                ],
-                "noteNameWithOctave": [
-                  "C5",
-                  "C5",
-                ],
-                "noteNumber": 72,
-                "startTicks": 2,
-              },
-              {
-                "durationTicks": 274,
-                "id": "removed",
-                "noteName": [
-                  "A",
-                  "A",
-                ],
-                "noteNameWithOctave": [
-                  "A4",
-                  "A4",
-                ],
-                "noteNumber": 69,
-                "startTicks": 98,
-              },
-              {
-                "durationTicks": 49,
-                "id": "removed",
-                "noteName": [
-                  "D",
-                  "D",
-                ],
-                "noteNameWithOctave": [
-                  "D4",
-                  "D4",
-                ],
-                "noteNumber": 62,
-                "startTicks": 379,
-              },
-              {
-                "durationTicks": 72,
-                "id": "removed",
-                "noteName": [
-                  "G",
-                  "G",
-                ],
-                "noteNameWithOctave": [
-                  "G4",
-                  "G4",
-                ],
-                "noteNumber": 67,
-                "startTicks": 377,
-              },
-              {
-                "durationTicks": 97,
-                "id": "removed",
-                "noteName": [
-                  "B",
-                  "B",
-                ],
-                "noteNameWithOctave": [
-                  "B4",
-                  "B4",
-                ],
-                "noteNumber": 71,
-                "startTicks": 368,
-              },
-              {
-                "durationTicks": 35,
-                "id": "removed",
-                "noteName": [
-                  "A",
-                  "A",
-                ],
-                "noteNameWithOctave": [
-                  "A3",
-                  "A3",
-                ],
-                "noteNumber": 57,
-                "startTicks": 484,
-              },
-              {
-                "durationTicks": 55,
-                "id": "removed",
-                "noteName": [
-                  "D",
-                  "D",
-                ],
-                "noteNameWithOctave": [
-                  "D4",
-                  "D4",
-                ],
-                "noteNumber": 62,
-                "startTicks": 602,
-              },
-              {
-                "durationTicks": 43,
-                "id": "removed",
-                "noteName": [
-                  "A",
-                  "A",
-                ],
-                "noteNameWithOctave": [
-                  "A3",
-                  "A3",
-                ],
-                "noteNumber": 57,
-                "startTicks": 710,
-              },
-              {
-                "durationTicks": 34,
-                "id": "removed",
-                "noteName": [
-                  "A",
-                  "A",
-                ],
-                "noteNameWithOctave": [
-                  "A2",
-                  "A2",
-                ],
-                "noteNumber": 45,
-                "startTicks": 839,
-              },
-              {
-                "durationTicks": 128,
-                "id": "removed",
-                "noteName": [
-                  "G",
-                  "G",
-                ],
-                "noteNameWithOctave": [
-                  "G4",
-                  "G4",
-                ],
-                "noteNumber": 67,
-                "startTicks": 957,
-              },
-              {
-                "durationTicks": 264,
-                "id": "removed",
-                "noteName": [
-                  "E",
-                  "E",
-                ],
-                "noteNameWithOctave": [
-                  "E4",
-                  "E4",
-                ],
-                "noteNumber": 64,
-                "startTicks": 959,
-              },
-              {
-                "durationTicks": 38,
-                "id": "removed",
-                "noteName": [
-                  "A",
-                  "A",
-                ],
-                "noteNameWithOctave": [
-                  "A3",
-                  "A3",
-                ],
-                "noteNumber": 57,
-                "startTicks": 1190,
-              },
-              {
-                "durationTicks": 240,
-                "id": "removed",
-                "noteName": [
-                  "A",
-                  "A",
-                ],
-                "noteNameWithOctave": [
-                  "A4",
-                  "A4",
-                ],
-                "noteNumber": 69,
-                "startTicks": 1079,
-              },
-              {
-                "durationTicks": 395,
-                "id": "removed",
-                "noteName": [
-                  "C",
-                  "C",
-                ],
-                "noteNameWithOctave": [
-                  "C5",
-                  "C5",
-                ],
-                "noteNumber": 72,
-                "startTicks": 960,
-              },
-              {
-                "durationTicks": 103,
-                "id": "removed",
-                "noteName": [
-                  "D",
-                  "D",
-                ],
-                "noteNameWithOctave": [
-                  "D4",
-                  "D4",
-                ],
-                "noteNumber": 62,
-                "startTicks": 1318,
-              },
-              {
-                "durationTicks": 113,
-                "id": "removed",
-                "noteName": [
-                  "G",
-                  "G",
-                ],
-                "noteNameWithOctave": [
-                  "G4",
-                  "G4",
-                ],
-                "noteNumber": 67,
-                "startTicks": 1318,
-              },
-              {
-                "durationTicks": 167,
-                "id": "removed",
-                "noteName": [
-                  "B",
-                  "B",
-                ],
-                "noteNameWithOctave": [
-                  "B4",
-                  "B4",
-                ],
-                "noteNumber": 71,
-                "startTicks": 1312,
-              },
-              {
-                "durationTicks": 40,
-                "id": "removed",
-                "noteName": [
-                  "A",
-                  "A",
-                ],
-                "noteNameWithOctave": [
-                  "A3",
-                  "A3",
-                ],
-                "noteNumber": 57,
-                "startTicks": 1439,
-              },
-              {
-                "durationTicks": 83,
-                "id": "removed",
-                "noteName": [
-                  "D",
-                  "D",
-                ],
-                "noteNameWithOctave": [
-                  "D4",
-                  "D4",
-                ],
-                "noteNumber": 62,
-                "startTicks": 1561,
-              },
-              {
-                "durationTicks": 38,
-                "id": "removed",
-                "noteName": [
-                  "A",
-                  "A",
-                ],
-                "noteNameWithOctave": [
-                  "A3",
-                  "A3",
-                ],
-                "noteNumber": 57,
-                "startTicks": 1684,
-              },
-              {
-                "durationTicks": 33,
-                "id": "removed",
-                "noteName": [
-                  "D",
-                  "D",
-                ],
-                "noteNameWithOctave": [
-                  "D3",
-                  "D3",
-                ],
-                "noteNumber": 50,
-                "startTicks": 1804,
-              },
-              {
-                "durationTicks": 3,
-                "id": "removed",
-                "noteName": [
-                  "E",
-                  "E",
-                ],
-                "noteNameWithOctave": [
-                  "E4",
-                  "E4",
-                ],
-                "noteNumber": 64,
-                "startTicks": 1917,
-              },
-            ],
-            "startTicks": 1920,
-          },
-        ],
-        "durationTicks": 1920,
-        "index": 1,
-        "notes": [
-          {
-            "durationTicks": 113,
-            "id": "removed",
-            "noteName": [
-              "G",
-              "G",
-            ],
-            "noteNameWithOctave": [
-              "G4",
-              "G4",
-            ],
-            "noteNumber": 67,
-            "startTicks": 0,
-          },
-          {
-            "durationTicks": 251,
-            "id": "removed",
-            "noteName": [
-              "A",
-              "A",
-            ],
-            "noteNameWithOctave": [
-              "A2",
-              "A2",
-            ],
-            "noteNumber": 45,
-            "startTicks": 2,
-          },
-          {
-            "durationTicks": 34,
-            "id": "removed",
-            "noteName": [
-              "A",
-              "A",
-            ],
-            "noteNameWithOctave": [
-              "A3",
-              "A3",
-            ],
-            "noteNumber": 57,
-            "startTicks": 253,
-          },
-          {
-            "durationTicks": 305,
-            "id": "removed",
-            "noteName": [
-              "E",
-              "E",
-            ],
-            "noteNameWithOctave": [
-              "E4",
-              "E4",
-            ],
-            "noteNumber": 64,
-            "startTicks": 0,
-          },
-          {
-            "durationTicks": 355,
-            "id": "removed",
-            "noteName": [
-              "C",
-              "C",
-            ],
-            "noteNameWithOctave": [
-              "C5",
-              "C5",
-            ],
-            "noteNumber": 72,
-            "startTicks": 2,
-          },
-          {
-            "durationTicks": 274,
-            "id": "removed",
-            "noteName": [
-              "A",
-              "A",
-            ],
-            "noteNameWithOctave": [
-              "A4",
-              "A4",
-            ],
-            "noteNumber": 69,
-            "startTicks": 98,
-          },
-          {
-            "durationTicks": 49,
-            "id": "removed",
-            "noteName": [
-              "D",
-              "D",
-            ],
-            "noteNameWithOctave": [
-              "D4",
-              "D4",
-            ],
-            "noteNumber": 62,
-            "startTicks": 379,
-          },
-          {
-            "durationTicks": 72,
-            "id": "removed",
-            "noteName": [
-              "G",
-              "G",
-            ],
-            "noteNameWithOctave": [
-              "G4",
-              "G4",
-            ],
-            "noteNumber": 67,
-            "startTicks": 377,
-          },
-          {
-            "durationTicks": 97,
-            "id": "removed",
-            "noteName": [
-              "B",
-              "B",
-            ],
-            "noteNameWithOctave": [
-              "B4",
-              "B4",
-            ],
-            "noteNumber": 71,
-            "startTicks": 368,
-          },
-          {
-            "durationTicks": 35,
-            "id": "removed",
-            "noteName": [
-              "A",
-              "A",
-            ],
-            "noteNameWithOctave": [
-              "A3",
-              "A3",
-            ],
-            "noteNumber": 57,
-            "startTicks": 484,
-          },
-          {
-            "durationTicks": 55,
-            "id": "removed",
-            "noteName": [
-              "D",
-              "D",
-            ],
-            "noteNameWithOctave": [
-              "D4",
-              "D4",
-            ],
-            "noteNumber": 62,
-            "startTicks": 602,
-          },
-          {
-            "durationTicks": 43,
-            "id": "removed",
-            "noteName": [
-              "A",
-              "A",
-            ],
-            "noteNameWithOctave": [
-              "A3",
-              "A3",
-            ],
-            "noteNumber": 57,
-            "startTicks": 710,
-          },
-          {
-            "durationTicks": 34,
-            "id": "removed",
-            "noteName": [
-              "A",
-              "A",
-            ],
-            "noteNameWithOctave": [
-              "A2",
-              "A2",
-            ],
-            "noteNumber": 45,
-            "startTicks": 839,
-          },
-          {
-            "durationTicks": 128,
-            "id": "removed",
-            "noteName": [
-              "G",
-              "G",
-            ],
-            "noteNameWithOctave": [
-              "G4",
-              "G4",
-            ],
-            "noteNumber": 67,
-            "startTicks": 957,
-          },
-          {
-            "durationTicks": 264,
-            "id": "removed",
-            "noteName": [
-              "E",
-              "E",
-            ],
-            "noteNameWithOctave": [
-              "E4",
-              "E4",
-            ],
-            "noteNumber": 64,
-            "startTicks": 959,
-          },
-          {
-            "durationTicks": 38,
-            "id": "removed",
-            "noteName": [
-              "A",
-              "A",
-            ],
-            "noteNameWithOctave": [
-              "A3",
-              "A3",
-            ],
-            "noteNumber": 57,
-            "startTicks": 1190,
-          },
-          {
-            "durationTicks": 240,
-            "id": "removed",
-            "noteName": [
-              "A",
-              "A",
-            ],
-            "noteNameWithOctave": [
-              "A4",
-              "A4",
-            ],
-            "noteNumber": 69,
-            "startTicks": 1079,
-          },
-          {
-            "durationTicks": 395,
-            "id": "removed",
-            "noteName": [
-              "C",
-              "C",
-            ],
-            "noteNameWithOctave": [
-              "C5",
-              "C5",
-            ],
-            "noteNumber": 72,
-            "startTicks": 960,
-          },
-          {
-            "durationTicks": 103,
-            "id": "removed",
-            "noteName": [
-              "D",
-              "D",
-            ],
-            "noteNameWithOctave": [
-              "D4",
-              "D4",
-            ],
-            "noteNumber": 62,
-            "startTicks": 1318,
-          },
-          {
-            "durationTicks": 113,
-            "id": "removed",
-            "noteName": [
-              "G",
-              "G",
-            ],
-            "noteNameWithOctave": [
-              "G4",
-              "G4",
-            ],
-            "noteNumber": 67,
-            "startTicks": 1318,
-          },
-          {
-            "durationTicks": 167,
-            "id": "removed",
-            "noteName": [
-              "B",
-              "B",
-            ],
-            "noteNameWithOctave": [
-              "B4",
-              "B4",
-            ],
-            "noteNumber": 71,
-            "startTicks": 1312,
-          },
-          {
-            "durationTicks": 40,
-            "id": "removed",
-            "noteName": [
-              "A",
-              "A",
-            ],
-            "noteNameWithOctave": [
-              "A3",
-              "A3",
-            ],
-            "noteNumber": 57,
-            "startTicks": 1439,
-          },
-          {
-            "durationTicks": 83,
-            "id": "removed",
-            "noteName": [
-              "D",
-              "D",
-            ],
-            "noteNameWithOctave": [
-              "D4",
-              "D4",
-            ],
-            "noteNumber": 62,
-            "startTicks": 1561,
-          },
-          {
-            "durationTicks": 38,
-            "id": "removed",
-            "noteName": [
-              "A",
-              "A",
-            ],
-            "noteNameWithOctave": [
-              "A3",
-              "A3",
-            ],
-            "noteNumber": 57,
-            "startTicks": 1684,
-          },
-          {
-            "durationTicks": 33,
-            "id": "removed",
-            "noteName": [
-              "D",
-              "D",
-            ],
-            "noteNameWithOctave": [
-              "D3",
-              "D3",
-            ],
-            "noteNumber": 50,
-            "startTicks": 1804,
-          },
-          {
-            "durationTicks": 3,
-            "id": "removed",
-            "noteName": [
-              "E",
-              "E",
-            ],
-            "noteNameWithOctave": [
-              "E4",
-              "E4",
-            ],
-            "noteNumber": 64,
-            "startTicks": 1917,
-          },
-        ],
-        "startTicks": 2400,
-      },
     ],
     "duration": {},
     "frequency": {},
@@ -2619,6 +2004,7 @@ exports[`analyze() 1`] = `
       "beatTicksMultiplier": 1,
       "beatsInSignature": 4,
       "denominator": 4,
+      "durationTicks": 1920,
       "numerator": 4,
       "startBeat": 0,
       "startTicks": 0,
@@ -2721,28 +2107,6 @@ exports[`chord detection 1`] = `
       "Gb",
     },
     "startTicks": 1920,
-    "uniqueNotes": [],
-    "unit": "bar",
-    "unitNumber": 0,
-  },
-  {
-    "chordNotes": Set {},
-    "chords": [],
-    "distribution": {
-      "ticks": {},
-      "time": {},
-    },
-    "durationTicks": 1920,
-    "notes": Set {
-      "G",
-      "A",
-      "E",
-      "C",
-      "D",
-      "B",
-      "Gb",
-    },
-    "startTicks": 4320,
     "uniqueNotes": [],
     "unit": "bar",
     "unitNumber": 0,
@@ -2955,17 +2319,11 @@ exports[`parseMidi() should parse to a known format 1`] = `
           "notes": [],
           "startTicks": 0,
         },
-        {
-          "durationTicks": 480,
-          "index": 1,
-          "notes": [],
-          "startTicks": 480,
-        },
       ],
-      "durationTicks": 1920,
+      "durationTicks": 480,
       "index": 0,
       "notes": [],
-      "startTicks": 960,
+      "startTicks": 0,
     },
   ],
   "notesMap": {},
@@ -2974,6 +2332,7 @@ exports[`parseMidi() should parse to a known format 1`] = `
       "beatTicksMultiplier": 1,
       "beatsInSignature": 1,
       "denominator": 4,
+      "durationTicks": 479,
       "numerator": 4,
       "startBeat": 0,
       "startTicks": 0,
@@ -2995,6 +2354,7 @@ exports[`parseMidi() should parse to a known format 1`] = `
         {
           "durationTicks": 35,
           "id": "removed",
+          "midiChannel": 0,
           "noteName": [
             "A",
             "A",
@@ -3009,6 +2369,7 @@ exports[`parseMidi() should parse to a known format 1`] = `
         {
           "durationTicks": 55,
           "id": "removed",
+          "midiChannel": 0,
           "noteName": [
             "D",
             "D",
@@ -3023,6 +2384,7 @@ exports[`parseMidi() should parse to a known format 1`] = `
         {
           "durationTicks": 43,
           "id": "removed",
+          "midiChannel": 0,
           "noteName": [
             "Bb",
             "A#",
@@ -3037,6 +2399,7 @@ exports[`parseMidi() should parse to a known format 1`] = `
         {
           "durationTicks": 34,
           "id": "removed",
+          "midiChannel": 0,
           "noteName": [
             "A",
             "A",
@@ -3051,6 +2414,7 @@ exports[`parseMidi() should parse to a known format 1`] = `
         {
           "durationTicks": 18,
           "id": "removed",
+          "midiChannel": 0,
           "noteName": [
             "G",
             "G",

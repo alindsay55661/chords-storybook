@@ -1,22 +1,20 @@
-import { Stats } from '../utils/analyze'
-import { Timings, TimeSignature } from '../utils/parse'
+import { Song } from '../utils/analyze'
 import { detectChords } from '../utils/chords'
 
 type ChordMarkerProps = {
-  analyzed: Stats
-  timings: Timings
+  song: Song
   width: number
+  leftOffset: number
 }
 export default function ChordMarkers({
-  analyzed,
-  timings,
+  song,
   width,
+  leftOffset,
 }: ChordMarkerProps) {
-  const chords = detectChords(analyzed, { unit: 'bar' })
-  const ticksPerPixel = timings.durationTicks / width
-  const chordWidth = timings.ticksPerBeat / ticksPerPixel
-  const markers = chords.map((chord, idx) => {
-    const x = chord.startTicks / ticksPerPixel
+  const chords = detectChords(song, { unit: 'bar' })
+  const ticksPerPixel = song.timings.durationTicks / width
+  const markers = chords.map(chord => {
+    const x = chord.startTicks / ticksPerPixel + leftOffset
     const label = chord.chords.length ? chord.chords[0] : ''
     return {
       key: `${chord.startTicks}`,
@@ -28,16 +26,19 @@ export default function ChordMarkers({
 
   return (
     <div
-      className="relative h-8"
-      style={{ width: `${width}px` }}
+      className="relative h-10 bg-slate-100"
+      style={{ width: `${width + leftOffset}px` }}
     >
+      <div className="sticky left-0 z-50 h-full w-[80px] overflow-hidden border-r border-slate-400 bg-slate-200 shadow-right">
+        <div className="p-3 text-center text-xs">Chords</div>
+      </div>
       {markers.map(marker => (
         <div
           key={marker.key}
-          className="absolute h-full bg-slate-100"
-          style={{ left: `${marker.x}px`, width: `${marker.w - 2}px` }}
+          className="absolute top-0 grid h-full place-content-center overflow-hidden border-r border-slate-400"
+          style={{ left: `${marker.x}px`, width: `${marker.w}px` }}
         >
-          <div className="text-center p-1 text-xs">{marker.label}</div>
+          <div className="font-bold">{marker.label}</div>
         </div>
       ))}
     </div>

@@ -1,10 +1,10 @@
 import * as Tonal from 'tonal'
-import type { MidiPart, Bar, Beat, Note, TimeSignature } from './parse'
-import type { DetectUnit, Stats } from './analyze'
+import type { Note } from './parse'
+import type { DetectUnit, Song } from './analyze'
 
 export type DetectChordOptions = {
   unit?: DetectUnit
-  lengthThreshold?: number
+  excludeThreshold?: number
 }
 
 export type DetectedChords = Array<
@@ -28,48 +28,47 @@ export type ChordRange = {
 }
 
 export function detectChords(
-  stats: Stats,
+  song: Song,
   opts?: DetectChordOptions,
 ): DetectedChords {
   const options = {
     unit: 'bar',
-    lengthThreshold: 0.1,
+    excludeThreshold: 0.1,
     ...opts,
   } satisfies DetectChordOptions
   const chordRanges: ChordRange[] = []
   const { unit } = options
 
   if (unit === 'bar') {
-    stats.notes.byBar.forEach(bar => {
+    song.notes.byBar.forEach(bar => {
       chordRanges.push(
-        createChordRange(bar.notes, {
+        makeChordRange(bar.notes, {
           unit,
           startTicks: bar.startTicks,
           durationTicks: bar.durationTicks,
         }),
       )
     })
+  } else if (unit === 'beat') {
+    song.notes.byBar.forEach(bar => {
+      bar.beats.forEach(beat => {
+        chordRanges.push(
+          makeChordRange(beat.notes, {
+            unit,
+            startTicks: beat.startTicks,
+            durationTicks: beat.durationTicks,
+          }),
+        )
+      })
+    })
   }
-  // else if (unit === 'beat') {
-  //   stats.notes.byBeat.forEach(beat => {
-  //     if (beat) {
-  //       chordRanges.push(
-  //         createChordRange(beat.notes, {
-  //           unit,
-  //           startTicks: beat.startTicks,
-  //           durationTicks: stats.timings.ticksPerBeat,
-  //         }),
-  //       )
-  //     }
-  //   })
-  // }
 
-  const chords = chordsFromRanges(chordRanges, options.lengthThreshold)
+  const chords = chordsFromRanges(chordRanges, options.excludeThreshold)
 
   return chords
 }
 
-function chordsFromRanges(
+export function chordsFromRanges(
   chordRanges: ChordRange[],
   lengthThreshold: number,
 ): ChordRange[] {
@@ -96,7 +95,7 @@ function chordsFromRanges(
   return chords
 }
 
-export function createChordRange(
+export function makeChordRange(
   notes: Note[],
   options: { unit: DetectUnit; startTicks: number; durationTicks: number },
 ): ChordRange {
@@ -120,10 +119,13 @@ export function createChordRange(
 }
 
 export function addNoteToChordRange(note: Note, range: ChordRange) {
+  // Ignore notes on channel 10 (percussion)
+  if (note.midiChannel === 10) return
+
   range.notes.add(note.noteName[0])
   range.uniqueNotes.push(note)
   // Note distribution allows for advanced chord recognition
-  range = updateDistribution(range, note)
+  updateDistribution(range, note)
 }
 
 export function notePercentagesInChordRange(chordRange: ChordRange) {

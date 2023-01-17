@@ -25,7 +25,7 @@ function removeUuids(data: any, type: string) {
       break
     }
 
-    case 'stats': {
+    case 'song': {
       const cleanedBars = data.notes.byBar.map((bar: any) => {
         bar.beats = bar.beats.map((beat: any) => {
           beat.notes = beat.notes.map((note: any) => {
@@ -89,6 +89,7 @@ test('parseMidi() should parse multiple time signatures', () => {
       numerator: 5,
       startBeat: 0,
       startTicks: 0,
+      durationTicks: 146400,
       beatTicksMultiplier: 1,
     },
     {
@@ -97,6 +98,7 @@ test('parseMidi() should parse multiple time signatures', () => {
       numerator: 3,
       startBeat: 305,
       startTicks: 146400,
+      durationTicks: 4320,
       beatTicksMultiplier: 1,
     },
     {
@@ -105,6 +107,7 @@ test('parseMidi() should parse multiple time signatures', () => {
       numerator: 5,
       startBeat: 314,
       startTicks: 150720,
+      durationTicks: 46559,
       beatTicksMultiplier: 1,
     },
   ]
@@ -117,8 +120,8 @@ test('chord detection', () => {
   // const path = `${__dirname}/midi/takefivedavebrubeck.mid`
   const data = readFileSync(path)
   const parsed = parseMidi(data)
-  const stats = analyze(parsed)
-  const chords = detectChords(stats, { unit: 'bar' })
+  const song = analyze(parsed)
+  const chords = detectChords(song, { unit: 'bar' })
   const cleaned = chords.map(chord => {
     return { ...chord, uniqueNotes: [] }
   })
@@ -130,9 +133,9 @@ test('analyze()', () => {
   const path = `${__dirname}/midi/sample.mid`
   const data = readFileSync(path)
   const parsed = parseMidi(data)
-  const stats = analyze(parsed)
+  const song = analyze(parsed)
 
-  const cleaned = removeUuids(stats, 'stats')
+  const cleaned = removeUuids(song, 'song')
 
   expect(cleaned).toMatchSnapshot()
 })

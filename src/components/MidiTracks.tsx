@@ -1,49 +1,52 @@
-import { useMemo, useRef, useEffect, memo } from 'react'
+import { useEffect, useState } from 'react'
 import { Timings, TimeSignature, Track } from '../utils/parse'
+import SongHeaders from './SongHeaders'
 import TrackHeader from './TrackHeader'
 import Clip from './Clip'
 import BeatLines from './BeatLines'
-import TimeSignatureMarkers from './TimeSignatureMarkers'
-import ChordMarkers from './ChordMarkers'
-import BeatMarkers from './BeatMarkers'
-import { Stats } from '../utils/analyze'
+import { Song } from '../utils/analyze'
 
 export type MidiTracksProps = {
-  tracks: Track[]
-  timings: Timings
-  timeSignatures: TimeSignature[]
+  song: Song
   zoom?: number
   trackHeight?: number
-  analyzed: Stats
+  maxHeight?: string
 }
 
 export default function MidiTracks({
   trackHeight = 128,
+  maxHeight = '100%',
   zoom = 50,
-  tracks = [],
-  timings,
-  timeSignatures,
-  analyzed,
+  song,
 }: MidiTracksProps) {
-  const height = tracks.length * trackHeight
-  const trackWidth = (timings.durationTicks / timings.ticksPerBeat) * zoom
-  const topOffset = 70
+  const { tracks, timings } = song
+  const topOffset = 78
   const leftOffset = 82
+  const songWidth = (timings.durationTicks / timings.ticksPerBeat) * zoom
+
+  const [headerWidth, setHeaderWidth] = useState(songWidth)
+  const [headerVisible, setHeaderVisible] = useState(true)
+
+  // Debounce header rendering (expensive to resize)
+  useEffect(() => {
+    setHeaderVisible(false)
+    const timeout = setTimeout(() => {
+      setHeaderWidth(songWidth)
+      setHeaderVisible(true)
+    }, 300)
+    return () => clearTimeout(timeout)
+  }, [songWidth])
 
   return (
     <div
-      className="bg-white relative overflow-y-scroll overflow-x-scroll"
-      style={{ height: `400px` }}
+      className="relative overflow-x-scroll overflow-y-scroll bg-white"
+      style={{ maxHeight }}
     >
-      <div className="sticky left-0 z-50">
-        <div
-          className="absolute bg-white top-0 w-[80px] text-white p-4"
-          style={{ height: `${topOffset - 1}px` }}
-        ></div>
+      <div className="sticky left-0 z-40">
         {tracks.map((track, idx) => (
           <div
             key={`header-${track.id}`}
-            className="absolute z-10 left-"
+            className="left- absolute z-10 shadow-right"
             style={{ top: trackHeight * idx + topOffset }}
           >
             <TrackHeader
@@ -54,40 +57,20 @@ export default function MidiTracks({
         ))}
       </div>
 
-      <div
-        className="sticky top-0 z-40 bg-white"
-        style={{
-          height: `${topOffset}px`,
-          width: `${trackWidth + leftOffset}px`,
-        }}
-      >
-        <div
-          className="absolute"
-          style={{ left: `${leftOffset}px` }}
-        >
-          <TimeSignatureMarkers
-            timings={timings}
-            timeSignatures={timeSignatures}
-            width={trackWidth}
-          />
-          <ChordMarkers
-            analyzed={analyzed}
-            timings={timings}
-            width={trackWidth}
-          />
-          {/* <BeatMarkers
-            analyzed={analyzed}
-            timings={timings}
-            width={trackWidth}
-          /> */}
-        </div>
-      </div>
+      <SongHeaders
+        song={song}
+        songWidth={headerWidth}
+        leftOffset={leftOffset}
+        topOffset={topOffset}
+        visible={headerVisible}
+      />
 
-      <div className="pl-[82px] relative">
+      <div className="relative pl-[82px]">
         <div className="absolute z-0 h-full">
           <BeatLines
+            bars={song.notes.byBar}
             timings={timings}
-            width={`${trackWidth}px`}
+            width={songWidth}
           />
         </div>
         <div className="">
@@ -95,10 +78,10 @@ export default function MidiTracks({
             return (
               <div key={`track-${track.id}`}>
                 <div
-                  className="track border-b border-slate-200 py-0.5 z-0"
+                  className="track z-0 border-b border-slate-200 py-0.5"
                   style={{
                     height: `${trackHeight}px`,
-                    width: `${trackWidth}px`,
+                    width: `${songWidth}px`,
                   }}
                 >
                   <Clip

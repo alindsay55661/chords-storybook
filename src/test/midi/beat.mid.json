@@ -7,8 +7,9 @@
   "timeSignatures": [
     {
       "startTicks": 0,
+      "durationTicks": 479,
       "startBeat": 0,
-      "beatsInSignature": 0.9979166666666667,
+      "beatsInSignature": 1,
       "numerator": 4,
       "denominator": 4,
       "beatTicksMultiplier": 1
@@ -16,10 +17,11 @@
   ],
   "tracks": [
     {
-      "id": "47c0ebd3-f41f-4b37-8370-c9d3a259fa95",
+      "id": "1eb7f74d-1b00-4ec4-891a-b336cde25af2",
       "notes": [
         {
-          "id": "49e36d7c-f0de-417b-a651-fe4bdc856d57",
+          "id": "1296adf3-43cb-4105-8ae0-9b36eea5f01b",
+          "midiChannel": 0,
           "startTicks": 4,
           "durationTicks": 35,
           "noteNumber": 57,
@@ -33,7 +35,8 @@
           ]
         },
         {
-          "id": "eb5fb50b-44d3-47d4-9da6-f4fd03e78305",
+          "id": "61fbd7c7-a877-4b86-a07c-3a0c00bbe0ac",
+          "midiChannel": 0,
           "startTicks": 122,
           "durationTicks": 55,
           "noteNumber": 62,
@@ -47,7 +50,8 @@
           ]
         },
         {
-          "id": "db71e787-fc51-490f-9fdd-6b32937ebb0e",
+          "id": "41576220-0750-423e-b472-a74687b3c895",
+          "midiChannel": 0,
           "startTicks": 230,
           "durationTicks": 43,
           "noteNumber": 58,
@@ -61,7 +65,8 @@
           ]
         },
         {
-          "id": "188c8319-2641-4e14-9006-a72d4c526845",
+          "id": "4aa66d47-6faf-4521-a2d3-3f99750911ff",
+          "midiChannel": 0,
           "startTicks": 359,
           "durationTicks": 34,
           "noteNumber": 45,
@@ -75,7 +80,8 @@
           ]
         },
         {
-          "id": "e9f5c327-38bd-4129-a232-92a2fc9a04de",
+          "id": "0ce559f1-6872-45ff-bdff-767af32e7373",
+          "midiChannel": 0,
           "startTicks": 461,
           "durationTicks": 18,
           "noteNumber": 67,
@@ -98,8 +104,8 @@
   "barsAndBeats": [
     {
       "index": 0,
-      "startTicks": 480,
-      "durationTicks": 1920,
+      "startTicks": 0,
+      "durationTicks": 480,
       "beatCount": 4,
       "beats": [
         {
@@ -113,8 +119,9 @@
     }
   ],
   "notesMap": {
-    "49e36d7c-f0de-417b-a651-fe4bdc856d57": {
-      "id": "49e36d7c-f0de-417b-a651-fe4bdc856d57",
+    "1296adf3-43cb-4105-8ae0-9b36eea5f01b": {
+      "id": "1296adf3-43cb-4105-8ae0-9b36eea5f01b",
+      "midiChannel": 0,
       "startTicks": 4,
       "durationTicks": 35,
       "noteNumber": 57,
@@ -127,8 +134,9 @@
         "A"
       ]
     },
-    "eb5fb50b-44d3-47d4-9da6-f4fd03e78305": {
-      "id": "eb5fb50b-44d3-47d4-9da6-f4fd03e78305",
+    "61fbd7c7-a877-4b86-a07c-3a0c00bbe0ac": {
+      "id": "61fbd7c7-a877-4b86-a07c-3a0c00bbe0ac",
+      "midiChannel": 0,
       "startTicks": 122,
       "durationTicks": 55,
       "noteNumber": 62,
@@ -141,8 +149,9 @@
         "D"
       ]
     },
-    "db71e787-fc51-490f-9fdd-6b32937ebb0e": {
-      "id": "db71e787-fc51-490f-9fdd-6b32937ebb0e",
+    "41576220-0750-423e-b472-a74687b3c895": {
+      "id": "41576220-0750-423e-b472-a74687b3c895",
+      "midiChannel": 0,
       "startTicks": 230,
       "durationTicks": 43,
       "noteNumber": 58,
@@ -155,8 +164,9 @@
         "A#"
       ]
     },
-    "188c8319-2641-4e14-9006-a72d4c526845": {
-      "id": "188c8319-2641-4e14-9006-a72d4c526845",
+    "4aa66d47-6faf-4521-a2d3-3f99750911ff": {
+      "id": "4aa66d47-6faf-4521-a2d3-3f99750911ff",
+      "midiChannel": 0,
       "startTicks": 359,
       "durationTicks": 34,
       "noteNumber": 45,
@@ -169,8 +179,9 @@
         "A"
       ]
     },
-    "e9f5c327-38bd-4129-a232-92a2fc9a04de": {
-      "id": "e9f5c327-38bd-4129-a232-92a2fc9a04de",
+    "0ce559f1-6872-45ff-bdff-767af32e7373": {
+      "id": "0ce559f1-6872-45ff-bdff-767af32e7373",
+      "midiChannel": 0,
       "startTicks": 461,
       "durationTicks": 18,
       "noteNumber": 67,

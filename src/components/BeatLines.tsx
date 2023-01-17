@@ -1,15 +1,25 @@
 import { memo } from 'react'
-import { Timings } from '../utils/parse'
+import { Timings, Bar } from '../utils/parse'
 
 type BeatLinesProps = {
   timings: Timings
-  width?: string
+  bars: Bar[]
+  width: number
 }
-function BeatLines({ timings, width = '100%' }: BeatLinesProps) {
-  const beatMarkers = new Array(timings.totalBeats)
-    .fill(0)
-    .map((_, idx) => idx * timings.ticksPerBeat)
+function BeatLines({ timings, bars, width }: BeatLinesProps) {
   const markerWidth = timings.ticksPerBeat / 200
+  const markers = bars.reduce((result: any[], bar) => {
+    let firstBeat = true
+    bar.beats.forEach(beat => {
+      result.push({
+        key: `beat-marker-${beat.index}`,
+        x: beat.startTicks,
+        label: firstBeat ? bar.index + 1 : '',
+      })
+      firstBeat = false
+    })
+    return result
+  }, [])
 
   return (
     <svg
@@ -18,13 +28,13 @@ function BeatLines({ timings, width = '100%' }: BeatLinesProps) {
       width={width}
       height="100%"
     >
-      {beatMarkers.map(beat => {
+      {markers.map(beat => {
         return (
           <rect
-            key={beat}
+            key={beat.key}
             width={markerWidth}
             height="100"
-            x={beat}
+            x={beat.x}
             y={0}
             className="fill-black/30"
           />
