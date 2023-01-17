@@ -1,18 +1,55 @@
 import { useState } from 'react'
-import { detectChords } from './utils/chords'
+import Dropzone from 'react-dropzone'
 import './App.css'
 import MidiTracks from './components/MidiTracks'
 import { analyzed as data } from './stories/musicData'
+import { analyze } from './utils/analyze'
+import { parseMidi } from './utils/parse'
 
 function App() {
   const [zoom, setZoom] = useState(20)
   const [trackHeight, setTrackHeight] = useState(128)
-  // const song = data.takeFive
-  // const song = data.ghostBusters
-  const song = data.chordTest
+  const [song, setSong] = useState(data.chordTest)
+
+  function handleDroppedFiles(files: File[]) {
+    files.forEach(file => {
+      const reader = new FileReader()
+
+      reader.onabort = () => console.log('file reading was aborted')
+      reader.onerror = () => console.log('file reading has failed')
+      reader.onload = () => {
+        // Do whatever you want with the file contents
+        if (reader.result) {
+          const result = reader.result as ArrayBufferLike
+          const song = analyze(parseMidi(new Uint8Array(result)))
+          setSong(song)
+        }
+      }
+      reader.readAsArrayBuffer(file)
+    })
+  }
 
   return (
     <div>
+      <Dropzone
+        onDrop={handleDroppedFiles}
+        maxFiles={1}
+      >
+        {({ getRootProps, getInputProps }) => (
+          <section>
+            <div
+              className="bg-slate-200 p-8"
+              {...getRootProps()}
+            >
+              <input {...getInputProps()} />
+              <p>
+                Drag 'n' drop a <span className="font-bold">".mid"</span> files
+                here, or click to select files
+              </p>
+            </div>
+          </section>
+        )}
+      </Dropzone>
       <label className="inline-block p-4">
         <span className="pr-2">Track Width</span>
         <input

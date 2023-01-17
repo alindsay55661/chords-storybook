@@ -26,14 +26,16 @@ export function midiBufferToJson(data: ArrayLike<number>) {
 
 export function buildMidiPart(data: ArrayLike<number>): BaseSongData {
   const json = midiBufferToJson(data)
+  let firstTrack: mf.MidiEvent[] = []
 
-  // Only process format 1 midi
-  if (json.header.format !== 1) {
-    throw new Error('You can currently only use midi format 1!')
+  if (json.header.format === 0) {
+    // metadata is stored along side note data in the same track for format 0
+    firstTrack = json.tracks[0]
+  } else if (json.header.format === 1) {
+    // By convention the first track in format 1 is metadata only
+    firstTrack = json.tracks.shift() as mf.MidiEvent[]
   }
 
-  // By convention the first track in format 1 is metadata only
-  const firstTrack = json.tracks.shift() as mf.MidiEvent[]
   const notesMap = {}
   const tracks = json.tracks.reduce((result: BaseSongData['tracks'], track) => {
     const processed = processTrack(track, notesMap)

@@ -1,4 +1,4 @@
-import Tonal from 'tonal'
+import * as Tonal from 'tonal'
 import { v4 as uuid } from 'uuid'
 import { buildMidiPart } from './adapters/midi-file-adapter'
 
@@ -13,7 +13,7 @@ export type BaseSongData = {
 export type Timings = {
   durationTicks: number
   ticksPerBeat: number
-  microsecondsPerBeat: number
+  microsecondsPerBeat?: number
 }
 
 export type TimeSignature = {

@@ -18,8 +18,10 @@ export default function ChordMarkers({
   const ticksPerPixel = song.timings.durationTicks / width
   const markers = chords.map(chord => {
     const x = chord.startTicks / ticksPerPixel + leftOffset
-    const label = chord.chords.length ? chord.chordsInclusive[0] : ''
-    // console.log(chord)
+    const label = chord.chordsInclusive.length
+      ? chord.chordsInclusive[0]
+      : chord.chords[0]
+
     return {
       key: `${chord.startTicks}`,
       x,
