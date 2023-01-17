@@ -22,10 +22,10 @@ test.skip('save parsed midi files to disk', () => {
     '2bar.mid',
     'beat.mid',
     'blackbird.mid',
+    'chord-test.mid',
     'ghostbusters.mid',
     'groove.mid',
     'sample.mid',
-    'timesigs.mid',
     'takefivedavebrubeck.mid',
   ]
 

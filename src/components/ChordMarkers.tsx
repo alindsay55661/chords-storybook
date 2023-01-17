@@ -1,21 +1,25 @@
-import { Song } from '../utils/analyze'
+import { DetectUnit, Song } from '../utils/analyze'
 import { detectChords } from '../utils/chords'
+import ChordName from './ChordName'
 
 type ChordMarkerProps = {
   song: Song
+  detectUnit?: DetectUnit
   width: number
   leftOffset: number
 }
 export default function ChordMarkers({
   song,
+  detectUnit = 'bar',
   width,
   leftOffset,
 }: ChordMarkerProps) {
-  const chords = detectChords(song, { unit: 'bar' })
+  const chords = detectChords(song, { unit: detectUnit })
   const ticksPerPixel = song.timings.durationTicks / width
   const markers = chords.map(chord => {
     const x = chord.startTicks / ticksPerPixel + leftOffset
-    const label = chord.chords.length ? chord.chords[0] : ''
+    const label = chord.chords.length ? chord.chordsInclusive[0] : ''
+    // console.log(chord)
     return {
       key: `${chord.startTicks}`,
       x,
@@ -38,7 +42,9 @@ export default function ChordMarkers({
           className="absolute top-0 grid h-full place-content-center overflow-hidden border-r border-slate-400"
           style={{ left: `${marker.x}px`, width: `${marker.w}px` }}
         >
-          <div className="font-bold">{marker.label}</div>
+          <div className="font-bold">
+            <ChordName chordText={marker.label} />
+          </div>
         </div>
       ))}
     </div>

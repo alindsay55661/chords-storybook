@@ -141,7 +141,7 @@ test('analyze()', () => {
 })
 
 test('makeBars()', () => {
-  const path = `${__dirname}/midi/timesigs.mid`
+  const path = `${__dirname}/midi/chord-test.mid`
   const data = readFileSync(path)
   const parsed = parseMidi(data)
 
@@ -172,6 +172,7 @@ test('updateDistribution()', () => {
   const cr: ChordRange = {
     notes: new Set(['A', 'B', 'C', 'D']),
     chords: [],
+    chordsInclusive: [],
     unit: 'bar',
     unitNumber: 0,
     distribution: {

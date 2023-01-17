@@ -1,5 +1,5 @@
 import { memo } from 'react'
-import { Song } from '../utils/analyze'
+import { DetectUnit, Song } from '../utils/analyze'
 import ChordMarkers from './ChordMarkers'
 import TimeSignatureMarkers from './TimeSignatureMarkers'
 import BeatMarkers from './BeatMarkers'
@@ -10,6 +10,7 @@ export type SongHeadersProps = {
   topOffset: number
   leftOffset: number
   visible: boolean
+  chordDetectUnit?: DetectUnit
 }
 
 function SongHeaders({
@@ -18,6 +19,7 @@ function SongHeaders({
   topOffset,
   leftOffset,
   visible = true,
+  chordDetectUnit = 'bar',
 }: SongHeadersProps) {
   const { timings, timeSignatures } = song
 
@@ -36,6 +38,7 @@ function SongHeaders({
 
       <ChordMarkers
         song={song}
+        detectUnit={chordDetectUnit}
         width={songWidth}
         leftOffset={leftOffset}
       />

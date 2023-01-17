@@ -17,10 +17,10 @@
   ],
   "tracks": [
     {
-      "id": "1eb7f74d-1b00-4ec4-891a-b336cde25af2",
+      "id": "2cc4ff25-6fbe-445c-a8f9-7139986d402c",
       "notes": [
         {
-          "id": "1296adf3-43cb-4105-8ae0-9b36eea5f01b",
+          "id": "3ff57128-b386-40a5-a2fd-7cc0b1ae8035",
           "midiChannel": 0,
           "startTicks": 4,
           "durationTicks": 35,
@@ -35,7 +35,7 @@
           ]
         },
         {
-          "id": "61fbd7c7-a877-4b86-a07c-3a0c00bbe0ac",
+          "id": "1aa5c614-ac63-4fd8-8176-73788b397e90",
           "midiChannel": 0,
           "startTicks": 122,
           "durationTicks": 55,
@@ -50,7 +50,7 @@
           ]
         },
         {
-          "id": "41576220-0750-423e-b472-a74687b3c895",
+          "id": "5aa9715f-7121-4260-9d31-5ce30ce9462c",
           "midiChannel": 0,
           "startTicks": 230,
           "durationTicks": 43,
@@ -65,7 +65,7 @@
           ]
         },
         {
-          "id": "4aa66d47-6faf-4521-a2d3-3f99750911ff",
+          "id": "1a3d6bf4-aac5-42f3-a9e0-38dd18f5e8e4",
           "midiChannel": 0,
           "startTicks": 359,
           "durationTicks": 34,
@@ -80,7 +80,7 @@
           ]
         },
         {
-          "id": "0ce559f1-6872-45ff-bdff-767af32e7373",
+          "id": "36306be2-5628-42b1-8018-23f7a10026ad",
           "midiChannel": 0,
           "startTicks": 461,
           "durationTicks": 18,
@@ -119,8 +119,8 @@
     }
   ],
   "notesMap": {
-    "1296adf3-43cb-4105-8ae0-9b36eea5f01b": {
-      "id": "1296adf3-43cb-4105-8ae0-9b36eea5f01b",
+    "3ff57128-b386-40a5-a2fd-7cc0b1ae8035": {
+      "id": "3ff57128-b386-40a5-a2fd-7cc0b1ae8035",
       "midiChannel": 0,
       "startTicks": 4,
       "durationTicks": 35,
@@ -134,8 +134,8 @@
         "A"
       ]
     },
-    "61fbd7c7-a877-4b86-a07c-3a0c00bbe0ac": {
-      "id": "61fbd7c7-a877-4b86-a07c-3a0c00bbe0ac",
+    "1aa5c614-ac63-4fd8-8176-73788b397e90": {
+      "id": "1aa5c614-ac63-4fd8-8176-73788b397e90",
       "midiChannel": 0,
       "startTicks": 122,
       "durationTicks": 55,
@@ -149,8 +149,8 @@
         "D"
       ]
     },
-    "41576220-0750-423e-b472-a74687b3c895": {
-      "id": "41576220-0750-423e-b472-a74687b3c895",
+    "5aa9715f-7121-4260-9d31-5ce30ce9462c": {
+      "id": "5aa9715f-7121-4260-9d31-5ce30ce9462c",
       "midiChannel": 0,
       "startTicks": 230,
       "durationTicks": 43,
@@ -164,8 +164,8 @@
         "A#"
       ]
     },
-    "4aa66d47-6faf-4521-a2d3-3f99750911ff": {
-      "id": "4aa66d47-6faf-4521-a2d3-3f99750911ff",
+    "1a3d6bf4-aac5-42f3-a9e0-38dd18f5e8e4": {
+      "id": "1a3d6bf4-aac5-42f3-a9e0-38dd18f5e8e4",
       "midiChannel": 0,
       "startTicks": 359,
       "durationTicks": 34,
@@ -179,8 +179,8 @@
         "A"
       ]
     },
-    "0ce559f1-6872-45ff-bdff-767af32e7373": {
-      "id": "0ce559f1-6872-45ff-bdff-767af32e7373",
+    "36306be2-5628-42b1-8018-23f7a10026ad": {
+      "id": "36306be2-5628-42b1-8018-23f7a10026ad",
       "midiChannel": 0,
       "startTicks": 461,
       "durationTicks": 18,

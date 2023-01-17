@@ -30,7 +30,7 @@ function Clip({
   return (
     <div className="clip flex h-full flex-col rounded border-2 border-sky-100 bg-sky-50">
       <div className="clip-title flex-shrink-0 bg-sky-100 py-0.5 px-1 text-sky-800"></div>
-      <div className="clip-notes flex-grow py-4">
+      <div className="clip-notes flex-grow py-2">
         <svg
           viewBox={`${startTicks} 0 ${durationTicks} ${height}`}
           preserveAspectRatio="none"

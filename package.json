@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "@tonaljs/scale": "^4.8.0",
+    "chord-symbol": "^3.0.0",
     "jzz": "^1.5.8",
     "jzz-midi-smf": "^1.7.1",
     "midi-file": "^1.2.3",

@@ -1,22 +1,23 @@
 import { useEffect, useState } from 'react'
-import { Timings, TimeSignature, Track } from '../utils/parse'
 import SongHeaders from './SongHeaders'
 import TrackHeader from './TrackHeader'
 import Clip from './Clip'
 import BeatLines from './BeatLines'
-import { Song } from '../utils/analyze'
+import { DetectUnit, Song } from '../utils/analyze'
 
 export type MidiTracksProps = {
   song: Song
   zoom?: number
   trackHeight?: number
   maxHeight?: string
+  chordDetectUnit?: DetectUnit
 }
 
 export default function MidiTracks({
   trackHeight = 128,
   maxHeight = '100%',
   zoom = 50,
+  chordDetectUnit = 'bar',
   song,
 }: MidiTracksProps) {
   const { tracks, timings } = song
@@ -59,6 +60,7 @@ export default function MidiTracks({
 
       <SongHeaders
         song={song}
+        chordDetectUnit={chordDetectUnit}
         songWidth={headerWidth}
         leftOffset={leftOffset}
         topOffset={topOffset}

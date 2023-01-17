@@ -2,6 +2,67 @@ import * as Tonal from 'tonal'
 import type { Note } from './parse'
 import type { DetectUnit, Song } from './analyze'
 
+// Additional 7th chords
+Tonal.ChordType.add(
+  ['1P', '3M', '7M'],
+  ['M7no5', 'maj7no5', 'ma7no5', 'Ma7no5', '^7no5'],
+  'major seventh no5',
+)
+Tonal.ChordType.add(
+  ['1P', '3m', '7m'],
+  ['m7no5', 'min7no5', 'mi7no5', '-7no5'],
+  'minor seventh no5',
+)
+Tonal.ChordType.add(
+  ['1P', '3m', '7M'],
+  ['mM7no5', 'mMaj7no5'],
+  'minor/major seventh no5',
+)
+
+// Additional 9th chords
+Tonal.ChordType.add(
+  ['1P', '3m', '7m', '9M'],
+  ['m9no5', 'min9no5', 'mi9no5', '-9no5'],
+  'minor ninth no5',
+)
+Tonal.ChordType.add(
+  ['1P', '3m', '9M'],
+  ['madd9', 'minadd9', 'miadd9', '-add9'],
+  'minor add 9',
+)
+
+// Additional 11th chords
+Tonal.ChordType.add(
+  ['1P', '3m', '11m'],
+  ['madd11', 'minadd11', 'miadd11', '-add11'],
+  'minor add 11',
+)
+Tonal.ChordType.add(
+  ['1P', '3m', '9M', '11m'],
+  ['madd9add11', 'minadd9add11', 'miadd9add11', '-add9add11'],
+  'minor add 9 add 11',
+)
+Tonal.ChordType.add(
+  ['1P', '3m', '7m', '9M', '11m'],
+  ['m7add9add11', 'min7add9add11', 'mi7add9add11', '-7add9add11'],
+  'minor 7 add 9 add 11',
+)
+Tonal.ChordType.add(
+  ['1P', '3m', '5M', '9M', '11m'],
+  ['madd9add11', 'minadd9add11', 'miadd9add11', '-add9add11'],
+  'minor add 9 add 11',
+)
+
+// Not working...
+Tonal.ChordType.add(['1P', '5P', '11A'], ['5#11'], 'fifth sharp 11')
+
+// Additional 13th chords
+Tonal.ChordType.add(
+  ['1P', '3m', '5M', '7m', '9M', '11m', '13M'],
+  ['m13', 'min13', 'mi13', '-13'],
+  'minor 13',
+)
+
 export type DetectChordOptions = {
   unit?: DetectUnit
   excludeThreshold?: number
@@ -20,11 +81,12 @@ export type ChordRange = {
     time?: Record<string, number>
   }
   chords: string[]
+  chordsInclusive: string[]
   unit: DetectUnit
   unitNumber: number
   startTicks: number
   durationTicks: number
-  uniqueNotes: Note[]
+  uniqueNotes: number[]
 }
 
 export function detectChords(
@@ -89,6 +151,9 @@ export function chordsFromRanges(
       ...cr,
       chordNotes: new Set(newNotes),
       chords: Tonal.Chord.detect([...newNotes]),
+      chordsInclusive: Tonal.Chord.detect(
+        cr.uniqueNotes.sort().map(number => Tonal.Midi.midiToNoteName(number)),
+      ),
     }
   })
 
@@ -105,6 +170,7 @@ export function makeChordRange(
       ticks: {},
     },
     chords: [],
+    chordsInclusive: [],
     unit: options.unit,
     unitNumber: 0,
     startTicks: options.startTicks,
@@ -123,7 +189,7 @@ export function addNoteToChordRange(note: Note, range: ChordRange) {
   if (note.midiChannel === 10) return
 
   range.notes.add(note.noteName[0])
-  range.uniqueNotes.push(note)
+  range.uniqueNotes.push(note.noteNumber)
   // Note distribution allows for advanced chord recognition
   updateDistribution(range, note)
 }

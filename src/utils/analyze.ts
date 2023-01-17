@@ -40,29 +40,6 @@ export function analyze(sd: BaseSongData): Song {
 
   // 1 - Note analysis (Hydrate barsAndBeats)
   const notes = Object.values(sd.notesMap)
-  function isNoteInRange(note: Note, startTicks: number, endTicks: number) {
-    const noteEndTicks = note.startTicks + note.durationTicks
-
-    // Note starts and ends in the range (CONTAINED - most common)
-    if (note.startTicks >= startTicks && note.startTicks <= endTicks) {
-      return true
-    }
-
-    // Note starts in the range and ends after the range (HEAD)
-    if (note.startTicks >= startTicks && noteEndTicks > endTicks) {
-      return true
-    }
-
-    // Note starts before the range and ends in the range (TAIL)
-    if (note.startTicks < startTicks && noteEndTicks <= endTicks) {
-      return true
-    }
-
-    // Note starts before the range and ends after range (THROUGH)
-    if (note.startTicks < startTicks && noteEndTicks > endTicks) {
-      return true
-    }
-  }
 
   sd.barsAndBeats.forEach(bar => {
     // Find notes in this bar
@@ -92,6 +69,34 @@ export function analyze(sd: BaseSongData): Song {
 
   // 3-4 are done with other funciton calls
   return song
+}
+
+export function isNoteInRange(
+  note: Note,
+  startTicks: number,
+  endTicks: number,
+) {
+  const noteEndTicks = note.startTicks + note.durationTicks
+
+  // Note starts and ends in the range (CONTAINED - most common)
+  if (note.startTicks >= startTicks && note.startTicks <= endTicks) {
+    return true
+  }
+
+  // Note starts in the range and ends after the range (HEAD)
+  if (note.startTicks >= startTicks && note.startTicks <= endTicks) {
+    return true
+  }
+
+  // Note starts before the range and ends in the range (TAIL)
+  if (noteEndTicks >= startTicks && noteEndTicks <= endTicks) {
+    return true
+  }
+
+  // Note starts before the range and ends after range (THROUGH)
+  if (note.startTicks < startTicks && noteEndTicks > endTicks) {
+    return true
+  }
 }
 
 function updateFrequencyStats(note: Note, song: Song) {
