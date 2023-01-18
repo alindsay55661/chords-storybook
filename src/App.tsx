@@ -3,13 +3,14 @@ import Dropzone from 'react-dropzone'
 import './App.css'
 import SongCanvas from './components/SongCanvas'
 import { analyzed as data } from './stories/musicData'
-import { analyze } from './utils/analyze'
+import { analyze, Song, DetectUnit } from './utils/analyze'
 import { parseMidi } from './utils/parse'
 
 function App() {
   const [zoom, setZoom] = useState(130)
   const [trackHeight, setTrackHeight] = useState(128)
-  const [song, setSong] = useState(data.chordTest)
+  const [unit, setUnit] = useState<DetectUnit>('beat')
+  const [song, setSong] = useState<Song>(data.chordTest)
 
   function handleDroppedFiles(files: File[]) {
     files.forEach(file => {
@@ -86,9 +87,33 @@ function App() {
           }}
         />
       </label>
+
+      <span className="p4 inline-block">
+        Detect chords by
+        <label className="px-3">
+          <input
+            type="radio"
+            name="unit"
+            value="bar"
+            checked={unit === 'bar'}
+            onChange={() => setUnit('bar')}
+          />{' '}
+          bar
+        </label>
+        <label>
+          <input
+            type="radio"
+            name="unit"
+            value="beat"
+            checked={unit === 'beat'}
+            onChange={() => setUnit('beat')}
+          />{' '}
+          beat
+        </label>
+      </span>
       <SongCanvas
         song={song}
-        chordDetectUnit="beat"
+        chordDetectUnit={unit}
         zoom={zoom}
         trackHeight={trackHeight}
         maxHeight="500px"
