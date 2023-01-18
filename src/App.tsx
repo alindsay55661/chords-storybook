@@ -52,7 +52,7 @@ function App() {
             >
               <input {...getInputProps()} />
               <p>
-                Drag 'n' drop a <span className="font-bold">".mid"</span> files
+                Drag 'n' drop a <span className="font-bold">".mid"</span> file
                 here, or click to select files
               </p>
             </div>
