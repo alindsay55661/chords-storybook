@@ -1,9 +1,10 @@
+import { Dispatch } from 'react'
 import Dropzone from 'react-dropzone'
-import { analyze } from '../utils/analyze'
+import { analyze, Song } from '../utils/analyze'
 import { parseMidi } from '../utils/parse'
 
 type FileSelectorProps = {
-  setSong: Function
+  setSong: Dispatch<Song>
 }
 
 export default function FileSelector({ setSong }: FileSelectorProps) {

@@ -4,6 +4,11 @@ import Track from './Track'
 import BeatLines from './BeatLines'
 import { DetectUnit, Song } from '../utils/analyze'
 
+export type SongCanvasOptions = Pick<
+  SongCanvasProps,
+  'zoom' | 'trackHeight' | 'chordDetectUnit'
+>
+
 export type SongCanvasProps = {
   song: Song
   zoom?: number
@@ -59,6 +64,7 @@ export default function SongCanvas({
         {tracks.map(track => {
           return (
             <Track
+              key={track.id}
               track={track}
               trackHeight={trackHeight}
               songWidth={songWidth}
