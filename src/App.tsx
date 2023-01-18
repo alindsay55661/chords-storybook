@@ -19,7 +19,7 @@ function App() {
         <span className="pr-2">Track Width</span>
         <input
           type="range"
-          min="1"
+          min="2"
           max="200"
           value={zoom}
           onChange={e => {
@@ -63,7 +63,7 @@ function App() {
           beat
         </label>
       </span>
-      
+
       <SongCanvas
         song={song}
         chordDetectUnit={unit}
