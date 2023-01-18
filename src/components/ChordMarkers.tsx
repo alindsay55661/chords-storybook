@@ -4,20 +4,21 @@ import ChordName from './ChordName'
 
 type ChordMarkerProps = {
   song: Song
+  songWidth: number
+  sidebarWidth: number
   detectUnit?: DetectUnit
-  width: number
-  leftOffset: number
 }
+
 export default function ChordMarkers({
   song,
+  songWidth,
+  sidebarWidth,
   detectUnit = 'bar',
-  width,
-  leftOffset,
 }: ChordMarkerProps) {
   const chords = detectChords(song, { unit: detectUnit })
-  const ticksPerPixel = song.timings.durationTicks / width
+  const ticksPerPixel = song.timings.durationTicks / songWidth
   const markers = chords.map(chord => {
-    const x = chord.startTicks / ticksPerPixel + leftOffset
+    const x = chord.startTicks / ticksPerPixel + sidebarWidth
     const label = chord.chordsInclusive.length
       ? chord.chordsInclusive[0]
       : chord.chords[0]
@@ -33,9 +34,14 @@ export default function ChordMarkers({
   return (
     <div
       className="relative h-10 bg-slate-100"
-      style={{ width: `${width + leftOffset}px` }}
+      style={{ width: `${songWidth + sidebarWidth}px` }}
     >
-      <div className="sticky left-0 z-50 h-full w-[80px] overflow-hidden border-r border-slate-400 bg-slate-200 shadow-right">
+      <div
+        className="sticky left-0 z-50 h-full overflow-hidden border-r border-slate-400 bg-slate-200 shadow-right"
+        style={{
+          width: `${sidebarWidth}px`,
+        }}
+      >
         <div className="p-3 text-center text-xs">Chords</div>
       </div>
       {markers.map(marker => (

@@ -2,21 +2,21 @@ import { Song } from '../utils/analyze'
 
 type BeatMarkerProps = {
   song: Song
-  width: number
-  leftOffset: number
+  songWidth: number
+  sidebarWidth: number
 }
 export default function BeatMarkers({
   song,
-  width,
-  leftOffset,
+  songWidth,
+  sidebarWidth,
 }: BeatMarkerProps) {
-  const ticksPerPixel = song.timings.durationTicks / width
+  const ticksPerPixel = song.timings.durationTicks / songWidth
   const markers = song.notes.byBar.reduce((result: any[], bar) => {
     let firstBeat = true
     bar.beats.forEach(beat => {
       result.push({
         key: `beat-${beat.index}`,
-        x: beat.startTicks / ticksPerPixel + leftOffset,
+        x: beat.startTicks / ticksPerPixel + sidebarWidth,
         label: firstBeat ? bar.index + 1 : '',
         w: beat.durationTicks / ticksPerPixel,
       })
@@ -28,9 +28,14 @@ export default function BeatMarkers({
   return (
     <div
       className="relative h-4 bg-slate-800 text-xs text-white"
-      style={{ width: `${width + leftOffset}px` }}
+      style={{ width: `${songWidth + sidebarWidth}px` }}
     >
-      <div className="sticky left-0 z-50 h-full w-[80px] bg-slate-800 px-2 shadow-right">
+      <div
+        className="sticky left-0 z-50 h-full bg-slate-800 px-2 shadow-right"
+        style={{
+          width: `${sidebarWidth}px`,
+        }}
+      >
         Measure #
       </div>
       {markers.map(marker => (

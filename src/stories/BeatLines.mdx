@@ -1,0 +1,20 @@
+import { Meta } from '@storybook/blocks'
+
+<Meta title="BeatLines" />
+
+# `BeatLines` is an SVG component
+
+It's important to understand that SVG components are used to improve rendering
+performance. In the case of `BeatLines` and `Clip`, SVG is rendered and set to
+ignore aspect ratio so that the image will resize naturally and quickly.
+
+In some cases, however, we want to preserve aspect ratio for some things while
+ignoring it for others. For example, we want to ignore the aspect ratio for the
+space between the beat lines but would like to keep the lines themselves at 1px.
+This isn't possible with SVG, however it has been approximated in the code by
+setting different line widths for different size ranges.
+
+## Important
+
+`BeatLines` must share the same `width` as other components on the same
+timeline.

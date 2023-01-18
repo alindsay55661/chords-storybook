@@ -23,13 +23,48 @@ const meta: Meta<typeof Clip> = {
 export default meta
 type Story = StoryObj<typeof Clip>
 
-export const Sample: Story = {
+export const Basic: Story = {
+  args: {
+    startTicks: 0,
+  },
+  render: args => {
+    return <Clip {...args} />
+  },
+}
+
+export const Complex: Story = {
+  args: {
+    startTicks: 0,
+    ...analyzed.chordTest.tracks[0],
+  },
+  render: args => {
+    return <Clip {...args} />
+  },
+}
+
+export const SmallContainer: Story = {
+  args: {
+    startTicks: 0,
+  },
+  decorators: [
+    Story => (
+      <div style={{ height: '48px', width: '200px' }}>
+        <Story />
+      </div>
+    ),
+  ],
+  render: args => {
+    return <Clip {...args} />
+  },
+}
+
+export const onNoteClick: Story = {
   args: {
     startTicks: 0,
   },
   decorators: [
     (Story, context) => {
-      const [note, setNote] = useState({ uuid: '' })
+      const [note, setNote] = useState({ id: '' })
       const onNoteClick = (n: any) => {
         setNote(n)
       }
@@ -41,7 +76,7 @@ export const Sample: Story = {
             data-testid="output"
             style={{ visibility: 'hidden' }}
           >
-            {note.uuid}
+            {note.id}
           </div>
         </>
       )

@@ -1,20 +1,19 @@
-import { Timings, TimeSignature } from '../utils/parse'
+import { Song } from '../utils/analyze'
 
 type SignatureProps = {
-  timeSignatures: TimeSignature[]
-  timings: Timings
-  width: number
-  leftOffset: number
+  song: Song
+  songWidth: number
+  sidebarWidth: number
 }
 export default function TimeSignatureMarkers({
-  timings,
-  timeSignatures,
-  width,
-  leftOffset,
+  song,
+  songWidth,
+  sidebarWidth,
 }: SignatureProps) {
-  const ticksPerPixel = timings.durationTicks / width
+  const { timings, timeSignatures } = song
+  const ticksPerPixel = timings.durationTicks / songWidth
   const markers = timeSignatures.map((ts, idx) => {
-    const x = ts.startTicks / ticksPerPixel + leftOffset
+    const x = ts.startTicks / ticksPerPixel + sidebarWidth
     return {
       key: `${ts.numerator}-${ts.denominator}-${idx}`,
       x,
@@ -25,9 +24,14 @@ export default function TimeSignatureMarkers({
   return (
     <div
       className="relative h-5 bg-slate-700 text-white"
-      style={{ width: `${width + leftOffset}px` }}
+      style={{ width: `${songWidth + sidebarWidth}px` }}
     >
-      <div className="sticky left-0 z-50 h-full w-[80px] overflow-hidden bg-slate-700 shadow-right">
+      <div
+        className="sticky left-0 z-50 h-full overflow-hidden bg-slate-700 shadow-right"
+        style={{
+          width: `${sidebarWidth}px`,
+        }}
+      >
         <div className="py-0.5 px-2  text-xs">Time Sig.</div>
       </div>
       {markers.map(marker => (

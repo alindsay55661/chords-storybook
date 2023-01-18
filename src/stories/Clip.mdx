@@ -1,0 +1,21 @@
+import { Meta } from '@storybook/blocks'
+
+<Meta title="Clip" />
+
+# `Clip` is an SVG component
+
+It's important to understand that SVG components are used to improve rendering
+performance. In the case of `BeatLines` and `Clip`, SVG is rendered and set to
+ignore aspect ratio so that the image will resize naturally and quickly.
+
+In some cases, however, we want to preserve aspect ratio for some things while
+ignoring it for others. For example, we want to ignore the aspect ratio for the
+notes in the clip but would like to keep the clip borders fixed. This isn't
+possible with SVG so `Clip` uses a mix of HTML for the containing element and
+SVG for the body.
+
+## Important
+
+`Clip` will expand to fit its container and should be housed in a container that
+shares the same `width` as other components on the same timeline. This is
+because there is only 1 `Clip` per track at the moment.

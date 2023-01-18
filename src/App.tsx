@@ -1,13 +1,13 @@
 import { useState } from 'react'
 import Dropzone from 'react-dropzone'
 import './App.css'
-import MidiTracks from './components/MidiTracks'
+import SongCanvas from './components/SongCanvas'
 import { analyzed as data } from './stories/musicData'
 import { analyze } from './utils/analyze'
 import { parseMidi } from './utils/parse'
 
 function App() {
-  const [zoom, setZoom] = useState(100)
+  const [zoom, setZoom] = useState(130)
   const [trackHeight, setTrackHeight] = useState(128)
   const [song, setSong] = useState(data.chordTest)
 
@@ -18,7 +18,6 @@ function App() {
       reader.onabort = () => console.log('file reading was aborted')
       reader.onerror = () => console.log('file reading has failed')
       reader.onload = () => {
-        // Do whatever you want with the file contents
         if (reader.result) {
           const result = reader.result as ArrayBufferLike
           const song = analyze(parseMidi(new Uint8Array(result)))
@@ -31,6 +30,16 @@ function App() {
 
   return (
     <div>
+      <h1 className="mb-5 text-xl">
+        Try out midi files from{' '}
+        <a
+          className="text-sky-800 underline"
+          target="_blank"
+          href="https://www.midis101.com/search/Coldplay"
+        >
+          https://www.midis101.com/
+        </a>
+      </h1>
       <Dropzone
         onDrop={handleDroppedFiles}
         maxFiles={1}
@@ -74,7 +83,7 @@ function App() {
           }}
         />
       </label>
-      <MidiTracks
+      <SongCanvas
         song={song}
         chordDetectUnit="beat"
         zoom={zoom}
