@@ -50,7 +50,7 @@ function App() {
         {({ getRootProps, getInputProps }) => (
           <section>
             <div
-              className="bg-slate-200 p-8"
+              className="cursor-pointer rounded border-2 border-dashed border-slate-300 bg-slate-100 p-8"
               {...getRootProps()}
             >
               <input {...getInputProps()} />
