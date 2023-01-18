@@ -55,9 +55,7 @@ export const OnChange: Story = {
     return <SongCanvasControls {...args} />
   },
   play: async ({ args, canvasElement, step }) => {
-    console.log(args)
     const canvas = within(canvasElement)
-
     const [zoomEl, trackHeightEl] = canvas.getAllByRole('slider')
     // From the component
     const zoomRange = [2, 200]
@@ -65,18 +63,19 @@ export const OnChange: Story = {
     await step(
       'Ensure zoom range control works and conforms to range boundaries',
       async () => {
-        expect(canvas.getByTestId('zoom-output')).toHaveTextContent('130')
-
+        expect(canvas.getByTestId('zoom-output')).toHaveTextContent(
+          `${args.options.zoom}`,
+        )
         await fireEvent.change(zoomEl, { target: { value: 20 } })
         expect(canvas.getByTestId('zoom-output')).toHaveTextContent('20')
 
         await fireEvent.change(zoomEl, { target: { value: -10 } })
         expect(canvas.getByTestId('zoom-output')).toHaveTextContent(
-          zoomRange[0].toString(),
+          `${zoomRange[0]}`,
         )
         await fireEvent.change(zoomEl, { target: { value: 600 } })
         expect(canvas.getByTestId('zoom-output')).toHaveTextContent(
-          zoomRange[1].toString(),
+          `${zoomRange[1]}`,
         )
       },
     )
@@ -88,21 +87,20 @@ export const OnChange: Story = {
       'Ensure zoom range control works and conforms to range boundaries',
       async () => {
         expect(canvas.getByTestId('trackheight-output')).toHaveTextContent(
-          '128',
+          `${args.options.trackHeight}`,
         )
 
         await fireEvent.change(trackHeightEl, { target: { value: 200 } })
         expect(canvas.getByTestId('trackheight-output')).toHaveTextContent(
           '200',
         )
-
         await fireEvent.change(trackHeightEl, { target: { value: -10 } })
         expect(canvas.getByTestId('trackheight-output')).toHaveTextContent(
-          trackHeightRange[0].toString(),
+          `${trackHeightRange[0]}`,
         )
         await fireEvent.change(trackHeightEl, { target: { value: 600 } })
         expect(canvas.getByTestId('trackheight-output')).toHaveTextContent(
-          trackHeightRange[1].toString(),
+          `${trackHeightRange[1]}`,
         )
       },
     )
@@ -111,14 +109,12 @@ export const OnChange: Story = {
 
     await step('Ensure chord detection option works', async () => {
       expect(canvas.getByTestId('chorddetectunit-output')).toHaveTextContent(
-        'beat',
+        `${args.options.chordDetectUnit}`,
       )
-
       await userEvent.click(barEl)
       expect(canvas.getByTestId('chorddetectunit-output')).toHaveTextContent(
         'bar',
       )
-
       await userEvent.click(beatEl)
       expect(canvas.getByTestId('chorddetectunit-output')).toHaveTextContent(
         'beat',
