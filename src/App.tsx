@@ -43,6 +43,9 @@ function App() {
       <Dropzone
         onDrop={handleDroppedFiles}
         maxFiles={1}
+        accept={{
+          'audio/midi': ['.mid', '.midi'],
+        }}
       >
         {({ getRootProps, getInputProps }) => (
           <section>
