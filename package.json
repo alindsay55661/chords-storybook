@@ -1,8 +1,18 @@
 {
   "name": "chords-storybook",
+  "description": "A project to showcase Storybook CDD and music engineering",
   "private": true,
-  "version": "0.0.1",
+  "version": "1.0.0",
   "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:alindsay55661/chords-storybook.git"
+  },
+  "author": {
+    "name": "Alan Lindsay",
+    "url": "https://thefury.dev"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vitest run && vite build && storybook build -o dist/storybook",
