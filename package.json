@@ -10,7 +10,7 @@
     "test": "vitest",
     "coverage": "vitest run --coverage",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build -o dist/storybook"
   },
   "dependencies": {
     "@tonaljs/scale": "^4.8.0",
