@@ -11,31 +11,31 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
         </h1>
         <div className="flex flex-wrap place-content-evenly pt-8 pb-8 sm:pb-16">
           <img
-            src="assets/storybook-logo.svg"
+            src="/storybook-logo.svg"
             className="m-4 w-20"
             alt="Storybook logo"
           />
           <span className="pt-8 text-4xl font-bold">+</span>
           <img
-            src="assets/vite-logo.svg"
+            src="/vite-logo.svg"
             className="m-4 w-20"
             alt="Vite logo"
           />
           <span className="pt-8 text-4xl font-bold">+</span>
           <img
-            src="assets/vitest-logo.svg"
+            src="/vitest-logo.svg"
             className="m-4 w-20"
             alt="Vitest logo"
           />
           <span className="pt-8 text-4xl font-bold">+</span>
           <img
-            src="assets/react.svg"
+            src="/react.svg"
             className="m-4 w-20"
             alt="React logo"
           />
           <span className="pt-8 text-4xl font-bold">+</span>
           <img
-            src="assets/midi-logo.svg"
+            src="/midi-logo.svg"
             className="m-4 w-20"
             alt="Midi logo"
           />
