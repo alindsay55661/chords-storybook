@@ -90,7 +90,7 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
         </div>
         <div className="text-center">
           <a
-            href="vitest/"
+            href="https://github.com/alindsay55661/chords-storybook/tree/main/src/app/test"
             className="text-sky-600 underline"
           >
             Non-storybook tests (utility/unit)
