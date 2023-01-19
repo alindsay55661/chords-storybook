@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build && storybook build -o dist/storybook",
+    "build": "tsc && vitest run && vite build && storybook build -o dist/storybook",
     "preview": "vite preview",
     "test": "vitest",
     "coverage": "vitest run --coverage",
@@ -37,6 +37,8 @@
     "@types/react-dom": "^18.0.9",
     "@types/uuid": "^9.0.0",
     "@vitejs/plugin-react": "^3.0.0",
+    "@vitest/coverage-c8": "^0.27.2",
+    "@vitest/ui": "^0.27.2",
     "autoprefixer": "^10.4.13",
     "postcss": "^8.4.21",
     "prettier": "^2.8.3",

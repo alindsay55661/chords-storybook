@@ -1,4 +1,4 @@
-import { defineConfig } from 'vitest/config'
+import { configDefaults, defineConfig } from 'vitest/config'
 import react from '@vitejs/plugin-react'
 import { resolve } from 'path'
 
@@ -9,10 +9,22 @@ const outDir = resolve(__dirname, 'dist')
 export default defineConfig({
   root,
   plugins: [react()],
-  test: {},
+  test: {
+    reporters: ['verbose', 'html'],
+    outputFile: resolve(outDir, 'vitest/index.html'),
+    coverage: {
+      enabled: false,
+      exclude: [
+        ...configDefaults.coverage.exclude,
+        '**/*.stories.{ts,tsx,js,jsx}',
+      ],
+      reportsDirectory: resolve(outDir, 'coverage/'),
+      reporter: 'html',
+    },
+  },
   build: {
     outDir,
-    emptyOutDir: true,
+    emptyOutDir: false,
     rollupOptions: {
       input: {
         main: resolve(root, 'index.html'),

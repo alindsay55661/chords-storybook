@@ -161,8 +161,6 @@ describe('makeBarsAndBeats()', () => {
 
     const bars = makeBarsAndBeats(updated, ticksPerBeat)
 
-    console.log(bars)
-
     expect(bars.length).toBe(3)
     expect(bars[0]).toMatchObject({
       startTicks: 0,
@@ -207,8 +205,6 @@ describe('makeBarsAndBeats()', () => {
     )
 
     const bars = makeBarsAndBeats(updated, ticksPerBeat)
-
-    console.log(bars)
 
     expect(bars.length).toBe(3)
     expect(bars[0]).toMatchObject({

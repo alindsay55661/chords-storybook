@@ -47,7 +47,10 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
         </p>
 
         <ul className="list-disc p-4 pl-8">
-          <li>Engineering for musical and technical midi interpretation</li>
+          <li>
+            Engineering for musical and technical midi interpretation (more than
+            meets the eye)
+          </li>
           <li>
             Storybook's advocacy of{' '}
             <a
@@ -70,9 +73,27 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
           </a>
           <a
             href="storybook/"
-            className="m-4 inline-block cursor-pointer rounded bg-sky-600 py-3 px-6 font-bold text-white"
+            className="m-4 inline-block cursor-pointer rounded bg-[#FF4785] py-3 px-6 font-bold text-white"
           >
-            View the Storybook ➞
+            Storybook components ➞
+          </a>
+          <a
+            href="storybook/"
+            className="m-4 inline-flex cursor-pointer rounded bg-slate-100 py-3 px-6 font-bold"
+          >
+            <img
+              src="/github-logo.svg"
+              className="pr-2"
+            />
+            Github source
+          </a>
+        </div>
+        <div className="text-center">
+          <a
+            href="vitest/"
+            className="text-sky-600 underline"
+          >
+            Non-storybook tests (utility/unit)
           </a>
         </div>
       </div>
