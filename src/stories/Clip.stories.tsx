@@ -2,13 +2,13 @@ import type { Meta, StoryObj } from '@storybook/react'
 import { userEvent, within } from '@storybook/testing-library'
 import { expect } from '@storybook/jest'
 import { useState } from 'react'
-import { analyzed } from './musicData'
+import { songs } from './musicData'
 import Clip from '../components/Clip'
 
 const meta: Meta<typeof Clip> = {
   title: 'Clip',
   args: {
-    ...analyzed.twoBar.tracks[0],
+    ...songs.twoBar.tracks[0],
   },
   component: Clip,
   decorators: [
@@ -35,7 +35,7 @@ export const Basic: Story = {
 export const Complex: Story = {
   args: {
     startTicks: 0,
-    ...analyzed.chordTest.tracks[0],
+    ...songs.chordTest.tracks[0],
   },
   render: args => {
     return <Clip {...args} />

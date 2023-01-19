@@ -1,4 +1,4 @@
-import { DetectUnit, Song } from '../utils/analyze'
+import { DetectUnit, Song } from '../utils/song'
 import { detectChords } from '../utils/chords'
 import ChordName from './ChordName'
 

@@ -1,6 +1,6 @@
 import { Dispatch } from 'react'
 import Dropzone from 'react-dropzone'
-import { analyze, Song } from '../utils/analyze'
+import { makeSong, Song } from '../utils/song'
 import { parseMidi } from '../utils/parse'
 
 type FileSelectorProps = {
@@ -17,7 +17,7 @@ export default function FileSelector({ setSong }: FileSelectorProps) {
       reader.onload = () => {
         if (reader.result) {
           const result = reader.result as ArrayBufferLike
-          const song = analyze(parseMidi(new Uint8Array(result)))
+          const song = makeSong(parseMidi(new Uint8Array(result)))
           setSong(song)
         }
       }

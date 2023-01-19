@@ -1,7 +1,6 @@
 import { test } from 'vitest'
 import { readFileSync, writeFileSync } from 'node:fs'
 import { parseMidi } from '../utils/parse'
-import { midiBufferToJson } from '../utils/adapters/midi-file-adapter'
 
 // This test file is not an actual test, just a shortcut to writing files
 // Change 'test.skip(' to 'test(' to write files - then restore the skip
@@ -30,14 +29,4 @@ test.skip('save parsed midi files to disk', () => {
   ]
 
   files.forEach(writeParsed)
-})
-
-test.skip('2 bar', () => {
-  const data = readFileSync(`${__dirname}/midi/2bar.mid`)
-  const json = midiBufferToJson(data)
-  writeFileSync(
-    `${__dirname}/midi/2bar.mid.RAW.json`,
-    JSON.stringify(json, null, 2),
-  )
-  const parsed = parseMidi(data)
 })

@@ -1,6 +1,6 @@
 import * as Tonal from 'tonal'
 import type { Note } from './parse'
-import type { DetectUnit, Song } from './analyze'
+import type { DetectUnit, Song } from './song'
 
 // Additional 7th chords
 Tonal.ChordType.add(
@@ -86,7 +86,7 @@ export type ChordRange = {
   unitNumber: number
   startTicks: number
   durationTicks: number
-  uniqueNotes: number[]
+  uniqueNotes: Set<number>
 }
 
 export function detectChords(
@@ -152,7 +152,9 @@ export function chordsFromRanges(
       chordNotes: new Set(newNotes),
       chords: Tonal.Chord.detect([...newNotes]),
       chordsInclusive: Tonal.Chord.detect(
-        cr.uniqueNotes.sort().map(number => Tonal.Midi.midiToNoteName(number)),
+        [...cr.uniqueNotes]
+          .sort()
+          .map(number => Tonal.Midi.midiToNoteName(number)),
       ),
     }
   })
@@ -175,13 +177,14 @@ export function makeChordRange(
     unitNumber: 0,
     startTicks: options.startTicks,
     durationTicks: options.durationTicks,
-    uniqueNotes: [],
+    uniqueNotes: new Set(),
   }
 
   // Evalute whether every note should be part of the chord
   notes.forEach(note => addNoteToChordRange(note, chordRange))
 
-  return chordRange
+  // Calculate time distribution
+  return updateDistribution(chordRange)
 }
 
 export function addNoteToChordRange(note: Note, range: ChordRange) {
@@ -189,7 +192,7 @@ export function addNoteToChordRange(note: Note, range: ChordRange) {
   if (note.midiChannel === 10) return
 
   range.notes.add(note.noteName[0])
-  range.uniqueNotes.push(note.noteNumber)
+  range.uniqueNotes.add(note.noteNumber)
   // Note distribution allows for advanced chord recognition
   updateDistribution(range, note)
 }

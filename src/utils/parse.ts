@@ -1,6 +1,6 @@
 import * as Tonal from 'tonal'
 import { v4 as uuid } from 'uuid'
-import { buildMidiPart } from './adapters/midi-file-adapter'
+import { makeBaseSongData } from './adapters/midi-file-adapter'
 
 export type BaseSongData = {
   timings: Timings
@@ -66,18 +66,19 @@ export type Note = {
 export function parseMidi(data: ArrayLike<number>): BaseSongData {
   // Adapters leverage generic 'buildNote' and 'makeBars' logic
   // during custom format translation
-  return buildMidiPart(data)
+  return makeBaseSongData(data)
 }
 
-export function buildNote(
+export function makeNote(
   note: Pick<Note, 'startTicks' | 'noteNumber' | 'durationTicks'> & {
     midiChannel?: number
   },
 ): Note | false {
   const { startTicks, noteNumber, durationTicks } = note
 
-  // Ignore notes with no duration (this happens with some midi programs)
-  if (!durationTicks) return false
+  // Ignore invalid durations, start times and note numbers
+  if (!durationTicks || startTicks < 0) return false
+  if (noteNumber < 0 || noteNumber > 127) return false
 
   return {
     id: uuid(),
@@ -97,6 +98,57 @@ export function buildNote(
       }),
     ],
   }
+}
+
+export function makeTimeSignature(
+  startTicks: number,
+  numerator: number,
+  denominator: number,
+): TimeSignature {
+  if (startTicks < 0 || numerator <= 0 || denominator <= 0) {
+    throw Error(`Can't make a time signature with invalid data`)
+  }
+
+  const beatTicksMultiplier = 4 / denominator
+  return {
+    startTicks,
+    durationTicks: 0,
+    startBeat: 0,
+    beatsInSignature: 0,
+    numerator: numerator,
+    denominator: denominator,
+    beatTicksMultiplier,
+  }
+}
+
+export function updateTimeSignatures(
+  timeSignatures: TimeSignature[],
+  songDurationTicks: number,
+  ticksPerBeat: number,
+) {
+  if (songDurationTicks <= 0) {
+    throw Error(`Cannot calculate time signatures for an empty song`)
+  }
+
+  let startBeat = 0
+  return timeSignatures.map((ts: TimeSignature, idx: number) => {
+    const nextSignature = timeSignatures[idx + 1]
+    const startTicks = nextSignature
+      ? nextSignature.startTicks
+      : songDurationTicks
+    const durationTicks = startTicks - ts.startTicks
+
+    const beatsInSignature = Math.ceil(
+      durationTicks / (ticksPerBeat * ts.beatTicksMultiplier),
+    )
+
+    const updated = { ...ts, durationTicks, startBeat, beatsInSignature }
+
+    // Increment
+    startBeat = startBeat + beatsInSignature
+
+    return updated
+  })
 }
 
 export function makeBarsAndBeats(

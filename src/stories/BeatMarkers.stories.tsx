@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { analyzed } from './musicData'
+import { songs } from './musicData'
 import BeatMarkers from '../components/BeatMarkers'
 
 const meta: Meta<typeof BeatMarkers> = {
   title: 'BeatMarkers',
   args: {
-    song: analyzed.chordTest,
+    song: songs.chordTest,
     songWidth: 1500,
     sidebarWidth: 100,
   },
@@ -17,7 +17,7 @@ type Story = StoryObj<typeof BeatMarkers>
 
 export const Basic: Story = {
   args: {
-    song: analyzed.twoBar,
+    song: songs.twoBar,
     songWidth: 500,
   },
   render: args => {

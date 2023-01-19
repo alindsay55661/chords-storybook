@@ -1,15 +1,15 @@
 import {
-  buildNote,
+  makeNote,
+  makeTimeSignature,
+  updateTimeSignatures,
   makeBarsAndBeats,
   BaseSongData,
-  TimeSignature,
   Track,
   Note,
   GMPatchNames,
 } from '../parse'
 import { v4 as uuid } from 'uuid'
 import mf from 'midi-file'
-import { note } from 'tonal'
 
 // Constants based on midi-file parsing
 const TEMPO = 'setTempo'
@@ -24,7 +24,7 @@ export function midiBufferToJson(data: ArrayLike<number>) {
   return mf.parseMidi(data)
 }
 
-export function buildMidiPart(data: ArrayLike<number>): BaseSongData {
+export function makeBaseSongData(data: ArrayLike<number>): BaseSongData {
   const json = midiBufferToJson(data)
   let firstTrack: mf.MidiEvent[] = []
 
@@ -86,43 +86,20 @@ function extractPartDataFromTrack(
         result.timings.microsecondsPerBeat = event.microsecondsPerBeat
         break
       case TIME_SIGNATURE:
-        const beatTicksMultiplier = 4 / event.denominator
-        const signature: TimeSignature = {
-          startTicks: currentTicks,
-          durationTicks: 0,
-          startBeat: 0,
-          beatsInSignature: 0,
-          numerator: event.numerator,
-          denominator: event.denominator,
-          beatTicksMultiplier,
-        }
-        result.timeSignatures.push(signature)
+        result.timeSignatures.push(
+          makeTimeSignature(currentTicks, event.numerator, event.denominator),
+        )
         break
     }
     return result
   }, defaultPartData)
 
-  // Update timeSignature data
-  let startBeat = 0
-  data.timeSignatures = data.timeSignatures.map(
-    (ts: TimeSignature, idx: number) => {
-      const nextSignature = data.timeSignatures[idx + 1]
-      const startTicks = nextSignature
-        ? nextSignature.startTicks
-        : songDurationTicks
-      const durationTicks = startTicks - ts.startTicks
-
-      const beatsInSignature = Math.ceil(
-        durationTicks / (ticksPerBeat * ts.beatTicksMultiplier),
-      )
-
-      const updated = { ...ts, durationTicks, startBeat, beatsInSignature }
-
-      // Increment
-      startBeat = startBeat + beatsInSignature
-
-      return updated
-    },
+  // Bars and beats can only be calculated properly when all time signatures
+  // are present
+  data.timeSignatures = updateTimeSignatures(
+    data.timeSignatures,
+    songDurationTicks,
+    ticksPerBeat,
   )
 
   return data
@@ -209,7 +186,7 @@ function processNote(
 
   const { noteNumber, startTicks, channel } = notesOn[number]
   const durationTicks = currentTicks - startTicks
-  const note = buildNote({
+  const note = makeNote({
     noteNumber,
     startTicks,
     durationTicks,

@@ -1,4 +1,4 @@
-import { Song } from '../utils/analyze'
+import { Song } from '../utils/song'
 
 type BeatMarkerProps = {
   song: Song

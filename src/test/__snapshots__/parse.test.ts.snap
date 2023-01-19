@@ -1,0 +1,1564 @@
+// Vitest Snapshot v1
+
+exports[`parseMidi() > chordTest 1`] = `
+[
+  {
+    "beatTicksMultiplier": 1,
+    "beatsInSignature": 10,
+    "denominator": 4,
+    "durationTicks": 4800,
+    "numerator": 5,
+    "startBeat": 0,
+    "startTicks": 0,
+  },
+  {
+    "beatTicksMultiplier": 1,
+    "beatsInSignature": 6,
+    "denominator": 4,
+    "durationTicks": 2880,
+    "numerator": 3,
+    "startBeat": 10,
+    "startTicks": 4800,
+  },
+  {
+    "beatTicksMultiplier": 0.5,
+    "beatsInSignature": 7,
+    "denominator": 8,
+    "durationTicks": 1680,
+    "numerator": 7,
+    "startBeat": 16,
+    "startTicks": 7680,
+  },
+  {
+    "beatTicksMultiplier": 1,
+    "beatsInSignature": 8,
+    "denominator": 4,
+    "durationTicks": 3840,
+    "numerator": 4,
+    "startBeat": 23,
+    "startTicks": 9360,
+  },
+  {
+    "beatTicksMultiplier": 1,
+    "beatsInSignature": 10,
+    "denominator": 4,
+    "durationTicks": 4800,
+    "numerator": 5,
+    "startBeat": 31,
+    "startTicks": 13200,
+  },
+  {
+    "beatTicksMultiplier": 2,
+    "beatsInSignature": 3,
+    "denominator": 2,
+    "durationTicks": 2856,
+    "numerator": 3,
+    "startBeat": 41,
+    "startTicks": 18000,
+  },
+]
+`;
+
+exports[`parseMidi() > chordTest 2`] = `
+[
+  {
+    "durationTicks": 20856,
+    "highestNote": 75,
+    "id": "removed",
+    "lowestNote": 46,
+    "midiChannel": 0,
+    "midiPatch": 0,
+    "name": "Piano",
+    "notes": [],
+  },
+]
+`;
+
+exports[`parseMidi() > chordTest 3`] = `
+[
+  {
+    "durationTicks": 456,
+    "id": "removed",
+    "midiChannel": 0,
+    "noteName": [
+      "Eb",
+      "D#",
+    ],
+    "noteNameWithOctave": [
+      "Eb5",
+      "D#5",
+    ],
+    "noteNumber": 75,
+    "startTicks": 0,
+  },
+  {
+    "durationTicks": 456,
+    "id": "removed",
+    "midiChannel": 0,
+    "noteName": [
+      "Bb",
+      "A#",
+    ],
+    "noteNameWithOctave": [
+      "Bb4",
+      "A#4",
+    ],
+    "noteNumber": 70,
+    "startTicks": 0,
+  },
+  {
+    "durationTicks": 456,
+    "id": "removed",
+    "midiChannel": 0,
+    "noteName": [
+      "G",
+      "G",
+    ],
+    "noteNameWithOctave": [
+      "G4",
+      "G4",
+    ],
+    "noteNumber": 67,
+    "startTicks": 0,
+  },
+  {
+    "durationTicks": 935,
+    "id": "removed",
+    "midiChannel": 0,
+    "noteName": [
+      "Eb",
+      "D#",
+    ],
+    "noteNameWithOctave": [
+      "Eb3",
+      "D#3",
+    ],
+    "noteNumber": 51,
+    "startTicks": 1,
+  },
+  {
+    "durationTicks": 458,
+    "id": "removed",
+    "midiChannel": 0,
+    "noteName": [
+      "G",
+      "G",
+    ],
+    "noteNameWithOctave": [
+      "G4",
+      "G4",
+    ],
+    "noteNumber": 67,
+    "startTicks": 478,
+  },
+  {
+    "durationTicks": 457,
+    "id": "removed",
+    "midiChannel": 0,
+    "noteName": [
+      "Eb",
+      "D#",
+    ],
+    "noteNameWithOctave": [
+      "Eb5",
+      "D#5",
+    ],
+    "noteNumber": 75,
+    "startTicks": 479,
+  },
+  {
+    "durationTicks": 456,
+    "id": "removed",
+    "midiChannel": 0,
+    "noteName": [
+      "Bb",
+      "A#",
+    ],
+    "noteNameWithOctave": [
+      "Bb4",
+      "A#4",
+    ],
+    "noteNumber": 70,
+    "startTicks": 480,
+  },
+  {
+    "durationTicks": 936,
+    "id": "removed",
+    "midiChannel": 0,
+    "noteName": [
+      "D",
+      "D",
+    ],
+    "noteNameWithOctave": [
+      "D5",
+      "D5",
+    ],
+    "noteNumber": 74,
+    "startTicks": 960,
+  },
+  {
+    "durationTicks": 935,
+    "id": "removed",
+    "midiChannel": 0,
+    "noteName": [
+      "F",
+      "F",
+    ],
+    "noteNameWithOctave": [
+      "F4",
+      "F4",
+    ],
+    "noteNumber": 65,
+    "startTicks": 961,
+  },
+  {
+    "durationTicks": 933,
+    "id": "removed",
+    "midiChannel": 0,
+    "noteName": [
+      "Bb",
+      "A#",
+    ],
+    "noteNameWithOctave": [
+      "Bb4",
+      "A#4",
+    ],
+    "noteNumber": 70,
+    "startTicks": 963,
+  },
+  {
+    "durationTicks": 1412,
+    "id": "removed",
+    "midiChannel": 0,
+    "noteName": [
+      "Eb",
+      "D#",
+    ],
+    "noteNameWithOctave": [
+      "Eb3",
+      "D#3",
+    ],
+    "noteNumber": 51,
+    "startTicks": 964,
+  },
+  {
+    "durationTicks": 459,
+    "id": "removed",
+    "midiChannel": 0,
+    "noteName": [
+      "Bb",
+      "A#",
+    ],
+    "noteNameWithOctave": [
+      "Bb4",
+      "A#4",
+    ],
+    "noteNumber": 70,
+    "startTicks": 1917,
+  },
+  {
+    "durationTicks": 458,
+    "id": "removed",
+    "midiChannel": 0,
+    "noteName": [
+      "F",
+      "F",
+    ],
+    "noteNameWithOctave": [
+      "F4",
+      "F4",
+    ],
+    "noteNumber": 65,
+    "startTicks": 1918,
+  },
+  {
+    "durationTicks": 454,
+    "id": "removed",
+    "midiChannel": 0,
+    "noteName": [
+      "Db",
+      "C#",
+    ],
+    "noteNameWithOctave": [
+      "Db5",
+      "C#5",
+    ],
+    "noteNumber": 73,
+    "startTicks": 1922,
+  },
+  {
+    "durationTicks": 1904,
+    "id": "removed",
+    "midiChannel": 0,
+    "noteName": [
+      "Eb",
+      "D#",
+    ],
+    "noteNameWithOctave": [
+      "Eb3",
+      "D#3",
+    ],
+    "noteNumber": 51,
+    "startTicks": 2392,
+  },
+  {
+    "durationTicks": 1898,
+    "id": "removed",
+    "midiChannel": 0,
+    "noteName": [
+      "Db",
+      "C#",
+    ],
+    "noteNameWithOctave": [
+      "Db5",
+      "C#5",
+    ],
+    "noteNumber": 73,
+    "startTicks": 2398,
+  },
+  {
+    "durationTicks": 1898,
+    "id": "removed",
+    "midiChannel": 0,
+    "noteName": [
+      "Ab",
+      "G#",
+    ],
+    "noteNameWithOctave": [
+      "Ab4",
+      "G#4",
+    ],
+    "noteNumber": 68,
+    "startTicks": 2398,
+  },
+  {
+    "durationTicks": 1892,
+    "id": "removed",
+    "midiChannel": 0,
+    "noteName": [
+      "F",
+      "F",
+    ],
+    "noteNameWithOctave": [
+      "F4",
+      "F4",
+    ],
+    "noteNumber": 65,
+    "startTicks": 2404,
+  },
+  {
+    "durationTicks": 459,
+    "id": "removed",
+    "midiChannel": 0,
+    "noteName": [
+      "F",
+      "F",
+    ],
+    "noteNameWithOctave": [
+      "F4",
+      "F4",
+    ],
+    "noteNumber": 65,
+    "startTicks": 4317,
+  },
+  {
+    "durationTicks": 458,
+    "id": "removed",
+    "midiChannel": 0,
+    "noteName": [
+      "Bb",
+      "A#",
+    ],
+    "noteNameWithOctave": [
+      "Bb4",
+      "A#4",
+    ],
+    "noteNumber": 70,
+    "startTicks": 4318,
+  },
+  {
+    "durationTicks": 458,
+    "id": "removed",
+    "midiChannel": 0,
+    "noteName": [
+      "Eb",
+      "D#",
+    ],
+    "noteNameWithOctave": [
+      "Eb3",
+      "D#3",
+    ],
+    "noteNumber": 51,
+    "startTicks": 4318,
+  },
+  {
+    "durationTicks": 453,
+    "id": "removed",
+    "midiChannel": 0,
+    "noteName": [
+      "Db",
+      "C#",
+    ],
+    "noteNameWithOctave": [
+      "Db5",
+      "C#5",
+    ],
+    "noteNumber": 73,
+    "startTicks": 4323,
+  },
+  {
+    "durationTicks": 937,
+    "id": "removed",
+    "midiChannel": 0,
+    "noteName": [
+      "C",
+      "C",
+    ],
+    "noteNameWithOctave": [
+      "C5",
+      "C5",
+    ],
+    "noteNumber": 72,
+    "startTicks": 4799,
+  },
+  {
+    "durationTicks": 936,
+    "id": "removed",
+    "midiChannel": 0,
+    "noteName": [
+      "Ab",
+      "G#",
+    ],
+    "noteNameWithOctave": [
+      "Ab4",
+      "G#4",
+    ],
+    "noteNumber": 68,
+    "startTicks": 4800,
+  },
+  {
+    "durationTicks": 935,
+    "id": "removed",
+    "midiChannel": 0,
+    "noteName": [
+      "Eb",
+      "D#",
+    ],
+    "noteNameWithOctave": [
+      "Eb4",
+      "D#4",
+    ],
+    "noteNumber": 63,
+    "startTicks": 4801,
+  },
+  {
+    "durationTicks": 1410,
+    "id": "removed",
+    "midiChannel": 0,
+    "noteName": [
+      "Db",
+      "C#",
+    ],
+    "noteNameWithOctave": [
+      "Db3",
+      "C#3",
+    ],
+    "noteNumber": 49,
+    "startTicks": 4806,
+  },
+  {
+    "durationTicks": 463,
+    "id": "removed",
+    "midiChannel": 0,
+    "noteName": [
+      "G",
+      "G",
+    ],
+    "noteNameWithOctave": [
+      "G4",
+      "G4",
+    ],
+    "noteNumber": 67,
+    "startTicks": 5753,
+  },
+  {
+    "durationTicks": 457,
+    "id": "removed",
+    "midiChannel": 0,
+    "noteName": [
+      "Eb",
+      "D#",
+    ],
+    "noteNameWithOctave": [
+      "Eb4",
+      "D#4",
+    ],
+    "noteNumber": 63,
+    "startTicks": 5759,
+  },
+  {
+    "durationTicks": 457,
+    "id": "removed",
+    "midiChannel": 0,
+    "noteName": [
+      "Bb",
+      "A#",
+    ],
+    "noteNameWithOctave": [
+      "Bb4",
+      "A#4",
+    ],
+    "noteNumber": 70,
+    "startTicks": 5759,
+  },
+  {
+    "durationTicks": 939,
+    "id": "removed",
+    "midiChannel": 0,
+    "noteName": [
+      "Ab",
+      "G#",
+    ],
+    "noteNameWithOctave": [
+      "Ab4",
+      "G#4",
+    ],
+    "noteNumber": 68,
+    "startTicks": 6237,
+  },
+  {
+    "durationTicks": 936,
+    "id": "removed",
+    "midiChannel": 0,
+    "noteName": [
+      "C",
+      "C",
+    ],
+    "noteNameWithOctave": [
+      "C5",
+      "C5",
+    ],
+    "noteNumber": 72,
+    "startTicks": 6240,
+  },
+  {
+    "durationTicks": 932,
+    "id": "removed",
+    "midiChannel": 0,
+    "noteName": [
+      "Eb",
+      "D#",
+    ],
+    "noteNameWithOctave": [
+      "Eb4",
+      "D#4",
+    ],
+    "noteNumber": 63,
+    "startTicks": 6244,
+  },
+  {
+    "durationTicks": 1412,
+    "id": "removed",
+    "midiChannel": 0,
+    "noteName": [
+      "C",
+      "C",
+    ],
+    "noteNameWithOctave": [
+      "C3",
+      "C3",
+    ],
+    "noteNumber": 48,
+    "startTicks": 6244,
+  },
+  {
+    "durationTicks": 457,
+    "id": "removed",
+    "midiChannel": 0,
+    "noteName": [
+      "Bb",
+      "A#",
+    ],
+    "noteNameWithOctave": [
+      "Bb4",
+      "A#4",
+    ],
+    "noteNumber": 70,
+    "startTicks": 7199,
+  },
+  {
+    "durationTicks": 453,
+    "id": "removed",
+    "midiChannel": 0,
+    "noteName": [
+      "Eb",
+      "D#",
+    ],
+    "noteNameWithOctave": [
+      "Eb4",
+      "D#4",
+    ],
+    "noteNumber": 63,
+    "startTicks": 7203,
+  },
+  {
+    "durationTicks": 451,
+    "id": "removed",
+    "midiChannel": 0,
+    "noteName": [
+      "G",
+      "G",
+    ],
+    "noteNameWithOctave": [
+      "G4",
+      "G4",
+    ],
+    "noteNumber": 67,
+    "startTicks": 7205,
+  },
+  {
+    "durationTicks": 935,
+    "id": "removed",
+    "midiChannel": 0,
+    "noteName": [
+      "Ab",
+      "G#",
+    ],
+    "noteNameWithOctave": [
+      "Ab4",
+      "G#4",
+    ],
+    "noteNumber": 68,
+    "startTicks": 7681,
+  },
+  {
+    "durationTicks": 935,
+    "id": "removed",
+    "midiChannel": 0,
+    "noteName": [
+      "D",
+      "D",
+    ],
+    "noteNameWithOctave": [
+      "D4",
+      "D4",
+    ],
+    "noteNumber": 62,
+    "startTicks": 7681,
+  },
+  {
+    "durationTicks": 933,
+    "id": "removed",
+    "midiChannel": 0,
+    "noteName": [
+      "C",
+      "C",
+    ],
+    "noteNameWithOctave": [
+      "C5",
+      "C5",
+    ],
+    "noteNumber": 72,
+    "startTicks": 7683,
+  },
+  {
+    "durationTicks": 226,
+    "id": "removed",
+    "midiChannel": 0,
+    "noteName": [
+      "Bb",
+      "A#",
+    ],
+    "noteNameWithOctave": [
+      "Bb4",
+      "A#4",
+    ],
+    "noteNumber": 70,
+    "startTicks": 8642,
+  },
+  {
+    "durationTicks": 1415,
+    "id": "removed",
+    "midiChannel": 0,
+    "noteName": [
+      "Bb",
+      "A#",
+    ],
+    "noteNameWithOctave": [
+      "Bb2",
+      "A#2",
+    ],
+    "noteNumber": 46,
+    "startTicks": 7681,
+  },
+  {
+    "durationTicks": 228,
+    "id": "removed",
+    "midiChannel": 0,
+    "noteName": [
+      "A",
+      "A",
+    ],
+    "noteNameWithOctave": [
+      "A4",
+      "A4",
+    ],
+    "noteNumber": 69,
+    "startTicks": 8880,
+  },
+  {
+    "durationTicks": 941,
+    "id": "removed",
+    "midiChannel": 0,
+    "noteName": [
+      "Bb",
+      "A#",
+    ],
+    "noteNameWithOctave": [
+      "Bb4",
+      "A#4",
+    ],
+    "noteNumber": 70,
+    "startTicks": 9115,
+  },
+  {
+    "durationTicks": 938,
+    "id": "removed",
+    "midiChannel": 0,
+    "noteName": [
+      "Gb",
+      "F#",
+    ],
+    "noteNameWithOctave": [
+      "Gb4",
+      "F#4",
+    ],
+    "noteNumber": 66,
+    "startTicks": 9118,
+  },
+  {
+    "durationTicks": 935,
+    "id": "removed",
+    "midiChannel": 0,
+    "noteName": [
+      "D",
+      "D",
+    ],
+    "noteNameWithOctave": [
+      "D3",
+      "D3",
+    ],
+    "noteNumber": 50,
+    "startTicks": 9121,
+  },
+  {
+    "durationTicks": 931,
+    "id": "removed",
+    "midiChannel": 0,
+    "noteName": [
+      "C",
+      "C",
+    ],
+    "noteNameWithOctave": [
+      "C4",
+      "C4",
+    ],
+    "noteNumber": 60,
+    "startTicks": 9125,
+  },
+  {
+    "durationTicks": 458,
+    "id": "removed",
+    "midiChannel": 0,
+    "noteName": [
+      "A",
+      "A",
+    ],
+    "noteNameWithOctave": [
+      "A4",
+      "A4",
+    ],
+    "noteNumber": 69,
+    "startTicks": 10318,
+  },
+  {
+    "durationTicks": 1416,
+    "id": "removed",
+    "midiChannel": 0,
+    "noteName": [
+      "D",
+      "D",
+    ],
+    "noteNameWithOctave": [
+      "D4",
+      "D4",
+    ],
+    "noteNumber": 62,
+    "startTicks": 10800,
+  },
+  {
+    "durationTicks": 1416,
+    "id": "removed",
+    "midiChannel": 0,
+    "noteName": [
+      "Bb",
+      "A#",
+    ],
+    "noteNameWithOctave": [
+      "Bb3",
+      "A#3",
+    ],
+    "noteNumber": 58,
+    "startTicks": 10800,
+  },
+  {
+    "durationTicks": 1414,
+    "id": "removed",
+    "midiChannel": 0,
+    "noteName": [
+      "G",
+      "G",
+    ],
+    "noteNameWithOctave": [
+      "G4",
+      "G4",
+    ],
+    "noteNumber": 67,
+    "startTicks": 10802,
+  },
+  {
+    "durationTicks": 1414,
+    "id": "removed",
+    "midiChannel": 0,
+    "noteName": [
+      "Eb",
+      "D#",
+    ],
+    "noteNameWithOctave": [
+      "Eb3",
+      "D#3",
+    ],
+    "noteNumber": 51,
+    "startTicks": 10802,
+  },
+  {
+    "durationTicks": 1422,
+    "id": "removed",
+    "midiChannel": 0,
+    "noteName": [
+      "Eb",
+      "D#",
+    ],
+    "noteNameWithOctave": [
+      "Eb3",
+      "D#3",
+    ],
+    "noteNumber": 51,
+    "startTicks": 12234,
+  },
+  {
+    "durationTicks": 1413,
+    "id": "removed",
+    "midiChannel": 0,
+    "noteName": [
+      "Ab",
+      "G#",
+    ],
+    "noteNameWithOctave": [
+      "Ab3",
+      "G#3",
+    ],
+    "noteNumber": 56,
+    "startTicks": 12243,
+  },
+  {
+    "durationTicks": 1412,
+    "id": "removed",
+    "midiChannel": 0,
+    "noteName": [
+      "G",
+      "G",
+    ],
+    "noteNameWithOctave": [
+      "G4",
+      "G4",
+    ],
+    "noteNumber": 67,
+    "startTicks": 12244,
+  },
+  {
+    "durationTicks": 1411,
+    "id": "removed",
+    "midiChannel": 0,
+    "noteName": [
+      "Db",
+      "C#",
+    ],
+    "noteNameWithOctave": [
+      "Db4",
+      "C#4",
+    ],
+    "noteNumber": 61,
+    "startTicks": 12245,
+  },
+  {
+    "durationTicks": 1420,
+    "id": "removed",
+    "midiChannel": 0,
+    "noteName": [
+      "G",
+      "G",
+    ],
+    "noteNameWithOctave": [
+      "G4",
+      "G4",
+    ],
+    "noteNumber": 67,
+    "startTicks": 13676,
+  },
+  {
+    "durationTicks": 1419,
+    "id": "removed",
+    "midiChannel": 0,
+    "noteName": [
+      "Eb",
+      "D#",
+    ],
+    "noteNameWithOctave": [
+      "Eb3",
+      "D#3",
+    ],
+    "noteNumber": 51,
+    "startTicks": 13677,
+  },
+  {
+    "durationTicks": 1416,
+    "id": "removed",
+    "midiChannel": 0,
+    "noteName": [
+      "Ab",
+      "G#",
+    ],
+    "noteNameWithOctave": [
+      "Ab3",
+      "G#3",
+    ],
+    "noteNumber": 56,
+    "startTicks": 13680,
+  },
+  {
+    "durationTicks": 1412,
+    "id": "removed",
+    "midiChannel": 0,
+    "noteName": [
+      "C",
+      "C",
+    ],
+    "noteNameWithOctave": [
+      "C4",
+      "C4",
+    ],
+    "noteNumber": 60,
+    "startTicks": 13684,
+  },
+  {
+    "durationTicks": 701,
+    "id": "removed",
+    "midiChannel": 0,
+    "noteName": [
+      "G",
+      "G",
+    ],
+    "noteNameWithOctave": [
+      "G4",
+      "G4",
+    ],
+    "noteNumber": 67,
+    "startTicks": 15115,
+  },
+  {
+    "durationTicks": 701,
+    "id": "removed",
+    "midiChannel": 0,
+    "noteName": [
+      "Ab",
+      "G#",
+    ],
+    "noteNameWithOctave": [
+      "Ab3",
+      "G#3",
+    ],
+    "noteNumber": 56,
+    "startTicks": 15115,
+  },
+  {
+    "durationTicks": 700,
+    "id": "removed",
+    "midiChannel": 0,
+    "noteName": [
+      "Eb",
+      "D#",
+    ],
+    "noteNameWithOctave": [
+      "Eb3",
+      "D#3",
+    ],
+    "noteNumber": 51,
+    "startTicks": 15116,
+  },
+  {
+    "durationTicks": 693,
+    "id": "removed",
+    "midiChannel": 0,
+    "noteName": [
+      "B",
+      "B",
+    ],
+    "noteNameWithOctave": [
+      "B3",
+      "B3",
+    ],
+    "noteNumber": 59,
+    "startTicks": 15123,
+  },
+  {
+    "durationTicks": 701,
+    "id": "removed",
+    "midiChannel": 0,
+    "noteName": [
+      "B",
+      "B",
+    ],
+    "noteNameWithOctave": [
+      "B3",
+      "B3",
+    ],
+    "noteNumber": 59,
+    "startTicks": 15835,
+  },
+  {
+    "durationTicks": 698,
+    "id": "removed",
+    "midiChannel": 0,
+    "noteName": [
+      "F",
+      "F",
+    ],
+    "noteNameWithOctave": [
+      "F4",
+      "F4",
+    ],
+    "noteNumber": 65,
+    "startTicks": 15838,
+  },
+  {
+    "durationTicks": 694,
+    "id": "removed",
+    "midiChannel": 0,
+    "noteName": [
+      "Eb",
+      "D#",
+    ],
+    "noteNameWithOctave": [
+      "Eb3",
+      "D#3",
+    ],
+    "noteNumber": 51,
+    "startTicks": 15842,
+  },
+  {
+    "durationTicks": 692,
+    "id": "removed",
+    "midiChannel": 0,
+    "noteName": [
+      "Ab",
+      "G#",
+    ],
+    "noteNameWithOctave": [
+      "Ab3",
+      "G#3",
+    ],
+    "noteNumber": 56,
+    "startTicks": 15844,
+  },
+  {
+    "durationTicks": 1419,
+    "id": "removed",
+    "midiChannel": 0,
+    "noteName": [
+      "Eb",
+      "D#",
+    ],
+    "noteNameWithOctave": [
+      "Eb3",
+      "D#3",
+    ],
+    "noteNumber": 51,
+    "startTicks": 16557,
+  },
+  {
+    "durationTicks": 1416,
+    "id": "removed",
+    "midiChannel": 0,
+    "noteName": [
+      "B",
+      "B",
+    ],
+    "noteNameWithOctave": [
+      "B3",
+      "B3",
+    ],
+    "noteNumber": 59,
+    "startTicks": 16560,
+  },
+  {
+    "durationTicks": 1415,
+    "id": "removed",
+    "midiChannel": 0,
+    "noteName": [
+      "Eb",
+      "D#",
+    ],
+    "noteNameWithOctave": [
+      "Eb4",
+      "D#4",
+    ],
+    "noteNumber": 63,
+    "startTicks": 16561,
+  },
+  {
+    "durationTicks": 1413,
+    "id": "removed",
+    "midiChannel": 0,
+    "noteName": [
+      "Ab",
+      "G#",
+    ],
+    "noteNameWithOctave": [
+      "Ab3",
+      "G#3",
+    ],
+    "noteNumber": 56,
+    "startTicks": 16563,
+  },
+  {
+    "durationTicks": 2862,
+    "id": "removed",
+    "midiChannel": 0,
+    "noteName": [
+      "Bb",
+      "A#",
+    ],
+    "noteNameWithOctave": [
+      "Bb3",
+      "A#3",
+    ],
+    "noteNumber": 58,
+    "startTicks": 17994,
+  },
+  {
+    "durationTicks": 2856,
+    "id": "removed",
+    "midiChannel": 0,
+    "noteName": [
+      "G",
+      "G",
+    ],
+    "noteNameWithOctave": [
+      "G3",
+      "G3",
+    ],
+    "noteNumber": 55,
+    "startTicks": 18000,
+  },
+  {
+    "durationTicks": 2855,
+    "id": "removed",
+    "midiChannel": 0,
+    "noteName": [
+      "Eb",
+      "D#",
+    ],
+    "noteNameWithOctave": [
+      "Eb4",
+      "D#4",
+    ],
+    "noteNumber": 63,
+    "startTicks": 18001,
+  },
+  {
+    "durationTicks": 2855,
+    "id": "removed",
+    "midiChannel": 0,
+    "noteName": [
+      "Eb",
+      "D#",
+    ],
+    "noteNameWithOctave": [
+      "Eb3",
+      "D#3",
+    ],
+    "noteNumber": 51,
+    "startTicks": 18001,
+  },
+]
+`;
+
+exports[`parseMidi() > chordTest 4`] = `
+[
+  {
+    "beatCount": 5,
+    "beats": [
+      {
+        "durationTicks": 480,
+        "index": 0,
+        "notes": [],
+        "startTicks": 0,
+      },
+      {
+        "durationTicks": 480,
+        "index": 1,
+        "notes": [],
+        "startTicks": 480,
+      },
+      {
+        "durationTicks": 480,
+        "index": 2,
+        "notes": [],
+        "startTicks": 960,
+      },
+      {
+        "durationTicks": 480,
+        "index": 3,
+        "notes": [],
+        "startTicks": 1440,
+      },
+      {
+        "durationTicks": 480,
+        "index": 4,
+        "notes": [],
+        "startTicks": 1920,
+      },
+    ],
+    "durationTicks": 2400,
+    "index": 0,
+    "notes": [],
+    "startTicks": 0,
+  },
+  {
+    "beatCount": 5,
+    "beats": [
+      {
+        "durationTicks": 480,
+        "index": 5,
+        "notes": [],
+        "startTicks": 2400,
+      },
+      {
+        "durationTicks": 480,
+        "index": 6,
+        "notes": [],
+        "startTicks": 2880,
+      },
+      {
+        "durationTicks": 480,
+        "index": 7,
+        "notes": [],
+        "startTicks": 3360,
+      },
+      {
+        "durationTicks": 480,
+        "index": 8,
+        "notes": [],
+        "startTicks": 3840,
+      },
+      {
+        "durationTicks": 480,
+        "index": 9,
+        "notes": [],
+        "startTicks": 4320,
+      },
+    ],
+    "durationTicks": 2400,
+    "index": 1,
+    "notes": [],
+    "startTicks": 2400,
+  },
+  {
+    "beatCount": 3,
+    "beats": [
+      {
+        "durationTicks": 480,
+        "index": 10,
+        "notes": [],
+        "startTicks": 4800,
+      },
+      {
+        "durationTicks": 480,
+        "index": 11,
+        "notes": [],
+        "startTicks": 5280,
+      },
+      {
+        "durationTicks": 480,
+        "index": 12,
+        "notes": [],
+        "startTicks": 5760,
+      },
+    ],
+    "durationTicks": 1440,
+    "index": 2,
+    "notes": [],
+    "startTicks": 4800,
+  },
+  {
+    "beatCount": 3,
+    "beats": [
+      {
+        "durationTicks": 480,
+        "index": 13,
+        "notes": [],
+        "startTicks": 6240,
+      },
+      {
+        "durationTicks": 480,
+        "index": 14,
+        "notes": [],
+        "startTicks": 6720,
+      },
+      {
+        "durationTicks": 480,
+        "index": 15,
+        "notes": [],
+        "startTicks": 7200,
+      },
+    ],
+    "durationTicks": 1440,
+    "index": 3,
+    "notes": [],
+    "startTicks": 6240,
+  },
+  {
+    "beatCount": 7,
+    "beats": [
+      {
+        "durationTicks": 240,
+        "index": 16,
+        "notes": [],
+        "startTicks": 7680,
+      },
+      {
+        "durationTicks": 240,
+        "index": 17,
+        "notes": [],
+        "startTicks": 7920,
+      },
+      {
+        "durationTicks": 240,
+        "index": 18,
+        "notes": [],
+        "startTicks": 8160,
+      },
+      {
+        "durationTicks": 240,
+        "index": 19,
+        "notes": [],
+        "startTicks": 8400,
+      },
+      {
+        "durationTicks": 240,
+        "index": 20,
+        "notes": [],
+        "startTicks": 8640,
+      },
+      {
+        "durationTicks": 240,
+        "index": 21,
+        "notes": [],
+        "startTicks": 8880,
+      },
+      {
+        "durationTicks": 240,
+        "index": 22,
+        "notes": [],
+        "startTicks": 9120,
+      },
+    ],
+    "durationTicks": 1680,
+    "index": 4,
+    "notes": [],
+    "startTicks": 7680,
+  },
+  {
+    "beatCount": 4,
+    "beats": [
+      {
+        "durationTicks": 480,
+        "index": 23,
+        "notes": [],
+        "startTicks": 9360,
+      },
+      {
+        "durationTicks": 480,
+        "index": 24,
+        "notes": [],
+        "startTicks": 9840,
+      },
+      {
+        "durationTicks": 480,
+        "index": 25,
+        "notes": [],
+        "startTicks": 10320,
+      },
+      {
+        "durationTicks": 480,
+        "index": 26,
+        "notes": [],
+        "startTicks": 10800,
+      },
+    ],
+    "durationTicks": 1920,
+    "index": 5,
+    "notes": [],
+    "startTicks": 9360,
+  },
+  {
+    "beatCount": 4,
+    "beats": [
+      {
+        "durationTicks": 480,
+        "index": 27,
+        "notes": [],
+        "startTicks": 11280,
+      },
+      {
+        "durationTicks": 480,
+        "index": 28,
+        "notes": [],
+        "startTicks": 11760,
+      },
+      {
+        "durationTicks": 480,
+        "index": 29,
+        "notes": [],
+        "startTicks": 12240,
+      },
+      {
+        "durationTicks": 480,
+        "index": 30,
+        "notes": [],
+        "startTicks": 12720,
+      },
+    ],
+    "durationTicks": 1920,
+    "index": 6,
+    "notes": [],
+    "startTicks": 11280,
+  },
+  {
+    "beatCount": 5,
+    "beats": [
+      {
+        "durationTicks": 480,
+        "index": 31,
+        "notes": [],
+        "startTicks": 13200,
+      },
+      {
+        "durationTicks": 480,
+        "index": 32,
+        "notes": [],
+        "startTicks": 13680,
+      },
+      {
+        "durationTicks": 480,
+        "index": 33,
+        "notes": [],
+        "startTicks": 14160,
+      },
+      {
+        "durationTicks": 480,
+        "index": 34,
+        "notes": [],
+        "startTicks": 14640,
+      },
+      {
+        "durationTicks": 480,
+        "index": 35,
+        "notes": [],
+        "startTicks": 15120,
+      },
+    ],
+    "durationTicks": 2400,
+    "index": 7,
+    "notes": [],
+    "startTicks": 13200,
+  },
+  {
+    "beatCount": 5,
+    "beats": [
+      {
+        "durationTicks": 480,
+        "index": 36,
+        "notes": [],
+        "startTicks": 15600,
+      },
+      {
+        "durationTicks": 480,
+        "index": 37,
+        "notes": [],
+        "startTicks": 16080,
+      },
+      {
+        "durationTicks": 480,
+        "index": 38,
+        "notes": [],
+        "startTicks": 16560,
+      },
+      {
+        "durationTicks": 480,
+        "index": 39,
+        "notes": [],
+        "startTicks": 17040,
+      },
+      {
+        "durationTicks": 480,
+        "index": 40,
+        "notes": [],
+        "startTicks": 17520,
+      },
+    ],
+    "durationTicks": 2400,
+    "index": 8,
+    "notes": [],
+    "startTicks": 15600,
+  },
+  {
+    "beatCount": 3,
+    "beats": [
+      {
+        "durationTicks": 960,
+        "index": 41,
+        "notes": [],
+        "startTicks": 18000,
+      },
+      {
+        "durationTicks": 960,
+        "index": 42,
+        "notes": [],
+        "startTicks": 18960,
+      },
+      {
+        "durationTicks": 960,
+        "index": 43,
+        "notes": [],
+        "startTicks": 19920,
+      },
+    ],
+    "durationTicks": 2880,
+    "index": 9,
+    "notes": [],
+    "startTicks": 18000,
+  },
+]
+`;

@@ -1,10 +1,9 @@
 import { useState } from 'react'
 import type { Meta, StoryObj } from '@storybook/react'
-import { analyzed } from './musicData'
-import { Song } from '../utils/analyze'
+import { songs } from './musicData'
+import { Song } from '../utils/song'
 import SongCanvas, { SongCanvasOptions } from '../components/SongCanvas'
 import SongCanvasControls from '../components/SongCanvasControls'
-import SongHeaders from '../components/SongHeaders'
 import FileSelector from '../components/FileSelector'
 
 type SampleAppProps = {
@@ -44,7 +43,7 @@ const meta: Meta<typeof SampleApp> = {
   title: 'Pages/App',
   component: SampleApp,
   args: {
-    appSong: analyzed.chordTest,
+    appSong: songs.chordTest,
     maxHeight: '300px',
   },
 }
@@ -54,7 +53,7 @@ type Story = StoryObj<typeof SampleApp>
 
 export const Basic: Story = {
   args: {
-    appSong: analyzed.twoBar,
+    appSong: songs.twoBar,
   },
   render: args => {
     return <SampleApp {...args} />
@@ -63,7 +62,7 @@ export const Basic: Story = {
 
 export const Complex: Story = {
   args: {
-    appSong: analyzed.takeFive,
+    appSong: songs.takeFive,
   },
   render: args => {
     return <SampleApp {...args} />

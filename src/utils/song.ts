@@ -17,7 +17,7 @@ export type Song = Pick<BaseSongData, 'timings' | 'timeSignatures'> & {
   tracks: Track[]
 }
 
-export function analyze(sd: BaseSongData): Song {
+export function makeSong(sd: BaseSongData): Song {
   let song: Song = {
     timings: sd.timings,
     timeSignatures: sd.timeSignatures,
@@ -97,6 +97,8 @@ export function isNoteInRange(
   if (note.startTicks < startTicks && noteEndTicks > endTicks) {
     return true
   }
+
+  return false
 }
 
 function updateFrequencyStats(note: Note, song: Song) {

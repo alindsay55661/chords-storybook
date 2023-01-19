@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import SongHeaders from './SongHeaders'
 import Track from './Track'
 import BeatLines from './BeatLines'
-import { DetectUnit, Song } from '../utils/analyze'
+import { DetectUnit, Song } from '../utils/song'
 
 export type SongCanvasOptions = Pick<
   SongCanvasProps,

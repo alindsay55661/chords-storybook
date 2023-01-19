@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { analyzed } from './musicData'
+import { songs } from './musicData'
 import BeatLines from '../components/BeatLines'
 
 const meta: Meta<typeof BeatLines> = {
@@ -20,9 +20,9 @@ type Story = StoryObj<typeof BeatLines>
 
 export const Basic: Story = {
   args: {
-    timings: analyzed.twoBar.timings,
-    bars: analyzed.twoBar.notes.byBar,
-    width: analyzed.twoBar.timings.durationTicks / 10,
+    timings: songs.twoBar.timings,
+    bars: songs.twoBar.notes.byBar,
+    width: songs.twoBar.timings.durationTicks / 10,
   },
   render: args => {
     return <BeatLines {...args} />
@@ -31,9 +31,9 @@ export const Basic: Story = {
 
 export const MultiTrack: Story = {
   args: {
-    timings: analyzed.ghostBusters.timings,
-    bars: analyzed.ghostBusters.notes.byBar,
-    width: analyzed.ghostBusters.timings.durationTicks / 10,
+    timings: songs.ghostBusters.timings,
+    bars: songs.ghostBusters.notes.byBar,
+    width: songs.ghostBusters.timings.durationTicks / 10,
   },
   render: args => {
     return <BeatLines {...args} />
@@ -42,9 +42,9 @@ export const MultiTrack: Story = {
 
 export const MultipleTimeSignatures: Story = {
   args: {
-    timings: analyzed.chordTest.timings,
-    bars: analyzed.chordTest.notes.byBar,
-    width: analyzed.chordTest.timings.durationTicks / 10,
+    timings: songs.chordTest.timings,
+    bars: songs.chordTest.notes.byBar,
+    width: songs.chordTest.timings.durationTicks / 10,
   },
   render: args => {
     return <BeatLines {...args} />

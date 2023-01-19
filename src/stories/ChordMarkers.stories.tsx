@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { analyzed } from './musicData'
+import { songs } from './musicData'
 import ChordMarkers from '../components/ChordMarkers'
 
 const meta: Meta<typeof ChordMarkers> = {
   title: 'ChordMarkers',
   args: {
-    song: analyzed.chordTest,
+    song: songs.chordTest,
     songWidth: 1500,
     sidebarWidth: 100,
     detectUnit: 'bar',
@@ -18,7 +18,7 @@ type Story = StoryObj<typeof ChordMarkers>
 
 export const Basic: Story = {
   args: {
-    song: analyzed.twoBar,
+    song: songs.twoBar,
     songWidth: 500,
   },
   render: args => {

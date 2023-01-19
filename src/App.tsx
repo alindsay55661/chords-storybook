@@ -3,11 +3,11 @@ import './App.css'
 import FileSelector from './components/FileSelector'
 import SongCanvas, { SongCanvasOptions } from './components/SongCanvas'
 import SongCanvasControls from './components/SongCanvasControls'
-import { analyzed as data } from './stories/musicData'
-import { Song } from './utils/analyze'
+import { songs } from './stories/musicData'
+import { Song } from './utils/song'
 
 function App() {
-  const [song, setSong] = useState<Song>(data.chordTest)
+  const [song, setSong] = useState<Song>(songs.chordTest)
   const [options, setOptions] = useState<SongCanvasOptions>({
     zoom: 130,
     trackHeight: 128,

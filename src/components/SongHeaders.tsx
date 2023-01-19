@@ -1,5 +1,5 @@
 import { memo } from 'react'
-import { DetectUnit, Song } from '../utils/analyze'
+import { DetectUnit, Song } from '../utils/song'
 import ChordMarkers from './ChordMarkers'
 import TimeSignatureMarkers from './TimeSignatureMarkers'
 import BeatMarkers from './BeatMarkers'
