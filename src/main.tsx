@@ -78,7 +78,7 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
             Storybook components ➞
           </a>
           <a
-            href="storybook/"
+            href="https://github.com/alindsay55661/chords-storybook"
             className="m-4 inline-flex cursor-pointer rounded bg-slate-100 py-3 px-6 font-bold"
           >
             <img
