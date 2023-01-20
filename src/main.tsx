@@ -41,6 +41,17 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
           />
         </div>
 
+        <p className="mb-8 rounded bg-slate-100 p-4 text-center">
+          (Full blog post on this project here:{' '}
+          <a
+            href="https://thefury.dev/projects/find-the-chord-storybook/"
+            className="text-sky-600 underline"
+          >
+            thefury.dev/projects/find-the-chord-storybook
+          </a>
+          )
+        </p>
+
         <p>
           This is a small project I put together to help me with my musical
           studies and learn some new tech. I dove into:
